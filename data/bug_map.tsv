@@ -1,28 +1,32 @@
-species.short	species.long	species.code	species.class	species.color	species.NT_ID
-B. fragilis	Bacteroides fragilis	Bf	Bacteroidia	#c6dbef	NT5003
-B. thetaiotaomicron	Bacteroides thetaiotaomicron	Bt	Bacteroidia	#9ecae1	NT5004
-B. uniformis	Bacteroides uniformis	Bu	Bacteroidia	#6baed6	NT5002
-B. uniformis HM715	Bacteroides uniformis HM715	15	Bacteroidia	#4292c6	NT5065
-B. uniformis HM716	Bacteroides uniformis HM716	16	Bacteroidia	#2171b5	NT5066
-B. vulgatus	Bacteroides vulgatus	Bv	Bacteroidia	#084594	NT5001
-B. animalis subsp. lactis BI-07	Bifidobacterium animalis lactis	Bal	Actinobacteria	#bae4b3	NT5044
-B. longum subsp. infantis	Bifidobacterium longum infantis	Bli	Actinobacteria	#74c476	NT5023
-B. longum subsp. longum	Bifidobacterium longum longum	Bll	Actinobacteria	#31a354	NT5028
-C. bolteae	Clostridium bolteae	Cb	Clostridia	#ef3b2c	NT5026
-C. ramosum	Clostridium ramosum	Cr	Erysipelotrichia	#FB6522	NT5006
-C. saccharolyticum	Clostridium saccharolyticum	Cs	Clostridia	#99000d	NT5037
-C. comes	Coprococcus comes	Cc	Clostridia	#fcbba1	NT5048
-E. lenta	Eggerthella lenta	El	Coriobacteriia	#006d2c	NT5024
-E. coli ED1a	Escherichia coli ED1a	Ece	Gammaproteobacteria	#cccccc	NT5078
-E. coli IAI1	Escherichia coli iAi1	Eci	Gammaproteobacteria	#969696	NT5077
-E. rectale	Eubacterium rectale	Er	Clostridia	#cb181d	NT5009
-F. nucleatum	Fusobacterium nucleatum nucleatum	Fn	Fusobacteria	#c51b8a	NT5025
-L. gasseri	Lactobacillus gasseri	Lg	Bacilli	#bcbddc	NT5007
-L. paracasei	Lactobacillus paracasei	Lpa	Bacilli	#9e9ac8	NT5042
-L. plantarum	Lactobacillus plantarum	Lpl	Bacilli	#756bb1	NTX2
-L. lactis	Lactococcus lactis	Ll	Bacilli	#54278f	NTX3
-R. gnavus	Ruminococcus gnavus	Rg	Clostridia	#fee0d2	NT5046
-R. torques	Ruminococcus torques	Rt	Clostridia	#fc9272	NT5047
-S. salivarius	Streptococcus salivarius	Ss	Bacilli	#dadaeb	NT5038
-Control	Control	Control			
-F. nucleatum animalis	Fusobacterium nucleatum animalis	Fna	Fusobacteria		NT5029
+species.short	species.long	species.code	species.group	species.group_order	species.color	species.NT_ID
+B. fragilis	Bacteroides fragilis	Bf	Bacteroidetes	5	#c6dbef	NT5003
+B. thetaiotaomicron	Bacteroides thetaiotaomicron	Bt	Bacteroidetes	5	#9ecae1	NT5004
+B. uniformis	Bacteroides uniformis	Bu	Bacteroidetes	5	#6baed6	NT5002
+B. uniformis HM715	Bacteroides uniformis HM715	15	Bacteroidetes	5	#4292c6	NT5065
+B. uniformis HM716	Bacteroides uniformis HM716	16	Bacteroidetes	5	#2171b5	NT5066
+B. vulgatus	Bacteroides vulgatus	Bv	Bacteroidetes	5	#084594	NT5001
+B. animalis subsp. lactis BI-07	Bifidobacterium animalis lactis	Bal	Actinobacteria	2	#bae4b3	NT5044
+B. longum subsp. infantis	Bifidobacterium longum infantis	Bli	Actinobacteria	2	#74c476	NT5023
+B. longum subsp. longum	Bifidobacterium longum longum	Bll	Actinobacteria	2	#31a354	NT5028
+C. bolteae	Clostridium bolteae	Cb	Firmicutes	3	#ef3b2c	NT5026
+C. ramosum	Clostridium ramosum	Cr	Firmicutes	3	#FB6522	NT5006
+C. saccharolyticum	Clostridium saccharolyticum	Cs	Firmicutes	3	#99000d	NT5037
+C. comes	Coprococcus comes	Cc	Firmicutes	3	#fcbba1	NT5048
+E. lenta	Eggerthella lenta	El	Firmicutes	3	#006d2c	NT5024
+E. coli ED1a	Escherichia coli ED1a	Ece	Proteobacteria	4	#cccccc	NT5078
+E. coli IAI1	Escherichia coli iAi1	Eci	Proteobacteria	4	#969696	NT5077
+E. rectale	Eubacterium rectale	Er	Firmicutes	3	#cb181d	NT5009
+F. nucleatum	Fusobacterium nucleatum nucleatum	Fn	Fusobacteria	1	#c51b8a	NT5025
+L. gasseri	Lactobacillus gasseri	Lg	Firmicutes	3	#bcbddc	NT5007
+L. paracasei	Lactobacillus paracasei	Lpa	Firmicutes	3	#9e9ac8	NT5042
+L. plantarum	Lactobacillus plantarum	Lpl	Firmicutes	3	#756bb1	NTX2
+L. lactis	Lactococcus lactis	Ll	Firmicutes	3	#54278f	NTX3
+R. gnavus	Ruminococcus gnavus	Rg	Firmicutes	3	#fee0d2	NT5046
+R. torques	Ruminococcus torques	Rt	Firmicutes	3	#fc9272	NT5047
+S. salivarius	Streptococcus salivarius	Ss	Firmicutes	3	#dadaeb	NT5038
+F. nucleatum animalis	Fusobacterium nucleatum animalis	Fna	Fusobacteria	1		NT5029
+Control	Control	ctrl	Control	7		
+Mix Degrad	Mix Degrad	m1	Mix	6		
+Mix No	Mix No	m1	Mix	6		
+REMOVE1	REMOVE1	rm1	Remove	8		
+REMOVE2	REMOVE2	rm2	Remove	8		
