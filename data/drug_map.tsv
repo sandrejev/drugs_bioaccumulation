@@ -1,0 +1,21 @@
+drug.order	drug.short	drug.long	drug.color	drug.color2	drug.color3	drug.atc
+3	acet	Acetaminophen	#543005	#F564E3	#a6cee3	Analgesics
+3	acethi	Acetaminophen high				
+13	arip	Aripiprazole	#8c510a	#619CFF	#1f78b4	Psycholeptics
+12	digo	Digoxin	#bf812d	#C77CFF	#b2df8a	Cardiac therapy
+4	done	Donepezil	#dfc27d	#FF64B0	#33a02c	Psychoanaleptics
+13	dulo	Duloxetine	#b22222	#b22222	#b22222	Psychoanaleptics
+6	ezet	Ezetimibe	#7A7361	#F8766D	#fb9a99	Lipid modifying agents
+9	leva	Levamisole	#1E90FF	#00BA38	#fdbf6f	Anthelmintics
+1	lope	Loperamide				Antidiarrheals
+16	metf	Metformin				Anti-diabetics
+15	metr	Metronidazole		#DE8C00	#e31a1c	Antibiotics
+10	mont	Montelukast	#80cdc1	#B79F00	#ff7f00	Drugs for obstructive airway disease
+8	rani	Ranitidine	#35978f	#7CAE00	#cab2d6	Drugs for acid related disorders
+5	rofl	Roflumilast	#01665e	#00C08B	#6a3d9a	Drugs for obstructive airway disease
+7	rosi	Rosiglitazone	#003c30	#00BFC4	#8A8A53	Anti-diabetics
+17	rosu	Rosuvastatin				Lipid modifying agents
+11	simv	Simvastatin				Lipid modifying agents
+14	sulf	Sulfasalazine	#B8B8B8	#00B4F0	#8F5419	Antidiarrheals
+18	teno	Tenofovir				Antivirals
+2	tolm	Tolmetin				Antirheumatics

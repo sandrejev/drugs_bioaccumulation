@@ -25,24 +25,7 @@ t.test2 <- function(m1,m2,s1,s2,n1,n2,m0=0,equal.variance=FALSE)
   return(dat) 
 }
 
-
-ttest.degrad.batch <- function(data.degrad){
-  ttest.diffSD <- plyr::ddply(data.degrad, plyr::.(GroupName,Plate,Batch,Species.x), function(z) t.test2(mean(z$DrugRatio,na.rm=T),z$BatchMean[1], sd(z$DrugRatio,na.rm=T),z$SD.ctrls[1], length(z$DrugRatio),z$N.ctrls[1], equal.variance=T))
-  ttest.sameSD <- plyr::ddply(data.degrad, plyr::.(GroupName,Plate,Batch,Species.x), function(z) t.test2(mean(z$DrugRatio,na.rm=T),z$BatchMean[1], z$SD.ctrls[1],z$SD.ctrls[1], length(z$DrugRatio),z$N.ctrls[1], equal.variance=T))
-  
-  ttest.diffSD$p_adjust <- p.adjust(ttest.diffSD$p_value,method="BH")
-  ttest.sameSD$p_adjust <- p.adjust(ttest.sameSD$p_value,method="BH")
-  
-  ttest.sameSD <- merge(ttest.sameSD, unique(data.degrad[,c("GroupName","Plate","BatchMean","growth")]))
-  ttest.sameSD$DiffOfMeans <- ttest.sameSD[,5]/ttest.sameSD$BatchMean
-  meanmax <- plyr::ddply(data.degrad, plyr::.(Plate,GroupName), summarize, Mean.Max = mean(maxOD, na.rm=T))
-  ttest.sameSD <- merge(ttest.sameSD,meanmax)
-  ttest.sameSD$Norm.Max <- ttest.sameSD$DiffOfMeans/ttest.sameSD$Mean.Max
-  
-  return(list(ttest.sameSD,ttest.diffSD))
-}
-
-ttest.degrad.batch2 <- function(data.degrad){
+ttest.degrad.batch = function(data.degrad){
   meanmax = data.degrad %>%
     dplyr::group_by(Plate, GroupName) %>%
     dplyr::summarise(Mean.Max=mean(maxOD))
@@ -73,8 +56,9 @@ ttest.degrad.batch2 <- function(data.degrad){
 #species_depletors = c("Fusobacterium nucleatum nucleatum", "Eggerthella lenta", "Bifidobacterium longum infantis", "Bifidobacterium animalis lactis", "Clostridium bolteae", "Clostridium saccharolyticum", "Clostridium ramosum", "Coprococcus comes", "Ruminococcus gnavus", "Escherichia coli iAi1", "Escherichia coli ED1a", "Lactococcus lactis", "Lactobacillus plantarum", "Lactobacillus gasseri", "Lactobacillus paracasei", "Streptococcus salivarius", "Bacteroides uniformis", "Bacteroides uniformis HM715", "Bacteroides uniformis HM716", "Bacteroides thetaiotaomicron", "Bacteroides vulgatus", "Mix Depletion", "Mix No Depletion", "REMOVE1")
 #species_influeced = c("L. lactis", "L. plantarum", "L. gasseri", "E. lenta", "B. longum subsp. infantis", "E. coli IAI1", "F. nucleatum subsp. nucleatum", "E. rectale", "R. torques", "C. saccharolyticum", "C. ramosum", "B. uniformis HM716", "B. uniformis HM715", "B. thetaiotaomicron", "B. uniformis", "B. fragilis", "REMOVE2")
 
-drug_map = read.csv("data/drug_map.csv", stringsAsFactors=F) %>% dplyr::select(drug.order=order,drug.short=GroupName, drug.long=full)
-bug_map = read.delim("data/bug_map.csv", sep=",", stringsAsFactors=F) %>% dplyr::select(species.long=long, species.short=full)
+drug_map = readr::read_delim("data/drug_map.tsv", "\t")
+bug_map = readr::read_delim("data/bug_map.tsv", "\t")
+
 species.groups = c(
   "Fusobacterium nucleatum nucleatum"="Fusobacteria", "F. nucleatum subsp. nucleatum"="Fusobacteria",
   "Eggerthella lenta"="Actinobacteria", "Bifidobacterium animalis lactis"="Actinobacteria", "Bifidobacterium longum infantis"="Actinobacteria", "B. longum subsp. infantis"="Actinobacteria", "B. animalis subsp. lactis BI-07"="Actinobacteria", "E. lenta"="Actinobacteria",
@@ -93,31 +77,6 @@ species.groups = data.frame(group=species.groups) %>%
 load("data/170511_processingUPLCpeaks_data.clean_aftergrowthmerge_andfixingget.datacleanfunction.RData")
 plates_with_growth = unique(data.clean %>% dplyr::filter(Status=="GMM" & growth=="growth") %>% .$Plate)
 data.degrad = data.clean %>% dplyr::filter(Status=="sample" & growth=="growth" & dummy==1 & Plate %in% plates_with_growth)
-
-#################
-meanmax = data.degrad %>%
-  dplyr::group_by(Plate, GroupName) %>%
-  dplyr::summarise(Mean.Max=mean(maxOD))
-
-ttest.diffSD = data.degrad %>%
-  dplyr::group_by(GroupName,Plate,Batch,Species.x) %>%
-  dplyr::do(t.test2(mean(.$DrugRatio), .$BatchMean[1], sd(.$DrugRatio),.$SD.ctrls[1], length(.$DrugRatio),.$N.ctrls[1], equal.variance=T)) %>%
-  data.frame() %>%
-  dplyr::mutate(p_adjust=p.adjust(.$p_value,method="BH"))
-  
-ttest.sameSD = data.degrad %>%
-  dplyr::group_by(GroupName,Plate,Batch,Species.x) %>%
-  dplyr::do(t.test2(mean(.$DrugRatio),.$BatchMean[1], .$SD.ctrls[1], .$SD.ctrls[1], length(.$DrugRatio), .$N.ctrls[1], equal.variance=T)) %>%
-  data.frame() %>%
-  dplyr::mutate(p_adjust=p.adjust(.$p_value,method="BH")) %>%
-  dplyr::inner_join(unique(data.degrad %>% dplyr::select(GroupName, Plate, BatchMean, growth)), by=c("GroupName", "Plate")) %>%
-  dplyr::mutate(DiffOfMeans = Difference.of.means/BatchMean) %>%
-  dplyr::inner_join(meanmax, by=c("GroupName", "Plate")) %>%
-  dplyr::mutate(Norm.Max=DiffOfMeans/Mean.Max)
-
-data.get.new = list(ttest.sameSD, ttest.diffSD)
-##############
-
 
 data.get <- ttest.degrad.batch(data.degrad) 
 hits = data.get[[1]] %>%
