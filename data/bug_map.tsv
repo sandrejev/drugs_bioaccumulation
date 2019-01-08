@@ -27,6 +27,6 @@ S. salivarius	Streptococcus salivarius	Ss	Firmicutes	3	#dadaeb	NT5038
 F. nucleatum animalis	Fusobacterium nucleatum animalis	Fna	Fusobacteria	1		NT5029
 Control	Control	ctrl	Control	7		
 Mix Degrad	Mix Degrad	m1	Mix	6		
-Mix No	Mix No	m1	Mix	6		
+Mix No	Mix No	m0	Mix	6		
 REMOVE1	REMOVE1	rm1	Remove	8		
 REMOVE2	REMOVE2	rm2	Remove	8		
