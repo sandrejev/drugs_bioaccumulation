@@ -52,7 +52,85 @@ ttest.degrad.batch = function(data.degrad){
   data.get.new = list(ttest.sameSD, ttest.diffSD)
 }
 
-#hits_uplc = readr::read_delim("data/assay.hits.csv", ";")
+preprocess.hits_uplc = function()
+{
+  padjst.th = 0.05
+  MedianDiff.general_th = -0.1
+  MedianDiff.bioaccumulation_th = 0.1
+  MedianDiffFold.bioaccumulation_th = 0.7
+  
+  drugs = readr::read_delim("data/drug_map.tsv", "\t") %>% dplyr::filter(!grepl("high concentration", drug.comment))
+  bugs = readr::read_delim("data/bug_map.tsv", "\t")
+  data = readr::read_delim("data/data.depletionmodeassay_long.csv", ",")
+  data = data %>%
+    dplyr::rename("species.long"="Bugslong") %>%
+    dplyr::inner_join(drugs, by=c("Drugs"="drug.short2")) %>% 
+    dplyr::left_join(bugs %>% dplyr::select(species.short, species.long), by=c("species.long")) %>%
+    dplyr::filter(Ctrl != "zero") %>% # I don't know what is 'med',  & is.na(drug.uplc_excluded) #  & Bugs != "med"
+    #dplyr::filter(!(Method=="di" & Bugs=="Fn")) %>% # TODO: this is from martina's code. I don't know why
+    data.frame()
+  
+  data.sum = data %>%
+    dplyr::group_by(drug.long, drug.short, species.long, species.short, Extraction, drug.known_activity, drug.uplc_excluded) %>% 
+    dplyr::summarise(MedianDiff=median(DiffCtrlSample[Ctrl=="smpl"]), pvalue=wilcox.test(DiffCtrlSample[Ctrl=="ctrl"], DiffCtrlSample[Ctrl=="smpl"])$p.value) %>%
+    data.frame() %>%
+    dplyr::mutate(padjst=p.adjust(pvalue, method="BH"), s=Extraction=="Supernatant") %>%
+    dplyr::group_by(drug.long, drug.short, species.short, species.long, drug.known_activity) %>% 
+    dplyr::summarise(
+      padjst.super=padjst[s], padjst.total=padjst[!s], MedianDiff.super=MedianDiff[s],  MedianDiff.total=MedianDiff[!s], 
+      MedianDiffFold=MedianDiff.total/MedianDiff.super, 
+      MedianDiffDiff=pmin(0, MedianDiff.total)-pmin(0, MedianDiff.super),
+      interaction = dplyr::case_when(
+        any(!is.na(drug.uplc_excluded)) ~ "Excluded",
+        all(MedianDiff>MedianDiff.general_th) | all(padjst>padjst.th) ~ "No activity",
+        
+        # This
+        padjst.super<padjst.th & MedianDiffDiff>=MedianDiff.bioaccumulation_th & MedianDiffFold<MedianDiffFold.bioaccumulation_th~ "Bioaccumulation",
+        padjst.super<padjst.th & MedianDiffDiff>=MedianDiff.bioaccumulation_th & MedianDiff.total>-MedianDiff.bioaccumulation_th~ "Bioaccumulation",
+        
+        padjst.super<padjst.th & any(MedianDiff>MedianDiff.general_th) & MedianDiffDiff>=MedianDiff.bioaccumulation_th & MedianDiffFold<MedianDiffFold.bioaccumulation_th~ "Bioaccumulation",
+        padjst.super<padjst.th & any(MedianDiff<MedianDiff.general_th) & MedianDiffDiff>=MedianDiff.bioaccumulation_th & MedianDiff.total>MedianDiff.general_th~ "Bioaccumulation",
+        
+        
+        any(padjst<padjst.th) ~ "Biotransformation",
+        T ~ "No activity"
+      ))
+  
+  #
+  # Write to file
+  #
+  readr::write_delim(data.sum, "data/degradation_hits.tsv", "\t")
+  
+  
+  # Test against old hit categories
+  hits = readr::read_delim("../Martina_old/data/degradation_hits.csv", ",")
+  x = data.sum %>%
+    dplyr::full_join(hits[!duplicated(hits[,c("Bug.full", "Drugs.full")]),], by=c("species.long"="Bug.full", "drug.long"="Drugs.full")) %>%
+    dplyr::filter(interaction!="Excluded") %>% # !is.na(species.long) & is.na(drug.known_activity)  & 
+    dplyr::mutate(Activity=ifelse(is.na(Activity), "No activity", Activity), interaction=ifelse(is.na(interaction), "Missing", interaction))
+  
+  table(new=x$interaction, old=x$Activity)
+  x.missmatch = x %>% data.frame() %>% dplyr::filter(interaction != Activity) %>% dplyr::select(species.short, drug.long, dplyr::matches("(padjst|MedianDiff)\\."), interaction, Activity)
+  x.missmatch
+  
+  
+  # Test against old p-values
+  hits = readr::read_delim("data/assay_test.hits.csv", ";")
+  hits = hits %>% 
+    dplyr::mutate(s=Extraction=="Supernatant") %>%
+    dplyr::group_by(Bugs, Drugs, SNToRatio, resp, value) %>%
+    dplyr::summarise(
+      padjst_old.super=ifelse(!length(padjst[s]),NA,padjst[s]), 
+      padjst_old.total=ifelse(!length(padjst[!s]),NA,padjst[!s]), 
+      MedianDiff_old.super=ifelse(!length(MedianDiff[s]),NA,MedianDiff[s]),  
+      MedianDiff_old.total=ifelse(!length(MedianDiff[!s]),NA,MedianDiff[!s])) %>%
+    dplyr::left_join(data.sum, by=c("Bugs"="species.short", "Drugs"="drug.long"))
+  
+  plot(hits$padjst_old.super-hits$padjst.super)    
+  plot(hits$padjst_old.total-hits$padjst.total)    
+  plot(hits$MedianDiff_old.super-hits$MedianDiff.super)    
+  plot(hits$MedianDiff_old.total-hits$MedianDiff.total)  
+}
 
 plot.sankey = function()
 {
