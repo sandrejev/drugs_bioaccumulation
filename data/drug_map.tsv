@@ -1,22 +1,21 @@
-drug.order	drug.code	drug.short	drug.short2	drug.long	drug.comment	drug.color	drug.color2	drug.color3	drug.atc	drug.uplc_excluded	drug.known_activity
-3	ac	acet	aceta	Acetaminophen		#543005	#F564E3	#a6cee3	Analgesics	Unstable peak	
-3	ach	acethi	acehi	Acetaminophen	high concentration	#543005	#F564E3	#a6cee3	Analgesics	Unstable peak	
-13	a	arip	aripi	Aripiprazole		#8c510a	#619CFF	#1f78b4	Psycholeptics		
-12	di	digo	digox	Digoxin		#bf812d	#C77CFF	#b2df8a	Cardiac therapy		Depleted
-4	do	done	donep	Donepezil		#dfc27d	#FF64B0	#33a02c	Psychoanaleptics		
-13	d	dulo	dulox	Duloxetine		#b22222	#b22222	#b22222	Psychoanaleptics		
-6	e	ezet	ezeti	Ezetimibe		#7A7361	#F8766D	#fb9a99	Lipid modifying agents		
-9	l	leva	levam	Levamisole		#1E90FF	#00BA38	#fdbf6f	Anthelmintics		
-1	lo	lope	loper	Loperamide					Antidiarrheals		
-16	me	metf	metfo	Metformin					Anti-diabetics	Unstable peak	
-15	mt	metr	metro	Metronidazole			#DE8C00	#e31a1c	Antibiotics		Depleted and Inhibits
-10	m	mont	monte	Montelukast		#80cdc1	#B79F00	#ff7f00	Drugs for obstructive airway disease		
-8	ra	rani	ranit	Ranitidine		#35978f	#7CAE00	#cab2d6	Drugs for acid related disorders		
-5	ro	rofl	roflu	Roflumilast		#01665e	#00C08B	#6a3d9a	Drugs for obstructive airway disease		
-7	r	rosi	rosig	Rosiglitazone		#003c30	#00BFC4	#8A8A53	Anti-diabetics		
-17	rs	rosu	rosuv	Rosuvastatin					Lipid modifying agents		
-11	si	simv	simva	Simvastatin					Lipid modifying agents	Unstable peak	
-14	s	sulf	sulfa	Sulfasalazine		#B8B8B8	#00B4F0	#8F5419	Antidiarrheals		Depleted
-18	te	teno	tenof	Tenofovir					Antivirals		
-2	to	tolm	tolme	Tolmetin					Antirheumatics		
-
+drug.order	drug.code	drug.short	drug.short2	drug.long	drug.comment	drug.color	drug.color2	drug.color3	drug.atc	drug.atc_color	drug.uplc_excluded	drug.known_activity
+3	ac	acet	aceta	Acetaminophen		#543005	#F564E3	#a6cee3	Analgesics	#7F5477	Unstable peak	
+3	ach	acethi	acehi	Acetaminophen	high concentration	#543005	#F564E3	#a6cee3	Analgesics	#7F5477	Unstable peak	
+13	a	arip	aripi	Aripiprazole		#8c510a	#619CFF	#1f78b4	Psycholeptics	#F781BF	Unstable peak	
+12	di	digo	digox	Digoxin		#bf812d	#C77CFF	#b2df8a	Cardiac therapy	#B47229		Depleted
+4	do	done	donep	Donepezil		#dfc27d	#FF64B0	#33a02c	Psychoanaleptics	#91569B		
+13	d	dulo	dulox	Duloxetine		#b22222	#b22222	#b22222	Psychoanaleptics	#91569B		
+6	e	ezet	ezeti	Ezetimibe		#7A7361	#F8766D	#fb9a99	Lipid modifying agents	#E41A1C		
+9	l	leva	levam	Levamisole		#1E90FF	#00BA38	#fdbf6f	Anthelmintics	#CB6651		
+1	lo	lope	loper	Loperamide					Antidiarrheals	#47A265		
+16	me	metf	metfo	Metformin					Anti-diabetics	#3A86A5	Unstable peak	
+15	mt	metr	metro	Metronidazole			#DE8C00	#e31a1c	Antibiotics	#FF8904		Depleted and Inhibits
+10	m	mont	monte	Montelukast		#80cdc1	#B79F00	#ff7f00	Drugs for obstructive airway disease	#658E67		
+8	ra	rani	ranit	Ranitidine		#35978f	#7CAE00	#cab2d6	Drugs for acid related disorders	#C76766		
+5	ro	rofl	roflu	Roflumilast		#01665e	#00C08B	#6a3d9a	Drugs for obstructive airway disease	#658E67		
+7	r	rosi	rosig	Rosiglitazone		#003c30	#00BFC4	#8A8A53	Anti-diabetics	#3A86A5		
+17	rs	rosu	rosuv	Rosuvastatin					Lipid modifying agents	#E41A1C		
+11	si	simv	simva	Simvastatin					Lipid modifying agents	#E41A1C	Unstable peak	
+14	s	sulf	sulfa	Sulfasalazine		#B8B8B8	#00B4F0	#8F5419	Antidiarrheals	#47A265		Depleted
+18	te	teno	tenof	Tenofovir					Antivirals	#E8D430		
+2	to	tolm	tolme	Tolmetin					Antirheumatics	#FFD422		
