@@ -4,26 +4,8 @@ library(dplyr)
 library(readr)
 library(xlsx)
 library(ggplot2)
-
-#
-# t-test
-#
-t.test2 <- function(m1,m2,s1,s2,n1,n2,m0=0,equal.variance=FALSE)
-{
-  if( equal.variance==FALSE ) {
-    # welch-satterthwaite equation
-    se = sqrt( (s1^2/n1) + (s2^2/n2) )
-    df = ( (s1^2/n1 + s2^2/n2)^2 )/( (s1^2/n1)^2/(n1-1) + (s2^2/n2)^2/(n2-1) )
-  } else {
-    # pooled standard deviation, scaled by the sample sizes
-    se = sqrt( (1/n1 + 1/n2) * ((n1-1)*s1^2 + (n2-1)*s2^2)/(n1+n2-2) ) 
-    df = n1+n2-2
-  }      
-  
-  t = (m1-m2-m0)/se 
-  dat = data.frame("Difference of means"=m1-m2, "Std Error"=se, "t"=t, "p_value"=2*pt(-abs(t),df))
-  return(dat) 
-}
+library(grid)
+source("functions.R")
 
 #
 # Differential analysis for degradation dataset
@@ -61,7 +43,7 @@ preprocess.hits_uplc = function()
   
   drugs = readr::read_delim("data/drug_map.tsv", "\t") %>% dplyr::filter(!grepl("high concentration", drug.comment))
   bugs = readr::read_delim("data/bug_map.tsv", "\t")
-  data = readr::read_delim("data/data.depletionmodeassay_long.csv", ",")
+  data = readr::read_delim("data/exp2metabolomics/data.depletionmodeassay_long.csv", ",") 
   data = data %>%
     dplyr::rename("species.long"="Bugslong") %>%
     dplyr::inner_join(drugs, by=c("Drugs"="drug.short2")) %>% 
@@ -99,37 +81,7 @@ preprocess.hits_uplc = function()
   #
   # Write to file
   #
-  readr::write_delim(data.sum, "data/degradation_hits.tsv", "\t")
-  
-  
-  # Test against old hit categories
-  hits = readr::read_delim("../Martina_old/data/degradation_hits.csv", ",")
-  x = data.sum %>%
-    dplyr::full_join(hits[!duplicated(hits[,c("Bug.full", "Drugs.full")]),], by=c("species.long"="Bug.full", "drug.long"="Drugs.full")) %>%
-    dplyr::filter(interaction!="Excluded") %>% # !is.na(species.long) & is.na(drug.known_activity)  & 
-    dplyr::mutate(Activity=ifelse(is.na(Activity), "No activity", Activity), interaction=ifelse(is.na(interaction), "Missing", interaction))
-  
-  table(new=x$interaction, old=x$Activity)
-  x.missmatch = x %>% data.frame() %>% dplyr::filter(interaction != Activity) %>% dplyr::select(species.short, drug.long, dplyr::matches("(padjst|MedianDiff)\\."), interaction, Activity)
-  x.missmatch
-  
-  
-  # Test against old p-values
-  hits = readr::read_delim("data/assay_test.hits.csv", ";")
-  hits = hits %>% 
-    dplyr::mutate(s=Extraction=="Supernatant") %>%
-    dplyr::group_by(Bugs, Drugs, SNToRatio, resp, value) %>%
-    dplyr::summarise(
-      padjst_old.super=ifelse(!length(padjst[s]),NA,padjst[s]), 
-      padjst_old.total=ifelse(!length(padjst[!s]),NA,padjst[!s]), 
-      MedianDiff_old.super=ifelse(!length(MedianDiff[s]),NA,MedianDiff[s]),  
-      MedianDiff_old.total=ifelse(!length(MedianDiff[!s]),NA,MedianDiff[!s])) %>%
-    dplyr::left_join(data.sum, by=c("Bugs"="species.short", "Drugs"="drug.long"))
-  
-  plot(hits$padjst_old.super-hits$padjst.super)    
-  plot(hits$padjst_old.total-hits$padjst.total)    
-  plot(hits$MedianDiff_old.super-hits$MedianDiff.super)    
-  plot(hits$MedianDiff_old.total-hits$MedianDiff.total)  
+  readr::write_delim(data.sum, "data/exp2metabolomics/hits.tsv", "\t")
 }
 
 plot.sankey = function()
@@ -140,7 +92,7 @@ plot.sankey = function()
   #
   # Load depletion experiment (#1) data for LEFT side of the sankey plot
   #
-  load("data/170511_processingUPLCpeaks_data.clean_aftergrowthmerge_andfixingget.datacleanfunction.RData")
+  load("data/exp1depletion/170511_processingUPLCpeaks_data.clean_aftergrowthmerge_andfixingget.datacleanfunction.RData")
   plates_with_growth = unique(data.clean %>% dplyr::filter(Status=="GMM" & growth=="growth") %>% .$Plate)
   data.degrad = data.clean %>% dplyr::filter(Status=="sample" & growth=="growth" & dummy==1 & Plate %in% plates_with_growth)
   data.get = ttest.degrad.batch(data.degrad) 
@@ -148,7 +100,7 @@ plot.sankey = function()
   #
   # Calculate edges for LEFT side of the sankey plot and join with UPLC experiment (#2)
   #
-  hits_uplc = readr::read_delim("data/degradation_hits.tsv", "\t")
+  hits_uplc = readr::read_delim("data/exp2metabolomics/hits.tsv", "\t")
   hits_degrad.all = data.get[[1]] %>%
     dplyr::mutate(Species.x=tidyr::replace_na(Species.x, ""), GroupName=tidyr::replace_na(as.character(GroupName), "")) %>%
     dplyr::left_join(data.clean %>% dplyr::select(GroupName, Plate, DiffToOwn) %>% unique(), by=c("GroupName", "Plate")) %>%
@@ -164,11 +116,10 @@ plot.sankey = function()
     dplyr::mutate(interaction=ifelse(is.na(interaction), "Untested", interaction)) %>%
     dplyr::mutate(interaction=ifelse(!is.na(drug.uplc_excluded), "Excluded", interaction))
   
-  
   #
   # Load growth effect experiment (#0) for RIGHT side of the sankey plot
   #
-  hits_growth.all = read.csv("data/curves.rel_annotation_2016-11-28.tab",sep="\t", header=T) %>%
+  hits_growth.all = read.csv("data/exp0growth/curves.rel_annotation_2016-11-28.tab",sep="\t", header=T) %>%
     dplyr::filter(!grepl("pyri", cond.org)) %>% # Pyri is not appearing anywhere in the drug list
     dplyr::mutate(side="right", drug.short=substring(cond.org,1,4), max_log_fold=ifelse(is.na(max_log_fold) | max_log_fold<(-2), -2, max_log_fold), value=pmin(1, abs(max_log_fold))) %>%
     dplyr::left_join(drug_map %>% dplyr::select(drug.short, drug.known_activity), by=c("drug.short"="drug.short")) %>%
@@ -236,11 +187,13 @@ plot.sankey = function()
   #
   # Plot legend for Sankey plot
   #
+  pdf(file="reports/exp012_sankey_legend.pdf", paper="a4r")
   legend = cowplot::get_legend(ggplot(data.frame(Group=c("Biotransformation", "Bioaccumulation", "Untested", "Previously_known", "Growth_Inhibition", "Growth_Promotion", "Excluded", "Untested", "No_activity"))) + # names(colourScale)
     geom_bar(aes(x=Group, y=1, fill=Group), alpha=0.5, stat="identity") +
     scale_fill_manual(values=colourScale))
-  grid.newpage()
-  grid.draw(legend) 
+  grid::grid.newpage()
+  grid::grid.draw(legend)
+  dev.off()
   
   #
   # Plot sankey
@@ -292,7 +245,29 @@ plot.sankey = function()
                   exp1.is_hit, exp2.interaction, growth.effect, exp1.diff, exp1.replicates, 
                   exp2.padjst_super, exp2.padjst_total, exp2.diff_super, exp2.diff_total,
                   growth.pvalue, growth.maxod_logfold) 
-  readr::write_tsv(hits_all, "reports/data_sankey.tsv", col_names=T, na="")  
+  readr::write_tsv(hits_all, "reports/exp012_sankey_data.tsv", col_names=T, na="")  
+  
+  
+  # Number of hits per species
+  hits_all.drugs = hits_all %>% 
+    dplyr::group_by(drug.long) %>% 
+    dplyr::summarise(
+      exp1=sum(drug.excluded=="No" & exp1.is_hit=="Yes"),
+      exp2=sum(drug.excluded=="No" & exp1.is_hit=="Yes" & (grepl("Bio", exp2.interaction) | drug.known_activity!="No"))) %>% 
+    data.frame() %>% 
+    dplyr::arrange(exp1)  
+
+  hits_all.species = hits_all %>% 
+    dplyr::group_by(species.short) %>% 
+    dplyr::summarise(
+      exp1=sum(drug.excluded=="No" & exp1.is_hit=="Yes"),
+      exp2=sum(drug.excluded=="No" & exp1.is_hit=="Yes" & (grepl("Bio", exp2.interaction) | drug.known_activity!="No"))) %>%
+    data.frame() %>% 
+    dplyr::arrange(exp1)  
+  
+  readr::write_tsv(hits_all.species, "reports/exp012_sankey_data_species.tsv", col_names=T, na="")  
+  readr::write_tsv(hits_all.drugs, "reports/exp012_sankey_data_drugs.tsv", col_names=T, na="")  
+  
   
   #
   # Summary (second degree)
@@ -330,98 +305,9 @@ plot.sankey = function()
       dplyr::left_join(hits_all.summary.3, by="group") %>% 
       replace(is.na(.), 0)
     hits_all.summary = rbind(hits_all.summary, c("Total", colSums(data.matrix(hits_all.summary[,-1]), na.rm=T)))
-    print(head(hits_all.summary))
-    
-    readr::write_tsv(hits_all.summary, paste0("reports/data_sankey_", gr, ".tsv"), col_names=T, na="")  
+
+    readr::write_tsv(hits_all.summary, paste0("reports/exp012_sankey_data_2nd_", gr, ".tsv"), col_names=T, na="")  
   }
-  
-  
-  
-  
-  
-  #
-  # Statistics on all edges
-  #
-  edges.all %>%
-    dplyr::filter(interaction!="REMOVE") %>%
-    dplyr::group_by(side) %>%
-    dplyr::mutate(interactions_sum=length(side)) %>%
-    data.frame() %>%
-    dplyr::group_by(side, interaction) %>%
-    dplyr::summarise(count=length(interaction), proportion=paste0(round(100*count/interactions_sum[1]), "%")) %>%
-    data.frame()
-  
-  
-  
-  # Experiment #2 summary
-  hits_uplc.drugs_summary = hits_uplc %>% 
-    dplyr::group_by(drug.long, interaction) %>%
-    dplyr::summarise(species=length(species.long)) %>%
-    reshape2::dcast(drug.long ~ interaction, value.var="species") %>%
-    replace(is.na(.), 0) %>%
-    data.frame() %>%
-    dplyr::mutate(Total=rowSums(.[,-1]))
-  hits_uplc.drugs_summary = rbind(hits_uplc.drugs_summary, c(drug.long="Total", colSums(hits_uplc.drugs_summary[,-1])))
-  writeLines("==============================================\n Experiment #2 (transformation type) summary: \n==============================================")
-  hits_uplc.drugs_summary
-  
-  hits_uplc.species_summary = hits_uplc %>% 
-    dplyr::group_by(species.short, interaction) %>%
-    dplyr::summarise(species=length(drug.long)) %>%
-    reshape2::dcast(species.short ~ interaction, value.var="species") %>%
-    replace(is.na(.), 0) %>%
-    data.frame() %>%
-    dplyr::mutate(Total=rowSums(.[,-1]), species.short=ifelse(species.short==0, NA, species.short))
-  hits_uplc.species_summary = rbind(hits_uplc.species_summary, c(species.short="Total", colSums(hits_uplc.species_summary[,-1])))
-  writeLines("==============================================\n Experiment #2 (transformation type) summary: \n==============================================")
-  hits_uplc.species_summary
-  
-  table(hits_degrad.all$Species.x[hits_degrad.all$replicates==1])
-  table(as.character(hits_degrad.all$GroupName)[hits_degrad.all$replicates==1])
-  
-  
-  dim(all_hits %>% dplyr::full_join(hits_growth.all, by=c("drug.short"="source", "species.short"="target")))
-  dim(all_hits %>% dplyr::full_join(hits_growth.all %>% dplyr::select(source, target), by=c("species.short"="source", "drug.short"="target")))
-  
-  setdiff(all_hits$species.short, hits_growth.all$target)
-  setdiff(unique(hits_growth.all$target), all_hits$species.short)
-  
-  dim(all_hits)
-  
-  View(all_hits %>% dplyr::filter(is.na(exp1.is_hit)))
-    
-  readr::write_tsv(all_hits, "reports/all_data.tsv", col_names=T, na="")  
-  
-  #dplyr::left_join(drug_map %>% dplyr::select(drug.short, drug.long, drug.uplc_excluded)) %>%
-  dplyr::mutate(f=is.na(drug.uplc_excluded)) %>%
-  
-  
-  hits_degrad.species_summary = hits_degrad.all_counts %>%
-    dplyr::group_by(species.long) %>% 
-    dplyr::summarise(
-      ndrugs.excluded=sum(nreplicates[!f]>0), ndrugs=sum(nreplicates[f]>0),
-      nhits.excluded=sum(nhits[!f]>0), nhits=sum(nhits[f]>0),
-      nreplicates.excluded=sum(nreplicates[!f]), nreplicates=sum(nreplicates[f])) %>%
-    data.frame()
-  
-  hits_degrad.species_summary = rbind(hits_degrad.species_summary, c(species.long="Total", hits_degrad.all_counts %>%
-    dplyr::summarise(
-      ndrugs.excluded=sum(nreplicates[!f & !duplicated(drug.long)]>0), ndrugs=sum(nreplicates[f & !duplicated(drug.long)]>0),
-      nhits.excluded=sum(nhits[!f]>0), nhits=sum(nhits[f]>0),
-      nreplicates.excluded=sum(nreplicates[!f]), nreplicates=sum(nreplicates[f])) %>%
-    data.frame()))
-    
-  
-  hits_degrad.all_counts %>%
-    dplyr::group_by(drug.long) %>% 
-    dplyr::summarise(
-      nspecies=paste0(sum(nreplicates[f]>0), " (", sum(nreplicates[!f]>0), ")"), 
-      nhits=paste0(sum(nhits[f]>0), " (", sum(nhits[!f]>0), ")"), 
-      nreplicates=paste0(sum(nreplicates[f]), " (", sum(nreplicates[!f]), ")"))
-    
-  pheatmap::pheatmap(d, color=c("#FFFFFF", RColorBrewer::brewer.pal(max(hits_degrad.all$replicates), "Reds")))
-    
-    )
 }
 
 
