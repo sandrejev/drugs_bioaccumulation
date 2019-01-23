@@ -1,0 +1,9 @@
+sample.name
+Control_1	Con_1
+Control_2	Con_2
+Control_3	Con_3
+Control_4	Con_4
+Du_1	Du_1
+Du_2	Du_2
+Du_3	Du_3
+Du_4	Du_4
