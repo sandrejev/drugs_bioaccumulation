@@ -109,7 +109,7 @@ plot.sankey = function()
     data.frame()
   hits_degrad = hits_degrad.all %>%
     dplyr::mutate(target=as.character(GroupName), source=as.character(Species.x), value=abs(MeanDiffToOwn)) %>%
-    dplyr::filter(nhits>1) %>% # TODO: Why does it have to be more than one
+    dplyr::filter(nhits>1) %>%
     dplyr::left_join(hits_uplc %>% dplyr::select(species.long, drug.short, interaction), by=c("source"="species.long", "target"="drug.short")) %>%
     dplyr::inner_join(drug_map %>% dplyr::select(drug.short, drug.known_activity, drug.uplc_excluded), by=c("target"="drug.short")) %>%
     dplyr::mutate(interaction=ifelse(grepl("Depleted", drug.known_activity), "Previously_known", interaction)) %>%
@@ -122,17 +122,19 @@ plot.sankey = function()
   hits_growth.all = read.csv("data/exp0growth/curves.rel_annotation_2016-11-28.tab",sep="\t", header=T) %>%
     dplyr::filter(!grepl("pyri", cond.org)) %>% # Pyri is not appearing anywhere in the drug list
     dplyr::mutate(side="right", drug.short=substring(cond.org,1,4), max_log_fold=ifelse(is.na(max_log_fold) | max_log_fold<(-2), -2, max_log_fold), value=pmin(1, abs(max_log_fold))) %>%
-    dplyr::left_join(drug_map %>% dplyr::select(drug.short, drug.known_activity), by=c("drug.short"="drug.short")) %>%
+    dplyr::left_join(drug_map %>% dplyr::select(drug.short, drug.known_activity, drug.uplc_excluded), by=c("drug.short"="drug.short")) %>%
     dplyr::mutate(
       interaction=dplyr::case_when(
         max_interaction_type=="none" ~ "No activity",
+        !is.na(drug.uplc_excluded)~"Excluded",
         grepl("Inhibits", drug.known_activity) ~ "Previously known",
         max_interaction_type=="lethal" ~ "Growth Inhibition",
         max_log_fold<0 ~ "Growth Inhibition", 
         max_log_fold>0 ~ "Growth Promotion",
         T ~ "Unexpected Results (this shouldn't happen)")) %>%
     dplyr::select(source=drug.short, target=org, value, interaction, max_log_fold, side, max_interaction_type, max_pvalue, max_tech.pval)
-  hits_growth = hits_growth.all %>% dplyr::filter(interaction != "No activity")
+  hits_growth = hits_growth.all %>% dplyr::filter(!interaction %in% c("No activity", "Excluded"))
+
   
   #
   # Build edges and nodes data.frames
@@ -147,7 +149,7 @@ plot.sankey = function()
       if(!any(z$side=="right")) { z = rbind(z, data.frame(source=z$drug[1], target="REMOVE2", value=NA, interaction="REMOVE", side="right", drug=z$drug[1])) }
       z
     })(.))
-  edges = edges.all %>% dplyr::filter(interaction!="No activity" & !grepl("Mix", source) & interaction!="Excluded") %>% data.frame() # Hide everything unrelated to plot
+  edges = edges.all %>% dplyr::filter(!(interaction %in% c("Untested", "No activity", "Excluded")) & !grepl("Mix", source)) %>% data.frame() # Hide everything unrelated to plot
   
   nodes = rbind(edges %>% dplyr::filter(side=="left") %>% dplyr::mutate(position="left") %>% dplyr::select(name=source, position), 
                 edges %>% dplyr::filter(side=="right") %>% dplyr::mutate(position="right") %>% dplyr::select(name=target, position),
@@ -238,6 +240,7 @@ plot.sankey = function()
       exp2.diff_super=round(exp2.diff_super, 3), 
       exp2.diff_total=round(exp2.diff_total, 3),
       growth.effect=tidyr::replace_na(growth.effect, "Not tested"),
+      growth.effect=ifelse(drug.excluded=="Yes" & growth.effect != "Not tested", "Excluded", growth.effect),
       growth.pvalue=round(growth.pvalue, 3),
       growth.maxod_logfold=round(growth.maxod_logfold, 3)
     ) %>%
