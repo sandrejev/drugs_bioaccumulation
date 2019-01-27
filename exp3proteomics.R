@@ -40,7 +40,7 @@ na.count2<-na.count
 samples<-dataset[,(p[sample.num.noctr[i]]:(p[sample.num.noctr[i]]+nrep-1))]
 data<-cbind(controls,samples)
 name<-colnames(samples)[1] 
-pdf(paste(name, "_vs_Control.pdf", sep=""))
+pdf(paste0("exp3proteomics_", name, "_vs_Control.pdf", sep=""))
 #log2 transform all the intensities
 data1<-log2(data)
 boxplot(data1, main= "Original data distribution")
@@ -61,7 +61,7 @@ barplot(c(
   nrow(na.count.1[na.count.1$randna=="TRUE"&(na.count.1[,control] >= 1 & na.count.1[, sample.num.noctr[i]] >= 1),]), 
   nrow(na.count.1[na.count.1$randna=="FALSE",])), 
   names.arg=c("TOTAL","MAR","MNAR"), main="Number of proteins with missing values")
-
+dev.off()
 # comparison with "usual" NA removal scheme that keep only proteins with one missing value per sample group, 
 # you can see how many proteins you will gain by adding missing values (MNAR)
 
@@ -105,41 +105,34 @@ heatmap.2(correlation,trace = "none",density.info="none", cexRow=0.9, cexCol=0.9
           sepcolor='white',sepwidth=c(0.0125,0.02), main = "correlation_after_imputation_normalization")
 dev.off()
 
-dev.off()
 # extract matrix normalized and with data imputed
-new.data<-as.data.frame(exprs(res.norm))
+write.table(exprs(res.norm), paste("data/exp3proteomics/", name, "_vs_Du_imputation_quan_nor.txt", sep=""), sep="\t", quote=FALSE)
 
-write.table(new.data, paste(name, "_vs_Du_imputation_quan_nor.txt", sep=""), sep="\t", quote=FALSE)
+uniprot = readr::read_delim("data/exp3proteomics/uniprot_C_saccharolyticum_enzymes.tab", "\t")
+new.data = as.data.frame(exprs(res.norm)) %>%
+  dplyr::mutate(proteinId = rownames(.)) %>%
+  dplyr::left_join(uniprot, by=c("proteinId"="Entry")) %>%
+  dplyr::rowwise() %>%
+  dplyr::mutate(
+    pvalue=t.test(c(Control_1, Control_2, Control_3, Control_4), c(Du_1, Du_2, Du_3, Du_4))$p.value,
+    FC=log2(2^mean(c(Du_1, Du_2, Du_3, Du_4))/2^mean(c(Control_1, Control_2, Control_3, Control_4)))) %>%
+  data.frame() %>%
+  dplyr::mutate(
+    p.adjst=p.adjust(pvalue, method="BH"), 
+    p.log10=-log10(p.adjst), 
+    group=dplyr::case_when(p.log10>1 & FC>2 ~ "enriched", T ~ "not sign."),
+    text=dplyr::case_when(group=="enriched" & grepl("^(2.4.2.7|1.17.1.4|6.3.3.1|1.3.1.14|4.1.1.23|2.7.1.11|1.3.)", EC.number)~EC.number, T~""))
 
-
-pvalues <- apply(new.data, 1, function(z) t.test(z[1:4],z[5:8])[["p.value"]])
-new.data$p.adjst <- p.adjust(pvalues,method = "BH")
-new.data$p.log10 <- -log10(new.data$p.adjst)
-
-new.data$FC <- log2(2^rowMeans(new.data[5:8])/2^rowMeans(new.data[1:4]))
-new.data$oldFC <- log2(rowMeans(new.data[5:8])/rowMeans(new.data[1:4]))
-
-hitsMarie <- rownames(new.data[which(new.data$FC>2 & new.data$p.adjst<0.1),])
-notsigmarie <- rownames(new.data[which(new.data$FC>0.2 & new.data$group=="not sign."),])
-nonsigbutexpressed <- rownames(new.data[which(new.data$FC<0.2 & new.data$group=="hits"),])
-hitsstrong <- rownames(new.data[which(new.data$FC>6 | new.data$p.adjst<0.00005),])
-
-new.data$group <- rep("not sign.",dim(new.data)[1])
-new.data$group[match(hitsMarie,rownames(new.data))] <- "enriched"
-#expressed = read.csv("~/Workspace/170610_save/experiments/Protein stuff/homologousoverexpression.csv",stringsAsFactors=F) # Sergej added this!
-#new.data$group[which(new.data$p.log10>1 & new.data$FC>2)] <- "enriched"
-#new.data$group[match(expressed$Uniprot.ID,rownames(new.data))] <- "expressed"
-#new.data$group[match(c("D9R6Y5","D9R5P1","D9R4L8","D9R2W0"),rownames(new.data))] <- "hits"
-new.data$group <- factor(new.data$group, levels=c("not sign.","enriched","expressed","hits"))
 
 pdf("reports/exp3proteomics_volcano_plot.pdf", width=11, height=11)
-ggplot(new.data,aes(x=FC,y=p.log10, color=group)) +
+ggplot(new.data, aes(x=FC,y=p.log10, color=group)) +
   geom_point() +
   scale_color_manual(values=c("not sign."="darkgrey", "enriched"="#893033")) +
-  #  scale_color_manual(values=c("darkgrey","black","dodgerblue4","firebrick","chartreuse4","darkorchid4")) +
-  #  geom_hline(yintercept =-log10(0.1),linetype="dotted") +
-  #  geom_vline(xintercept =2,linetype="dotted") +  
-  scale_x_continuous(limits =c(-9,9), breaks=seq(-8,8,2)) +
+  geom_hline(yintercept=-log10(0.1), linetype="dotted") +
+  geom_vline(xintercept=2, linetype="dotted") +  
+  ggrepel::geom_text_repel(aes(label=text), size=8, show.legend=F) +
+  scale_x_continuous(limits=c(-9,9), breaks=seq(-8,8,2)) +
   labs(x="log2 fold change of imputated intensity", y="-log10 of FDR adjusted p-value", color="") +
   myTheme
 dev.off()
+#  scale_color_manual(values=c("darkgrey","black","dodgerblue4","firebrick","chartreuse4","darkorchid4"))
