@@ -176,10 +176,11 @@ plot.sankey = function()
   #
   # Specify colors
   #
+  species_colourScale = unique(bug_map[,c("species.group", "species.group_color")]) %>% dplyr::filter(!is.na(species.group_color)) %>% data.frame()
   colourScale = c(
+    species_colourScale$species.group_color %>% setNames(species_colourScale$species.group),
     "Growth_Inhibition"="#F8523B", "Growth_Promotion"="#6CAA44", 
-    "Biotransformation"="#C287C0", "Bioaccumulation"="#4483AA", "Fusobacteria"="#DAC300", 
-    "Actinobacteria"="#825BB8", "Firmicutes"="#70A8FF", "Proteobacteria"="#837E79", "Bacteroidetes"="#69BB6F", 
+    "Biotransformation"="#C287C0", "Bioaccumulation"="#4483AA", 
     "Mix"="#FFFFFF", 
     "No_activity"="#FF8A11", "Untested"="#ABABAB", "Excluded"="#ABABAB", "Previously_known"="#AFCFCA",
     "drug"="#27303B", "Remove"="#FFFFFF", "REMOVE"="#FFFFFF"
