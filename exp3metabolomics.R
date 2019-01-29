@@ -81,9 +81,6 @@ load("data/exp3metabolomics/clickxset.fillden.noInj1.RData")
 load("data/exp3metabolomics/extraxset.fillden.noInj1.RData")
 load("data/exp3metabolomics/lysxset.fillden.noInj1.RData")
 
-a = readr::read_delim("data/exp3metabolomics/ions.tsv", "\t")
-a = a %>% dplyr::inner_join(KEGG_metabolites %>% dplyr::select(Name, dplyr::matches("mass")), by=c("Name"))
-
 KEGG_metabolites = read.csv("data/exp3metabolomics/KEGG_metbolites_info.csv", stringsAsFactors=F)
 KEGG_metabolites = read.csv("data/exp3metabolomics/KEGG_metabolites_bugs.csv", stringsAsFactors=F) %>%
   dplyr::select(KEGG.id=METABOLITES, Cs=csh, Bu=bth) %>%
@@ -143,9 +140,14 @@ for(d in names(datasets.all)) {
 # Generate single name for each peak
 #
 peak_long.sum = peak_long %>% 
-  dplyr::arrange(nchar(Name)) %>% 
+  dplyr::mutate(is_phosphorylated=grepl("phosphate", Name)) %>%
+  dplyr::arrange(is_phosphorylated, nchar(Name)) %>% 
   dplyr::group_by(Dataset, species.code, Peak) %>% 
-  dplyr::summarise(MetaboliteNames.shortest=paste(Name[1], collapse=","), MetaboliteNames=paste(unique(Name), collapse=","))
+  dplyr::summarise(
+    metabolite_display=Name[1], 
+    metabolite_kegg=ifelse(any(!is_phosphorylated),  paste(unique(KEGG.id[!is_phosphorylated]), collapse=","), paste(unique(KEGG.id), collapse=",")), 
+    metabolite_pubchem=ifelse(any(!is_phosphorylated), paste(unique(PubChem.id[!is_phosphorylated]), collapse=","), paste(unique(PubChem.id), collapse=",")), 
+    metabolite_name=ifelse(any(!is_phosphorylated), paste(unique(Name[!is_phosphorylated]), collapse=","), paste(unique(Name), collapse=",")))
 
 #View(peak_long.d %>% dplyr::select( Name, Sum.formula, dplyr::matches("donor"), dplyr::matches("mass"), mzlow, mzmed, mzhigh))
 #
@@ -161,7 +163,8 @@ data_long.norm = data_long %>%
     z$Intensity_amitrip = z$Intensity/denominator
     z$IntensityLog10_amitrip=log10(z$Intensity_amitrip)
     z
-  })(.))
+  })(.)) %>%
+  dplyr::left_join(peak_long.sum, by=c("Dataset", "species.code", "Peak"))
 
 #
 # Replicates matching table
@@ -211,57 +214,63 @@ data_amitrip.effect = data_long.norm %>%
     ret.drug = fun_uncertaintest(data_interest=z.drug, pair=c("Dulox", paste0(sp, "Dulox")), dulox_peak=dulox_peak) %>% dplyr::mutate(Control="Dulox") %>% data.frame()
     ret.bug = fun_uncertaintest(data_interest=z, pair=c(sp, paste0(sp, "Dulox")), dulox_peak=dulox_peak) %>% dplyr::mutate(Control=sp) %>% data.frame()
     rbind(ret.bug, ret.drug)
-  })(.))
-data_amitrip.sign_effect = data_amitrip.effect %>% filter(padjust<0.05, abs(FC)>FCmin) %>% data.frame()
-
-#
-# 
-#
-data_amitrip.sign_effect.sum = data_amitrip.sign_effect %>%
-  dplyr::filter(Control!="Dulox") %>%
-  setNames(gsub("^((?!Dataset|Peak|State|species).*)$", "\\1.bug", names(.), perl=T)) %>%
-  dplyr::inner_join(data_amitrip.sign_effect %>%
-    dplyr::filter(Control=="Dulox") %>%
-    setNames(gsub("^((?!Dataset|Peak|State|species).*)$", "\\1.drug", names(.), perl=T)),
-    by=c("Dataset", "State", "Peak", "species.code")) %>%
-  dplyr::mutate(FC.both_same_10=dplyr::between(logFC.bug/logFC.drug, 0.9, 1.1), FC.both_same_33=dplyr::between(logFC.bug/logFC.drug, 0.75, 1.33)) %>%
-  dplyr::left_join(peak_long.sum, by=c("Dataset", "species.code", "Peak")) %>%  #Treatment.drug=Treatment, 
+  })(.)) %>%
+  data.frame() %>%
+  dplyr::left_join(peak_long.sum, by=c("Dataset", "species.code", "Peak")) %>%
   dplyr::mutate(
     State=factor(State, c("lys", "extra")),
-    Group.detailed=dplyr::case_when(
-      species.code=="Bu" & State=="lys" & Peak=="674.5/1499" ~ "extracellular and lysate",
-      species.code=="Bu" & State=="lys" & Peak=="298.1/1050" ~ "duloxetine",
-      species.code=="Bu" & State=="extra" & Peak=="674.5/1496" ~ "extracellular and lysate",
-      species.code=="Bu" & State=="extra" & Peak=="298.1/1040" ~ "duloxetine",
-      species.code=="Bu" & State=="extra" & !is.na(MetaboliteNames) ~ "annotated",
-      
-      species.code=="Cs" & State=="lys" & FC.bug>10 & FC.drug>10 ~ "extracellular and lysate", 
-      species.code=="Cs" & State=="lys" & Peak=="298.1/1050" ~ "duloxetine",
-      species.code=="Cs" & State=="extra" & FC.bug>10 & FC.drug>10 ~ "extracellular and lysate", 
-      species.code=="Cs" & State=="extra" & Peak=="298.1/1040" ~ "duloxetine",
-      species.code=="Cs" & State=="extra" & !is.na(MetaboliteNames) ~ "annotated",
-      T ~ "unique"), 
-    Group=ifelse(Group.detailed=="duloxetine", Group.detailed, "other")
+    is_significant=ifelse(padjust<0.05 & abs(FC)>FCmin, 1, 0),
+    metabolite_display=dplyr::case_when(State=="lys"&Peak=="298.1/1050" |  State=="extra"&Peak=="298.1/1040" ~ "Duloxetine", T ~ metabolite_display)) %>% 
+    dplyr::select(-Ufc, -FCmin)
+
+
+#
+# Significally effected cases
+#
+data_amitrip.effect.sum = data_amitrip.effect %>%
+  dplyr::filter(Control!="Dulox") %>% setNames(gsub("^((?!Dataset|Peak|State|species.code|metabolite_name|metabolite.*).*)$", "\\1.bug", names(.), perl=T)) %>%
+  dplyr::inner_join(data_amitrip.effect %>% dplyr::filter(Control=="Dulox") %>% setNames(gsub("^((?!Dataset|Peak|State|species.code|metabolite.*).*)$", "\\1.drug", names(.), perl=T)), by=c("Dataset", "State", "Peak", colnames(data_amitrip.effect)[grepl("metabolite", colnames(data_amitrip.effect))], "species.code")) %>%
+  dplyr::mutate(
+    FC.both_same_33=dplyr::between(logFC.bug/logFC.drug, 0.75, 1.33),
+    Group=dplyr::case_when(grepl("Duloxetine", metabolite_display) ~ "Duloxetine", T ~ "Other")
   ) %>%
   dplyr::group_by(species.code, State) %>%
-  dplyr::mutate(MetaboliteName=ifelse(!is.na(MetaboliteNames) & FC.both_same_33 & FC.bug*FC.drug >= sort((FC.bug*FC.drug)[!is.na(MetaboliteNames) & FC.both_same_33], decreasing=T)[10], MetaboliteNames.shortest, NA))
-  
+  dplyr::mutate(metabolite_display.top10=ifelse(is_significant.bug & is_significant.drug & !is.na(metabolite_display) & FC.both_same_33 & FC.bug*FC.drug >= sort((FC.bug*FC.drug)[is_significant.bug & is_significant.drug & !is.na(metabolite_display) & FC.both_same_33], decreasing=T)[10], metabolite_display, NA)) %>%
+  data.frame() %>%
+  dplyr::mutate(Group=ifelse(!is.na(metabolite_display.top10), "Annotated", Group)) %>% 
+  data.frame()
 
-data_amitrip.sign_effect.sum %>% dplyr::filter(grepl("Cyto", MetaboliteNames) & species.code=="Cs") %>% dplyr::select(MetaboliteNames.shortest, MetaboliteNames, State, species.code, dplyr::matches("padj|FC"))
-data_amitrip.sign_effect.sum %>% dplyr::filter(grepl("Cyto", MetaboliteNames) & !is.na(MetaboliteNameDisplay))
+data_amitrip.effect.sum_export = data_amitrip.effect.sum %>% 
+  dplyr::mutate(Species=dplyr::case_when(species.code=="Sc"~"Clostridium saccharolyticum", species.code=="Bu"~"Bacteroides uniformis", T~"No species")) %>%
+  dplyr::select(
+    Dataset, Species, Peak, metabolite_name.display=metabolite_display, metabolite_name.all=metabolite_name, metabolite_kegg,
+    
+    is_significant.treated_vs_species=is_significant.bug,
+    is_significant.treated_vs_dulox=is_significant.drug,
+    FC.treated_vs_species=FC.bug,
+    FC.treated_vs_dulox=FC.drug,
+    
+    pvalue.treated_vs_specie=pvalue.bug,
+    padjust.treated_vs_specie=padjust.bug,
+    pvalue.treated_vs_dulox=pvalue.drug,
+    padjust.treated_vs_dulox=padjust.drug,
+    
+    Mean.treated_species=Mean.treated.bug,
+    SD.treated_species=SD.treated.bug,
+    Mean.dulox_control=Mean.ctrl.drug,
+    SD.dulox_control=SD.ctrl.drug,
+    Mean.species_control=Mean.ctrl.bug,
+    SD.species_control=SD.ctrl.bug
+  )
 
-peak_long.sum %>% dplyr::filter(grepl("Cyto", MetaboliteNames.shortest) & species.code=="Cs")
-
-  # TODO: Why some specific?
-  # result_both.Cs.extra <- result_both.Cs.extra[c(4,5,13,15,22,25,30,38,39,47,48,52,54,65,71,72,79,82,86,88,89,92,95,97,106,120)]
-  # result_both.Cs.lys <- result_both.Cs.lys[c(1,2,4,5,8,10,11,14,15,18:24,26:32,34,37,41)]
+  readr::write_tsv(data_amitrip.effect.sum_export, "reports/exp3metabolomics_hits_scatterplot_data.tsv", col_names=T, na="")  
 
   pdf(file="reports/exp3metabolomics_hits_scatterplot.pdf", width=11, height=11)
-  ggplot(data_amitrip.sign_effect.sum, aes(x=logFC.bug,y=logFC.drug, size=Mean.treated.bug)) +
+  ggplot(aes(x=logFC.bug,y=logFC.drug, size=Mean.treated.bug), data=data_amitrip.effect.sum %>% dplyr::filter(Group=="Other" & is_significant.bug & is_significant.drug)) +
     geom_point(aes(color=Group)) +
-    ggrepel::geom_text_repel(aes(label=MetaboliteName), data=data_amitrip.sign_effect.sum %>% dplyr::filter(!is.na(MetaboliteName)), size=4) +
-    #scale_color_manual(values=c(other="darkgrey", unique="darkgrey", duloxetine="dodgerblue4", "extracellular and lysate"="firebrick", annotated="chartreuse4")) +
-    scale_color_manual(values=c(other="darkgrey", duloxetine="#8A3134")) +
+    geom_point(aes(color=Group), data=data_amitrip.effect.sum %>% dplyr::filter(Group!="Other" & is_significant.bug & is_significant.drug)) +
+    ggrepel::geom_text_repel(aes(label=metabolite_display.top10), data=data_amitrip.effect.sum %>% dplyr::filter(!is.na(metabolite_display.top10) & is_significant.bug & is_significant.drug), size=4) +
+    scale_color_manual(values=c(Other="darkgrey", Annotated="#000000", Duloxetine="#8A3134")) +
     scale_x_continuous(limits =c(-2,5), breaks=seq(-2,5,1)) +
     scale_y_continuous(limits =c(-2,5), breaks=seq(-2,5,1)) +
     scale_size_continuous(breaks=c(0.4, 1.6)) +

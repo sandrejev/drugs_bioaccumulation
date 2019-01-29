@@ -92,7 +92,7 @@ heatmap.2(correlation,trace = "none",density.info="none", cexRow=0.9, cexCol=0.9
 dev.off()
 
 #data imputation 
-res3 <- impute(res, method = "mixed",  randna = fData(res)$randna, mar = "knn", mnar = "MinDet")
+res3 <- MSnbase::impute(res, method = "mixed",  randna = fData(res)$randna, mar = "knn", mnar = "MinDet")
 res.norm<-normalise(res3, "quantiles")
 boxplot(exprs(res.norm), main= "Data distribution after normalization")
 
@@ -109,7 +109,7 @@ dev.off()
 write.table(exprs(res.norm), paste("data/exp3proteomics/", name, "_vs_Du_imputation_quan_nor.txt", sep=""), sep="\t", quote=FALSE)
 
 uniprot = readr::read_delim("data/exp3proteomics/uniprot_C_saccharolyticum_enzymes.tab", "\t")
-new.data = as.data.frame(exprs(res.norm)) %>%
+final_data = as.data.frame(exprs(res.norm)) %>%
   dplyr::mutate(proteinId = rownames(.)) %>%
   dplyr::left_join(uniprot, by=c("proteinId"="Entry")) %>%
   dplyr::rowwise() %>%
@@ -120,14 +120,25 @@ new.data = as.data.frame(exprs(res.norm)) %>%
   dplyr::mutate(
     p.adjst=p.adjust(pvalue, method="BH"), 
     p.log10=-log10(p.adjst), 
-    group=dplyr::case_when(p.log10>1 & FC>2 ~ "enriched", T ~ "not sign."),
-    text=dplyr::case_when(group=="enriched" & grepl("^(2.4.2.7|1.17.1.4|6.3.3.1|1.3.1.14|4.1.1.23|2.7.1.11|1.3.)", EC.number)~EC.number, T~""))
+    is_significant=ifelse(p.log10>1 & FC>2, 1, 0),
+    group=dplyr::case_when(
+      is_significant>0 & grepl("^(2.4.2.7|1.17.1.4|6.3.3.1|1.3.1.14|4.1.1.23|2.7.1.11|1.3.)", EC.number) ~ "annotated",
+      is_significant>0 ~ "enriched", 
+      T ~ "not sign."),
+    text=ifelse(group=="annotated", EC.number, ""))
 
+final_data.export = final_data %>% 
+  dplyr::select(
+    proteinId, EC.number, is_significant, FC, pvalue, padjst=p.adjst,
+    Control_1, Control_2, Control_3, Control_4, Du_1, Du_2, Du_3, Du_4,
+    Pathway, Protein.names, GO.Molecular_Function=Gene.ontology..GO., GO.Biological_Process=Gene.ontology..biological.process.
+  )
+readr::write_tsv(final_data.export, "reports/exp3proteomics_volcano_plot_data.tsv", col_names=T, na="")  
 
 pdf("reports/exp3proteomics_volcano_plot.pdf", width=11, height=11)
-ggplot(new.data, aes(x=FC,y=p.log10, color=group)) +
+ggplot(aes(x=FC,y=p.log10, color=group), data=final_data) +
   geom_point() +
-  scale_color_manual(values=c("not sign."="darkgrey", "enriched"="#893033")) +
+  scale_color_manual(values=c("not sign."="darkgrey", "enriched"="#893033", "annotated"="#241011")) +
   geom_hline(yintercept=-log10(0.1), linetype="dotted") +
   geom_vline(xintercept=2, linetype="dotted") +  
   ggrepel::geom_text_repel(aes(label=text), size=8, show.legend=F) +
