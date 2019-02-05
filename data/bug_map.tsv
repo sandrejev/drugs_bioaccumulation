@@ -1,32 +1,32 @@
-species.short	species.long	species.code	species.group	species.class	species.group_order	species.class_order	species.class_color	species.group_color	species.color	species.NT_ID
-B. fragilis	Bacteroides fragilis	Bf	Bacteroidetes	Bacteroidia	5	1	#2171b5	#69BB6F	#c6dbef	NT5003
-B. thetaiotaomicron	Bacteroides thetaiotaomicron	Bt	Bacteroidetes	Bacteroidia	5	1	#2171b5	#69BB6F	#9ecae1	NT5004
-B. uniformis	Bacteroides uniformis	Bu	Bacteroidetes	Bacteroidia	5	1	#2171b5	#69BB6F	#6baed6	NT5002
-B. uniformis HM715	Bacteroides uniformis HM715	15	Bacteroidetes	Bacteroidia	5	1	#2171b5	#69BB6F	#4292c6	NT5065
-B. uniformis HM716	Bacteroides uniformis HM716	16	Bacteroidetes	Bacteroi	5	1	#2171b5	#69BB6F	#2171b5	NT5066
-B. vulgatus	Bacteroides vulgatus	Bv	Bacteroidetes	Bacteroidia	5	1	#2171b5	#69BB6F	#084594	NT5001
-B. animalis subsp. lactis BI-07	Bifidobacterium animalis lactis	Bal	Actinobacteria	Actinobacteria	2	4	#74c476	#825BB8	#bae4b3	NT5044
-B. longum subsp. infantis	Bifidobacterium longum infantis	Bli	Actinobacteria	Actinobacteria	2	4	#74c476	#825BB8	#74c476	NT5023
-B. longum subsp. longum	Bifidobacterium longum longum	Bll	Actinobacteria	Actinobacteria	2	4	#74c476	#825BB8	#31a354	NT5028
-C. bolteae	Clostridium bolteae	Cb	Firmicutes	Clostridia	3	2	#cb181d	#70A8FF	#ef3b2c	NT5026
-C. ramosum	Clostridium ramosum	Cr	Firmicutes	Erysipelotrichia	3	7	#FB6522	#70A8FF	#FB6522	NT5006
-C. saccharolyticum	Clostridium saccharolyticum	Cs	Firmicutes	Clostridia	3	2	#cb181d	#70A8FF	#99000d	NT5037
-C. comes	Coprococcus comes	Cc	Firmicutes	Clostridia	3	2	#cb181d	#70A8FF	#fcbba1	NT5048
-E. lenta	Eggerthella lenta	El	Actinobacteria	Coriobacteriia	3	6	#006d2c	#825BB8	#006d2c	NT5024
-E. coli ED1a	Escherichia coli ED1a	Ece	Proteobacteria	Gammaproteobacteria	4	5	#969696	#837E79	#cccccc	NT5078
-E. coli IAI1	Escherichia coli iAi1	Eci	Proteobacteria	Gammaproteobacteria	4	5	#969696	#837E79	#969696	NT5077
-E. rectale	Eubacterium rectale	Er	Firmicutes	Clostridia	3	2	#cb181d	#70A8FF	#cb181d	NT5009
-F. nucleatum	Fusobacterium nucleatum nucleatum	Fn	Fusobacteria	Fusobacteria	1	8	#c51b8a	#DAC300	#c51b8a	NT5025
-L. gasseri	Lactobacillus gasseri	Lg	Firmicutes	Bacilli	3	3	#756bb1	#70A8FF	#bcbddc	NT5007
-L. paracasei	Lactobacillus paracasei	Lpa	Firmicutes	Bacilli	3	3	#756bb1	#70A8FF	#9e9ac8	NT5042
-L. plantarum	Lactobacillus plantarum	Lpl	Firmicutes	Bacilli	3	3	#756bb1	#70A8FF	#756bb1	NTX2
-L. lactis	Lactococcus lactis	Ll	Firmicutes	Bacilli	3	3	#756bb1	#70A8FF	#54278f	NTX3
-R. gnavus	Ruminococcus gnavus	Rg	Firmicutes	Clostridia	3	2	#cb181d	#70A8FF	#fee0d2	NT5046
-R. torques	Ruminococcus torques	Rt	Firmicutes	Clostridia	3	2	#cb181d	#70A8FF	#fc9272	NT5047
-S. salivarius	Streptococcus salivarius	Ss	Firmicutes	Bacilli	3	3	#756bb1	#70A8FF	#dadaeb	NT5038
-F. nucleatum animalis	Fusobacterium nucleatum animalis	Fna	Fusobacteria	Fusobacteria	1	8	#c51b8a	#DAC300	#c51b8a	NT5029
-Control	Control	ctrl	Control		7	11				
-Mix Degrad	Mix Degrad	m1	Mix		6	9				
-Mix No	Mix No	m0	Mix		6	10				
-REMOVE1	REMOVE1	rm1	Remove		8	12				
-REMOVE2	REMOVE2	rm2	Remove		8	12				
+species.short	species.long	species.code	species.group	species.class	species.group_order	species.class_order	species.class_color	species.group_color	species.color	species.NT_ID	species.taxid	species.keggorg
+B. fragilis	Bacteroides fragilis	Bf	Bacteroidetes	Bacteroidia	5	1	#2171b5	#69BB6F	#c6dbef	NT5003	272559	bfs
+B. thetaiotaomicron	Bacteroides thetaiotaomicron	Bt	Bacteroidetes	Bacteroidia	5	1	#2171b5	#69BB6F	#9ecae1	NT5004	226186	bth
+B. uniformis	Bacteroides uniformis	Bu	Bacteroidetes	Bacteroidia	5	1	#2171b5	#69BB6F	#6baed6	NT5002	411479	
+B. uniformis HM715	Bacteroides uniformis HM715	15	Bacteroidetes	Bacteroidia	5	1	#2171b5	#69BB6F	#4292c6	NT5065	997889	
+B. uniformis HM716	Bacteroides uniformis HM716	16	Bacteroidetes	Bacteroi	5	1	#2171b5	#69BB6F	#2171b5	NT5066	997890	
+B. vulgatus	Bacteroides vulgatus	Bv	Bacteroidetes	Bacteroidia	5	1	#2171b5	#69BB6F	#084594	NT5001	435590	bvu
+B. animalis subsp. lactis BI-07	Bifidobacterium animalis lactis	Bal	Actinobacteria	Actinobacteria	2	4	#74c476	#825BB8	#bae4b3	NT5044	742729	bls
+B. longum subsp. infantis	Bifidobacterium longum infantis	Bli	Actinobacteria	Actinobacteria	2	4	#74c476	#825BB8	#74c476	NT5023	391904	blon
+B. longum subsp. longum	Bifidobacterium longum longum	Bll	Actinobacteria	Actinobacteria	2	4	#74c476	#825BB8	#31a354	NT5028		blm
+C. bolteae	Clostridium bolteae	Cb	Firmicutes	Clostridia	3	2	#cb181d	#70A8FF	#ef3b2c	NT5026	411902	
+C. ramosum	Clostridium ramosum	Cr	Firmicutes	Erysipelotrichia	3	7	#FB6522	#70A8FF	#FB6522	NT5006	445974	
+C. saccharolyticum	Clostridium saccharolyticum	Cs	Firmicutes	Clostridia	3	2	#cb181d	#70A8FF	#99000d	NT5037	610130	csh
+C. comes	Coprococcus comes	Cc	Firmicutes	Clostridia	3	2	#cb181d	#70A8FF	#fcbba1	NT5048	470146	
+E. lenta	Eggerthella lenta	El	Actinobacteria	Coriobacteriia	2	6	#006d2c	#825BB8	#006d2c	NT5024	479437	ele
+E. coli ED1a	Escherichia coli ED1a	Ece	Proteobacteria	Gammaproteobacteria	4	5	#969696	#837E79	#cccccc	NT5078	585397	ecq
+E. coli IAI1	Escherichia coli iAi1	Eci	Proteobacteria	Gammaproteobacteria	4	5	#969696	#837E79	#969696	NT5077	585034	ecr
+E. rectale	Eubacterium rectale	Er	Firmicutes	Clostridia	3	2	#cb181d	#70A8FF	#cb181d	NT5009	657318	ert
+F. nucleatum	Fusobacterium nucleatum nucleatum	Fn	Fusobacteria	Fusobacteria	1	8	#c51b8a	#DAC300	#c51b8a	NT5025	190304	fnu
+L. gasseri	Lactobacillus gasseri	Lg	Firmicutes	Bacilli	3	3	#756bb1	#70A8FF	#bcbddc	NT5007	324831	lga
+L. paracasei	Lactobacillus paracasei	Lpa	Firmicutes	Bacilli	3	3	#756bb1	#70A8FF	#9e9ac8	NT5042		lpq
+L. plantarum	Lactobacillus plantarum	Lpl	Firmicutes	Bacilli	3	3	#756bb1	#70A8FF	#756bb1	NTX2	220668	lpl
+L. lactis	Lactococcus lactis	Ll	Firmicutes	Bacilli	3	3	#756bb1	#70A8FF	#54278f	NTX3	272623	lla
+R. gnavus	Ruminococcus gnavus	Rg	Firmicutes	Clostridia	3	2	#cb181d	#70A8FF	#fee0d2	NT5046	411470	
+R. torques	Ruminococcus torques	Rt	Firmicutes	Clostridia	3	2	#cb181d	#70A8FF	#fc9272	NT5047	411460	rto
+S. salivarius	Streptococcus salivarius	Ss	Firmicutes	Bacilli	3	3	#756bb1	#70A8FF	#dadaeb	NT5038		stj
+F. nucleatum animalis	Fusobacterium nucleatum animalis	Fna	Fusobacteria	Fusobacteria	1	8	#c51b8a	#DAC300	#c51b8a	NT5029	997347	fnu
+Control	Control	ctrl	Control		7	11						
+Mix Degrad	Mix Degrad	m1	Mix		6	9						
+Mix No	Mix No	m0	Mix		6	10						
+REMOVE1	REMOVE1	rm1	Remove		8	12						
+REMOVE2	REMOVE2	rm2	Remove		8	12						

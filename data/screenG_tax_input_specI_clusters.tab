@@ -1,0 +1,96 @@
+title	family	genus	cluster	taxid
+Bacteroides dorei/vulgatus [Cluster1104]	Bacteroidaceae	Bacteroides	Cluster1104	435590,457391,457394,457395,469593,483217,556260,702446
+Bacteroides uniformis [Cluster1100]	Bacteroidaceae	Bacteroides	Cluster1100	411479,457393,585543
+Alistipes putredinis [Cluster1054]	Rikenellaceae	Alistipes	Cluster1054	445970
+Eubacterium rectale [Cluster1630]	Eubacteriaceae	Eubacterium	Cluster1630	515619,657317,657318
+Bacteroides ovatus [Cluster1094]	Bacteroidaceae	Bacteroides	Cluster1094	411476,457390,469590,556259,665954,702443
+Parabacteroides distasonis [Cluster1088]	NA	NA	Cluster1088	435591,457388,469589,469591,469592,563193
+Faecalibacterium prausnitzii [Cluster1575]	Ruminococcaceae	Faecalibacterium	Cluster1575	748224
+Parabacteroides merdae [Cluster1089]	Porphyromonadaceae	Parabacteroides	Cluster1089	411477
+Faecalibacterium prausnitzii [Cluster1574]	Ruminococcaceae	Faecalibacterium	Cluster1574	411485,657322
+Faecalibacterium prausnitzii [Cluster1577]	Ruminococcaceae	Faecalibacterium	Cluster1577	718252
+Bacteroides thetaiotaomicron [Cluster1092]	Bacteroidaceae	Bacteroides	Cluster1092	226186,469585,469586
+Ruminococcus bromii [Cluster1569]	Ruminococcaceae	Ruminococcus	Cluster1569	657321
+Faecalibacterium prausnitzii [Cluster1576]	Ruminococcaceae	Faecalibacterium	Cluster1576	411483
+unnamed Ruminococcus sp. 5_1_39BFAA [Cluster1620]	Ruminococcaceae	Ruminococcus	Cluster1620	457412
+Bacteroides caccae [Cluster1096]	Bacteroidaceae	Bacteroides	Cluster1096	411901
+Eubacterium eligens [Cluster1627]	Eubacteriaceae	Eubacterium	Cluster1627	515620
+Odoribacter splanchnicus [Cluster1115]	Porphyromonadaceae	Odoribacter	Cluster1115	709991
+Bacteroides xylanisolvens [Cluster1093]	Bacteroidaceae	Bacteroides	Cluster1093	457387,469588,556258,585544,657309,702447
+Alistipes shahii [Cluster1052]	Rikenellaceae	Alistipes	Cluster1052	717959
+butyrate-producing bacterium [Cluster1595]	NA	NA	Cluster1595	245018,411484,658089
+Roseburia inulinivorans [Cluster1632]	Lachnospiraceae	Roseburia	Cluster1632	622312
+Bacteroides stercoris [Cluster1098]	Bacteroidaceae	Bacteroides	Cluster1098	449673
+Coprococcus comes [Cluster1616]	Lachnospiraceae	Coprococcus	Cluster1616	470146
+[Ruminococcus] torques [Cluster1610]	Lachnospiraceae	Blautia	Cluster1610	657313
+Roseburia intestinalis [Cluster1631]	Lachnospiraceae	Roseburia	Cluster1631	657315,718255
+Dorea longicatena [Cluster1605]	Lachnospiraceae	Dorea	Cluster1605	411462
+Eubacterium hallii [Cluster1597]	Eubacteriaceae	Eubacterium	Cluster1597	411469
+Dorea formicigenerans [Cluster1604]	Lachnospiraceae	Dorea	Cluster1604	411461
+unnamed butyrate-producing bacterium SS3/4 [Cluster1603]	undef	undef	Cluster1603	245014
+unnamed Ruminococcus sp. SR1/5 [Cluster1621]	Ruminococcaceae	Ruminococcus	Cluster1621	657323
+[Ruminococcus] torques [Cluster1608]	Lachnospiraceae	NA	Cluster1608	411460,658081,665950,665951
+Bilophila wadsworthia [Cluster756]	Desulfovibrionaceae	Bilophila	Cluster756	563192
+Collinsella aerofaciens [Cluster814]	Coriobacteriaceae	Collinsella	Cluster814	411903
+[Ruminococcus] obeum [Cluster1618]	Lachnospiraceae	Blautia	Cluster1618	411459
+Roseburia hominis [Cluster1633]	Lachnospiraceae	Roseburia	Cluster1633	585394
+unnamed Alistipes sp. HGB5 [Cluster1053]	Rikenellaceae	Alistipes	Cluster1053	908612
+Eubacterium ventriosum [Cluster1629]	Eubacteriaceae	Eubacterium	Cluster1629	411463
+Bifidobacterium longum [Cluster970]	Bifidobacteriaceae	Bifidobacterium	Cluster970	1035817,205913,206672,391904,469594,537937,548480,565040,565042,722911,759350,890402
+Bacteroides intestinalis [Cluster1103]	Bacteroidaceae	Bacteroides	Cluster1103	471870
+Escherichia coli [Cluster390]	Enterobacteriaceae	Escherichia	Cluster390	1001989,1004153,1033813,1042803,1048254,1048689,1068608,1072459,155864,198214,198215,199310,216592,216599,300267,300268,300269,316385,316401,316407,331111,331112,340185,340186,344609,344610,358708,358709,362663,364106,373384,386585,405955,409438,413997,431946,439855,444447,444448,444449,444450,444451,444453,457400,457401,469008,469598,478004,478005,478008,481805,502346,511145,525281,536056,544404,550672,550676,550677,550687,550694,556266,566546,573235,574521,585034,585035,585054,585055,585056,585057,585395,585396,585397,591020,591946,595495,595496,637388,655817,656372,656374,656379,656380,656383,656388,656390,656393,656404,656408,656414,656417,656419,656420,656429,656437,656440,656443,656444,656449,670888,670890,670892,670893,670894,670897,670899,670904,670905,679202,679204,679205,679206,679207,685038,696406,701177,714962,749529,749530,749536,749539,749541,749542,753642,754082,754092,754093,766139,766141,766142,766145,766146,766147,766148,766149,766152,766157,766159,766160,796392,866768,869729,885275,885276,926026,926027,926028,926029,926030,926032,932676,941429,941435,945360,945434,981367,997825
+Parasutterella excrementihominis [Cluster468]	NA	undef	Cluster468	469610,762966
+Streptococcus salivarius [Cluster1377]	Streptococcaceae	Streptococcus	Cluster1377	1046629,1048332,347253,596322
+Bifidobacterium adolescentis [Cluster972]	Bifidobacteriaceae	Bifidobacterium	Cluster972	367928,411481
+Bacteroides finegoldii [Cluster1095]	Bacteroidaceae	Bacteroides	Cluster1095	483215
+Eubacterium siraeum [Cluster1564]	Eubacteriaceae	Eubacterium	Cluster1564	428128,657319,717961
+Clostridium leptum [Cluster1573]	Clostridiaceae	Clostridium	Cluster1573	428125
+unnamed Ruminococcaceae bacterium D16 [Cluster1580]	Ruminococcaceae	undef	Cluster1580	552398
+[Ruminococcus] gnavus [Cluster1611]	Lachnospiraceae	NA	Cluster1611	411470,658082
+Ruminococcus lactaris [Cluster1609]	Ruminococcaceae	Ruminococcus	Cluster1609	471875
+Bacteroides fluxus [Cluster1101]	Bacteroidaceae	Bacteroides	Cluster1101	763034
+Streptococcus parasanguinis [Cluster1421]	Streptococcaceae	Streptococcus	Cluster1421	760570,888048,905067
+Haemophilus parainfluenzae [Cluster326]	Pasteurellaceae	Haemophilus	Cluster326	862965,888828
+Veillonella parvula [Cluster1261]	Veillonellaceae	Veillonella	Cluster1261	450749,457416,479436,686660
+Clostridium bolteae [Cluster1598]	Clostridiaceae	Clostridium	Cluster1598	411902
+Prevotella copri [Cluster1081]	Prevotellaceae	Prevotella	Cluster1081	537011
+Bifidobacterium catenulatum-Bifidobacterium pseudocatenulatum complex [Cluster973]	Bifidobacteriaceae	Bifidobacterium	Cluster973	547043,566552
+Streptococcus thermophilus [Cluster1375]	Streptococcaceae	Streptococcus	Cluster1375	1051074,264199,299768,322159,767463
+Akkermansia muciniphila [Cluster1008]	Verrucomicrobiaceae	Akkermansia	Cluster1008	349741
+Bacteroides clarus [Cluster1099]	Bacteroidaceae	Bacteroides	Cluster1099	762984
+Bacteroides fragilis [Cluster1090]	Bacteroidaceae	Bacteroides	Cluster1090	272559,295405,457392,469587,665938,862962
+Bacteroides eggerthii [Cluster1097]	Bacteroidaceae	Bacteroides	Cluster1097	483216,665953
+unnamed Veillonella sp. oral taxon 158 [Cluster1263]	Veillonellaceae	Veillonella	Cluster1263	879309
+Veillonella atypica [Cluster1260]	Veillonellaceae	Veillonella	Cluster1260	866776,866778
+Streptococcus vestibularis [Cluster1376]	Streptococcaceae	Streptococcus	Cluster1376	889206,904306
+Bacteroides coprocola [Cluster1107]	Bacteroidaceae	Bacteroides	Cluster1107	470145
+unnamed Lachnospiraceae bacterium 3_1_57FAA_CT1 [Cluster1624]	Lachnospiraceae	undef	Cluster1624	658086
+Clostridium symbiosum [Cluster1600]	Clostridiaceae	Clostridium	Cluster1600	742740,742741
+Dialister invisus [Cluster1259]	Veillonellaceae	Dialister	Cluster1259	592028
+Bacteroides plebeius [Cluster1105]	Bacteroidaceae	Bacteroides	Cluster1105	484018
+unnamed Capnocytophaga sp. oral taxon 329 [Cluster1086]	Flavobacteriaceae	Capnocytophaga	Cluster1086	706436
+Coprococcus eutactus [Cluster1592]	Lachnospiraceae	Coprococcus	Cluster1592	411474
+Paraprevotella xylaniphila [Cluster1087]	Prevotellaceae	Paraprevotella	Cluster1087	762982
+Sutterella wadsworthensis [Cluster469]	Sutterellaceae	Sutterella	Cluster469	742821
+unnamed Clostridium sp. L2-50 [Cluster1593]	Clostridiaceae	Clostridium	Cluster1593	411489
+Methanobrevibacter smithii [Cluster92]	Methanobacteriaceae	Methanobrevibacter	Cluster92	420247,483214,521002
+Clostridium ramosum [Cluster1269]	Erysipelotrichaceae	NA	Cluster1269	445974,556270
+Klebsiella variicola/pneumoniae [Cluster399]	Enterobacteriaceae	Klebsiella	Cluster399	1049565,1125630,272620,469608,484021,507522,640131,667127
+Eubacterium biforme [Cluster1275]	Erysipelotrichaceae	undef	Cluster1275	518637
+Bifidobacterium bifidum [Cluster968]	Bifidobacteriaceae	Bifidobacterium	Cluster968	398513,702459,883062
+Desulfovibrio piger [Cluster751]	Desulfovibrionaceae	Desulfovibrio	Cluster751	411464
+Clostridium scindens [Cluster1606]	NA	NA	Cluster1606	411468,658085
+Bacteroides coprophilus [Cluster1106]	Bacteroidaceae	Bacteroides	Cluster1106	547042
+unnamed Erysipelotrichaceae bacterium 5_2_54FAA [Cluster1279]	Erysipelotrichaceae	undef	Cluster1279	552396
+Blautia hydrogenotrophica [Cluster1622]	Lachnospiraceae	Blautia	Cluster1622	476272
+Butyrivibrio crossotus [Cluster1628]	Lachnospiraceae	Butyrivibrio	Cluster1628	511680
+unclassified Lachnospiraceae [Cluster1614]	Lachnospiraceae	undef	Cluster1614	552395,658088
+Enterobacter hormaechei/cloacae [Cluster384]	Enterobacteriaceae	Enterobacter	Cluster384	718254,888063
+Phascolarctobacterium succinatutens [Cluster1659]	Acidaminococcaceae	Phascolarctobacterium	Cluster1659	626939
+Eubacterium cylindroides [Cluster1276]	Erysipelotrichaceae	undef	Cluster1276	717960
+Acidaminococcus intestini [Cluster1657]	Acidaminococcaceae	Acidaminococcus	Cluster1657	563191,568816
+Blautia hansenii [Cluster1617]	Lachnospiraceae	NA	Cluster1617	537007,658083
+Bacteroides fragilis [Cluster1091]	Bacteroidaceae	Bacteroides	Cluster1091	457424
+Megasphaera elsdenii [Cluster1267]	Veillonellaceae	Megasphaera	Cluster1267	1064535
+Streptococcus anginosus [Cluster1393]	Streptococcaceae	Streptococcus	Cluster1393	1000570,742820
+Mitsuokella multacida [Cluster1653]	Veillonellaceae	Mitsuokella	Cluster1653	500635
