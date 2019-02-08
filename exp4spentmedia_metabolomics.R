@@ -71,18 +71,18 @@ drug_steady.ions = drug_comb.filtTP2 %>%
 # Filter ions that increase after time point 13_5
 drug_increasing.ions = drug_steady.ions %>%
   dplyr::group_by(mz) %>%
-  dplyr::filter(!any((intensity[sample == "30"] - intensity[sample == "13_5"]) > 1))
+  dplyr::mutate(is_hit=!any((intensity[sample == "30"] - intensity[sample == "13_5"]) > 1))
 
 # Filter ions that increase after time point 30 with no change at time point 13.5 
 drug_increasing.ions2 = drug_increasing.ions %>%
   dplyr::group_by(mz) %>%
-  dplyr::filter(!any(abs(intensity[sample == "30"] - intensity[sample == "13_5"]) < 1 &
+  dplyr::mutate(is_hit=is_hit & !any(abs(intensity[sample == "30"] - intensity[sample == "13_5"]) < 1 &
                        (intensity[sample == "36"] - intensity[sample == "30"]) > 1))
 
 # Filter ions that increase after time point 36 with no change at time point 13.5 and 30
 drug_increasing.ions3 = drug_increasing.ions2 %>%
   dplyr::group_by(mz) %>%
-  dplyr::filter(!any(abs(intensity[sample == "30"] - intensity[sample == "13_5"]) < 1 &
+  dplyr::mutate(is_hit=is_hit & !any(abs(intensity[sample == "30"] - intensity[sample == "13_5"]) < 1 &
                        abs(intensity[sample == "36"] - intensity[sample == "30"]) < 1 &
                        (intensity[sample == "36"] - intensity[sample == "13_5"]) > -1 &
                        (intensity[sample == "47"] - intensity[sample == "36"]) > 1))
@@ -92,16 +92,18 @@ drug_increasing.ions3 = drug_increasing.ions2 %>%
 # to obtain the final hits
 drug_finalHits = drug_increasing.ions3 %>%
   dplyr::group_by(mz) %>%
-  dplyr::filter(!any((intensity[sample == "30"] == 0 &
+  dplyr::mutate(is_hit=is_hit & !any((intensity[sample == "30"] == 0 &
                         (intensity[sample == "36"] > 0 | intensity[sample == "47"] > 0)) |
                        (intensity[sample == "36"] == 0 & intensity[sample == "47"] > 0) ))
 
 
 #drug_finalHits.old = drug_finalHits
+ggplot(drug_finalHits %>% dplyr::filter(is_hit), aes(x=sample, y=intensity, group=mz, color=is_hit)) + 
+  geom_line(alpha = 0.4, color = "grey20", size =0.5) + 
+  theme_bw()
 
-ggplot(drug_finalHits, aes(x = sample, y = intensity, group = mz)) + 
-  geom_line(alpha = 0.4, color = "grey20", size =0.5) + theme_bw()
-file_ToSave = spread(drug_finalHits, key = sample, value = intensity)
-write.table(file_ToSave, file = "FinalFiltering_Paper/Salivarius_duloxetine_FinalPaperHits_271.txt", sep = "\t", quote = F, col.names = T, row.names = F)
-save(drug_finalHits, file = "FinalFiltering_Paper/Salivarius_duloxetine_FinalPaperHits_271.RData")
+file_ToSave = drug_finalHits %>% 
+  tidyr::spread(key=sample, value=intensity) %>% 
+  dplyr::mutate(is_hit=ifelse(is_hit, "Yes", "No"))
 
+write.table(file_ToSave, file = "reports/exp4spentmedia_metabolomics.tsv", sep = "\t", quote = F, col.names = T, row.names = F)
