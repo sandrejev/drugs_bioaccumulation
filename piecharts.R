@@ -5,7 +5,6 @@ library(RSQLite)
 library(scales)
 library(tidyr)
 source("functions.R")
-
 plot.piechart = function()
 {
   blank_theme = theme_minimal()+
@@ -39,6 +38,22 @@ plot.piechart = function()
     blank_theme+
     theme(axis.text.y=element_blank(), axis.text.x=element_blank())
   dev.off()
+}
+
+microbiome_coverate = function()
+{
+  #
+  # Abundance of study species in core microbiome
+  #
+  species_map = readr::read_delim("data/bug_map.tsv", "\t") %>% dplyr::mutate(species.taxid=as.character(species.taxid))
+  top95clusters.info = read.table("data/screenG_tax_info_specI_clusters.tab", na.strings="", header=T, sep="\t", stringsAsFactors=F)
+  top95clusters = read.table("data/screenG_tax_input_specI_clusters.tab", na.strings="", header=T, sep="\t", stringsAsFactors=F)
+  species_abundance = top95clusters %>%
+    tidyr::separate_rows(taxid, sep=",") %>%
+    dplyr::inner_join(species_map, by=c("taxid"="species.taxid")) %>%
+    dplyr::inner_join(top95clusters.info, by=c("cluster"="SpecI_ID")) %>%
+    dplyr::group_by(cluster) %>%
+    dplyr::summarise(species=paste(unique(species.short), collapse=","), Rel_ab_median=unique(Rel_ab_median), Prevalence=unique(Prevalence))
 }
 
 cummulative_plot.enzymatic_coverage = function()
