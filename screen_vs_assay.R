@@ -51,7 +51,7 @@ ggplot(data.merge, aes(x=MedianDiff.screen,y=MedianDiff.assay, color=drug.long))
   coord_cartesian(ylim=c(-105,105), xlim = c(-105,105)) +
   scale_color_manual(values=myColors) +
   annotate("label", x=60, y=90, label=paste0("Pearson Correlation: ",corscreenassay)) +
-  labs(x="Depletion screen", y="Metabolomics assay")
+  labs(x="Depletion screen", y="Metabolomics assay") +
   geom_abline(slope=corscreenassay,intercept=0, linetype="dotted", color="black") +
   myTheme
 dev.off()
