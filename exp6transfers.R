@@ -1,0 +1,136 @@
+library(ggplot2)
+library(plyr)
+library(LSD)
+library(boot)
+library(ade4)
+library(DESeq2)
+library(vsn)
+library(gplots)
+library(RColorBrewer)
+library(matrixStats)
+library(MASS)
+library(vegan)
+library(locfit)
+library(stringr)
+library(sva)
+library(limma)
+library(corpcor)
+library(tidyr)
+library(reshape2)
+library(dplyr)
+library(stringr)
+library(magrittr)
+library(purrr)
+library(readr)
+library(mutoss)
+library(qvalue)
+library(xlsx)
+source("functions.R")
+
+peak.read = function(path,len, remove.empty=T)
+{
+  df = read.xlsx(path,1,startRow=1,stringsAsFactors=F)
+  df$group = substr(df$SampleName,1,6)
+  df <- df[order(df$Name,df$Channel.Description,df$Sample.Set.Name,df$SampleName,df$Vial),]
+  if (length(unique(df$Sample.Set.Name))>1){
+    print("Data processed, but more than 1 sample set detected")
+    return(df[1:len,])
+  }
+  else {
+    return(df[1:len,])
+  }
+}
+
+#
+# Read transfer assay targeted metabolomics data
+#
+data.transfer = peak.read("data/exp6transfers/160916_160907_160823_transferassaydulox.xlsx", 272)
+data.transfer.norm = data.transfer %>%
+  dplyr::filter(grepl("peak", Name)) %>%
+  dplyr::mutate_at(.vars=dplyr::vars(Area, Height), .funs=dplyr::funs(ifelse(is.na(Area), 0, .))) %>%
+  dplyr::mutate(Area=as.double(Area), Height=as.double(Height), Date=as.numeric(factor(Date, sort(unique(Date))))) %>% 
+  dplyr::group_by(Date) %>%
+  dplyr::mutate(MeanCtrl=mean(Area[Condition=="Control"]), Normed=Area/MeanCtrl) %>% 
+  data.frame()
+
+# ggplot(data.transfer.norm[which(!data.T$Condition %in% c("+Bu;-D","-Bu;-D")),], aes(x=Condition,y=Area,fill=as.factor(Date))) +
+#   geom_boxplot()
+# ggplot(data.transfer.norm[which(!data.T$Condition %in% c("+Bu;-D","-Bu;-D")),], aes(x=Condition,y=Normed,fill=as.factor(Date))) +
+#   geom_boxplot()
+
+data.T = data.transfer.norm %>%
+  dplyr::group_by(Date) %>%
+  dplyr::mutate(
+    pvalue.Bu=t.test(Normed[Condition=="Control"], Normed[Condition=="+Bu;+D"])$p.value,
+    pvalue.No=t.test(Normed[Condition=="Control"], Normed[Condition=="-Bu;+D"])$p.value,
+    pvalue.BuNo=t.test(Normed[Condition=="+Bu;+D"], Normed[Condition=="-Bu;+D"])$p.value,
+    Sign=rowSums(cbind(pvalue.Bu, pvalue.No, pvalue.BuNo)<0.05))
+
+pdf("reports/exp6transfers_duloxetine_degradation.pdf", width=8, height=5)
+data.plot = data.T %>% 
+  dplyr::filter(!(Condition %in% c("+Bu;-D","-Bu;-D","d"))) %>%
+  dplyr::mutate(ConditionName=dplyr::case_when(
+    Condition=="+Bu;+D" ~ "with B. uniformis",
+    Condition=="-Bu;+D" ~ "no B. uniformis",
+    Condition=="Control" ~ "Bacteria-free control",
+    T ~ "This should not happen"
+  ))
+ggplot(data.plot) +
+  geom_hline(yintercept = 1, linetype="longdash" ) +
+  geom_boxplot(aes(x=as.factor(Date), y=Normed, fill=ConditionName)) +
+  ylim(c(0,1.1)) +
+  scale_fill_manual(values=c("Bacteria-free control"="red", "no B. uniformis"="chartreuse4", "with B. uniformis"="darkorchid4")) + 
+  myTheme +
+  theme(axis.ticks.length = unit(0, "lines")) +
+  labs(x="Transfer", y= "AUC normalized by mean of controls", color="", fill="Community") +
+  theme(axis.text=element_text(size=18), axis.title=element_text(size=18))
+dev.off()
+
+#
+# Read transfer assay metagenomics data
+#
+map = readr::read_delim("data/exp6transfers/Sample_map_mod.csv", ",")
+data.seq = readr::read_delim("data/exp6transfers/otu_table_wo_mono_normalized_by_gene_copy_mod.csv", ",") %>%
+  dplyr::inner_join(map, by=c("Sample")) %>%
+  reshape2::melt(measure.vars=c("B. thetaiotaomicron", "B. uniformis", "E. rectale", "L. gasseri", "R. torques", "S. salivarius"), variable.name="Species", value.name="Percent") %>%
+  dplyr::mutate(Bug=gsub("([^;]+);.*", "\\1", Condition), Drug=gsub("[^;]+;([^;]+)", "\\1", Condition))
+
+# data.plot = data.seq %>%
+#   dplyr::filter(Condition %in% c("+Bu;-D","+Bu;+D","-Bu;+D","-Bu;-D"))
+# ggplot(data.plot, aes(x=Date,y=Percent,color=Condition)) +
+#   geom_jitter(width=0.1) +
+#   geom_smooth(span=0.3, se=T) +
+#   scale_color_manual(values=c("dodgerblue","dodgerblue4","firebrick1","firebrick4")) +
+#   facet_wrap(~Species, scales="free") +
+#   labs(x="Transfer", y="Relative species abundance in percent")+
+#   myTheme
+
+depleters <- c("B. uniformis","B. thetaiotaomicron","S. salivarius")
+nopes <- c("E. rectale","R. torques","L. gasseri")
+data.deplete = data.seq %>%
+  dplyr::filter(Drug=="+D") %>%
+  dplyr::group_by(Date,Condition,Species) %>%
+  dplyr::mutate(Rep=1:length(Date)) %>%
+  dplyr::group_by(Date,Bug,Rep) %>%
+  dplyr::summarise(
+    meanDep = sum(Percent[which(Species %in% depleters)]), 
+    meanNop=sum(Percent[which(Species %in% nopes)]),
+    Condition=dplyr::case_when(Bug[1]=="+Bu"~"+Bu;+D", T~"-Bu;+D"),
+    meanDep=meanDep/100) %>%
+  data.frame()
+
+pdf("reports/exp6transfers_duloxetine_degradation.pdf", width=8, height=5)
+data.deplete.plot = data.deplete %>%
+  dplyr::mutate(ConditionName=dplyr::case_when(
+    Condition=="+Bu;+D" ~ "with B. uniformis",
+    Condition=="-Bu;+D" ~ "no B. uniformis",
+    Condition=="Control" ~ "Bacteria-free control",
+    T ~ "This should not happen"
+  ))
+ggplot(data.deplete.plot, aes(x=as.factor(Date), y=meanDep, fill=ConditionName)) +
+  geom_boxplot() +
+  ylim(c(0,1.1)) +
+  scale_fill_manual(values=c("Bacteria-free control"="red", "no B. uniformis"="chartreuse4", "with B. uniformis"="darkorchid4"))  +
+  myTheme +
+  labs(x="Transfer", y= "Fraction of duloxetine depleting bacteria", fill="Community")
+dev.off()
