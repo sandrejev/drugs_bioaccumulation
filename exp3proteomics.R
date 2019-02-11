@@ -128,6 +128,7 @@ final_data = as.data.frame(exprs(res.norm)) %>%
     text=ifelse(group=="annotated", EC.number, ""))
 
 final_data.export = final_data %>% 
+  dplyr::mutate(is_significant=ifelse(is_significant>0, "Yes", "No")) %>%
   dplyr::select(
     proteinId, EC.number, is_significant, FC, pvalue, padjst=p.adjst,
     Control_1, Control_2, Control_3, Control_4, Du_1, Du_2, Du_3, Du_4,

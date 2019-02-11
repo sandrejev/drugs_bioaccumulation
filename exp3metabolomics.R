@@ -80,6 +80,8 @@ load("data/exp3metabolomics/clickxset.fillden.noInj1.RData")
 load("data/exp3metabolomics/extraxset.fillden.noInj1.RData")
 load("data/exp3metabolomics/lysxset.fillden.noInj1.RData")
 
+bugs = readr::read_delim("data/bug_map.tsv", "\t")
+
 #
 # Load KEGG metabolites from Cs/Bu species
 #
@@ -178,7 +180,11 @@ data_long.norm = data_long %>%
     z$IntensityLog10_amitrip=log10(z$Intensity_amitrip)
     z
   })(.)) %>%
-  dplyr::left_join(peak_long.sum, by=c("Dataset", "species.code", "Peak"))
+  data.frame() %>%
+  dplyr::left_join(peak_long.sum, by=c("Dataset", "species.code", "Peak")) %>%
+  dplyr::mutate(metabolite_name=dplyr::case_when(State=="lys" & Peak=="298.1/1050" |  State=="extra" & Peak=="298.1/1040" ~ "Duloxetine", T ~ metabolite_name)) %>%
+  dplyr::mutate(metabolite_display=dplyr::case_when(State=="lys" & Peak=="298.1/1050" |  State=="extra" & Peak=="298.1/1040" ~ "Duloxetine", T ~ metabolite_display))
+   
 
 #
 # Replicates matching table
@@ -198,6 +204,7 @@ data_long.norm_rep = rbind(data_long.norm_techrep, data_long.norm_biorep)
 #
 # Calculate fold changes of different peaks AUC and corresponding p-values
 #
+#data_amitrip.effect.old = data_amitrip.effect
 data_amitrip.effect = data_long.norm %>% 
   dplyr::filter(!is.na(species.code)) %>%
   dplyr::group_by(State, Dataset, species.code) %>%
@@ -215,9 +222,8 @@ data_amitrip.effect = data_long.norm %>%
   dplyr::left_join(peak_long.sum, by=c("Dataset", "species.code", "Peak")) %>%
   dplyr::mutate(
     State=factor(State, c("lys", "extra")),
-    is_significant=ifelse(padjust<0.05 & abs(FC)>FCmin, 1, 0),
-    metabolite_display=dplyr::case_when(State=="lys"&Peak=="298.1/1050" |  State=="extra"&Peak=="298.1/1040" ~ "Duloxetine", T ~ metabolite_display)) %>% 
-    dplyr::select(-Ufc, -FCmin)
+    is_significant=ifelse(padjust<0.05 & abs(FC)>FCmin, 1, 0)) %>% 
+  dplyr::select(-Ufc, -FCmin)
 
 
 #
@@ -263,20 +269,25 @@ data_amitrip.pathway_hits = data_amitrip.effect.sum %>%
   data.frame() %>%
   
   # Multiple testing adjustment
-  dplyr::filter(pathway.detected_size > 1) %>%
-  #dplyr::group_by(species.code) %>%
-  dplyr::mutate(padjst.hyper=p.adjust(pvalue.hyper), is_significant=ifelse(padjst.hyper<0.05, "Y", "N")) %>% 
+  dplyr::mutate(is_small_pathway=pathway.detected_size < 2) %>%
+  dplyr::group_by(species.code, is_small_pathway) %>%
+  dplyr::mutate(padjst.hyper=p.adjust(pvalue.hyper), is_significant=ifelse(padjst.hyper<0.05, "Yes", "No")) %>% 
+  data.frame() %>%
+  dplyr::mutate(is_significant=ifelse(is_small_pathway, "No", is_significant), padjst.hyper=ifelse(is_small_pathway, NA, padjst.hyper)) %>%
   dplyr::arrange(species.code, dplyr::desc(pathway.size), dplyr::desc(pathway.hits/pathway.size))
 
-# Show hits
-# data_amitrip.pathway_hits %>% 
-#   dplyr::filter(species.code=="Cs" & pvalue.hyper<0.05) %>%
-#   dplyr::mutate(sign=ifelse(padjst.hyper<=0.05, "Y", "")) %>%
-#   dplyr::select(pathway.name, pvalue.hyper, sign, pathway.hits, pathway.detected_size, pathway.size, species.hits, species.size, species.detected_size, pvalue.fisher, f11, f21, f12, f22) %>% 
-#   data.frame() %>%
-#   View()
-
-
+#
+# Export pathway enrichment data
+#
+data_amitrip.pathway_hits.export = data_amitrip.pathway_hits %>%
+  dplyr::inner_join(bugs, by="species.code") %>%
+  dplyr::select(species.short, pathway.id, pathway.name, is_significant, pvalue.hyper, padjst.hyper,
+    pathway.hits, species.hits, pathway.detected_size, species.detected_size, pathway.size, species.size)
+readr::write_tsv(data_amitrip.pathway_hits.export, "reports/exp3metabolomics_pathway_enrichment.tsv", col_names=T, na="")  
+    
+#
+# Export figure 2c
+#
 data_amitrip.effect.sum_export = data_amitrip.effect.sum %>% 
   dplyr::mutate(Species=dplyr::case_when(species.code=="Sc"~"Clostridium saccharolyticum", species.code=="Bu"~"Bacteroides uniformis", T~"No species")) %>%
   dplyr::select(
@@ -300,39 +311,58 @@ data_amitrip.effect.sum_export = data_amitrip.effect.sum %>%
     SD.species_control=SD.ctrl.bug
   )
 
-  readr::write_tsv(data_amitrip.effect.sum_export, "reports/exp3metabolomics_hits_scatterplot_data.tsv", col_names=T, na="")  
+readr::write_tsv(data_amitrip.effect.sum_export, "reports/exp3metabolomics_hits_scatterplot_data.tsv", col_names=T, na="")  
 
-  pdf(file="reports/exp3metabolomics_hits_scatterplot.pdf", width=11, height=11)
-  ggplot(aes(x=logFC.bug, y=logFC.drug, size=Mean.treated.bug), data=data_amitrip.effect.sum %>% dplyr::filter(Group=="Other" & is_significant.bug & is_significant.drug)) +
-    geom_point(aes(color=Group)) +
-    geom_point(aes(color=Group), data=data_amitrip.effect.sum %>% dplyr::filter(Group!="Other" & is_significant.bug & is_significant.drug)) +
-    ggrepel::geom_text_repel(aes(label=metabolite_display.top10), data=data_amitrip.effect.sum %>% dplyr::filter(!is.na(metabolite_display.top10) & is_significant.bug & is_significant.drug), size=4) +
-    scale_color_manual(values=c(Other="darkgrey", Annotated="#000000", Duloxetine="#8A3134")) +
-    scale_x_continuous(limits =c(-2,5), breaks=seq(-2,5,1)) +
-    scale_y_continuous(limits =c(-2,5), breaks=seq(-2,5,1)) +
-    scale_size_continuous(breaks=c(0.4, 1.6)) +
-    coord_equal() +
-    facet_grid(species.code~State) +
-    labs(y="Fold change drug treated bacteria vs. drug control; log10", 
-         x="Fold change drug treated bacteria vs. bacteria control; log10", size="Intensity in Treated", color="") +
-    myTheme
-  dev.off()
+pdf(file="reports/exp3metabolomics_hits_scatterplot.pdf", width=11, height=11)
+ggplot(aes(x=logFC.bug, y=logFC.drug, size=Mean.treated.bug), data=data_amitrip.effect.sum %>% dplyr::filter(Group=="Other" & is_significant.bug & is_significant.drug)) +
+  geom_point(aes(color=Group)) +
+  geom_point(aes(color=Group), data=data_amitrip.effect.sum %>% dplyr::filter(Group!="Other" & is_significant.bug & is_significant.drug)) +
+  ggrepel::geom_text_repel(aes(label=metabolite_display.top10), data=data_amitrip.effect.sum %>% dplyr::filter(!is.na(metabolite_display.top10) & is_significant.bug & is_significant.drug), size=4) +
+  scale_color_manual(values=c(Other="darkgrey", Annotated="#000000", Duloxetine="#8A3134")) +
+  scale_x_continuous(limits =c(-2,5), breaks=seq(-2,5,1)) +
+  scale_y_continuous(limits =c(-2,5), breaks=seq(-2,5,1)) +
+  scale_size_continuous(breaks=c(0.4, 1.6)) +
+  coord_equal() +
+  facet_grid(species.code~State) +
+  labs(y="Fold change drug treated bacteria vs. drug control; log10", 
+       x="Fold change drug treated bacteria vs. bacteria control; log10", size="Intensity in Treated", color="") +
+  myTheme
+dev.off()
+
+
+png("reports/exp3metabolomics_replicated_correlation.png", width = 2048, height=2048)
+data_long.norm_cor = data_long.norm_rep %>% 
+  dplyr::group_by(group, Dataset) %>%
+  dplyr::summarise(cor=cor(IntensityLog10_amitrip.x, IntensityLog10_amitrip.y, method="spearman", use="pairwise.complete.obs"))
+ggplot(data_long.norm_rep, aes(x=IntensityLog10_amitrip.x, y=IntensityLog10_amitrip.y)) +
+  geom_point(alpha=0.1,color="black", size=0.1) +
+  coord_equal() +
+  scale_x_continuous(limits =c(-8,2), breaks=seq(-8,2,2)) +
+  scale_y_continuous(limits =c(-8,2), breaks=seq(-8,2,2)) +
+  labs(x="Rep. 1, Log10 Peak Intensity normalized by Amitriptyline", y="Rep. 2, Log10 Peak Intensity normalized by Amitriptyline") +
+  geom_text(aes(x=-4, y=1, label=round(cor, 3)), data=data_long.norm_cor, colour="black", size=10,inherit.aes=FALSE, parse=FALSE) +
+  facet_grid(group~Dataset) +
+  myTheme +
+  theme(strip.text = element_text(size=48)) +
+  theme(axis.text = element_text(size=32)) 
+dev.off()
+
+pdf(file="reports/exp3metabolomics_duloxetine_degradation.pdf", width=11, height=5)
+data_long.norm_dulox = data_long.norm %>% 
+  dplyr::filter(metabolite_name=="Duloxetine" & (is.na(species.code) | species.code=="Cs")) %>%
+  dplyr::mutate(Subset=dplyr::case_when(
+    Treatment=="Cs" ~ "Not exposed to duloxetine",
+    Treatment=="CsDulox" ~ "Exposed to duloxetine",
+    Treatment=="Dulox" ~ "Duloxetine control",
+    T ~ "This should not hapen"
+)) %>%
+dplyr::filter(Dataset=="Extracellular" & Treatment %in% c("CsDulox", "Dulox"))
+ggplot(data_long.norm_dulox) +
+  geom_boxplot(aes(x=Subset, y=Intensity_amitrip), fill="#999999") +
+  labs(y="Peak intensity normalized by Amitriptyline", x="") +
+  myTheme +
+  theme(axis.text=element_text(size=18), axis.title=element_text(size=18))
+dev.off()
   
   
-  png("reports/exp3proteomics_replicated_correlation.png", width = 2048, height=2048)
-  data_long.norm_cor = data_long.norm_rep %>% 
-    dplyr::group_by(group, Dataset) %>%
-    dplyr::summarise(cor=cor(IntensityLog10_amitrip.x, IntensityLog10_amitrip.y, method="spearman", use="pairwise.complete.obs"))
-  ggplot(data_long.norm_rep, aes(x=IntensityLog10_amitrip.x, y=IntensityLog10_amitrip.y)) +
-    geom_point(alpha=0.1,color="black", size=0.1) +
-    coord_equal() +
-    scale_x_continuous(limits =c(-8,2), breaks=seq(-8,2,2)) +
-    scale_y_continuous(limits =c(-8,2), breaks=seq(-8,2,2)) +
-    labs(x="Rep. 1, Log10 Peak Intensity normalized by Amitriptyline", y="Rep. 2, Log10 Peak Intensity normalized by Amitriptyline") +
-    geom_text(aes(x=-4, y=1, label=round(cor, 3)), data=data_long.norm_cor, colour="black", size=10,inherit.aes=FALSE, parse=FALSE) +
-    facet_grid(group~Dataset) +
-    myTheme +
-    theme(strip.text = element_text(size=48)) +
-    theme(axis.text = element_text(size=32)) 
-  dev.off()
   
