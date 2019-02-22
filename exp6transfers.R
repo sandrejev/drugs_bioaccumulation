@@ -75,7 +75,7 @@ data.plot = data.T %>%
     Condition=="Control" ~ "Bacteria-free control",
     T ~ "This should not happen"
   ))
-ggplot(data.plot) +
+ggplot(data.plot %>% dplyr::filter(Condition=="-Bu;+D")) +
   geom_hline(yintercept = 1, linetype="longdash" ) +
   geom_boxplot(aes(x=as.factor(Date), y=Normed, fill=ConditionName)) +
   ylim(c(0,1.1)) +
@@ -119,7 +119,7 @@ data.deplete = data.seq %>%
     meanDep=meanDep/100) %>%
   data.frame()
 
-pdf("reports/exp6transfers_duloxetine_degradation.pdf", width=8, height=5)
+pdf("reports/exp6transfers_duloxetine_degradation_bacteria_fraction.pdf", width=8, height=5)
 data.deplete.plot = data.deplete %>%
   dplyr::mutate(ConditionName=dplyr::case_when(
     Condition=="+Bu;+D" ~ "with B. uniformis",
@@ -127,7 +127,7 @@ data.deplete.plot = data.deplete %>%
     Condition=="Control" ~ "Bacteria-free control",
     T ~ "This should not happen"
   ))
-ggplot(data.deplete.plot, aes(x=as.factor(Date), y=meanDep, fill=ConditionName)) +
+ggplot(data.deplete.plot %>% dplyr::filter(Condition=="-Bu;+D"), aes(x=as.factor(Date), y=meanDep, fill=ConditionName)) +
   geom_boxplot() +
   ylim(c(0,1.1)) +
   scale_fill_manual(values=c("Bacteria-free control"="red", "no B. uniformis"="chartreuse4", "with B. uniformis"="darkorchid4"))  +
