@@ -40,10 +40,8 @@ na.count2<-na.count
 samples<-dataset[,(p[sample.num.noctr[i]]:(p[sample.num.noctr[i]]+nrep-1))]
 data<-cbind(controls,samples)
 name<-colnames(samples)[1] 
-pdf(paste0("exp3proteomics_", name, "_vs_Control.pdf", sep=""))
 #log2 transform all the intensities
 data1<-log2(data)
-boxplot(data1, main= "Original data distribution")
 
 # define MNAR (Missing not at random). Must have a 3+ difference in number of NAs in sample in control.
 na.count2$randna<-ifelse((na.count[,control] == 0 & na.count[, sample.num.noctr[i]] >= 3) | (na.count[,control] >= 3&na.count[, sample.num.noctr[i]] == 0)| 
@@ -56,12 +54,14 @@ data2<-data1[na.count[,control]<=1|na.count[, sample.num.noctr[i]]<=1,]
 na.count.1<-na.count2[na.count[,control]<=1|na.count[, sample.num.noctr[i]]<=1,]
 
 # number of proteins that have Missing not at random (MNAR) values (e.g 4/0, 3/0, 0/4, 0/3)
+#pdf(paste0("exp3proteomics_", name, "_vs_Control.pdf", sep=""))
+boxplot(data1, main= "Original data distribution")
 barplot(c(
   nrow(na.count.1),
   nrow(na.count.1[na.count.1$randna=="TRUE"&(na.count.1[,control] >= 1 & na.count.1[, sample.num.noctr[i]] >= 1),]), 
   nrow(na.count.1[na.count.1$randna=="FALSE",])), 
   names.arg=c("TOTAL","MAR","MNAR"), main="Number of proteins with missing values")
-dev.off()
+#dev.off()
 # comparison with "usual" NA removal scheme that keep only proteins with one missing value per sample group, 
 # you can see how many proteins you will gain by adding missing values (MNAR)
 
@@ -84,12 +84,12 @@ res<-readMSnSet(exprsFile="data/exp3proteomics/exprsFile.txt", featureDataFile="
 
 #correlation original data
 correlation = cor(exprs(res), method="pearson",use="pairwise.complete.obs")
-pdf("reports/exp3proteomics_correlation_original_data.pdf", width=11, height=11)
+#pdf("reports/exp3proteomics_correlation_original_data.pdf", width=11, height=11)
 heatmap.2(correlation,trace = "none",density.info="none", cexRow=0.9, cexCol=0.9, col=brewer.pal(11, "PRGn"), 
           colsep=c(seq(1,ncol(correlation),1)),
           rowsep=c(seq(1,ncol(correlation),1)),
           sepcolor='white',sepwidth=c(0.0125,0.02), main="correlation_original_data")
-dev.off()
+#dev.off()
 
 #data imputation 
 res3 <- MSnbase::impute(res, method = "mixed",  randna = fData(res)$randna, mar = "knn", mnar = "MinDet")
@@ -98,12 +98,12 @@ boxplot(exprs(res.norm), main= "Data distribution after normalization")
 
 #correlation
 correlation = cor(exprs(res.norm), method="pearson",use="pairwise.complete.obs")
-pdf("reports/exp3proteomics_correlation_after_imputation_normalization.pdf", width=11, height=11)
+#pdf("reports/exp3proteomics_correlation_after_imputation_normalization.pdf", width=11, height=11)
 heatmap.2(correlation,trace = "none",density.info="none", cexRow=0.9, cexCol=0.9, col=brewer.pal(11, "PRGn"), 
           colsep=c(seq(1,ncol(correlation),1)),
           rowsep=c(seq(1,ncol(correlation),1)),
           sepcolor='white',sepwidth=c(0.0125,0.02), main = "correlation_after_imputation_normalization")
-dev.off()
+#dev.off()
 
 # extract matrix normalized and with data imputed
 write.table(exprs(res.norm), paste("data/exp3proteomics/", name, "_vs_Du_imputation_quan_nor.txt", sep=""), sep="\t", quote=FALSE)
@@ -148,3 +148,32 @@ ggplot(aes(x=FC,y=p.log10, color=group), data=final_data) +
   myTheme
 dev.off()
 #  scale_color_manual(values=c("darkgrey","black","dodgerblue4","firebrick","chartreuse4","darkorchid4"))
+
+
+#
+# GO terms enrichment
+#
+go.terms = readr::read_delim("data/go_terms.tsv", "\t")
+final_data.go = final_data %>%
+  reshape2::melt(measure.vars=c("Gene.ontology..GO."), value.name="go") %>%
+  dplyr::filter(!is.na(go)) %>%
+  tidyr::separate_rows(go, sep="; ") %>%
+  dplyr::mutate(go.name=gsub("(.*) \\[GO:.*", "\\1", go), go.id=gsub(".*(GO:.*)\\].*", "\\1", go)) %>%
+  dplyr::inner_join(go.terms, by="go.id") %>%
+  dplyr::group_by(go.ontology) %>%
+  dplyr::mutate(total_hits=sum(!duplicated(proteinId[is_significant==1])), total_n=length(unique(proteinId))) %>%
+  dplyr::group_by(go.ontology, go.name, go.id, total_hits, total_n) %>%
+  dplyr::do((function(z) {
+    z.ret = data.frame(go_hits=sum(z$is_significant==1), go_n=length(z$proteinId))
+    f11 = z.ret$go_hits
+    f21 = z.ret$go_n - z.ret$go_hits
+    f12 = z$total_hits[1] - z.ret$go_hits[1]
+    f22 = z$total_n[1] - z.ret$go_n - z$total_hits[1] + z.ret$go_hits
+    t = fisher.test(matrix(c(f11,f21,f12,f22), ncol=2), alternative="two.sided")
+    z.ret$pval = t$p.value
+    z.ret$odds = t$estimate
+    z.ret
+  })(.)) %>%
+  data.frame() %>%
+  dplyr::mutate(padj=p.adjust(pval))
+final_data.go %>% dplyr::filter(pval < 0.05)
