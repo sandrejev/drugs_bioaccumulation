@@ -176,4 +176,5 @@ final_data.go = final_data %>%
   })(.)) %>%
   data.frame() %>%
   dplyr::mutate(padj=p.adjust(pval))
+readr::write_tsv(final_data.export, "reports/exp3proteomics_enrichment.tsv", col_names=T, na="")  
 final_data.go %>% dplyr::filter(pval < 0.05)
