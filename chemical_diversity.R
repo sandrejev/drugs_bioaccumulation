@@ -8,7 +8,7 @@ library(vegan)
 
 drug_classes = readr::read_delim("data/chemical_diversity/2064_Drug_class_combined.dms", "\t", col_names=c("drug.id", "drug.class"))
 drug_ids = readr::read_delim("data/chemical_diversity/drugs.tsv", "\t")
-drug_map = readr::read_delim("data/drug_map.tsv", "\t") %>% dplyr::mutate(in_study=T) %>% dplyr::select(drug.long, drug.uplc_excluded, in_study)
+drug_map = readr::read_delim("data/drug_map.tsv", "\t") %>% dplyr::mutate(in_study=T) %>% dplyr::select(drug.long, drug.uplc_excluded, in_study) %>% unique()
 
 #
 # Distance matrix (from long)
@@ -41,13 +41,15 @@ AT.pco_df = as.data.frame(AT.pco$points) %>%
 #
 # Plot
 #
+pdf("reports/chemical_diversity.pdf", width=10, height=9)
 ggplot(aes(PC1, PC2, shape=in_study, size=in_study, alpha=in_study, fill=drug.class, color=in_study), data=AT.pco_df) +
   geom_point() +
-  geom_text(aes(label=drug.study_name), hjust=-0.1, vjust=-1, col='black', size=5) +
-  theme_bw() +
+  geom_text(aes(label=drug.study_name), hjust=-0.12, vjust=0.1, col='black', size=4, show.legend=F) +
+  theme_bw(base_size=18) +
   scale_size_manual(values=c("Selected"=5, "Not selected"=2.3)) +
   scale_shape_manual(values=c("Selected"=21, "Not selected"=21)) +
   scale_alpha_manual(values=c("Selected"=1, "Not selected"=0.25)) +  
   scale_colour_manual(values=c("Selected"="#000000", "Not selected"="#FFFFFF")) +
-  labs(xlab=paste0("PCO1 (",round(round(100*AT.variance[1])),"% variance explained)"), ylab=paste0("PCO2 (",round(round(100*AT.variance[2])),"% variance explained)")) +
-  guides(fill=guide_legend(override.aes=list(shape=21)))
+  labs(alpha="Part of the study", fill="ATC", xlab=paste0("PCO1 (",round(round(100*AT.variance[1])),"% variance explained)"), ylab=paste0("PCO2 (",round(round(100*AT.variance[2])),"% variance explained)")) +
+  guides(shape=F, color=F, size=F, alpha=guide_legend(override.aes=list(shape=16, size=5, color="#FF0000")), fill=guide_legend(override.aes=list(shape=21, size=5, color="#FFFFFF00")))
+dev.off()
