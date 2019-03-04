@@ -19,13 +19,13 @@ ttest.degrad.batch = function(data.degrad){
     dplyr::group_by(GroupName,Plate,Batch,Species.x) %>%
     dplyr::do(t.test2(mean(.$DrugRatio), .$BatchMean[1], sd(.$DrugRatio),.$SD.ctrls[1], length(.$DrugRatio),.$N.ctrls[1], equal.variance=T)) %>%
     data.frame() %>%
-    dplyr::mutate(p_adjust=p.adjust(.$p_value,method="BH"))
+    dplyr::mutate(p_adjust=p.adjust(p_value,method="BH"))
   
   ttest.sameSD = data.degrad %>%
-    dplyr::group_by(GroupName,Plate,Batch,Species.x) %>%
+    dplyr::group_by(GroupName, Plate, Batch, Species.x) %>%
     dplyr::do(t.test2(mean(.$DrugRatio),.$BatchMean[1], .$SD.ctrls[1], .$SD.ctrls[1], length(.$DrugRatio), .$N.ctrls[1], equal.variance=T)) %>%
     data.frame() %>%
-    dplyr::mutate(p_adjust=p.adjust(.$p_value,method="BH")) %>%
+    dplyr::mutate(p_adjust=p.adjust(p_value,method="BH")) %>%
     dplyr::inner_join(unique(data.degrad %>% dplyr::select(GroupName, Plate, BatchMean, growth)), by=c("GroupName", "Plate")) %>%
     dplyr::mutate(DiffOfMeans = Difference.of.means/BatchMean) %>%
     dplyr::inner_join(meanmax, by=c("GroupName", "Plate")) %>%
@@ -49,16 +49,16 @@ preprocess.hits_uplc = function()
     dplyr::inner_join(drugs, by=c("Drugs"="drug.short2")) %>% 
     dplyr::left_join(bugs %>% dplyr::select(species.short, species.long), by=c("species.long")) %>%
     dplyr::filter(Ctrl != "zero") %>% # I don't know what is 'med',  & is.na(drug.uplc_excluded) #  & Bugs != "med"
-    #dplyr::filter(!(Method=="di" & Bugs=="Fn")) %>% # TODO: this is from martina's code. I don't know why
     data.frame()
-  
+
   data.sum = data %>%
     dplyr::group_by(drug.long, drug.short, species.long, species.short, Extraction, drug.known_activity, drug.uplc_excluded) %>% 
-    dplyr::summarise(MedianDiff=median(DiffCtrlSample[Ctrl=="smpl"]), pvalue=wilcox.test(DiffCtrlSample[Ctrl=="ctrl"], DiffCtrlSample[Ctrl=="smpl"])$p.value) %>%
+    dplyr::summarise(MedianDiff=median(DiffCtrlSample[Ctrl=="smpl"]), pvalue=wilcox.test(DiffCtrlSample[Ctrl=="ctrl"], DiffCtrlSample[Ctrl=="smpl"])$p.value, n.ctrl=sum(Ctrl=="ctrl"), n.sample=sum(Ctrl=="smpl")) %>%
     data.frame() %>%
     dplyr::mutate(padjst=p.adjust(pvalue, method="BH"), s=Extraction=="Supernatant") %>%
     dplyr::group_by(drug.long, drug.short, species.short, species.long, drug.known_activity) %>% 
     dplyr::summarise(
+      n.super_ctrl=n.ctrl[s], n.super_sample=n.sample[s], n.total_ctrl=n.ctrl[!s], n.total_sample=n.sample[!s],
       padjst.super=padjst[s], padjst.total=padjst[!s], MedianDiff.super=MedianDiff[s],  MedianDiff.total=MedianDiff[!s], 
       MedianDiffFold=MedianDiff.total/MedianDiff.super, 
       MedianDiffDiff=pmin(0, MedianDiff.total)-pmin(0, MedianDiff.super),
@@ -78,10 +78,106 @@ preprocess.hits_uplc = function()
         T ~ "No activity"
       ))
   
+  readr::write_delim(x, "l.tsv", "\t")
   #
   # Write to file
   #
   readr::write_delim(data.sum, "data/exp2metabolomics/hits.tsv", "\t")
+}
+
+number_of_replicates = function()
+{
+  drugs = readr::read_delim("data/drug_map.tsv", "\t") %>% dplyr::filter(!grepl("high concentration", drug.comment))
+  bugs = readr::read_delim("data/bug_map.tsv", "\t")
+  load("data/exp1depletion/170511_processingUPLCpeaks_data.clean_aftergrowthmerge_andfixingget.datacleanfunction.RData")
+  
+  #
+  # Statistics for growth data
+  #
+  data.growth = read.table("data/exp0growth/2016-11-28_curves_annotation.tab", stringsAsFactors=F, na.strings="", sep="\t", quote="", header=T)
+  data.growth_reps = data.growth %>%
+    dplyr::mutate(drug.long=gsub("\\|.*", "", ConditionSpecies), solution=gsub(".*\\|", "", ConditionSpecies)) %>%
+    dplyr::group_by(ConditionSpecies, Species, File, drug.long, solution, TechnicalReplicates) %>%
+    dplyr::do((function(z) {
+      z.wells = as.numeric(unlist(strsplit(gsub("[^0-9]+", ",", z$TechnicalReplicates), ",")))
+      data.frame(TechnicalReplicatesCount=z.wells[3] - z.wells[2] + 1)
+    })(.)) %>% 
+    data.frame() %>%
+    dplyr::group_by(ConditionSpecies, Species, drug.long, solution) %>%
+    dplyr::summarise(n_bio=length(unique(File)), n_tech=sum(TechnicalReplicatesCount)) 
+  data.growth_control_reps = data.growth_reps %>% dplyr::filter(solution==drug.long) %>% data.frame()
+  data.growth_sample_reps = data.growth_reps %>% dplyr::filter(solution!=drug.long) %>% data.frame()
+  data.growth_final_reps = data.growth_sample_reps %>% 
+    dplyr::select(-drug.long) %>%
+    dplyr::left_join(data.growth_control_reps %>% dplyr::select(-drug.long, -ConditionSpecies), by=c("Species", "solution")) %>%
+    setNames(gsub("(\\.x)$", ".sample", names(.), perl=T)) %>%
+    setNames(gsub("(\\.y)$", ".control", names(.), perl=T)) %>%
+    dplyr::mutate(Species=dplyr::case_when(
+      Species=="F. nucleatum subsp. nucleatum"~"F. nucleatum", 
+      Species=="Mix Depletion"~"Mix Degrad",
+      Species=="Mix NoDepletion"~"Mix No",
+      T~Species))
+  
+  # hits_growth.all = read.csv("data/exp0growth/curves.rel_annotation_2016-11-28.tab",sep="\t", header=T) 
+  # hits_growth.all.updated = hits_growth.all %>% 
+  #   dplyr::left_join(data.growth_final_reps, by=c("cond.org"="ConditionSpecies", "org"="Species"))
+  # readr::write_tsv(hits_growth.all2, "data/exp0growth/curves.rel_annotation_2016-11-28.tab", col_names=T, na="")  
+
+  # Convert annotation to a different format
+  data.abs = with(mres.annotation, data.frame(
+    file=File, org=Species, cond.org=ConditionSpecies, media=Media, mu=Rate, max=MaxOD - BlankOD, lag=LagTime,
+    growth=ifelse(!grepl("NoGrowth", Class), "growth", "no growth"),
+    control=F, exclude=Excluded, stringsAsFactors=F))
+  
+  #
+  # Statistics for statistical report form
+  #
+  data.clean_techreps = data.clean %>% 
+    dplyr::filter(Status!="sample" | Plate %in% plates_with_growth) %>%
+    dplyr::inner_join(drug_map %>% dplyr::select(drug.short, drug.uplc_excluded), by=c("GroupName"="drug.short"))  %>%
+    dplyr::group_by(Species.x, GroupName, Status, Batch, N.ctrls, drug.uplc_excluded, Replicate) %>%
+    dplyr::mutate(TechnicalReplicates=length(unique(Well)), N.ctrls_count=length(unique(N.ctrls)))
+  data.clean_sample_techreps = data.clean_techreps %>% 
+    dplyr::filter(Status=="sample") 
+  
+  data.clean_sample_bioreps = data.clean_sample_techreps %>%
+    dplyr::group_by(Species.x, GroupName, Status, Batch, drug.uplc_excluded) %>%
+    dplyr::summarise(BiologicalReplicates=length(unique(Replicate)), Plates=paste(unique(Plate), collapse=","), N.ctrls_count=length(unique(N.ctrls)))
+  
+  
+  
+  table(data.clean_techreps$TechnicalReplicates, data.clean_techreps$Status)
+  table(data.clean_sample_bioreps$Species.x, data.clean_sample_bioreps$BiologicalReplicates)
+  table(table(data.clean_sample_bioreps$Batch, data.clean_sample_bioreps$Species.x, data.clean_sample_bioreps$N.ctrls_count))
+  
+  table(data.clean_sample_techreps %>% dplyr::filter(N.ctrls_count>1))
+  View(data.clean_sample_techreps %>% dplyr::filter(N.ctrls>1))
+  data.clean_sample_bioreps %>% dplyr::filter(Species.x %in% c("Bacteroides uniformis", "Bifidobacterium animalis lactis", "Clostridium bolteae", "Fusobacterium nucleatum nucleatum", "Lactococcus lactis"))
+  
+  data.uplc = readr::read_delim("data/exp2metabolomics/data.depletionmodeassay_long.csv", ",") 
+  
+  data.uplc_techrep = data.uplc %>% 
+    dplyr::filter(Ctrl != "zero") %>% 
+    dplyr::mutate(species.long=tidyr::replace_na(Bugslong, ""), Drugs=tidyr::replace_na(as.character(Drugs), "")) %>%
+    dplyr::inner_join(drugs, by=c("Drugs"="drug.short2")) %>% 
+    dplyr::inner_join(bugs %>% dplyr::select(species.short, species.long), by=c("species.long")) %>%
+    dplyr::group_by(Extraction, Ctrl, SampleName, Sample.Set.Name,drug.long, species.long, drug.uplc_excluded, drug.known_activity, Replicate) %>%
+    dplyr::summarise(TechnicalReplicates=length(Replicate)) %>%
+    data.frame()
+  
+  data.uplc_biorep = data.uplc_techrep %>%
+    group_by(Extraction, Ctrl, species.long, drug.long, drug.uplc_excluded, drug.known_activity) %>%
+    dplyr::summarise(BiologicalReplicates=length(unique(Replicate)), TechnicalReplicates=sum(TechnicalReplicates))
+  
+  data.uplc_biorep = data.uplc_techrep %>%
+    group_by(Extraction, Ctrl, species.long, drug.long, drug.uplc_excluded, drug.known_activity) %>%
+    dplyr::summarise(BiologicalReplicates=length(unique(Replicate)), TechnicalReplicates=sum(TechnicalReplicates))
+  
+  
+  table(data.uplc_biorep$BiologicalReplicates)
+  table(data.uplc_techrep$TechnicalReplicates)
+  View(data.uplc_biorep %>% dplyr::filter(BiologicalReplicates < 3) %>% data.frame())
+  View(data.uplc_techrep %>% dplyr::filter(TechnicalReplicates < 2) %>% data.frame())
 }
 
 plot.sankey = function()
@@ -95,7 +191,7 @@ plot.sankey = function()
   load("data/exp1depletion/170511_processingUPLCpeaks_data.clean_aftergrowthmerge_andfixingget.datacleanfunction.RData")
   plates_with_growth = unique(data.clean %>% dplyr::filter(Status=="GMM" & growth=="growth") %>% .$Plate)
   data.degrad = data.clean %>% dplyr::filter(Status=="sample" & growth=="growth" & dummy==1 & Plate %in% plates_with_growth)
-  data.get = ttest.degrad.batch(data.degrad) 
+  data.get = ttest.degrad.batch(data.degrad) # initial screen
   
   #
   # Calculate edges for LEFT side of the sankey plot and join with UPLC experiment (#2)
@@ -105,8 +201,29 @@ plot.sankey = function()
     dplyr::mutate(Species.x=tidyr::replace_na(Species.x, ""), GroupName=tidyr::replace_na(as.character(GroupName), "")) %>%
     dplyr::left_join(data.clean %>% dplyr::select(GroupName, Plate, DiffToOwn) %>% unique(), by=c("GroupName", "Plate")) %>%
     dplyr::group_by(GroupName, Species.x) %>%
-    dplyr::summarize(replicates=length(GroupName), nhits=sum(-0.3>DiffToOwn), MeanDiffToOwn=mean(DiffToOwn[-0.3>DiffToOwn]), side="left") %>%
+    dplyr::summarize(
+      #DiffOfMeans.screen=ifelse(any(-0.3>DiffOfMeans & p_adjust<0.05), mean(DiffOfMeans[-0.3>DiffOfMeans & p_adjust<0.05]), mean(DiffOfMeans)),
+      p_value.screen=min(p_value),
+      p_adjust.screen=min(p_adjust),
+      #nhits.screen=sum(-0.3>DiffOfMeans & p_adjust<0.05),
+      replicates=length(GroupName), 
+      nhits=sum(-0.3>DiffToOwn), 
+      nhits.plates=paste(Plate[-0.3>DiffToOwn], collapse=","), 
+      MeanDiffToOwn=mean(DiffToOwn[-0.3>DiffToOwn]), 
+      side="left") %>%
     data.frame()
+
+  #
+  # Plot difference in DiffOfMeans for pairs selected and not selected for additional UPLC experiment
+  #
+  # hits_degrad_selection.ggplot = hits_degrad.all %>%
+  #   dplyr::inner_join(drug_map %>% dplyr::select(drug.short, drug.known_activity), by=c("GroupName"="drug.short")) %>%
+  #   dplyr::mutate(
+  #     is_known=ifelse(!is.na(drug.known_activity), "Known", "Not known"),
+  #     is_selected=ifelse(!is.na(MeanDiffToOwn), "Selected", "Not selected"))
+  # ggplot(hits_degrad_selection.ggplot) +
+  #   geom_boxplot(aes(y=DiffOfMeans.screen, x=is_known, fill=is_selected))
+
   hits_degrad = hits_degrad.all %>%
     dplyr::mutate(target=as.character(GroupName), source=as.character(Species.x), value=abs(MeanDiffToOwn)) %>%
     dplyr::filter(nhits>1) %>%
@@ -135,7 +252,6 @@ plot.sankey = function()
     dplyr::select(source=drug.short, target=org, value, interaction, max_log_fold, side, max_interaction_type, max_pvalue, max_tech.pval)
   hits_growth = hits_growth.all %>% dplyr::filter(!interaction %in% c("No activity", "Excluded"))
 
-  
   #
   # Build edges and nodes data.frames
   #
@@ -220,10 +336,10 @@ plot.sankey = function()
   hits_all = hits_degrad.all %>% 
     reshape2::dcast(Species.x ~ GroupName, value.var="replicates") %>%
     reshape2::melt(id.vars="Species.x", value.name="nreplicates", variable.name="drug.short") %>% 
-    dplyr::left_join(hits_degrad.all %>% dplyr::select(Species.x, GroupName, nhits, MeanDiffToOwn), by=c("Species.x", "drug.short"="GroupName")) %>% 
+    dplyr::left_join(hits_degrad.all %>% dplyr::select(Species.x, GroupName, nhits, MeanDiffToOwn, p_value.screen, p_adjust.screen), by=c("Species.x", "drug.short"="GroupName")) %>% 
     replace(is.na(.), 0) %>%
     dplyr::mutate(exp1.is_hit=ifelse(nhits>1, "Yes", "No"), exp1.replicates=paste0(nhits, "/", nreplicates))  %>%
-    dplyr::select(species.long=Species.x, drug.short, exp1.is_hit, exp1.replicates, exp1.diff=MeanDiffToOwn) %>% 
+    dplyr::select(species.long=Species.x, drug.short, exp1.is_hit, exp1.replicates, exp1.diff=MeanDiffToOwn, p_value.screen, p_adjust.screen) %>% 
     data.frame() %>%
     dplyr::left_join(drug_map %>% dplyr::select(drug.short, drug.long, drug.known_activity, drug.excluded=drug.uplc_excluded), by=c("drug.short")) %>%
     dplyr::left_join(bug_map %>% dplyr::select(species.long, species.short), by=c("species.long")) %>%
@@ -235,6 +351,8 @@ plot.sankey = function()
       drug.excluded=tidyr::replace_na(drug.excluded, "No"),
       exp2.interaction=tidyr::replace_na(exp2.interaction, "Not tested"),
       exp1.is_hit=ifelse(drug.excluded=="No", exp1.is_hit, "Excluded"), 
+      exp1.pvalue=round(p_value.screen, 3),
+      exp1.padjst=round(p_adjust.screen, 3),
       exp1.diff=round(exp1.diff, 3), 
       exp2.padjst_super=round(exp2.padjst_super, 3), 
       exp2.padjst_total=round(exp2.padjst_total, 3), 
@@ -245,12 +363,19 @@ plot.sankey = function()
       growth.pvalue=round(growth.pvalue, 3),
       growth.maxod_logfold=round(growth.maxod_logfold, 3)
     ) %>%
-    dplyr::select(species.short, drug.long, drug.excluded, drug.known_activity, 
-                  exp1.is_hit, exp2.interaction, growth.effect, exp1.diff, exp1.replicates, 
-                  exp2.padjst_super, exp2.padjst_total, exp2.diff_super, exp2.diff_total,
-                  growth.pvalue, growth.maxod_logfold) 
+    dplyr::select(species.short, drug.long, drug.known_activity, drug.excluded,
+                  exp1.is_hit, exp2.interaction, growth.effect,                             # General HIT/NO-HIT information
+                  exp1.diff, exp1.replicates, exp1.pvalue, exp1.padjst,                     # exp1
+                  exp2.padjst_super, exp2.padjst_total, exp2.diff_super, exp2.diff_total,   # exp2
+                  growth.pvalue, growth.maxod_logfold                                       # growth
+    ) 
   readr::write_tsv(hits_all, "reports/exp012_sankey_data.tsv", col_names=T, na="")  
   
+  x  = data.clean %>% 
+    dplyr::mutate(plate_group=gsub(".*((A|B|C)[0-9]?)$", "\\1", data.clean$Plate)) %>%
+    dplyr::filter(nchar(plate_group) < 3)
+  table(data.clean$Species.x, gsub(".*((A|B|C)[0-9]?)$", "\\1", data.clean$Plate))
+
   
   # Number of hits per species
   hits_all.drugs = hits_all %>% 
@@ -310,7 +435,7 @@ plot.sankey = function()
       replace(is.na(.), 0)
     hits_all.summary = rbind(hits_all.summary, c("Total", colSums(data.matrix(hits_all.summary[,-1]), na.rm=T)))
 
-    readr::write_tsv(hits_all.summary, paste0("reports/exp012_sankey_data_2nd_", gr, ".tsv"), col_names=T, na="")  
+    #readr::write_tsv(hits_all.summary, paste0("reports/exp012_sankey_data_2nd_", gr, ".tsv"), col_names=T, na="")  
   }
 }
 
