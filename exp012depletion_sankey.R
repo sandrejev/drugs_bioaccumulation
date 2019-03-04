@@ -213,17 +213,6 @@ plot.sankey = function()
       side="left") %>%
     data.frame()
 
-  #
-  # Plot difference in DiffOfMeans for pairs selected and not selected for additional UPLC experiment
-  #
-  # hits_degrad_selection.ggplot = hits_degrad.all %>%
-  #   dplyr::inner_join(drug_map %>% dplyr::select(drug.short, drug.known_activity), by=c("GroupName"="drug.short")) %>%
-  #   dplyr::mutate(
-  #     is_known=ifelse(!is.na(drug.known_activity), "Known", "Not known"),
-  #     is_selected=ifelse(!is.na(MeanDiffToOwn), "Selected", "Not selected"))
-  # ggplot(hits_degrad_selection.ggplot) +
-  #   geom_boxplot(aes(y=DiffOfMeans.screen, x=is_known, fill=is_selected))
-
   hits_degrad = hits_degrad.all %>%
     dplyr::mutate(target=as.character(GroupName), source=as.character(Species.x), value=abs(MeanDiffToOwn)) %>%
     dplyr::filter(nhits>1) %>%
