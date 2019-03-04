@@ -42,6 +42,11 @@ log.zero = function(x) log10(ifelse(x>0, x, 1))
 glog2 = function(x) ((asinh(x)-log(2))/log(2))
 
 fun_uncertaintest = function(data_interest, pair, dulox_peak) {
+  #
+  # K Ortmayr et al. Uncertainty budgeting in fold change determination and implications for non-targeted metabolomics studies in model systems
+  # https://pubs.rsc.org/en/content/articlehtml/2016/an/c6an01342b
+  #
+  # Vinaixa, M. et al., 2012. A Guideline to Univariate Statistical Analysis for LC/MS-Based Untargeted Metabolomics-Derived Data. Metabolites, 2(4), pp.775
   calcunc = function(m1,m2,sd1,sd2){ 2*sqrt(((m2/m1)-(m2/(m1+sd1)))^2+((m2/m1)-((m2+sd2)/m1))^2) }
   
   data_pointestimate = data_interest %>%
