@@ -95,15 +95,21 @@ data.seq = readr::read_delim("data/exp6transfers/otu_table_wo_mono_normalized_by
   reshape2::melt(measure.vars=c("B. thetaiotaomicron", "B. uniformis", "E. rectale", "L. gasseri", "R. torques", "S. salivarius"), variable.name="Species", value.name="Percent") %>%
   dplyr::mutate(Bug=gsub("([^;]+);.*", "\\1", Condition), Drug=gsub("[^;]+;([^;]+)", "\\1", Condition))
 
-# data.plot = data.seq %>%
-#   dplyr::filter(Condition %in% c("+Bu;-D","+Bu;+D","-Bu;+D","-Bu;-D"))
-# ggplot(data.plot, aes(x=Date,y=Percent,color=Condition)) +
-#   geom_jitter(width=0.1) +
-#   geom_smooth(span=0.3, se=T) +
-#   scale_color_manual(values=c("dodgerblue","dodgerblue4","firebrick1","firebrick4")) +
-#   facet_wrap(~Species, scales="free") +
-#   labs(x="Transfer", y="Relative species abundance in percent")+
-#   myTheme
+data.seq_plot = data.seq %>%
+  dplyr::filter(Condition %in% c("+Bu;-D","+Bu;+D","-Bu;+D","-Bu;-D")) %>%
+  dplyr::mutate(Drug=ifelse(Drug=="-D", "- Duloxetine", "+ Duloxetine")) %>%
+  dplyr::mutate(Bug=ifelse(Bug=="-Bu", "- B. uniformis", "+ B. uniformis"))  %>%
+  dplyr::group_by(Condition, Drug, Bug, Species, Date) %>%
+  dplyr::summarise(Percent=mean(Percent))
+
+pdf("reports/exp6transfers_abundance.pdf", width=12, height=8)
+ggplot(data.seq_plot) +
+  geom_bar(aes(x=Date, y=Percent, fill=Species), position="stack", stat="identity") +
+  scale_fill_manual(values=c("B. thetaiotaomicron"="#4B7FAE", "E. rectale"="#E24F52", "L. gasseri"="#634FA2", "R. torques"="#FB775A", "S. salivarius"="#D4CFE0", "B. uniformis"="#FF7F0E")) +
+  facet_grid(Bug ~ Drug) +
+  labs(y="Species abundance (%)", x="Transfers") +
+  myTheme
+dev.off()
 
 depleters <- c("B. uniformis","B. thetaiotaomicron","S. salivarius")
 nopes <- c("E. rectale","R. torques","L. gasseri")
