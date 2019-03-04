@@ -45,12 +45,13 @@ data.sum = data.approx %>%
     maxODnorm=(maxOD-minOD.species[1])/(maxOD.species[1]-minOD.species[1])) %>%
   dplyr::group_by(Species, Concentration) %>%
   dplyr::summarise(
+    n=length(Concentration),
     maxODnorm.se=sd(maxODnorm)/length(Replicate),
     maxODnorm=mean(maxODnorm),
     maxOD.se=sd(maxOD)/length(Replicate),
     maxOD=mean(maxOD)
   ) %>%
-  dplyr::select(Species, Concentration, maxOD, maxOD.se, maxODnorm, maxODnorm.se)
+  dplyr::select(Species, Concentration, maxOD, maxOD.se, maxODnorm, maxODnorm.se, n)
 
 
 readr::write_tsv(data.sum, "reports/exp5concentration_growth.tsv", col_names=T, na="")  
