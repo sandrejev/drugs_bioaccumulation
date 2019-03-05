@@ -1,3 +1,4 @@
+dir.create("reports", showWarnings=F)
 library(scales)
 library(ggplot2)
 library(ggrepel)
@@ -5,6 +6,7 @@ library(RSQLite)
 library(scales)
 library(tidyr)
 source("functions.R")
+
 plot.piechart = function()
 {
   blank_theme = theme_minimal()+
@@ -40,26 +42,11 @@ plot.piechart = function()
   dev.off()
 }
 
-microbiome_coverate = function()
-{
-  #
-  # Abundance of study species in core microbiome
-  #
-  species_map = readr::read_delim("data/bug_map.tsv", "\t") %>% dplyr::mutate(species.taxid=as.character(species.taxid))
-  top95clusters.info = read.table("data/screenG_tax_info_specI_clusters.tab", na.strings="", header=T, sep="\t", stringsAsFactors=F)
-  top95clusters = read.table("data/screenG_tax_input_specI_clusters.tab", na.strings="", header=T, sep="\t", stringsAsFactors=F)
-  species_abundance = top95clusters %>%
-    tidyr::separate_rows(taxid, sep=",") %>%
-    dplyr::inner_join(species_map, by=c("taxid"="species.taxid")) %>%
-    dplyr::inner_join(top95clusters.info, by=c("cluster"="SpecI_ID")) %>%
-    dplyr::group_by(cluster) %>%
-    dplyr::summarise(species=paste(unique(species.short), collapse=","), Rel_ab_median=unique(Rel_ab_median), Prevalence=unique(Prevalence))
-}
-
 cummulative_plot.enzymatic_coverage = function()
 {
   top95clusters = read.table("data/screenG_tax_input_specI_clusters.tab", na.strings="", header=T, sep="\t", stringsAsFactors=F)
   
+  unzip("data/kegg.zip", exdir="data")
   db = dbConnect(SQLite(), dbname="data/kegg.db")
   all.ec = dbGetQuery(db, paste0(
     "SELECT DISTINCT 
@@ -110,6 +97,5 @@ cummulative_plot.enzymatic_coverage = function()
     theme(axis.text.x = element_text(angle = 90, hjust = 1)) + 
     guides(fill=FALSE, color=FALSE) +
     labs(x="", y="cumulative enzyme coverage, %")
-  
   dev.off()
 }
