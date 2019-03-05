@@ -29,3 +29,9 @@ myTheme <- list(theme_minimal(base_size = 15),
                 theme(axis.title.x = element_text(size = rel(0.8), angle = 00)),
                 theme(legend.title = element_text(size = rel(0.8))),
                 theme(legend.text = element_text(size = rel(0.8))))
+
+
+
+log.na = function(x) log10(ifelse(x>0, x, NA))
+log.zero = function(x) log10(ifelse(x>0, x, 1))
+glog2 = function(x) ((asinh(x)-log(2))/log(2))

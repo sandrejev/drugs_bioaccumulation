@@ -1,3 +1,4 @@
+dir.create("reports", showWarnings=F)
 library(rCharts)
 library(networkD3)
 library(dplyr)
@@ -87,7 +88,8 @@ preprocess.hits_uplc = function()
 
 number_of_replicates = function()
 {
-  drugs = readr::read_delim("data/drug_map.tsv", "\t") %>% dplyr::filter(!grepl("high concentration", drug.comment))
+  drug_map = readr::read_delim("data/drug_map.tsv", "\t") %>% dplyr::filter(!grepl("high concentration", drug.comment))
+  bug_map = readr::read_delim("data/bug_map.tsv", "\t")
   bugs = readr::read_delim("data/bug_map.tsv", "\t")
   load("data/exp1depletion/170511_processingUPLCpeaks_data.clean_aftergrowthmerge_andfixingget.datacleanfunction.RData")
   
@@ -118,20 +120,10 @@ number_of_replicates = function()
       Species=="Mix NoDepletion"~"Mix No",
       T~Species))
   
-  # hits_growth.all = read.csv("data/exp0growth/curves.rel_annotation_2016-11-28.tab",sep="\t", header=T) 
-  # hits_growth.all.updated = hits_growth.all %>% 
-  #   dplyr::left_join(data.growth_final_reps, by=c("cond.org"="ConditionSpecies", "org"="Species"))
-  # readr::write_tsv(hits_growth.all2, "data/exp0growth/curves.rel_annotation_2016-11-28.tab", col_names=T, na="")  
-
-  # Convert annotation to a different format
-  data.abs = with(mres.annotation, data.frame(
-    file=File, org=Species, cond.org=ConditionSpecies, media=Media, mu=Rate, max=MaxOD - BlankOD, lag=LagTime,
-    growth=ifelse(!grepl("NoGrowth", Class), "growth", "no growth"),
-    control=F, exclude=Excluded, stringsAsFactors=F))
-  
   #
   # Statistics for statistical report form
   #
+  plates_with_growth = unique(data.clean %>% dplyr::filter(Status=="GMM" & growth=="growth") %>% .$Plate)
   data.clean_techreps = data.clean %>% 
     dplyr::filter(Status!="sample" | Plate %in% plates_with_growth) %>%
     dplyr::inner_join(drug_map %>% dplyr::select(drug.short, drug.uplc_excluded), by=c("GroupName"="drug.short"))  %>%
@@ -154,13 +146,15 @@ number_of_replicates = function()
   View(data.clean_sample_techreps %>% dplyr::filter(N.ctrls>1))
   data.clean_sample_bioreps %>% dplyr::filter(Species.x %in% c("Bacteroides uniformis", "Bifidobacterium animalis lactis", "Clostridium bolteae", "Fusobacterium nucleatum nucleatum", "Lactococcus lactis"))
   
+  #
+  # UPLC experiment
+  #
   data.uplc = readr::read_delim("data/exp2metabolomics/data.depletionmodeassay_long.csv", ",") 
-  
   data.uplc_techrep = data.uplc %>% 
     dplyr::filter(Ctrl != "zero") %>% 
     dplyr::mutate(species.long=tidyr::replace_na(Bugslong, ""), Drugs=tidyr::replace_na(as.character(Drugs), "")) %>%
-    dplyr::inner_join(drugs, by=c("Drugs"="drug.short2")) %>% 
-    dplyr::inner_join(bugs %>% dplyr::select(species.short, species.long), by=c("species.long")) %>%
+    dplyr::inner_join(drug_map, by=c("Drugs"="drug.short2")) %>% 
+    dplyr::inner_join(bug_map %>% dplyr::select(species.short, species.long), by=c("species.long")) %>%
     dplyr::group_by(Extraction, Ctrl, SampleName, Sample.Set.Name,drug.long, species.long, drug.uplc_excluded, drug.known_activity, Replicate) %>%
     dplyr::summarise(TechnicalReplicates=length(Replicate)) %>%
     data.frame()
@@ -180,7 +174,7 @@ number_of_replicates = function()
   View(data.uplc_techrep %>% dplyr::filter(TechnicalReplicates < 2) %>% data.frame())
 }
 
-plot.sankey = function()
+exp012depletion.sankey = function()
 {
   drug_map = readr::read_delim("data/drug_map.tsv", "\t")
   bug_map = readr::read_delim("data/bug_map.tsv", "\t")
@@ -359,13 +353,7 @@ plot.sankey = function()
                   growth.pvalue, growth.maxod_logfold                                       # growth
     ) 
   readr::write_tsv(hits_all, "reports/exp012_sankey_data.tsv", col_names=T, na="")  
-  
-  x  = data.clean %>% 
-    dplyr::mutate(plate_group=gsub(".*((A|B|C)[0-9]?)$", "\\1", data.clean$Plate)) %>%
-    dplyr::filter(nchar(plate_group) < 3)
-  table(data.clean$Species.x, gsub(".*((A|B|C)[0-9]?)$", "\\1", data.clean$Plate))
 
-  
   # Number of hits per species
   hits_all.drugs = hits_all %>% 
     dplyr::group_by(drug.long) %>% 
@@ -424,7 +412,7 @@ plot.sankey = function()
       replace(is.na(.), 0)
     hits_all.summary = rbind(hits_all.summary, c("Total", colSums(data.matrix(hits_all.summary[,-1]), na.rm=T)))
 
-    #readr::write_tsv(hits_all.summary, paste0("reports/exp012_sankey_data_2nd_", gr, ".tsv"), col_names=T, na="")  
+    readr::write_tsv(hits_all.summary, paste0("reports/exp012_sankey_data_2nd_", gr, ".tsv"), col_names=T, na="")  
   }
 }
 

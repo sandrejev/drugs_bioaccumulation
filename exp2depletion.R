@@ -1,9 +1,10 @@
+dir.create("reports", showWarnings=F)
 library(ggplot2)
 library(xlsx)
 library(dplyr)
 source("functions.R")
 
-scatter.total2supernatant = function() 
+exp2depletion.total2supernatant = function() 
 {
   bug_map = readr::read_delim("data/bug_map.tsv", "\t") %>% dplyr::filter(!is.na(species.NT_ID))
   drug_map = readr::read_delim("data/drug_map.tsv", "\t")

@@ -1,10 +1,11 @@
+dir.create("reports", showWarnings=F)
 library(ggplot2)
-library(data.table)
 library(tidyr)
 library(RColorBrewer)
 library(widyr)
 library(labdsv)
 library(vegan)
+library(data.table)
 
 drug_classes = readr::read_delim("data/chemical_diversity/2064_Drug_class_combined.dms", "\t", col_names=c("drug.id", "drug.class"))
 drug_ids = readr::read_delim("data/chemical_diversity/drugs.tsv", "\t")

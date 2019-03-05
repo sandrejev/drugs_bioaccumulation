@@ -7,7 +7,7 @@ library(scales)
 library(tidyr)
 source("functions.R")
 
-plot.piechart = function()
+summary.bugs_piechart = function()
 {
   blank_theme = theme_minimal()+
     theme(
@@ -42,7 +42,7 @@ plot.piechart = function()
   dev.off()
 }
 
-cummulative_plot.enzymatic_coverage = function()
+summary.enzymatic_coverage = function()
 {
   top95clusters = read.table("data/screenG_tax_input_specI_clusters.tab", na.strings="", header=T, sep="\t", stringsAsFactors=F)
   
