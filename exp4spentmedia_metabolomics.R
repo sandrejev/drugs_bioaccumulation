@@ -2,7 +2,6 @@ dir.create("reports", showWarnings=F)
 library(reshape2)
 library(dplyr)
 library(ggplot2)
-library(magrittr)
 library(tidyr)
 source("functions.R")
 

@@ -1,38 +1,16 @@
 dir.create("reports", showWarnings=F)
+library(xlsx)
 library(ggplot2)
-library(plyr)
-library(LSD)
-library(boot)
-library(ade4)
-library(DESeq2)
-library(vsn)
-library(gplots)
-library(RColorBrewer)
-library(matrixStats)
-library(MASS)
-library(vegan)
-library(locfit)
-library(stringr)
-library(sva)
-library(limma)
-library(corpcor)
-library(tidyr)
 library(reshape2)
 library(dplyr)
-library(stringr)
-library(magrittr)
-library(purrr)
 library(readr)
-library(mutoss)
-library(qvalue)
-library(xlsx)
 source("functions.R")
 
 peak.read = function(path,len, remove.empty=T)
 {
   df = read.xlsx(path,1,startRow=1,stringsAsFactors=F)
   df$group = substr(df$SampleName,1,6)
-  df <- df[order(df$Name,df$Channel.Description,df$Sample.Set.Name,df$SampleName,df$Vial),]
+  df = df[order(df$Name,df$Channel.Description,df$Sample.Set.Name,df$SampleName,df$Vial),]
   if (length(unique(df$Sample.Set.Name))>1){
     print("Data processed, but more than 1 sample set detected")
     return(df[1:len,])
@@ -109,8 +87,8 @@ exp6transfers.analyze = function()
     myTheme
   dev.off()
   
-  depleters <- c("B. uniformis","B. thetaiotaomicron","S. salivarius")
-  nopes <- c("E. rectale","R. torques","L. gasseri")
+  depleters = c("B. uniformis","B. thetaiotaomicron","S. salivarius")
+  nopes = c("E. rectale","R. torques","L. gasseri")
   data.deplete = data.seq %>%
     dplyr::filter(Drug=="+D") %>%
     dplyr::group_by(Date,Condition,Species) %>%

@@ -1,15 +1,9 @@
 dir.create("reports", showWarnings=F)
-library(Mfuzz)
-library(limma)
 library(gplots)
-library(RColorBrewer)
 library(MSnbase)
-library(vsn)
-library(impute)
-library(imputeLCMD)
 library(ggplot2)
-library(stringi)
-library(stringr)
+library(dplyr)
+library(RColorBrewer)
 source("functions.R")
 
 exp3proteomics.analyze = function()
@@ -56,7 +50,7 @@ exp3proteomics.analyze = function()
   na.count.1 = na.count2[na.count[,control]<=1|na.count[, sample.num.noctr[i]]<=1,]
   
   # number of proteins that have Missing not at random (MNAR) values (e.g 4/0, 3/0, 0/4, 0/3)
-  pdf(paste0("exp3proteomics_", name, "_vs_Control.pdf", sep=""))
+  pdf(paste0("reports/exp3proteomics_", name, "_vs_Control.pdf", sep=""))
   boxplot(data1, main= "Original data distribution")
   barplot(c(
     nrow(na.count.1),
@@ -88,7 +82,7 @@ exp3proteomics.analyze = function()
   #correlation original data
   correlation = cor(exprs(res), method="pearson",use="pairwise.complete.obs")
   pdf("reports/exp3proteomics_correlation_original_data.pdf", width=11, height=11)
-  heatmap.2(correlation,trace = "none",density.info="none", cexRow=0.9, cexCol=0.9, col=brewer.pal(11, "PRGn"), 
+  heatmap.2(correlation,trace = "none",density.info="none", cexRow=0.9, cexCol=0.9, col=RColorBrewer::brewer.pal(11, "PRGn"), 
             colsep=c(seq(1,ncol(correlation),1)),
             rowsep=c(seq(1,ncol(correlation),1)),
             sepcolor='white',sepwidth=c(0.0125,0.02), main="correlation_original_data")
@@ -150,8 +144,6 @@ exp3proteomics.analyze = function()
     labs(x="log2 fold change of imputated intensity", y="-log10 of FDR adjusted p-value", color="") +
     myTheme
   dev.off()
-  #  scale_color_manual(values=c("darkgrey","black","dodgerblue4","firebrick","chartreuse4","darkorchid4"))
-  
   
   #
   # GO terms enrichment

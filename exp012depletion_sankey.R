@@ -79,7 +79,6 @@ preprocess.hits_uplc = function()
         T ~ "No activity"
       ))
   
-  readr::write_delim(x, "l.tsv", "\t")
   #
   # Write to file
   #

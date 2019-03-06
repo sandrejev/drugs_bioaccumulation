@@ -1,11 +1,11 @@
 dir.create("reports", showWarnings=F)
-library(scales)
 library(ggplot2)
 library(ggrepel)
 library(RSQLite)
-library(scales)
 library(tidyr)
 source("functions.R")
+
+# library(scales)
 
 summary.bugs_piechart = function()
 {
