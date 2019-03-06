@@ -13,4 +13,4 @@ RUN ["Rscript", "-e", "versions::install.versions('scales', '1.0.0')", "-e", "ve
 RUN ["installGithub.r", "ramnathv/rCharts@8d3fe35be5a4b41907d800944a14ac0d193c5b1a", "slowkow/ggrepel@3a14848bacbd5a4ce6a5a857f16af898e0eb1bfc"]
 WORKDIR /payload/
 ENTRYPOINT ["Rscript", "run_everything.R"]
-CMD ["run_everything.R"]
+CMD ["Rscript", "run_everything.R"]
