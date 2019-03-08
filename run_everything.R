@@ -21,12 +21,9 @@ create.dockerfile = function()
     versioned_packages=T)
   write(dfile, file=file.path(getwd(), "Dockerfile"))
   
-  # sudo systemctl restart networking
-  # sudo systemctl restart network-manager
-  # sudo systemctl restart docker
-  
   system("docker build --file Dockerfile --tag sandrejev/drugs_bioaccumulation .", wait=T)
   system("docker save -o drugs_bioaccumulation.tar sandrejev/drugs_bioaccumulation:latest .", wait=T)
+  system("docker push sandrejev/drugs_bioaccumulation", wait=T)
 }
 
 exp012depletion.sankey()
