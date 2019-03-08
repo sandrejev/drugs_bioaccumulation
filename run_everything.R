@@ -7,6 +7,7 @@ source("exp5concentration.R")
 source("exp6transfers.R")
 source("summary.R")
 source("screen_vs_assay.R")
+source("chemical_diversity.R")
 
 
 # Create docker container
@@ -19,6 +20,13 @@ create.dockerfile = function()
     entrypoint=containerit::Entrypoint("Rscript", params=list("run_everything.R")), 
     versioned_packages=T)
   write(dfile, file=file.path(getwd(), "Dockerfile"))
+  
+  # sudo systemctl restart networking
+  # sudo systemctl restart network-manager
+  # sudo systemctl restart docker
+  
+  system("docker build --file Dockerfile --tag sandrejev/drugs_bioaccumulation .", wait=T)
+  system("docker save -o drugs_bioaccumulation.tar sandrejev/drugs_bioaccumulation:latest .", wait=T)
 }
 
 exp012depletion.sankey()
