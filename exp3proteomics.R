@@ -1,4 +1,5 @@
 dir.create("reports", showWarnings=F)
+dir.create("tmp", showWarnings=F)
 dir.create("tmp/exp3proteomics", showWarnings=F)
 library(gplots)
 library(MSnbase)
@@ -17,7 +18,8 @@ exp3proteomics.analyze = function()
   dataset = read.delim("data/exp3proteomics/Data_all.txt", as.is = TRUE)
   #read in NA table (make sum of NA per sample group in a seperate file)
   na.count = read.delim("data/exp3proteomics/NA_counts.txt", as.is = TRUE)
-  # define number of samples total inclusing control
+
+    # define number of samples total inclusing control
   ns=2
   #define number of replicates per sample
   nrep=4
