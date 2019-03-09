@@ -1,9 +1,6 @@
 FROM rocker/r-ver:3.4.4
 LABEL maintainer="Sergej Andrejev <sandrejev@gmail.com>"
 
-COPY *.R  /drugs_bioaccumulation/
-COPY data  /drugs_bioaccumulation/data
-
 RUN apt-get -y update \
   && apt-get install -y \
     git-core \
@@ -152,5 +149,8 @@ RUN ["Rscript", \
 RUN ["installGithub.r", "ramnathv/rCharts@8d3fe35be5a4b41907d800944a14ac0d193c5b1a", "slowkow/ggrepel@3a14848bacbd5a4ce6a5a857f16af898e0eb1bfc"]
 
 WORKDIR /drugs_bioaccumulation
+
+COPY *.R  /drugs_bioaccumulation/
+COPY data  /drugs_bioaccumulation/data
 RUN ["Rscript", "/drugs_bioaccumulation/run_everything.R"]
 CMD ["Rscript", "/drugs_bioaccumulation/run_everything.R"]
