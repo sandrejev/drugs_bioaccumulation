@@ -1,4 +1,5 @@
 dir.create("reports", showWarnings=F)
+dir.create("tmp/exp3proteomics", showWarnings=F)
 library(gplots)
 library(MSnbase)
 library(ggplot2)
@@ -63,21 +64,21 @@ exp3proteomics.analyze = function()
   # you can see how many proteins you will gain by adding missing values (MNAR)
   
   # write out expression data file
-  write.table(data2, "data/exp3proteomics/exprsFile.txt", sep="\t", quote=FALSE)
+  write.table(data2, "tmp/exp3proteomics/exprsFile.txt", sep="\t", quote=FALSE)
   
   # write out feature data file (it must have the same number of rows and rownames as data)
   fdata = na.count.1
   
-  write.table(fdata, "data/exp3proteomics/fdataFile.txt", sep="\t", quote=FALSE)
+  write.table(fdata, "tmp/exp3proteomics/fdataFile.txt", sep="\t", quote=FALSE)
   
   # write out phenotype data file (it must have the same number of rows as number of columns of data and rownames as data)
   
   pdata = data.frame(row.names=colnames(data), sample.name=c("Con_1", "Con_2", "Con_3", "Con_4", "Du_1", "Du_2", "Du_3", "Du_4"))
-  write.table(pdata, "data/exp3proteomics/pdataFile.txt", sep="\t", quote=FALSE)
+  write.table(pdata, "tmp/exp3proteomics/pdataFile.txt", sep="\t", quote=FALSE)
   
   
   # generates "res" in values (this contains all the information from the 3 necessary files (expression data, feature file, phenotype file))
-  res = readMSnSet(exprsFile="data/exp3proteomics/exprsFile.txt", featureDataFile="data/exp3proteomics/fdataFile.txt", phenoDataFile="data/exp3proteomics/pdataFile.txt", sep="\t", header=TRUE)
+  res = readMSnSet(exprsFile="tmp/exp3proteomics/exprsFile.txt", featureDataFile="tmp/exp3proteomics/fdataFile.txt", phenoDataFile="tmp/exp3proteomics/pdataFile.txt", sep="\t", header=TRUE)
   
   #correlation original data
   correlation = cor(exprs(res), method="pearson",use="pairwise.complete.obs")
