@@ -1,4 +1,6 @@
 dir.create("reports", showWarnings=F)
+dir.create("tmp", showWarnings=F)
+dir.create("tmp/exp5concentration", showWarnings=F)
 library(readr)
 library(dplyr)
 library(ggplot2)
@@ -18,12 +20,16 @@ exp5concentration.preprocess = function()
     reshape2::melt(id.vars=c("Time", "Replicate"), variable.name="Well", value.name="OD") %>%
     dplyr::inner_join(map, by="Well") %>%
     dplyr::select(Well, Species, Concentration, Replicate, Time, OD)
-  readr::write_tsv(data, path="data/exp5concentration/data.tsv", na="")
+  readr::write_tsv(data, path="tmp/exp5concentration/data.tsv", na="")
 }
 
 exp5concentration.analyze = function()
 {
-  data = readr::read_delim("data/exp5concentration/data.tsv", "\t")
+  if(!file.exists("tmp/exp5concentration/data.tsv")) {
+    exp5concentration.preprocess()
+  }
+    
+  data = readr::read_delim("tmp/exp5concentration/data.tsv", "\t")
   pdf(file="reports/exp5concentration_curves.pdf", width=11, height=11)
   ggplot(data) + 
     geom_line(aes(x=Time, y=OD, color=Concentration, group=paste(Concentration, Replicate)))+

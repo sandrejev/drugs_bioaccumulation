@@ -17,7 +17,9 @@ exp3proteomics.analyze = function()
   #read in the whole dataset
   dataset = read.delim("data/exp3proteomics/Data_all.txt", as.is = TRUE)
   #read in NA table (make sum of NA per sample group in a seperate file)
-  na.count = read.delim("data/exp3proteomics/NA_counts.txt", as.is = TRUE)
+  na.count = data.frame(
+    Control=rowSums(is.na(dataset[grepl("Control_", colnames(dataset))])),
+    Du=rowSums(is.na(dataset[grepl("Du_", colnames(dataset))])))
 
     # define number of samples total inclusing control
   ns=2
