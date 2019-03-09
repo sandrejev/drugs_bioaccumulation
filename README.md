@@ -5,6 +5,8 @@ Dockerfile provides a recepie to reproduce our setup. A functional docker image 
 
 ~~~~
 docker pull sandrejev/drugs_bioaccumulation
+docker run -it sandrejev/drugs_bioaccumulation bash # to inspect contents of the container
+docker run -it sandrejev/drugs_bioaccumulation # To repeat the analysis
 ~~~~
 
 ## Data files
