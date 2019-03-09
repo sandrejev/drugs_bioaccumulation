@@ -1,7 +1,7 @@
 Analysis from Klünemann et al. "Bioaccumulation of therapeutic drugs by human gut bacteria" publication.
 
 ## Docker image
-Dockerfile provides a recepie to reproduce our setup. A functional docker image with newest code is also avalable from Docker cloud:
+Dockerfile provides a recepie to reproduce our setup. A functional docker image with newest code is also avalable from [Docker Cloud](https://hub.docker.com/r/sandrejev/drugs_bioaccumulation):
 
 ~~~~
 docker pull sandrejev/drugs_bioaccumulation
