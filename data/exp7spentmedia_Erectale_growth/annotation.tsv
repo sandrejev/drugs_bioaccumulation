@@ -1,0 +1,73 @@
+row	column	Annotation	species.code	Concentration	Replicate	species.long	Well	Condition
+A	1	Bt-0-a	Bt	0	a	Bacteriodes thetatiomicron	A1	spent
+B	1	Ss-0-a	Ss	0	a	Streptococcus salivarius	B1	spent
+C	1	Bt-0-a	Bt	0	a	Bacteriodes thetatiomicron	C1	conditioned
+D	1	Ss-0-a	Ss	0	a	Streptococcus salivarius	D1	conditioned
+E	1	0-0-a	Ctrl	0	a	NA	E1	conditioned
+F	1	0	Ctrl	0	NA	NA	F1	fresh
+A	2	Bt-0-b	Bt	0	b	Bacteriodes thetatiomicron	A2	spent
+B	2	Ss-0-b	Ss	0	b	Streptococcus salivarius	B2	spent
+C	2	Bt-0-b	Bt	0	b	Bacteriodes thetatiomicron	C2	conditioned
+D	2	Ss-0-b	Ss	0	b	Streptococcus salivarius	D2	conditioned
+E	2	0-0-b	Ctrl	0	b	NA	E2	conditioned
+F	2	0	Ctrl	0	NA	NA	F2	fresh
+A	3	Bt-0-c	Bt	0	c	Bacteriodes thetatiomicron	A3	spent
+B	3	Ss-0-c	Ss	0	c	Streptococcus salivarius	B3	spent
+C	3	Bt-0-c	Bt	0	c	Bacteriodes thetatiomicron	C3	conditioned
+D	3	Ss-0-c	Ss	0	c	Streptococcus salivarius	D3	conditioned
+E	3	0-0-c	Ctrl	0	c	NA	E3	conditioned
+F	3	0	Ctrl	0	NA	NA	F3	fresh
+A	4	Bt-10-a	Bt	10	a	Bacteriodes thetatiomicron	A4	spent
+B	4	Ss-10-a	Ss	10	a	Streptococcus salivarius	B4	spent
+C	4	Bt-10-a	Bt	10	a	Bacteriodes thetatiomicron	C4	conditioned
+D	4	Ss-10-a	Ss	10	a	Streptococcus salivarius	D4	conditioned
+E	4	0-10-a	Ctrl	10	a	NA	E4	conditioned
+F	4	10	Ctrl	10	NA	NA	F4	fresh
+A	5	Bt-10-b	Bt	10	b	Bacteriodes thetatiomicron	A5	spent
+B	5	Ss-10-b	Ss	10	b	Streptococcus salivarius	B5	spent
+C	5	Bt-10-b	Bt	10	b	Bacteriodes thetatiomicron	C5	conditioned
+D	5	Ss-10-b	Ss	10	b	Streptococcus salivarius	D5	conditioned
+E	5	0-10-b	Ctrl	10	b	NA	E5	conditioned
+F	5	10	Ctrl	10	NA	NA	F5	fresh
+A	6	Bt-10-c	Bt	10	c	Bacteriodes thetatiomicron	A6	spent
+B	6	Ss-10-c	Ss	10	c	Streptococcus salivarius	B6	spent
+C	6	Bt-10-c	Bt	10	c	Bacteriodes thetatiomicron	C6	conditioned
+D	6	Ss-10-c	Ss	10	c	Streptococcus salivarius	D6	conditioned
+E	6	0-10-c	Ctrl	10	c	NA	E6	conditioned
+F	6	10	Ctrl	10	NA	NA	F6	fresh
+A	7	Bt-20-a	Bt	20	a	Bacteriodes thetatiomicron	A7	spent
+B	7	Ss-20-a	Ss	20	a	Streptococcus salivarius	B7	spent
+C	7	Bt-20-a	Bt	20	a	Bacteriodes thetatiomicron	C7	conditioned
+D	7	Ss-20-a	Ss	20	a	Streptococcus salivarius	D7	conditioned
+E	7	0-20-a	Ctrl	20	a	NA	E7	conditioned
+F	7	20	Ctrl	20	NA	NA	F7	fresh
+A	8	Bt-20-b	Bt	20	b	Bacteriodes thetatiomicron	A8	spent
+B	8	Ss-20-b	Ss	20	b	Streptococcus salivarius	B8	spent
+C	8	Bt-20-b	Bt	20	b	Bacteriodes thetatiomicron	C8	conditioned
+D	8	Ss-20-b	Ss	20	b	Streptococcus salivarius	D8	conditioned
+E	8	0-20-b	Ctrl	20	b	NA	E8	conditioned
+F	8	20	Ctrl	20	NA	NA	F8	fresh
+A	9	Bt-20-c	Bt	20	c	Bacteriodes thetatiomicron	A9	spent
+B	9	Ss-20-c	Ss	20	c	Streptococcus salivarius	B9	spent
+C	9	Bt-20-c	Bt	20	c	Bacteriodes thetatiomicron	C9	conditioned
+D	9	Ss-20-c	Ss	20	c	Streptococcus salivarius	D9	conditioned
+E	9	0-20-c	Ctrl	20	c	NA	E9	conditioned
+F	9	20	Ctrl	20	NA	NA	F9	fresh
+A	10	Bt-50-a	Bt	50	a	Bacteriodes thetatiomicron	A10	spent
+B	10	Ss-50-a	Ss	50	a	Streptococcus salivarius	B10	spent
+C	10	Bt-50-a	Bt	50	a	Bacteriodes thetatiomicron	C10	conditioned
+D	10	Ss-50-a	Ss	50	a	Streptococcus salivarius	D10	conditioned
+E	10	0-50-a	Ctrl	50	a	NA	E10	conditioned
+F	10	50	Ctrl	50	NA	NA	F10	fresh
+A	11	Bt-50-b	Bt	50	b	Bacteriodes thetatiomicron	A11	spent
+B	11	Ss-50-b	Ss	50	b	Streptococcus salivarius	B11	spent
+C	11	Bt-50-b	Bt	50	b	Bacteriodes thetatiomicron	C11	conditioned
+D	11	Ss-50-b	Ss	50	b	Streptococcus salivarius	D11	conditioned
+E	11	0-50-b	Ctrl	50	b	NA	E11	conditioned
+F	11	50	Ctrl	50	NA	NA	F11	fresh
+A	12	Bt-50-c	Bt	50	c	Bacteriodes thetatiomicron	A12	spent
+B	12	Ss-50-c	Ss	50	c	Streptococcus salivarius	B12	spent
+C	12	Bt-50-c	Bt	50	c	Bacteriodes thetatiomicron	C12	conditioned
+D	12	Ss-50-c	Ss	50	c	Streptococcus salivarius	D12	conditioned
+E	12	0-50-c	Ctrl	50	c	NA	E12	conditioned
+F	12	50	Ctrl	50	NA	NA	F12	fresh
