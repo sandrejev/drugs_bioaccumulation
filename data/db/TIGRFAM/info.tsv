@@ -1,0 +1,4489 @@
+annotation	cutoff.trusted	cutoff.noise	type	ec
+TIGR00001	51.2	23.65	equivalog	
+TIGR00002	45.3	40.6	equivalog	
+TIGR00003	62	56.4	subfamily_domain	
+TIGR00004	106.25	80.8	subfamily	
+TIGR00005	192.7	136.2	subfamily	5.4.99.-
+TIGR00006	154.3	114.95	equivalog	2.1.1.199
+TIGR00007	228.95	163.05	equivalog	5.3.1.16
+TIGR00008	61.15	39.7	equivalog	
+TIGR00009	48.3	42.85	equivalog	
+TIGR00010	206	108.85	subfamily	
+TIGR00011	153.25	70.15	hypoth_equivalog	3.6.1.-
+TIGR00012	22.6	21.75	equivalog	
+TIGR00013	56.9	31.5	subfamily	5.3.2.-
+TIGR00014	106.05	61.55	equivalog	1.20.4.1
+TIGR00016	293.4	146.1	equivalog	2.7.2.1
+TIGR00017	135.55	36.35	equivalog	2.7.4.14
+TIGR00018	212.75	77.6	equivalog	6.3.2.1
+TIGR00019	423.25	330	equivalog	
+TIGR00020	383.15	337.4	equivalog	
+TIGR00021	126.4	56.35	equivalog	5.3.1.6
+TIGR00022	45.5	35.65	subfamily	
+TIGR00023	137.2	62.4	equivalog	2.3.1.-
+TIGR00024	115.2	70.2	hypoth_equivalog	3.1.-.-
+TIGR00025	146.9	58.6	paralog	
+TIGR00026	46.35	38.15	subfamily	
+TIGR00027	93.55	67.25	subfamily	2.1.1.-
+TIGR00028	73.6	73.45	subfamily	
+TIGR00029	52.9	39.2	equivalog	
+TIGR00030	28.95	24.5	equivalog	
+TIGR00031	303.75	188.3	equivalog	5.4.99.9
+TIGR00032	268.2	168.65	equivalog	6.3.4.5
+TIGR00033	212.2	131.1	equivalog	4.2.3.5
+TIGR00034	173.2	18.9	equivalog	2.5.1.54
+TIGR00035	93.1	88.7	subfamily	5.1.1.13
+TIGR00036	122	80.7	equivalog	1.17.1.8
+TIGR00037	75.45	69.8	equivalog	
+TIGR00038	185.8	136.65	equivalog	
+TIGR00039	125.5	57.25	subfamily	
+TIGR00040	56.25	40.05	subfamily	3.1.-.-
+TIGR00041	83.25	76.7	equivalog	2.7.4.9
+TIGR00042	145.35	55.9	equivalog	3.6.1.-
+TIGR00043	42.05	38.05	equivalog	
+TIGR00044	106.25	98.5	hypoth_equivalog	
+TIGR00045	168.45	152.85	subfamily	2.7.1.31
+TIGR00046	41	31.05	subfamily	2.1.1.-
+TIGR00048	290	285	equivalog	2.1.1.192
+TIGR00049	58.8	45.6	subfamily	
+TIGR00050	167.15	89.4	subfamily	2.1.1.-
+TIGR00051	68.7	34.4	subfamily	
+TIGR00052	79.55	64.1	subfamily	3.6.1.-
+TIGR00053	87.25	52.65	subfamily	
+TIGR00054	147.55	70	equivalog	3.4.24.-
+TIGR00055	109.55	25.1	equivalog	2.5.1.31
+TIGR00056	212.2	101	subfamily	
+TIGR00057	123.2	75.45	equivalog	
+TIGR00058	131.85	70.8	subfamily	
+TIGR00059	70.05	57.15	equivalog	
+TIGR00060	87.85	56.45	equivalog	
+TIGR00061	43.7	38.75	equivalog	
+TIGR00062	90.35	46.5	equivalog	
+TIGR00063	181.6	100.9	equivalog	3.5.4.16
+TIGR00064	260.7	246.3	equivalog	
+TIGR00065	295.2	197.75	equivalog	
+TIGR00066	357.85	182.7	equivalog	2.3.2.2
+TIGR00067	146.65	78.55	equivalog	5.1.1.3
+TIGR00068	122.45	61.3	equivalog	4.4.1.5
+TIGR00069	243.8	212.5	equivalog_domain	1.1.1.23
+TIGR00070	75.75	61.55	equivalog	2.4.2.17
+TIGR00071	142.85	31.35	equivalog	5.4.99.12
+TIGR00072	47.45	36.95	superfamily	
+TIGR00073	121.2	85.4	equivalog	
+TIGR00074	48	39.5	equivalog	
+TIGR00075	192.8	28.85	equivalog	
+TIGR00077	73.95	67.15	equivalog	3.4.23.36
+TIGR00078	198.4	150.9	equivalog	2.4.2.19
+TIGR00079	103.95	74.15	equivalog	3.5.1.88
+TIGR00080	159.05	79.2	equivalog	2.1.1.77
+TIGR00081	189.9	36.9	equivalog	6.3.2.6
+TIGR00082	51.15	40.6	equivalog	
+TIGR00083	184.35	95.15	equivalog	2.7.1.26 2.7.7.2
+TIGR00084	116.45	81.5	equivalog	3.6.4.12
+TIGR00086	119.1	82.35	equivalog	
+TIGR00087	135.1	33.2	equivalog	3.1.3.5 3.1.3.6
+TIGR00088	195	29.35	equivalog	2.1.1.228
+TIGR00089	251	185.4	subfamily	2.1.1.- 2.8.1.-
+TIGR00090	56.9	52.95	equivalog	
+TIGR00091	112.65	82.65	equivalog	2.1.1.33
+TIGR00092	279.2	203.55	hypoth_equivalog	
+TIGR00093	109.3	46.4	subfamily	5.4.99.-
+TIGR00094	172.2	60.85	subfamily	5.4.99.-
+TIGR00095	117.5	67.9	equivalog	2.1.1.171
+TIGR00096	167.9	84.9	equivalog	2.1.1.198
+TIGR00097	204.95	79.35	equivalog_domain	2.7.1.49 2.7.4.7
+TIGR00099	137	100.65	subfamily	
+TIGR00100	88.1	56.8	equivalog	
+TIGR00101	204.2	74.2	equivalog	
+TIGR00103	49.45	47.85	equivalog	
+TIGR00104	93.25	75.4	equivalog	2.1.1.-
+TIGR00105	38.35	25.35	equivalog	
+TIGR00106	54.7	48.1	hypoth_equivalog	
+TIGR00107	232.25	106.4	equivalog	2.4.2.1
+TIGR00109	124.6	114.2	equivalog	4.99.1.1
+TIGR00110	618.15	339.1	equivalog	4.2.1.9
+TIGR00111	177.65	128.2	equivalog	
+TIGR00112	196.75	89.05	equivalog	1.5.1.2
+TIGR00113	267.45	158	equivalog	2.4.99.17
+TIGR00114	84.6	77.65	equivalog	2.5.1.78
+TIGR00115	180.2	154.5	equivalog	5.2.1.8
+TIGR00116	104.05	93.7	equivalog	
+TIGR00117	1287.2	372.35	equivalog	4.2.1.3
+TIGR00118	538.35	489	equivalog	2.2.1.6
+TIGR00119	56.9	38.2	equivalog	2.2.1.6
+TIGR00120	298	203.55	equivalog	2.3.1.35 2.3.1.1
+TIGR00121	83.1	76.45	equivalog_domain	6.3.4.15
+TIGR00122	70	39.75	equivalog_domain	
+TIGR00123	184.15	39.85	equivalog	
+TIGR00124	262.1	183.85	equivalog	6.2.1.22
+TIGR00125	27.7	27.5	domain	
+TIGR00126	117.3	39.35	equivalog	4.1.2.4
+TIGR00127	397.15	103.45	equivalog	1.1.1.42
+TIGR00128	260.9	209.6	equivalog	2.3.1.39
+TIGR00129	140.9	33.65	equivalog	
+TIGR00130	134.95	134.85	equivalog	
+TIGR00131	226.65	185	equivalog	2.7.1.6
+TIGR00132	481.1	399.35	equivalog	6.3.5.-
+TIGR00133	314.8	199.15	equivalog	6.3.5.-
+TIGR00134	319.55	223.4	equivalog	6.3.5.-
+TIGR00135	47.1	29.35	equivalog	6.3.5.-
+TIGR00136	524.85	97	equivalog	
+TIGR00137	428.65	82.85	equivalog	2.1.1.74
+TIGR00138	99.5	75.9	equivalog	2.1.1.170
+TIGR00139	529.9	315.3	equivalog	4.2.1.36
+TIGR00140	151.8	103.1	equivalog	3.4.23.-
+TIGR00142	119.1	91.15	equivalog	3.4.23.-
+TIGR00143	466.1	359.8	equivalog	
+TIGR00144	113.5	44.7	subfamily	
+TIGR00145	303.8	43.6	subfamily	
+TIGR00147	118.65	102.3	subfamily	2.7.1.-
+TIGR00148	244.85	15.9	subfamily	4.1.1.-
+TIGR00149	67.75	48.95	hypoth_equivalog	
+TIGR00150	60.1	46.45	equivalog	
+TIGR00151	116.45	42.35	equivalog_domain	4.6.1.12
+TIGR00152	65.55	62.35	equivalog	2.7.1.24
+TIGR00153	104.3	43.9	hypoth_equivalog	
+TIGR00154	138.7	105.2	equivalog	2.7.1.148
+TIGR00155	260.35	214.55	subfamily	
+TIGR00156	108.15	34.45	hypoth_equivalog	
+TIGR00157	100	60	equivalog	3.6.-.-
+TIGR00158	58.6	26.05	equivalog	
+TIGR00159	188.8	143.5	hypoth_equivalog	
+TIGR00160	146.9	71.55	equivalog	4.2.3.3
+TIGR00161	199.25	117.35	hypoth_equivalog	
+TIGR00162	200	130	hypoth_equivalog	
+TIGR00163	111.75	53.25	equivalog	4.1.1.65
+TIGR00164	144.75	56.85	hypoth_equivalog	
+TIGR00165	38.75	17.85	equivalog	
+TIGR00166	42.9	20.5	equivalog	
+TIGR00167	215.6	137.5	subfamily	
+TIGR00168	69.25	57.9	equivalog	
+TIGR00169	353.2	253.75	equivalog	1.1.1.85
+TIGR00170	560.25	226.8	equivalog_domain	4.2.1.33
+TIGR00171	116.25	81.9	equivalog_domain	4.2.1.33
+TIGR00172	117.15	85.65	equivalog	
+TIGR00173	244.2	183.05	equivalog	2.2.1.9
+TIGR00174	148.65	112.65	equivalog	2.5.1.75
+TIGR00175	432.4	323.75	equivalog	1.1.1.41
+TIGR00176	76.2	33.25	equivalog	
+TIGR00177	85.35	56.3	domain	
+TIGR00178	950	100	equivalog	1.1.1.42
+TIGR00179	144.5	31.5	equivalog	1.3.1.98
+TIGR00180	58.45	39.8	domain	
+TIGR00181	490.55	382.1	equivalog	3.4.24.-
+TIGR00182	243.4	177.85	equivalog	
+TIGR00183	567.3	219.05	equivalog	1.1.1.42
+TIGR00184	395.55	59.25	equivalog	6.3.4.4
+TIGR00185	190.6	88.85	equivalog	2.1.1.207
+TIGR00186	160.15	149.1	hypoth_equivalog	
+TIGR00187	156.6	116.95	equivalog	2.5.1.9
+TIGR00188	38.35	16.85	equivalog	3.1.26.5
+TIGR00189	292.85	45.3	equivalog	3.1.2.-
+TIGR00190	460	75	equivalog	4.1.99.17
+TIGR00191	168.25	161.15	equivalog	2.7.1.39
+TIGR00192	90.3	40.65	equivalog_domain	3.5.1.5
+TIGR00193	82.3	31.45	equivalog_domain	3.5.1.5
+TIGR00194	285.45	266.1	equivalog	3.1.25.-
+TIGR00195	182.55	83.2	equivalog	3.1.11.2
+TIGR00196	129.85	97.7	hypoth_equivalog_domain	
+TIGR00197	88.6	64.35	hypoth_equivalog_domain	
+TIGR00198	770.25	427.7	equivalog	1.11.1.6
+TIGR00199	68.9	48.95	subfamily_domain	3.5.-.-
+TIGR00200	243.15	194.15	domain	
+TIGR00201	233.55	66.4	subfamily	
+TIGR00202	70.1	31.1	equivalog	
+TIGR00203	117.3	88.55	equivalog	1.10.3.-
+TIGR00204	465.95	222.45	equivalog	2.2.1.7
+TIGR00205	48.1	33	equivalog	
+TIGR00206	129.75	128.65	equivalog	
+TIGR00207	226.7	159.7	equivalog	
+TIGR00208	53.75	32.6	equivalog	
+TIGR00209	102.1	89.25	equivalog	2.7.7.10
+TIGR00210	310.75	19.6	equivalog	
+TIGR00211	321.95	296.9	equivalog_domain	6.1.1.14
+TIGR00212	164	127.1	equivalog	2.5.1.61
+TIGR00213	149.6	93	subfamily	
+TIGR00214	83.55	64.65	equivalog	2.3.1.181
+TIGR00215	190.25	176.15	equivalog	2.4.1.182
+TIGR00216	187.85	103.6	equivalog	1.17.1.2
+TIGR00217	205.65	155.4	equivalog	2.4.1.25
+TIGR00218	116.2	59.15	equivalog	5.3.1.8
+TIGR00219	92.75	64.55	equivalog	
+TIGR00220	71	43.3	equivalog	
+TIGR00221	225.65	167.2	equivalog	3.5.1.25
+TIGR00222	207.55	96.9	equivalog	2.1.2.11
+TIGR00223	106	83.7	equivalog	4.1.1.11
+TIGR00224	590.05	290.7	equivalog	4.1.1.49
+TIGR00225	218.6	98.15	subfamily	3.4.21.-
+TIGR00227	150.15	82.35	domain	3.5.4.-
+TIGR00228	100.65	47.5	equivalog	3.1.22.4
+TIGR00229	22.9	22.1	domain	
+TIGR00230	126.45	86	equivalog	
+TIGR00231	42.5	35.2	domain	
+TIGR00232	682.25	621.15	equivalog	2.2.1.1
+TIGR00233	176.75	139.15	equivalog	6.1.1.2
+TIGR00234	113.8	82.25	equivalog	6.1.1.1
+TIGR00235	220.3	173.45	equivalog	2.7.1.48
+TIGR00236	210.15	69.95	equivalog	5.1.3.14
+TIGR00237	180	100	equivalog	3.1.11.6
+TIGR00238	199.2	115.45	subfamily	
+TIGR00239	770	618.85	equivalog	1.2.4.2
+TIGR00240	148.55	68.1	equivalog	2.1.3.2
+TIGR00241	125.4	107.95	domain	
+TIGR00242	98.35	46.1	equivalog	
+TIGR00243	315.7	224.55	equivalog	1.1.1.267
+TIGR00244	124.65	86.7	equivalog	
+TIGR00245	164.8	87.75	hypoth_equivalog	
+TIGR00246	149.7	49.1	equivalog	2.1.1.177
+TIGR00247	103.4	93.65	hypoth_equivalog	
+TIGR00249	74.5	54.4	equivalog	3.1.3.-
+TIGR00250	43.25	38.45	hypoth_equivalog	
+TIGR00251	53.5	33.5	hypoth_equivalog	
+TIGR00252	69.05	57.4	hypoth_equivalog	
+TIGR00253	78.5	51.5	hypoth_equivalog	
+TIGR00254	37.4	33.3	domain	
+TIGR00255	167.5	44.05	hypoth_equivalog	
+TIGR00256	101.5	57.15	equivalog	3.6.1.-
+TIGR00257	167.95	117.35	hypoth_equivalog	
+TIGR00258	117.1	69.15	hypoth_equivalog	
+TIGR00259	153.4	106.15	subfamily	
+TIGR00260	167.1	108	equivalog	4.2.3.1
+TIGR00261	178.35	145.1	subfamily	
+TIGR00262	102.35	100.35	equivalog	4.2.1.20
+TIGR00263	392.45	220.75	equivalog	4.2.1.20
+TIGR00264	98.75	62.95	hypoth_equivalog	
+TIGR00266	96.6	86.8	hypoth_equivalog	
+TIGR00267	156.95	32.05	hypoth_equivalog	
+TIGR00268	166.5	104.75	hypoth_equivalog	
+TIGR00269	62.75	42.05	hypoth_equivalog	
+TIGR00270	60.35	46.5	hypoth_equivalog	
+TIGR00271	146.5	66.65	domain	
+TIGR00272	184.05	146.75	equivalog	
+TIGR00273	444.8	254.85	equivalog	
+TIGR00274	302	160.45	equivalog	4.2.1.126
+TIGR00275	183.8	130.6	subfamily	
+TIGR00276	200	195	equivalog	1.-.-.-
+TIGR00277	27.6	27.5	domain	
+TIGR00278	57.25	44.5	equivalog	
+TIGR00279	223.55	101.7	equivalog	
+TIGR00280	95.8	65.7	equivalog	
+TIGR00281	89.2	65.1	equivalog	
+TIGR00282	254.15	147.4	hypoth_equivalog	
+TIGR00283	82	47.65	equivalog	3.1.1.29
+TIGR00284	256.65	102.6	hypoth_equivalog	
+TIGR00285	88.25	26.25	equivalog	
+TIGR00286	106.95	43.5	equivalog	4.1.1.19
+TIGR00287	71.7	66	equivalog	3.1.-.-
+TIGR00288	178.45	28.1	hypoth_equivalog	
+TIGR00289	249.5	126.35	hypoth_equivalog	
+TIGR00290	114.6	69.35	domain	
+TIGR00291	126.55	104.45	equivalog	
+TIGR00292	148.3	114.85	equivalog	
+TIGR00293	53.9	43	equivalog	
+TIGR00294	100.35	96.1	hypoth_equivalog	3.5.4.-
+TIGR00295	172.35	87.15	hypoth_equivalog	
+TIGR00296	91.05	61.7	hypoth_equivalog	
+TIGR00297	205.85	60.15	hypoth_equivalog	
+TIGR00298	175.05	119.7	equivalog	3.1.3.71
+TIGR00299	242.7	183.6	hypoth_equivalog	
+TIGR00300	410.8	229.5	hypoth_equivalog	
+TIGR00302	39	37.5	equivalog	
+TIGR00303	229.95	175.85	hypoth_equivalog	
+TIGR00304	62.65	29.75	hypoth_equivalog	
+TIGR00305	29.15	28.85	equivalog	
+TIGR00306	264.5	95.5	subfamily	5.4.2.12
+TIGR00307	78.25	73.8	equivalog	
+TIGR00308	280.65	153.9	equivalog	2.1.1.-
+TIGR00309	72.25	60.25	subfamily	3.6.3.14
+TIGR00310	78.3	74.55	domain	
+TIGR00311	137.65	73.1	hypoth_equivalog	
+TIGR00312	166.9	108.35	equivalog	
+TIGR00313	309.9	237.2	equivalog	6.3.5.10
+TIGR00314	781.3	384	equivalog	1.2.99.2
+TIGR00315	101.2	56.4	equivalog	1.2.99.2
+TIGR00316	355.95	355.55	equivalog	1.2.99.2 2.3.1.169
+TIGR00317	110	87.1	equivalog	2.7.8.26
+TIGR00318	57.95	31.4	hypoth_equivalog	
+TIGR00319	36.05	24.1	domain	
+TIGR00320	146.9	57.1	equivalog	
+TIGR00321	304.25	79.75	equivalog	2.5.1.46
+TIGR00322	35	25	domain	
+TIGR00323	137.75	123.3	hypoth_equivalog	
+TIGR00324	59.6	47.6	equivalog	4.6.1.16
+TIGR00325	187.25	155	equivalog	3.5.1.-
+TIGR00326	156.35	152.8	equivalog	3.5.4.26 1.1.1.193
+TIGR00327	36.2	34.5	equivalog	
+TIGR00328	349.25	332.2	equivalog	
+TIGR00329	207.8	124.95	subfamily	
+TIGR00330	259.3	213.35	equivalog	3.1.3.11
+TIGR00331	197.2	119.75	equivalog	
+TIGR00332	61.9	36.75	domain	
+TIGR00333	74.65	53.6	equivalog	
+TIGR00334	110.65	61.85	equivalog	3.1.26.8
+TIGR00335	143.5	81.1	equivalog	
+TIGR00336	106.8	69.65	equivalog_domain	2.4.2.10
+TIGR00337	462.75	289.55	equivalog	6.3.4.2
+TIGR00338	144.15	105	equivalog	3.1.3.3
+TIGR00339	322.95	181.8	equivalog_domain	2.7.7.4
+TIGR00340	117.95	93.25	hypoth_equivalog	
+TIGR00341	94.75	92.3	hypoth_equivalog	
+TIGR00342	264.5	166.1	equivalog_domain	2.8.1.4
+TIGR00343	438.45	152.25	equivalog	
+TIGR00344	457.05	420	equivalog	6.1.1.7
+TIGR00345	135	120	subfamily	3.6.1.-
+TIGR00346	332.35	49.7	equivalog	
+TIGR00347	83.3	56.05	equivalog	6.3.3.3
+TIGR00348	284.55	213.45	subfamily	3.1.21.3
+TIGR00350	62.3	49.25	domain	
+TIGR00351	105.55	62.1	equivalog	1.7.99.4
+TIGR00353	569.05	173.8	equivalog	
+TIGR00354	702.15	544.3	equivalog	2.7.7.7
+TIGR00355	528	462.65	equivalog	2.1.2.3 3.5.4.10
+TIGR00357	113.05	84.2	equivalog_domain	1.8.4.-
+TIGR00358	368.6	139	superfamily	3.1.13.1
+TIGR00359	434.45	297.7	equivalog	2.7.1.69
+TIGR00360	36.5	36.5	subfamily_domain	
+TIGR00361	190.05	164.2	equivalog	
+TIGR00362	343.9	184.65	equivalog	
+TIGR00363	228.85	90.4	subfamily	
+TIGR00364	150.3	86.2	equivalog	
+TIGR00365	117.1	85.7	equivalog	
+TIGR00366	575.75	215.8	hypoth_equivalog	
+TIGR00367	179.65	150.3	hypoth_equivalog	
+TIGR00368	362.4	271.7	hypoth_equivalog	
+TIGR00369	36.6	29.3	domain	
+TIGR00370	145.55	74.75	hypoth_equivalog	
+TIGR00372	65	59.9	equivalog	
+TIGR00373	149.5	61.7	equivalog	
+TIGR00374	43.2	33.6	superfamily	
+TIGR00375	326.6	110.4	hypoth_equivalog	
+TIGR00376	348.9	276.05	hypoth_equivalog	3.6.4.12
+TIGR00377	53.45	27.2	superfamily	
+TIGR00378	211.15	37.3	equivalog	
+TIGR00379	261.4	152.4	equivalog	6.3.1.-
+TIGR00380	165.9	148.2	equivalog	6.3.1.10
+TIGR00381	252.9	197.55	equivalog	1.2.99.2
+TIGR00382	370.75	178.75	equivalog	
+TIGR00383	200.75	127.55	equivalog	
+TIGR00384	88	78.25	subfamily	
+TIGR00385	123.15	82	subfamily	
+TIGR00387	567.9	311.85	equivalog	
+TIGR00388	361.45	191.45	equivalog_domain	6.1.1.14
+TIGR00389	243.3	190.9	equivalog	6.1.1.14
+TIGR00390	362.45	225.25	equivalog	
+TIGR00391	179.5	91	superfamily	
+TIGR00392	621.4	560	equivalog	6.1.1.5
+TIGR00393	203.7	137.15	subfamily	
+TIGR00394	614.4	388.15	equivalog_domain	2.7.1.69
+TIGR00395	648.5	373.75	equivalog	6.1.1.4
+TIGR00396	548.4	335.3	equivalog	6.1.1.4
+TIGR00397	178.85	83.15	subfamily	
+TIGR00398	336.35	216.4	equivalog_domain	6.1.1.10
+TIGR00399	116.65	64.45	equivalog_domain	6.1.1.10
+TIGR00400	232.75	179.75	equivalog	
+TIGR00401	108.1	71.15	equivalog_domain	1.8.4.11
+TIGR00402	102.2	59.85	equivalog	
+TIGR00403	302.35	168.65	equivalog	1.6.5.3
+TIGR00405	69.95	49.85	equivalog	
+TIGR00406	183.15	112.05	equivalog	2.1.1.-
+TIGR00407	317.45	240.45	equivalog_domain	1.2.1.41
+TIGR00408	437	251.35	equivalog	6.1.1.15
+TIGR00409	306.7	253.65	equivalog	6.1.1.15
+TIGR00410	236	95.6	subfamily	2.7.1.69
+TIGR00411	92.75	64.7	hypoth_equivalog	
+TIGR00412	73.5	55.6	hypoth_equivalog	
+TIGR00413	82.15	38.55	subfamily	
+TIGR00414	301.65	225.6	equivalog	6.1.1.11
+TIGR00415	489.55	166.6	equivalog	6.1.1.11
+TIGR00416	403.05	297.4	equivalog	
+TIGR00417	249.55	147.4	equivalog	2.5.1.16
+TIGR00418	383.65	288.75	equivalog	6.1.1.3
+TIGR00419	130.6	113.5	equivalog	5.3.1.1
+TIGR00420	236.95	185.85	equivalog	2.1.1.61
+TIGR00421	108.9	69.3	subfamily	4.1.1.-
+TIGR00422	612.1	581.35	equivalog	6.1.1.9
+TIGR00423	260.25	188.9	subfamily	
+TIGR00424	553.2	347.35	equivalog	
+TIGR00425	238.15	169.6	hypoth_equivalog	5.4.99.-
+TIGR00426	53.1	34.5	subfamily_domain	
+TIGR00427	99.2	86.75	hypoth_equivalog	
+TIGR00430	306.75	213.65	equivalog	2.4.2.29
+TIGR00431	151.45	58.1	equivalog	5.4.99.25
+TIGR00432	350	200	equivalog	2.4.2.48
+TIGR00433	230	210	equivalog	2.8.1.6
+TIGR00434	165.1	95.95	subfamily	1.8.4.8
+TIGR00435	340	266.85	equivalog	6.1.1.16
+TIGR00436	116.25	95.25	equivalog	
+TIGR00437	315.65	246.65	equivalog	
+TIGR00438	300.15	117	equivalog	2.1.1.166
+TIGR00439	402.25	234.6	equivalog	
+TIGR00440	425.8	343	equivalog	6.1.1.18
+TIGR00441	209.45	176.2	equivalog	5.3.1.28
+TIGR00442	286.75	246.9	equivalog	6.1.1.21
+TIGR00443	271.65	251.6	equivalog	
+TIGR00444	148.3	130.45	subfamily	
+TIGR00445	192.05	169.5	equivalog	2.7.8.13
+TIGR00446	210.45	190.2	subfamily_domain	2.1.1.-
+TIGR00447	143.15	87.2	equivalog	3.1.1.29
+TIGR00448	124.2	107.75	equivalog	2.7.7.6
+TIGR00449	47.6	22.35	superfamily	2.4.2.-
+TIGR00450	252.6	200.7	equivalog	3.6.-.-
+TIGR00451	27	26	domain	
+TIGR00452	275	150	equivalog	2.1.1.-
+TIGR00453	181.3	87.2	equivalog_domain	2.7.7.60
+TIGR00454	174.7	115.85	hypoth_equivalog	
+TIGR00455	138.7	133.35	equivalog_domain	2.7.1.25
+TIGR00456	261.65	193.5	equivalog	6.1.1.19
+TIGR00457	342.6	307.25	equivalog	6.1.1.22
+TIGR00458	368.4	357.25	equivalog	6.1.1.23
+TIGR00459	373.85	317.5	equivalog	6.1.1.-
+TIGR00460	201.5	178.75	equivalog	2.1.2.9
+TIGR00461	859.2	664.7	equivalog	1.4.4.2
+TIGR00462	286.9	279.15	equivalog	
+TIGR00463	401.75	384.75	equivalog	6.1.1.17
+TIGR00464	289.95	260.6	equivalog	6.1.1.17
+TIGR00465	226.15	185	equivalog	1.1.1.86
+TIGR00466	155.2	113.75	equivalog	2.7.7.38
+TIGR00467	147.55	134.15	equivalog	6.1.1.6
+TIGR00468	237.45	190.65	equivalog	6.1.1.20
+TIGR00469	258.35	157.15	equivalog	6.1.1.20
+TIGR00470	380.65	307.85	equivalog	6.1.1.27
+TIGR00471	282.65	252.4	equivalog	6.1.1.20
+TIGR00472	402.65	302.8	equivalog	6.1.1.20
+TIGR00473	107	84	equivalog	2.7.8.8
+TIGR00474	267.9	239.95	equivalog	2.9.1.1
+TIGR00475	242.25	229	equivalog	
+TIGR00476	125	120	equivalog	2.7.9.3
+TIGR00477	219.5	142.1	equivalog	
+TIGR00478	185.8	118.6	subfamily	
+TIGR00479	183.55	159.95	equivalog	2.1.1.-
+TIGR00481	57.75	51	hypoth_equivalog	
+TIGR00482	112.45	63.85	equivalog	2.7.7.18
+TIGR00483	540.1	401.1	equivalog	
+TIGR00484	659.4	215.15	equivalog	
+TIGR00485	522.4	135.3	equivalog	
+TIGR00486	130.55	107.15	hypoth_equivalog	
+TIGR00487	424.4	354.6	equivalog	
+TIGR00488	70.15	62	hypoth_equivalog	
+TIGR00489	61.2	41.45	equivalog	
+TIGR00490	738.45	346.65	equivalog	
+TIGR00491	554.75	393.05	equivalog	
+TIGR00492	168	129.9	equivalog	5.1.1.1
+TIGR00493	308.6	59.2	equivalog	3.4.21.92
+TIGR00494	80.45	50.6	hypoth_equivalog	
+TIGR00495	430.05	215.85	hypoth_equivalog	
+TIGR00496	149.1	93.4	equivalog	
+TIGR00497	242.75	139.2	equivalog	2.1.1.72
+TIGR00498	110.95	96	equivalog	3.4.21.88
+TIGR00499	427.6	334.35	equivalog	6.1.1.6
+TIGR00500	171.35	130.85	equivalog	3.4.11.18
+TIGR00501	222.65	184.6	equivalog	3.4.11.18
+TIGR00502	236.9	130.85	equivalog	3.5.99.6
+TIGR00503	466.95	327.25	equivalog	
+TIGR00504	201.75	113.65	equivalog	3.4.19.3
+TIGR00505	205.85	98.5	equivalog_domain	3.5.4.25
+TIGR00506	177.45	102.1	equivalog_domain	4.1.99.12
+TIGR00507	200.2	124.5	equivalog_domain	1.1.1.25
+TIGR00508	405	395	equivalog	2.6.1.62
+TIGR00509	1017.55	232.15	subfamily	
+TIGR00510	310.25	187.3	equivalog	2.8.1.8
+TIGR00511	314.1	246.1	equivalog	5.3.1.-
+TIGR00512	279	234.35	equivalog	5.3.1.23
+TIGR00513	319.3	171.15	equivalog	6.4.1.2
+TIGR00514	626.5	550.45	equivalog	6.3.4.14
+TIGR00515	317.45	177	equivalog	6.4.1.2
+TIGR00516	59.8	35.25	equivalog_domain	2.7.8.7
+TIGR00517	70.45	26.4	equivalog	
+TIGR00518	391.85	173.55	equivalog	1.4.1.1
+TIGR00519	260.5	190.1	subfamily	3.5.1.1
+TIGR00520	314.3	211.35	subfamily	3.5.1.1
+TIGR00521	219.7	211.1	equivalog	4.1.1.36 6.3.2.5
+TIGR00522	114.3	113.75	equivalog	2.1.1.98
+TIGR00523	102.9	30.95	equivalog	
+TIGR00524	185.85	142.6	subfamily	
+TIGR00525	72.15	23.4	equivalog	4.1.2.25
+TIGR00526	45.05	35.65	domain	
+TIGR00527	115.85	96.9	equivalog	
+TIGR00528	235.85	176.05	equivalog	2.1.2.10
+TIGR00529	378.4	108.15	hypoth_equivalog	
+TIGR00530	102.95	44.3	subfamily_domain	2.3.1.51
+TIGR00531	115.2	92.85	equivalog	
+TIGR00532	259.95	71.45	equivalog	1.1.1.88
+TIGR00533	441.8	204.7	equivalog_domain	1.1.1.34
+TIGR00534	256.25	93.75	equivalog	
+TIGR00535	233.15	127.3	equivalog	4.1.1.50
+TIGR00536	115.5	73.45	subfamily	
+TIGR00537	87	78.1	hypoth_equivalog	
+TIGR00538	324.95	261.65	equivalog	1.3.99.22
+TIGR00539	205.4	179.65	hypoth_equivalog	1.3.99.22
+TIGR00540	142	138	hypoth_equivalog	
+TIGR00541	346.65	200.5	equivalog	4.1.1.22
+TIGR00542	272.15	188.5	hypoth_equivalog	
+TIGR00543	224.75	214.35	subfamily	5.4.4.2
+TIGR00544	118.9	76.8	equivalog	2.4.99.-
+TIGR00545	201.85	117.1	subfamily	
+TIGR00546	132.9	87.05	equivalog	2.3.1.-
+TIGR00547	48.6	33.95	equivalog	
+TIGR00548	59.6	54.35	equivalog	
+TIGR00549	163.05	139.4	equivalog	2.7.1.36
+TIGR00550	262.9	106.85	equivalog	2.5.1.72
+TIGR00551	452.75	425.6	equivalog	1.4.3.16
+TIGR00552	63.65	57.5	equivalog_domain	6.3.1.5
+TIGR00553	328.4	327.2	equivalog	2.6.1.85
+TIGR00554	306.2	185.7	equivalog	2.7.1.33
+TIGR00555	247.6	82.75	equivalog	2.7.1.33
+TIGR00556	45.35	32	domain	
+TIGR00557	290.35	252.75	equivalog	1.1.1.262
+TIGR00558	150.1	128.85	equivalog	1.4.3.5
+TIGR00559	192.75	154.25	equivalog	2.6.99.2
+TIGR00560	109.1	72.3	equivalog	2.7.8.5
+TIGR00561	444.4	258.6	equivalog	1.6.1.2
+TIGR00562	97.85	73.05	equivalog	1.3.3.4
+TIGR00563	269.05	188	equivalog	2.1.1.176
+TIGR00564	517.7	516.2	equivalog	4.1.3.27
+TIGR00565	494.65	341.1	equivalog	4.1.3.27
+TIGR00566	121.05	95.25	subfamily	
+TIGR00567	116.35	75.8	subfamily	3.2.2.-
+TIGR00568	231.05	70.85	equivalog	
+TIGR00569	250.35	103.9	subfamily	
+TIGR00570	160.2	150.65	equivalog	
+TIGR00571	114.85	91.7	subfamily	2.1.1.72
+TIGR00573	71.5	67.4	subfamily_domain	2.7.7.7
+TIGR00574	217.8	171.15	superfamily	6.5.1.1
+TIGR00575	444.45	277.2	equivalog	6.5.1.2
+TIGR00576	102.55	66.3	superfamily	3.6.1.23
+TIGR00577	203.3	105.1	equivalog	3.2.2.23
+TIGR00578	194.25	154.65	superfamily	
+TIGR00580	819.85	533	equivalog	3.6.1.-
+TIGR00581	141.5	71.45	equivalog	
+TIGR00583	434.6	203.25	equivalog	
+TIGR00584	402.6	41.55	subfamily	3.2.2.-
+TIGR00585	253.25	133.15	superfamily	
+TIGR00586	97.9	43.8	subfamily	3.6.1.-
+TIGR00587	129.65	112.5	subfamily	
+TIGR00588	397.85	128	subfamily	3.2.2.-
+TIGR00589	46.4	42.95	superfamily	2.1.1.63
+TIGR00590	99.1	73.05	equivalog	
+TIGR00591	550.05	251.5	superfamily	4.1.99.3
+TIGR00592	239.95	195.6	superfamily	2.7.7.7
+TIGR00593	600	438.9	equivalog	2.7.7.7
+TIGR00594	434.35	379.7	superfamily	2.7.7.7
+TIGR00595	230.35	95.85	equivalog	3.6.1.-
+TIGR00596	806.65	346.1	subfamily	
+TIGR00597	72.9	45.7	subfamily	
+TIGR00598	113.15	66.65	equivalog	
+TIGR00599	175.05	89.6	equivalog	
+TIGR00600	1204.4	316.45	subfamily	
+TIGR00601	207.3	129.1	equivalog	
+TIGR00602	482.55	184.5	subfamily	
+TIGR00603	328.7	303.8	subfamily	3.6.4.12
+TIGR00604	246.95	201.8	subfamily	3.6.4.-
+TIGR00605	697.5	374	subfamily	
+TIGR00606	453.75	328.35	subfamily	
+TIGR00607	224.8	65.05	subfamily	
+TIGR00608	133.85	105.1	superfamily	
+TIGR00609	696.05	432.1	equivalog	3.1.11.5
+TIGR00611	159.45	154.15	subfamily	
+TIGR00612	280.25	159.6	equivalog	1.17.7.1
+TIGR00613	48.7	40.3	equivalog	
+TIGR00614	219.8	182	subfamily	3.6.4.12
+TIGR00615	162.55	113.3	equivalog	
+TIGR00616	52.65	50.5	subfamily	
+TIGR00617	334.2	271.45	subfamily	
+TIGR00618	478.5	144.7	subfamily	
+TIGR00619	77.65	67.25	subfamily	
+TIGR00621	53.95	51.5	subfamily	
+TIGR00622	45.1	35.45	subfamily	
+TIGR00623	269.45	65.45	subfamily	
+TIGR00624	232.5	90.4	subfamily	3.2.2.20
+TIGR00625	320.7	228.35	subfamily	
+TIGR00627	355.05	97.5	subfamily	
+TIGR00628	185.75	109.05	equivalog	3.2.2.27
+TIGR00629	124.45	118.7	equivalog	3.-.-.-
+TIGR00630	729.8	289.8	equivalog	3.1.25.-
+TIGR00631	750.1	402.55	equivalog	3.1.25.-
+TIGR00632	97.85	44.85	subfamily	3.1.-.-
+TIGR00633	99.05	82.15	subfamily	3.1.11.2
+TIGR00634	407.85	207.65	equivalog	
+TIGR00635	299.05	191.3	equivalog	3.6.4.12
+TIGR00636	108.45	53.9	equivalog_domain	2.5.1.17
+TIGR00637	98.5	22.2	subfamily_domain	
+TIGR00638	55	28.55	subfamily_domain	
+TIGR00639	150.1	127	equivalog	2.1.2.2
+TIGR00640	57.45	27	subfamily_domain	
+TIGR00641	303.8	136.05	subfamily_domain	5.4.99.-
+TIGR00642	617.25	284.3	equivalog	5.4.99.2
+TIGR00643	659.4	407.35	equivalog	3.6.4.12
+TIGR00644	396.9	230.05	equivalog	3.1.-.-
+TIGR00645	144.4	34.85	hypoth_equivalog	
+TIGR00646	260.65	260.5	hypoth_equivalog	
+TIGR00647	44.1	38.25	equivalog	
+TIGR00648	176.75	34.95	equivalog	3.1.-.-
+TIGR00649	400	250	subfamily	3.1.-.-
+TIGR00651	311.2	205.4	equivalog	2.3.1.8
+TIGR00652	114.65	32	equivalog	5.1.1.7
+TIGR00653	429.15	324.75	equivalog	6.3.1.2
+TIGR00654	76.2	38.35	subfamily	
+TIGR00655	285.95	170.6	equivalog	3.5.1.10
+TIGR00656	402.25	355.2	equivalog	2.7.2.4
+TIGR00657	208.7	91.15	subfamily_domain	2.7.2.4
+TIGR00658	280.85	175.35	equivalog	2.1.3.3
+TIGR00659	249.7	174.15	hypoth_equivalog	
+TIGR00661	195.9	38.7	subfamily_domain	
+TIGR00663	137.65	129	equivalog	2.7.7.7
+TIGR00664	150.55	49.8	equivalog	2.7.7.7
+TIGR00665	385.25	248.1	equivalog	3.6.4.12
+TIGR00666	107.8	75.45	equivalog	3.4.16.4
+TIGR00667	143.55	66.55	equivalog	2.3.2.6
+TIGR00668	222.85	169.65	equivalog	3.6.1.41
+TIGR00669	292.8	185.4	equivalog	6.3.1.1
+TIGR00670	236.95	186.45	equivalog	2.1.3.2
+TIGR00671	58.2	52.45	subfamily	2.7.1.33
+TIGR00672	375.35	94.4	equivalog	3.6.1.26
+TIGR00673	113.3	81.05	equivalog	4.2.1.104
+TIGR00674	206.15	177.55	equivalog	4.3.3.7
+TIGR00675	100.65	94.9	superfamily	2.1.1.37
+TIGR00676	293.7	289.85	equivalog	1.5.1.20
+TIGR00677	310.05	301.8	equivalog	1.5.1.20
+TIGR00678	180.6	161	equivalog_domain	2.7.7.7
+TIGR00679	240	230	equivalog	2.7.1.-
+TIGR00680	387.7	356.05	equivalog	3.6.3.12
+TIGR00681	152.55	83.65	equivalog	3.6.3.12
+TIGR00682	91.95	72.9	equivalog	2.7.1.130
+TIGR00683	382	154.1	equivalog	4.1.3.3
+TIGR00684	59.35	48.55	equivalog	
+TIGR00685	68.05	33.4	equivalog	3.1.3.12
+TIGR00686	80.2	43.55	hypoth_equivalog	
+TIGR00687	144.5	73.45	equivalog	2.7.1.35
+TIGR00688	130.15	34.8	hypoth_equivalog	
+TIGR00689	88.3	53	subfamily	5.3.1.-
+TIGR00690	23.6	23.1	equivalog	2.7.7.6
+TIGR00691	499.2	337.65	subfamily	
+TIGR00692	458.35	348.75	equivalog	1.1.1.103
+TIGR00693	145.1	60.35	equivalog_domain	2.5.1.3
+TIGR00694	256.4	110.9	equivalog_domain	2.7.1.50
+TIGR00695	199.55	122.6	equivalog	4.2.1.8
+TIGR00696	69	37.8	superfamily	2.4.1.-
+TIGR00697	50.95	42.5	subfamily	
+TIGR00698	232.6	74.35	subfamily	
+TIGR00699	567.15	251.2	equivalog	2.6.1.19
+TIGR00700	506.65	317.8	equivalog	2.6.1.19
+TIGR00701	138.05	59.9	hypoth_equivalog	
+TIGR00702	75.65	41.35	domain	
+TIGR00703	155.4	153.5	hypoth_equivalog	
+TIGR00704	210.1	100.3	hypoth_equivalog	
+TIGR00705	311.45	229	equivalog	3.4.-.-
+TIGR00706	155.45	97.75	equivalog_domain	3.4.-.-
+TIGR00707	410.05	397.55	subfamily	
+TIGR00708	167.75	79.5	equivalog	2.5.1.17
+TIGR00709	401.6	334.4	subfamily	2.6.1.-
+TIGR00710	200.9	188.55	subfamily	
+TIGR00711	230.2	175.95	subfamily	
+TIGR00712	632.55	358.3	equivalog	
+TIGR00713	527.3	281.9	equivalog	5.4.3.8
+TIGR00714	46.75	44.7	equivalog	
+TIGR00715	129.85	82	equivalog	1.3.1.54
+TIGR00716	161.2	80.2	equivalog	3.1.26.4
+TIGR00717	577	255.6	equivalog	
+TIGR00718	243.2	201.5	equivalog	4.3.1.17
+TIGR00719	161.2	45.8	equivalog	4.3.1.17
+TIGR00720	345.1	216.25	equivalog	4.3.1.17
+TIGR00721	60.25	45.4	subfamily	
+TIGR00722	100.65	84.9	subfamily_domain	
+TIGR00723	145.15	87.8	subfamily_domain	
+TIGR00724	230.2	153.15	domain	
+TIGR00725	106.9	37.5	hypoth_equivalog	
+TIGR00726	141.15	94.35	hypoth_equivalog	
+TIGR00727	438.7	299.45	equivalog	
+TIGR00728	128.35	121.65	superfamily	
+TIGR00729	123.3	97.8	equivalog	3.1.26.4
+TIGR00730	96.35	63.8	hypoth_equivalog	
+TIGR00731	73.1	70.35	equivalog	
+TIGR00732	191.15	113.15	equivalog	
+TIGR00733	182.5	77.15	equivalog	
+TIGR00734	179.85	88.45	hypoth_equivalog	
+TIGR00735	294.55	137	equivalog_domain	
+TIGR00736	218.7	57.65	hypoth_equivalog	
+TIGR00737	293.3	184.95	subfamily	
+TIGR00738	73.3	49.95	superfamily	
+TIGR00739	44.2	31.35	equivalog	
+TIGR00740	193.3	112	equivalog	2.1.1.-
+TIGR00741	40.9	29.5	equivalog_domain	
+TIGR00742	397.2	118.35	subfamily	1.-.-.-
+TIGR00743	71.45	45.75	superfamily	
+TIGR00744	260.35	178.9	subfamily	
+TIGR00745	141.35	91.4	subfamily	1.1.1.-
+TIGR00746	358.25	41.85	equivalog	2.7.2.2
+TIGR00747	292.1	135.65	subfamily	2.3.1.180
+TIGR00748	353.35	353.15	equivalog	2.3.3.10
+TIGR00749	225.45	123.2	equivalog	2.7.1.2
+TIGR00750	240.75	157.75	equivalog	2.7.-.-
+TIGR00751	102.15	88.15	equivalog	2.5.1.74
+TIGR00752	88.45	74.75	superfamily	
+TIGR00753	217.5	107.9	equivalog	3.6.1.27
+TIGR00754	125.55	56.8	equivalog	
+TIGR00755	171	168	equivalog	2.1.1.182
+TIGR00756	15.5	13.4	repeat	
+TIGR00757	325.95	53.65	subfamily_domain	3.1.4.-
+TIGR00758	125.3	27.1	subfamily	3.2.2.-
+TIGR00759	859.9	436.6	equivalog	1.2.4.1
+TIGR00760	389.1	46.75	equivalog	5.1.3.4
+TIGR00761	151.3	113.2	equivalog_domain	2.7.2.8
+TIGR00762	99.7	84.1	domain	
+TIGR00763	608.05	336.55	equivalog	3.4.21.53
+TIGR00764	516.6	121	equivalog	
+TIGR00765	73.15	43.25	subfamily_domain	
+TIGR00766	213.65	63	equivalog	
+TIGR00767	509.45	313.2	equivalog	3.6.4.-
+TIGR00768	143.4	100.8	subfamily	6.3.2.-
+TIGR00769	387.2	359.1	superfamily	
+TIGR00770	331.35	248.7	subfamily	
+TIGR00771	187	148.5	subfamily	
+TIGR00773	254	220.55	equivalog	
+TIGR00774	826.1	713.4	equivalog	
+TIGR00775	577.1	409.25	subfamily	
+TIGR00776	319.6	294.1	superfamily	
+TIGR00777	191.95	94.8	subfamily	1.11.1.15
+TIGR00778	27.8	13.3	domain	
+TIGR00779	181.65	124.25	subfamily	
+TIGR00780	583.15	168.15	equivalog	1.9.3.1
+TIGR00781	200.65	62.85	equivalog	1.9.3.1
+TIGR00782	179.95	54.05	equivalog	1.9.3.1
+TIGR00783	549.05	417.35	subfamily	
+TIGR00784	259.7	232.9	subfamily	
+TIGR00785	198.6	115.75	subfamily	
+TIGR00786	268.45	131.85	subfamily	
+TIGR00787	175.05	154.05	subfamily	
+TIGR00788	216.4	204.55	subfamily	
+TIGR00789	117.35	79	hypoth_equivalog_domain	
+TIGR00790	232.3	126.35	subfamily	
+TIGR00791	292.75	250.15	subfamily	
+TIGR00792	231.35	219.9	subfamily_domain	
+TIGR00793	453.8	127.55	equivalog	
+TIGR00794	539.6	444.9	equivalog	
+TIGR00795	341.15	320.3	subfamily	
+TIGR00796	243.4	218.95	equivalog	
+TIGR00797	147.4	123.2	subfamily	
+TIGR00798	322.8	225.45	subfamily	
+TIGR00799	181.3	102	subfamily	
+TIGR00800	353.1	113.2	subfamily	
+TIGR00801	291.8	202.1	superfamily	
+TIGR00802	333.05	96.3	subfamily	
+TIGR00803	55.85	53.9	subfamily	
+TIGR00804	442	200.8	subfamily	
+TIGR00805	280	259.3	subfamily	
+TIGR00806	227.4	217.4	equivalog	
+TIGR00807	113.45	37.35	equivalog	
+TIGR00808	236.3	85.55	equivalog	
+TIGR00809	102.8	51.7	equivalog	
+TIGR00810	30.85	27.8	equivalog	
+TIGR00811	1047.6	581.85	subfamily	
+TIGR00813	184	149.8	superfamily	
+TIGR00814	525.8	312.8	subfamily	
+TIGR00815	380.45	289.5	subfamily	
+TIGR00816	237.25	121.5	subfamily	
+TIGR00817	317.9	210.6	subfamily	
+TIGR00819	753.55	241.15	subfamily	
+TIGR00820	231.15	168.4	subfamily	
+TIGR00821	166.3	83.05	subfamily	2.7.1.69
+TIGR00822	339.85	264.6	subfamily	
+TIGR00823	136.95	117.85	subfamily	2.7.1.69
+TIGR00824	98.35	66.75	subfamily_domain	2.7.1.69
+TIGR00825	458.7	324.35	subfamily	
+TIGR00826	45.75	32.2	domain	2.7.1.69
+TIGR00827	542.2	439.65	subfamily	
+TIGR00828	292.75	241	subfamily	
+TIGR00829	76.85	64.15	subfamily_domain	2.7.1.69
+TIGR00830	97.5	78.75	subfamily_domain	
+TIGR00831	279.6	218.75	equivalog	
+TIGR00832	282.8	173.7	equivalog	
+TIGR00833	874.7	244.55	subfamily	
+TIGR00834	599.45	445.45	subfamily	
+TIGR00835	272.65	259.2	subfamily	
+TIGR00836	343.3	250.2	subfamily	
+TIGR00837	350	272.15	subfamily	
+TIGR00838	279.5	135.55	equivalog	4.3.2.1
+TIGR00839	681.2	524.8	equivalog	4.3.1.1
+TIGR00840	251.25	245.6	equivalog	
+TIGR00841	326.3	190.3	subfamily	
+TIGR00842	407.55	340.3	subfamily	
+TIGR00843	203.4	183.25	subfamily	
+TIGR00844	1236.05	574.9	equivalog	
+TIGR00845	679.85	553.05	equivalog	
+TIGR00846	317.45	188.25	superfamily	
+TIGR00847	28.35	20.1	equivalog	
+TIGR00848	103.5	95.8	subfamily_domain	2.7.1.69
+TIGR00849	189.55	105	subfamily	2.7.1.69
+TIGR00851	468.4	398.55	subfamily	2.7.1.69
+TIGR00852	291.1	276	subfamily_domain	
+TIGR00853	110	90.3	subfamily_domain	
+TIGR00854	163.6	140.25	subfamily	2.7.1.69
+TIGR00855	84.4	55	equivalog	
+TIGR00856	292.95	129.9	equivalog	3.5.2.3
+TIGR00857	279.05	197.8	subfamily_domain	3.5.2.3
+TIGR00858	426.45	324.95	equivalog	2.3.1.47
+TIGR00859	428	413.4	subfamily	
+TIGR00860	280.2	233.65	subfamily	
+TIGR00861	171.25	123	subfamily	
+TIGR00862	358.95	237.8	subfamily	
+TIGR00863	288	260.4	subfamily	
+TIGR00864	1861.4	1077.1	subfamily_domain	
+TIGR00865	283.35	223.2	subfamily	
+TIGR00867	598.45	425.85	subfamily	
+TIGR00868	900.85	658.5	subfamily	
+TIGR00869	166.65	126.35	subfamily	
+TIGR00870	498.75	352.75	subfamily	
+TIGR00871	400.6	195.7	equivalog	1.1.1.49
+TIGR00872	297.2	267.5	equivalog	1.1.1.44
+TIGR00873	426.7	211.2	equivalog	1.1.1.44
+TIGR00874	396.2	130.45	equivalog	2.2.1.2
+TIGR00875	245.95	105.4	equivalog	4.1.2.-
+TIGR00876	233.75	147.15	equivalog	2.2.1.2
+TIGR00877	288	199.75	equivalog_domain	6.3.4.13
+TIGR00878	236.35	139.05	equivalog_domain	6.3.3.1
+TIGR00879	237.8	205.35	subfamily	
+TIGR00880	131	91.2	superfamily	
+TIGR00881	407.75	350.65	subfamily	
+TIGR00882	220	48.95	subfamily	
+TIGR00883	443.45	405.05	subfamily	
+TIGR00884	338.75	126.15	equivalog_domain	6.3.5.2
+TIGR00885	280.4	264.85	equivalog	
+TIGR00886	311.7	263.7	subfamily	
+TIGR00887	610.3	510.9	equivalog	
+TIGR00888	172.15	113.35	equivalog_domain	6.3.5.2
+TIGR00889	446.1	180.45	subfamily	
+TIGR00890	374.85	296.2	subfamily	
+TIGR00891	552.9	226.85	subfamily	
+TIGR00892	586.1	433.6	subfamily	
+TIGR00893	395	316.45	subfamily	
+TIGR00894	626.45	437.95	subfamily	
+TIGR00895	418.55	286.7	subfamily	
+TIGR00896	406	303.5	subfamily	
+TIGR00897	590.3	331.8	subfamily	
+TIGR00898	550.75	497.15	subfamily	
+TIGR00899	522.3	321.25	subfamily	
+TIGR00900	319.6	294.05	subfamily	
+TIGR00901	370.8	328.1	subfamily	
+TIGR00902	698.9	430.2	subfamily	
+TIGR00903	391.85	391.55	subfamily	
+TIGR00904	365.75	146.25	subfamily	
+TIGR00905	409.05	382.55	subfamily	
+TIGR00906	681.7	600	subfamily	
+TIGR00907	598.3	401.45	subfamily	
+TIGR00908	381.75	318.65	equivalog	
+TIGR00909	556.8	422.55	subfamily	
+TIGR00910	673.5	415.65	equivalog	
+TIGR00911	701.8	657.15	subfamily	
+TIGR00912	139.55	102.75	subfamily	
+TIGR00913	578.7	536.6	subfamily	
+TIGR00914	701.45	424.4	subfamily	
+TIGR00915	940.35	456.65	subfamily	
+TIGR00916	148.6	127.75	subfamily	
+TIGR00917	1016.5	1004.7	subfamily	
+TIGR00918	1120.4	746.45	subfamily	
+TIGR00920	778.35	751.7	subfamily	
+TIGR00921	351.9	206.35	subfamily	
+TIGR00922	135.7	125.85	equivalog	
+TIGR00924	130.2	122.2	subfamily	
+TIGR00926	821.6	775.9	subfamily	
+TIGR00927	710.1	438.7	subfamily	
+TIGR00928	326.2	307.75	equivalog	4.3.2.2
+TIGR00929	643.1	293.55	subfamily	
+TIGR00930	953.4	817.95	subfamily	
+TIGR00931	370	250	equivalog	
+TIGR00932	238.3	212.55	subfamily	
+TIGR00933	331.15	284.05	subfamily	
+TIGR00934	441.9	314.6	subfamily	
+TIGR00935	415	405	subfamily	
+TIGR00936	497.6	121.6	equivalog	3.3.1.1
+TIGR00937	171.7	119.5	subfamily	
+TIGR00938	255.9	133.6	equivalog	2.7.1.39
+TIGR00939	297.5	273.95	subfamily	
+TIGR00940	920.45	834.4	subfamily	
+TIGR00941	161.2	134.7	subfamily	
+TIGR00942	212.25	159.2	subfamily	
+TIGR00943	139.75	113.1	subfamily	
+TIGR00944	692	610	subfamily	
+TIGR00945	132.7	92.55	equivalog	
+TIGR00946	246.05	141.85	subfamily	
+TIGR00947	366.4	209.65	equivalog	
+TIGR00948	213.65	168.7	subfamily	
+TIGR00949	183.95	142.75	subfamily	
+TIGR00950	230.2	180.3	subfamily	
+TIGR00951	192.35	122	subfamily	
+TIGR00952	63.65	37.3	equivalog	
+TIGR00954	918.9	888.7	subfamily	
+TIGR00955	736.35	664.3	subfamily	
+TIGR00956	1959	1905.05	subfamily	
+TIGR00957	1470	1470	equivalog	
+TIGR00958	874.6	826.25	subfamily	
+TIGR00959	473.2	453.65	equivalog	
+TIGR00962	484.45	209	equivalog	3.6.3.14
+TIGR00963	800	797	equivalog	
+TIGR00964	27.55	25.65	equivalog	
+TIGR00965	375.4	53.6	equivalog	2.3.1.117
+TIGR00966	164.9	81.1	equivalog_domain	
+TIGR00967	253.6	233.3	equivalog	
+TIGR00968	342.75	328.1	subfamily	3.6.3.25
+TIGR00969	240	204.85	subfamily	
+TIGR00970	697.4	244.35	equivalog	2.3.3.13
+TIGR00971	155.5	135.25	subfamily	
+TIGR00972	343.2	302	equivalog	3.6.3.27
+TIGR00973	598.7	597.2	equivalog	2.3.3.13
+TIGR00974	193.45	161.9	equivalog	
+TIGR00975	205	171.9	equivalog	
+TIGR00976	66.3	62.65	subfamily	
+TIGR00977	450	325	equivalog	2.3.1.182
+TIGR00978	301.2	201.3	equivalog	1.2.1.11
+TIGR00979	664.75	524.85	equivalog	4.2.1.2
+TIGR00980	251.05	239.15	subfamily	
+TIGR00981	112.95	96.1	equivalog	
+TIGR00982	140.2	104.3	equivalog	
+TIGR00983	181.7	94.95	subfamily	
+TIGR00984	552.35	466.05	subfamily	
+TIGR00985	163.55	155.05	subfamily	
+TIGR00986	193.2	134.95	subfamily	
+TIGR00987	120.25	89.75	equivalog	
+TIGR00988	119.95	89.35	equivalog	
+TIGR00989	271.85	160.95	subfamily	
+TIGR00990	757.25	557.7	subfamily	
+TIGR00991	421.55	412.4	subfamily	
+TIGR00992	1163.25	507.3	subfamily	
+TIGR00993	660.7	204.75	subfamily_domain	
+TIGR00994	341.15	290.9	subfamily	
+TIGR00995	413.15	284.4	subfamily	
+TIGR00996	140.5	82	paralog	
+TIGR00997	165.2	72.6	equivalog	
+TIGR00998	390.8	267.3	subfamily	
+TIGR00999	319.3	231.25	subfamily	
+TIGR01000	258.85	225.5	subfamily	
+TIGR01001	315.4	23.4	equivalog	2.3.1.46
+TIGR01002	245.6	141.55	subfamily	
+TIGR01003	47.9	31.4	subfamily	
+TIGR01004	130.1	129.4	subfamily	
+TIGR01005	411.7	322.75	subfamily	
+TIGR01006	296	240.5	subfamily	
+TIGR01007	108.05	85.75	subfamily_domain	
+TIGR01008	150.25	120	equivalog	
+TIGR01009	114.5	87.4	equivalog	
+TIGR01010	437.5	147.15	subfamily	
+TIGR01011	76.3	68.5	equivalog	
+TIGR01012	211.5	92.6	equivalog	
+TIGR01013	306.15	247.2	subfamily	
+TIGR01015	510.75	61.6	equivalog	1.13.11.5
+TIGR01016	375.55	167.75	subfamily	6.2.1.-
+TIGR01017	177.2	66.8	equivalog	
+TIGR01018	82.25	78.1	equivalog	
+TIGR01019	353.2	165.45	subfamily	6.2.1.-
+TIGR01020	181.65	122.55	equivalog	
+TIGR01021	164.05	119.35	equivalog	
+TIGR01022	22.7	21.85	equivalog	
+TIGR01023	23.95	22.7	equivalog	
+TIGR01024	90.7	38.2	equivalog	
+TIGR01025	139	72.65	equivalog	
+TIGR01026	379.5	247.55	subfamily	3.6.3.14
+TIGR01027	186	170.15	equivalog_domain	2.7.2.11
+TIGR01028	200	95	equivalog	
+TIGR01029	135.85	96.25	equivalog	
+TIGR01030	37.65	34.55	equivalog	
+TIGR01031	22.6	22.2	equivalog	
+TIGR01032	65.65	49.95	equivalog	
+TIGR01033	208.75	139.65	subfamily	
+TIGR01034	309.4	122.2	equivalog	2.5.1.6
+TIGR01035	209.55	94.15	equivalog	1.2.1.70
+TIGR01036	200	200	equivalog	1.3.98.1
+TIGR01037	150.15	141.6	subfamily_domain	1.3.-.-
+TIGR01038	79.85	77.95	equivalog	
+TIGR01039	462.85	391.55	equivalog	3.6.3.14
+TIGR01040	804.65	710.35	equivalog	3.6.3.14
+TIGR01041	844.65	770.3	equivalog	3.6.3.14
+TIGR01042	779.9	776.6	equivalog	3.6.3.14
+TIGR01043	972.15	971.95	equivalog	3.6.3.14
+TIGR01044	73.65	66.75	equivalog	
+TIGR01045	30	29.25	domain	
+TIGR01046	96.25	81.1	equivalog	
+TIGR01047	409.05	205.95	equivalog	
+TIGR01048	297.9	227.6	equivalog	4.1.1.20
+TIGR01049	72.75	70	equivalog	
+TIGR01050	89.35	84.95	equivalog	
+TIGR01051	456.4	379.15	equivalog	5.99.1.2
+TIGR01052	380.7	102.75	equivalog	5.99.1.3
+TIGR01053	15.5	12.65	subfamily_domain	
+TIGR01054	471.7	469.7	equivalog	3.6.4.12 5.99.1.3
+TIGR01055	723.35	680.2	equivalog	5.99.1.-
+TIGR01056	515.75	356.4	subfamily	5.99.1.2
+TIGR01057	458	314.2	equivalog	5.99.1.2
+TIGR01058	899.95	885.65	equivalog	5.99.1.-
+TIGR01059	882.4	783.95	equivalog	5.99.1.3
+TIGR01060	443.85	215	equivalog	4.2.1.11
+TIGR01061	813.25	777.45	equivalog	5.99.1.-
+TIGR01062	628.9	622.65	equivalog	5.99.1.-
+TIGR01063	877	874	equivalog	5.99.1.3
+TIGR01064	306.4	233	equivalog	2.7.1.40
+TIGR01065	172.2	28.05	subfamily	
+TIGR01066	93.05	72.45	equivalog	
+TIGR01067	111.1	108.3	equivalog	
+TIGR01068	96.8	75.7	equivalog	
+TIGR01069	557.35	468.6	subfamily	
+TIGR01070	641.7	502.95	equivalog	
+TIGR01071	77.95	48.35	equivalog	
+TIGR01072	392.7	234.8	equivalog	2.5.1.7
+TIGR01073	911.2	822.15	equivalog	3.6.4.12
+TIGR01074	951.45	770.95	equivalog	3.6.4.12
+TIGR01075	1144.45	761.1	equivalog	3.6.4.12
+TIGR01076	39.35	21.95	subfamily	3.4.22.-
+TIGR01077	98.9	62	equivalog	
+TIGR01078	489.1	433.2	equivalog	3.5.3.6
+TIGR01079	53.7	41.1	equivalog	
+TIGR01080	47.65	37.55	equivalog	
+TIGR01081	388.7	206.05	equivalog	
+TIGR01082	335.1	292.8	equivalog	6.3.2.8
+TIGR01083	211.7	144.65	equivalog	4.2.99.18
+TIGR01084	286.5	179.95	equivalog	3.2.2.-
+TIGR01085	257.3	204.35	subfamily	
+TIGR01086	400.25	269.5	equivalog	4.1.2.17
+TIGR01087	211.95	194.4	equivalog	6.3.2.9
+TIGR01088	169.85	145.55	equivalog	4.2.1.10
+TIGR01089	850	399.9	equivalog	5.3.1.25
+TIGR01090	185.85	68.8	equivalog	2.4.2.7
+TIGR01091	208.35	112.3	equivalog	2.4.2.9
+TIGR01092	796.75	525.45	equivalog	
+TIGR01093	139.3	40.85	equivalog_domain	4.2.1.10
+TIGR01096	256.35	201	subfamily	
+TIGR01097	216.7	189.95	equivalog	
+TIGR01098	112.05	84.3	subfamily	
+TIGR01099	326.8	312.55	equivalog	2.7.7.9
+TIGR01100	61.45	44.15	equivalog	3.6.3.14
+TIGR01101	90.25	57.55	equivalog	3.6.3.14
+TIGR01102	208.6	195.8	equivalog	
+TIGR01103	217.45	192.4	equivalog	
+TIGR01104	651.9	283.6	equivalog	3.6.1.1
+TIGR01105	659.2	416.75	equivalog	
+TIGR01106	946.1	648.8	subfamily	3.6.3.-
+TIGR01107	189.35	187.1	equivalog	3.6.3.9
+TIGR01108	756.5	720.35	equivalog	4.1.1.3
+TIGR01109	190.6	184.35	subfamily	
+TIGR01110	789.15	313.85	equivalog	
+TIGR01111	249.15	173.85	equivalog	2.1.1.86
+TIGR01112	126.85	101.85	equivalog	2.1.1.86
+TIGR01113	238.35	81.9	equivalog	2.1.1.86
+TIGR01114	271.4	115	equivalog	2.1.1.86
+TIGR01115	364.25	248.65	equivalog	
+TIGR01116	703.4	697.45	equivalog	3.6.3.8
+TIGR01117	998.8	908.8	subfamily	4.1.1.41
+TIGR01118	181.1	172.55	equivalog	5.3.1.26
+TIGR01119	312.55	291.6	equivalog	5.3.1.26
+TIGR01120	138.65	135.75	equivalog	5.3.1.6
+TIGR01121	277.45	155.8	equivalog	2.6.1.21
+TIGR01122	245.55	196.55	equivalog	2.6.1.42
+TIGR01123	250.05	198.2	equivalog	2.6.1.42
+TIGR01124	411.3	325.5	equivalog	4.3.1.19
+TIGR01125	356.95	332.15	equivalog	2.1.1.- 2.8.1.-
+TIGR01126	107.2	81.45	equivalog_domain	
+TIGR01127	378.75	336.9	equivalog	4.3.1.19
+TIGR01128	94.95	65.15	equivalog	2.7.7.7
+TIGR01129	244.4	104.8	equivalog_domain	
+TIGR01130	344.25	163.25	subfamily	
+TIGR01131	102.6	90.9	equivalog	3.6.3.14
+TIGR01132	778.05	155.35	equivalog	5.4.2.2
+TIGR01133	250.25	219.85	equivalog	2.4.1.227
+TIGR01134	350	166.25	equivalog	2.4.2.14
+TIGR01135	418.05	302.9	equivalog	2.6.1.16
+TIGR01136	344.15	335.75	subfamily	2.5.1.47
+TIGR01137	510.25	356.9	equivalog	4.2.1.22
+TIGR01138	394.2	330.85	equivalog	2.5.1.47
+TIGR01139	350.95	330	equivalog	2.5.1.47
+TIGR01140	290.55	276.85	equivalog	4.1.1.81
+TIGR01141	276.55	200.85	equivalog	2.6.1.9
+TIGR01142	502.15	268.35	equivalog	2.1.2.-
+TIGR01143	288.6	233.9	subfamily	6.3.2.10
+TIGR01144	65.5	54.85	equivalog	3.6.3.14
+TIGR01145	57.5	50.25	equivalog	3.6.3.14
+TIGR01146	194.45	58.75	equivalog	3.6.3.14
+TIGR01147	56.95	50.45	equivalog	3.6.3.14
+TIGR01148	103.65	74.95	equivalog	2.1.1.86
+TIGR01149	50.65	40.35	equivalog	2.1.1.86
+TIGR01150	240.4	118.3	equivalog	
+TIGR01151	596.05	223.2	equivalog	1.10.3.9
+TIGR01152	600.6	388.5	equivalog	
+TIGR01153	603.05	477.2	equivalog	
+TIGR01156	127.05	126.95	equivalog	1.10.9.1
+TIGR01157	266.2	206.65	equivalog	
+TIGR01158	111.65	64.25	hypoth_equivalog	
+TIGR01159	118.15	46.2	subfamily	
+TIGR01160	143.9	47.9	equivalog	
+TIGR01161	318.4	197.1	equivalog_domain	4.1.1.21
+TIGR01162	149.6	62.25	equivalog_domain	4.1.1.21
+TIGR01163	212.6	96.9	equivalog	5.1.3.1
+TIGR01164	76.85	56.2	equivalog	
+TIGR01165	104.85	32.25	subfamily	
+TIGR01166	211.8	195.65	subfamily	
+TIGR01167	15.9	15.7	domain	
+TIGR01168	20.2	19.35	domain	
+TIGR01169	216.3	124.75	equivalog	
+TIGR01170	129.05	111.1	equivalog	
+TIGR01171	174.5	164.85	equivalog	
+TIGR01172	210.65	134.4	equivalog	2.3.1.30
+TIGR01173	366.85	204.85	equivalog	2.7.7.23 2.3.1.157
+TIGR01174	175.85	74	equivalog	
+TIGR01175	133	75.55	subfamily	
+TIGR01176	932.7	847.05	equivalog	1.3.5.4
+TIGR01177	316.55	137.45	hypoth_equivalog	
+TIGR01178	472.5	185	equivalog	3.5.4.2
+TIGR01179	262.3	231.95	equivalog	5.1.3.2
+TIGR01180	249.55	168.7	subfamily	
+TIGR01181	365.1	197	equivalog	4.2.1.46
+TIGR01182	156.05	95.25	subfamily	4.1.2.14 4.1.3.16
+TIGR01183	209.05	168.75	equivalog	
+TIGR01184	291.8	259.45	subfamily	
+TIGR01185	290.35	96.75	subfamily	
+TIGR01186	326.6	315.8	subfamily	
+TIGR01187	355.6	349.95	subfamily	3.6.3.31
+TIGR01188	312.45	305.3	subfamily	
+TIGR01189	131.6	129.5	equivalog	3.6.3.41
+TIGR01190	156.2	29.5	equivalog	
+TIGR01191	186	181.55	subfamily	
+TIGR01192	585.4	351.9	subfamily	3.6.3.42
+TIGR01193	523.85	460.5	subfamily	
+TIGR01194	286.2	257.5	subfamily	
+TIGR01195	36.05	32.8	subfamily	
+TIGR01196	708.25	349.5	equivalog	4.2.1.12
+TIGR01197	272.5	45.5	subfamily	
+TIGR01198	124.45	120.7	equivalog_domain	3.1.1.31
+TIGR01200	50	23	subfamily	
+TIGR01201	68.6	44.15	superfamily	
+TIGR01202	291.25	50.5	equivalog	
+TIGR01203	150	62.1	equivalog	2.4.2.8
+TIGR01204	193.55	69.15	equivalog	6.2.1.14
+TIGR01205	245.65	95.55	subfamily	6.3.2.4
+TIGR01206	53.2	24.55	equivalog	
+TIGR01207	360.65	189.5	equivalog	2.7.7.24
+TIGR01208	320.25	196.85	equivalog	2.7.7.24
+TIGR01209	136.9	136.6	hypoth_equivalog	
+TIGR01210	212.15	46.45	hypoth_equivalog	
+TIGR01211	350	160	subfamily	2.3.1.48
+TIGR01212	180	120	hypoth_equivalog	
+TIGR01213	239.55	81.2	equivalog	5.4.99.25
+TIGR01214	224.05	125.3	equivalog	1.1.1.133
+TIGR01215	49.3	36.35	equivalog	
+TIGR01216	67.25	62.35	equivalog	3.6.3.14
+TIGR01217	520.9	299	equivalog	6.2.1.16
+TIGR01218	35	32	subfamily	
+TIGR01219	376.95	102.8	equivalog	2.7.4.2
+TIGR01220	165.7	70.35	equivalog	2.7.4.2
+TIGR01221	155.75	83.2	equivalog	5.1.3.13
+TIGR01222	95.25	67.35	equivalog	
+TIGR01223	188.15	31.35	equivalog	2.7.4.2
+TIGR01224	298.15	101.65	equivalog	3.5.2.7
+TIGR01225	539.15	534.1	equivalog	4.3.1.3
+TIGR01226	519.15	301.9	equivalog	4.3.1.24
+TIGR01227	229.15	151.7	equivalog	3.5.3.8
+TIGR01228	422.2	185.5	equivalog	4.2.1.49
+TIGR01229	227.6	108.9	equivalog	3.5.3.1
+TIGR01230	174.3	141	equivalog	3.5.3.11
+TIGR01231	409.55	212.8	equivalog	2.7.1.144
+TIGR01232	432.2	121.4	equivalog	4.1.2.40
+TIGR01233	561.2	439.5	equivalog	3.2.1.85
+TIGR01234	583.25	222.15	equivalog	2.7.1.16
+TIGR01235	1114.45	617.1	equivalog	6.4.1.1
+TIGR01236	613.6	458.25	equivalog	1.2.1.88
+TIGR01237	659.65	443	equivalog	1.2.1.88
+TIGR01238	485.2	374.05	equivalog_domain	1.2.1.88
+TIGR01239	650.15	116.8	equivalog	2.7.7.12
+TIGR01240	171.35	93.05	equivalog	4.1.1.33
+TIGR01241	468.2	304.75	subfamily	3.4.24.-
+TIGR01242	343.6	305.15	subfamily	
+TIGR01243	802.65	727.3	subfamily	
+TIGR01244	85.85	31.3	hypoth_equivalog	
+TIGR01245	199.05	133.1	equivalog_domain	2.4.2.18
+TIGR01246	361.8	192.3	equivalog	3.5.1.18
+TIGR01247	223.05	126.2	subfamily	
+TIGR01248	165.65	74.8	subfamily	
+TIGR01249	259.75	95.45	equivalog	3.4.11.5
+TIGR01250	167.65	87.4	subfamily	
+TIGR01251	113	107.35	subfamily	2.7.6.1
+TIGR01252	180.65	80.8	equivalog	4.1.1.5
+TIGR01253	395.1	234.1	equivalog	
+TIGR01254	93.4	76	subfamily	
+TIGR01255	994.2	181.1	equivalog	2.3.1.54
+TIGR01256	62.5	50.5	equivalog	
+TIGR01257	4012.85	2683.1	equivalog	
+TIGR01258	81.7	72.95	subfamily	
+TIGR01259	152.35	66.4	subfamily	
+TIGR01260	43.95	43.2	equivalog	3.6.3.14
+TIGR01261	140	93.45	equivalog_domain	3.1.3.15
+TIGR01262	171.05	104	equivalog	5.2.1.2
+TIGR01263	277	93.6	equivalog	1.13.11.27
+TIGR01264	474.25	256.05	equivalog	2.6.1.5
+TIGR01265	292.45	274.05	subfamily	
+TIGR01266	375.3	137.6	equivalog	3.7.1.2
+TIGR01267	264.75	182.45	equivalog	1.14.16.1
+TIGR01268	704.8	674.95	equivalog	1.14.16.1
+TIGR01269	654.65	566.9	equivalog	1.14.16.2
+TIGR01270	705.5	608.15	equivalog	1.14.16.4
+TIGR01271	1761.2	1208.3	equivalog	3.6.3.49
+TIGR01272	202.55	197.15	subfamily	
+TIGR01273	624.1	310.9	equivalog	4.1.1.19
+TIGR01274	392	259.8	equivalog	3.5.99.7
+TIGR01275	289.4	240.55	subfamily	
+TIGR01276	317.15	268.75	equivalog	
+TIGR01277	245.05	213.1	equivalog	3.6.3.-
+TIGR01278	490.35	115.3	equivalog	1.3.7.7
+TIGR01279	419.95	140.3	equivalog	1.3.7.7
+TIGR01280	35	30	equivalog	3.1.11.6
+TIGR01281	345.15	280.45	equivalog	1.3.7.7
+TIGR01282	653.55	503.05	equivalog	1.18.6.1
+TIGR01283	505.1	412.85	equivalog	
+TIGR01284	512.8	392.75	subfamily	1.18.6.1
+TIGR01285	326.8	325.3	equivalog	
+TIGR01286	427.3	414.5	equivalog	1.18.6.1
+TIGR01287	394.35	261.05	equivalog	1.18.6.1
+TIGR01288	424	258.5	equivalog	
+TIGR01289	331.35	133.6	equivalog	1.3.1.33
+TIGR01290	343.65	222.2	equivalog	
+TIGR01291	206.65	79.45	subfamily	
+TIGR01292	343.45	285.5	equivalog	1.8.1.9
+TIGR01293	365.4	228.7	subfamily	
+TIGR01294	72.85	72.8	equivalog	
+TIGR01295	92.9	29.15	subfamily	
+TIGR01296	324.2	259.15	equivalog	1.2.1.11
+TIGR01297	82.35	73.35	superfamily	
+TIGR01298	246.2	60.2	equivalog	3.1.13.-
+TIGR01299	637.3	236.15	subfamily	
+TIGR01300	63.1	32.95	subfamily	
+TIGR01301	511	274.35	subfamily	
+TIGR01302	481.5	303.25	equivalog	1.1.1.205
+TIGR01303	562.75	527.65	hypoth_equivalog	
+TIGR01304	342.1	179.3	hypoth_equivalog	
+TIGR01305	492.15	216.2	equivalog	1.7.1.7
+TIGR01306	465.65	247.65	equivalog	1.7.1.7
+TIGR01307	330.65	164.4	equivalog	5.4.2.12
+TIGR01308	44.65	38.2	equivalog	
+TIGR01309	150.05	91.65	equivalog	
+TIGR01310	254	92.3	subfamily	
+TIGR01311	590.35	269.35	equivalog	2.7.1.30
+TIGR01312	380.25	368.35	equivalog	2.7.1.17
+TIGR01313	113.75	53.3	subfamily	2.7.1.-
+TIGR01314	648.55	355.65	equivalog	2.7.1.12
+TIGR01315	408.7	236.2	subfamily	2.7.1.-
+TIGR01316	471.75	394.95	equivalog	1.4.1.13
+TIGR01317	447.7	370.15	subfamily_domain	1.4.1.-
+TIGR01318	482.95	399.6	subfamily_domain	
+TIGR01319	204.05	50.65	subfamily	
+TIGR01320	549.95	197.4	equivalog	1.1.5.4
+TIGR01321	67.25	34.45	equivalog	
+TIGR01322	356.4	342.45	subfamily	3.2.1.-
+TIGR01323	249.85	239.05	equivalog	4.2.1.84
+TIGR01324	365.9	282.9	equivalog	4.4.1.8
+TIGR01325	510.05	433.55	equivalog	4.2.99.-
+TIGR01326	495.1	483.05	subfamily	
+TIGR01327	454	268.1	equivalog	1.1.1.95
+TIGR01328	549.7	466.75	equivalog	4.4.1.11
+TIGR01329	487.5	424.8	equivalog	4.4.1.8
+TIGR01330	267.05	152.45	equivalog	3.1.3.7
+TIGR01331	228.8	145	equivalog	3.1.3.7
+TIGR01332	93.95	25.9	equivalog	
+TIGR01333	61.15	35.95	equivalog	
+TIGR01334	178.85	162.6	hypoth_equivalog	
+TIGR01335	862.55	857.05	equivalog	1.97.1.12
+TIGR01336	921.65	886.4	equivalog	1.97.1.12
+TIGR01337	228.15	166.3	equivalog	
+TIGR01338	269.45	269.3	equivalog	
+TIGR01339	279.3	260.85	equivalog	
+TIGR01340	825.35	558.15	equivalog	4.2.1.3
+TIGR01341	945	508.8	equivalog	4.2.1.3
+TIGR01342	719.15	440.55	hypoth_equivalog	4.2.1.3
+TIGR01343	385.7	382.6	subfamily	
+TIGR01344	594.5	122.1	equivalog	2.3.3.9
+TIGR01345	989.15	403.25	equivalog	2.3.3.9
+TIGR01346	275.9	107.2	equivalog	4.1.3.1
+TIGR01347	378.65	329.9	equivalog	2.3.1.61
+TIGR01348	552.1	407.3	equivalog	2.3.1.12
+TIGR01349	445	277.2	equivalog	2.3.1.12
+TIGR01350	408.8	400.75	equivalog	1.8.1.4
+TIGR01351	168	157.1	subfamily	2.7.4.-
+TIGR01352	27.1	25	subfamily_domain	
+TIGR01353	152.35	116.9	subfamily	3.1.5.1
+TIGR01354	113.65	70.95	equivalog	3.5.4.5
+TIGR01355	275	90.25	equivalog	3.5.4.5
+TIGR01356	287.25	167.55	equivalog	2.5.1.19
+TIGR01357	305	295	equivalog	4.2.3.4
+TIGR01358	614.7	464.35	equivalog	2.5.1.54
+TIGR01359	207.6	202	subfamily	2.7.4.-
+TIGR01360	284.1	214	equivalog	2.7.4.3
+TIGR01361	267.75	132.85	equivalog_domain	2.5.1.54
+TIGR01362	314	139	equivalog	2.5.1.55
+TIGR01363	33	25	subfamily_domain	
+TIGR01364	443.6	102.2	equivalog	2.6.1.52
+TIGR01365	448.2	85.2	equivalog	2.6.1.52
+TIGR01366	401.65	81.7	equivalog	2.6.1.52
+TIGR01367	150.25	107	equivalog	2.4.2.10
+TIGR01368	307.35	133.55	equivalog_domain	6.3.5.5
+TIGR01369	1027	469.1	equivalog_domain	6.3.5.5
+TIGR01370	181.25	33.65	hypoth_equivalog	
+TIGR01371	929.95	322.1	equivalog	2.1.1.14
+TIGR01372	1164	906.05	subfamily	
+TIGR01373	529.45	182.65	subfamily	
+TIGR01374	116.5	40.75	subfamily	
+TIGR01375	143.95	29.55	subfamily	1.5.3.1
+TIGR01376	15	12.1	repeat	
+TIGR01377	479.65	184.35	subfamily	
+TIGR01378	76.4	67.85	equivalog	2.7.6.2
+TIGR01379	184.15	113.7	equivalog	2.7.4.16
+TIGR01380	299.05	112.05	equivalog	6.3.2.3
+TIGR01381	571.35	304.85	equivalog	
+TIGR01382	139.05	112.55	subfamily	
+TIGR01383	131.25	127.15	subfamily	
+TIGR01384	64.75	56.5	equivalog	
+TIGR01385	237.1	100	equivalog	
+TIGR01386	292.55	239.85	subfamily	2.7.13.3
+TIGR01387	279.2	266	subfamily	
+TIGR01388	298.95	138.75	equivalog	3.1.13.5
+TIGR01389	640.2	533.15	equivalog	3.6.4.12
+TIGR01390	883	412.8	equivalog	3.1.4.16
+TIGR01391	283.6	111.3	equivalog_domain	2.7.7.-
+TIGR01392	276.85	109.05	equivalog	2.3.1.31
+TIGR01393	533.9	260.4	equivalog	3.6.5.-
+TIGR01394	757.3	262.6	equivalog	
+TIGR01395	102.1	66.55	equivalog	
+TIGR01396	59.05	34.95	equivalog	
+TIGR01397	219.6	49.65	equivalog	
+TIGR01398	772.1	660.9	equivalog	
+TIGR01399	692.25	677.3	subfamily	
+TIGR01400	168.6	139.45	equivalog	
+TIGR01401	163.05	140.95	equivalog	
+TIGR01402	88.9	83.25	equivalog	
+TIGR01403	76.5	73.4	subfamily	
+TIGR01404	326.8	312.7	subfamily	
+TIGR01405	1043.45	618.45	equivalog	2.7.7.7
+TIGR01406	222.7	113.6	equivalog	2.7.7.7
+TIGR01407	547.7	349.25	hypoth_equivalog	
+TIGR01408	750.05	494.3	subfamily	
+TIGR01409	16.7	16.7	domain	
+TIGR01410	56.5	46.7	equivalog	
+TIGR01411	53.9	34.95	subfamily	
+TIGR01412	428	138.2	hypoth_equivalog	
+TIGR01413	100.5	78.95	superfamily	
+TIGR01414	16	15.9	domain	
+TIGR01415	518.85	295.15	hypoth_equivalog	
+TIGR01416	97.4	77.9	equivalog	1.10.2.2
+TIGR01417	341.7	320.1	equivalog_domain	2.7.3.9
+TIGR01418	739.75	338.15	equivalog	2.7.9.2
+TIGR01419	138.7	130.15	equivalog	
+TIGR01420	319.1	220.05	subfamily	
+TIGR01421	556.15	457.25	equivalog	1.8.1.7
+TIGR01422	221.2	117.4	equivalog	3.11.1.1
+TIGR01423	738.1	459.7	equivalog	1.8.1.12
+TIGR01424	606.05	494.95	equivalog	1.8.1.7
+TIGR01425	576.25	501	equivalog	
+TIGR01426	109.35	97.3	subfamily	2.4.1.-
+TIGR01427	157.55	155.9	subfamily_domain	
+TIGR01428	125.4	72.3	equivalog	3.8.1.2
+TIGR01429	726.3	170.85	equivalog	3.5.4.6
+TIGR01430	216.55	114.85	equivalog	3.5.4.4
+TIGR01431	315	139.5	subfamily	
+TIGR01432	240.95	204.55	equivalog	1.10.3.-
+TIGR01433	266.2	218.75	equivalog	1.10.3.-
+TIGR01434	393.3	223.85	equivalog	6.3.2.2
+TIGR01435	656	338.35	equivalog	6.3.2.2 6.3.2.3
+TIGR01436	463.15	90.55	equivalog	6.3.2.2
+TIGR01437	385.3	150.35	hypoth_equivalog	
+TIGR01438	475.85	405.5	subfamily	1.6.4.-
+TIGR01439	28.3	26.15	domain	
+TIGR01440	145.3	77.35	hypoth_equivalog	
+TIGR01441	238	100	equivalog	3.4.24.78
+TIGR01442	30.65	28.65	subfamily	
+TIGR01443	15.6	14	domain	
+TIGR01444	37.7	26.3	subfamily_domain	
+TIGR01445	24.5	8.55	domain	
+TIGR01446	24.95	23.5	domain	
+TIGR01447	310.15	268.8	equivalog	3.1.11.5
+TIGR01448	539.2	218.4	hypoth_equivalog	
+TIGR01449	164.6	123.9	equivalog	3.1.3.18
+TIGR01450	582.9	341.95	equivalog	3.1.11.5
+TIGR01451	16.6	15.7	domain	
+TIGR01452	201.95	160.55	subfamily	3.1.3.18
+TIGR01453	56.05	44.8	subfamily	
+TIGR01454	246.65	132.25	hypoth_equivalog	
+TIGR01455	447.55	339.25	equivalog	5.4.2.10
+TIGR01456	139.25	110.8	hypoth_equivalog	
+TIGR01457	247.65	179.35	hypoth_equivalog	
+TIGR01458	175.95	118.5	hypoth_equivalog	
+TIGR01459	103.75	80.3	hypoth_equivalog	
+TIGR01460	100.15	65.85	subfamily	
+TIGR01461	171.05	140.4	equivalog	
+TIGR01462	139	130.65	subfamily_domain	
+TIGR01463	235.4	103.65	subfamily	2.1.1.-
+TIGR01464	302.95	140.6	equivalog	4.1.1.37
+TIGR01465	259.65	206.85	equivalog	2.1.1.133
+TIGR01466	246.35	103.8	equivalog_domain	2.1.1.131
+TIGR01467	163.25	84.75	equivalog	2.1.1.130
+TIGR01469	185	184.25	equivalog_domain	2.1.1.107
+TIGR01470	62.3	43.4	subfamily_domain	
+TIGR01472	415	103.25	equivalog	4.2.1.47
+TIGR01473	210.3	138.3	equivalog	2.5.1.-
+TIGR01474	275.45	160.95	equivalog	2.5.1.-
+TIGR01475	180.8	148.1	hypoth_equivalog	2.5.1.-
+TIGR01476	212.3	152.35	subfamily	2.5.1.-
+TIGR01477	176.95	54.3	paralog	
+TIGR01478	166.65	57.35	paralog	
+TIGR01479	372.95	209.4	equivalog	5.3.1.8 2.7.7.13
+TIGR01480	478.95	291.4	subfamily	
+TIGR01481	442.35	328.65	equivalog	
+TIGR01482	107.15	104	subfamily	3.1.3.-
+TIGR01484	41.8	36.5	subfamily	
+TIGR01485	183.65	100.05	equivalog	3.1.3.24
+TIGR01486	164.75	114.15	subfamily	3.1.3.-
+TIGR01487	122.75	108.7	equivalog	3.1.3.18
+TIGR01488	45	45	subfamily	
+TIGR01489	81.55	63	subfamily	
+TIGR01490	98.3	90.5	hypoth_equivalog	
+TIGR01491	151.9	106.5	hypoth_equivalog	
+TIGR01492	35.6	32.95	domain	
+TIGR01493	39	26.1	subfamily	
+TIGR01494	62.3	29.2	subfamily	3.6.3.-
+TIGR01495	32.75	30.65	paralog	
+TIGR01496	162.6	92.7	equivalog	2.5.1.15
+TIGR01497	527.9	398.75	equivalog	3.6.3.12
+TIGR01498	54.1	32.6	equivalog	2.7.6.3
+TIGR01499	162.65	125.05	subfamily	6.3.2.-
+TIGR01500	206.55	116.6	equivalog	1.1.1.153
+TIGR01501	135.8	66.75	equivalog	5.4.99.1
+TIGR01502	286.15	168.75	equivalog	4.3.1.2
+TIGR01503	390.1	240.9	equivalog	5.4.99.1
+TIGR01504	711.2	589.15	equivalog	4.1.1.47
+TIGR01505	340.75	301.35	equivalog	1.1.1.60
+TIGR01506	100.55	100.25	equivalog	2.5.1.9
+TIGR01507	431.1	386.85	equivalog	5.4.99.17
+TIGR01508	186.45	165.85	equivalog	1.1.1.-
+TIGR01509	29.4	23.9	subfamily	
+TIGR01510	103.3	72.75	equivalog	2.7.7.3
+TIGR01511	397	389.45	equivalog	3.6.3.4
+TIGR01512	313.5	304.3	equivalog	3.6.3.3
+TIGR01513	297.4	119.2	hypoth_equivalog	6.3.4.21
+TIGR01514	269.55	170.9	equivalog	6.3.4.21
+TIGR01515	463.95	262	equivalog	2.4.1.18
+TIGR01517	507.05	275.9	equivalog	3.6.3.8
+TIGR01518	165.4	71	equivalog	2.7.7.39
+TIGR01519	29.35	27.55	paralog_domain	
+TIGR01520	347.7	206.25	equivalog	4.1.2.13
+TIGR01521	496.35	373.15	equivalog	4.1.2.13
+TIGR01522	798.3	792.15	equivalog	3.6.3.8
+TIGR01523	645.05	306.45	equivalog	3.6.3.-
+TIGR01524	610.75	563.35	equivalog	3.6.3.2
+TIGR01525	346.25	329.8	subfamily	3.6.3.-
+TIGR01526	341.15	78.3	equivalog_domain	2.7.7.1
+TIGR01527	181.2	73.45	equivalog	2.7.7.1
+TIGR01528	42.45	37.95	subfamily	
+TIGR01529	130.45	67.2	equivalog	
+TIGR01530	436	253.5	equivalog	3.1.3.5 3.6.1.22
+TIGR01531	1399.55	574.95	equivalog	
+TIGR01532	530.55	455.25	equivalog	1.2.1.72
+TIGR01533	216.05	72.3	equivalog	
+TIGR01534	367.2	124.45	equivalog	1.2.1.-
+TIGR01535	741.9	337.85	equivalog	3.2.1.3
+TIGR01536	267.1	159.05	equivalog	6.3.5.4
+TIGR01537	112.05	56	equivalog	
+TIGR01538	165.85	38.35	equivalog	
+TIGR01539	172.7	108.85	equivalog	
+TIGR01540	166.05	102.35	equivalog	
+TIGR01541	104.75	20.95	equivalog_domain	
+TIGR01542	277.2	38.2	hypoth_equivalog	
+TIGR01543	59	30.7	equivalog	3.4.-.-
+TIGR01544	256.95	96.15	hypoth_equivalog	
+TIGR01545	259.25	204.5	hypoth_equivalog	
+TIGR01546	232.9	56.25	equivalog	1.2.1.59
+TIGR01547	105.05	50.85	equivalog	
+TIGR01548	140.2	79.85	hypoth_equivalog	
+TIGR01549	23.3	22.7	subfamily	
+TIGR01550	38.65	38.3	subfamily	
+TIGR01551	219.65	126.45	equivalog	
+TIGR01552	20.8	20.4	subfamily	
+TIGR01553	814.2	572.6	equivalog	1.1.5.6
+TIGR01554	23.5	21	equivalog	
+TIGR01555	196.25	57.3	hypoth_equivalog	
+TIGR01556	200.55	191.5	subfamily	2.4.1.-
+TIGR01557	29.3	26.05	subfamily_domain	
+TIGR01558	45.6	30.25	equivalog	
+TIGR01559	286.75	127.8	equivalog	2.5.1.21
+TIGR01560	26.35	26	hypoth_equivalog	
+TIGR01561	364.15	52.55	hypoth_equivalog	
+TIGR01562	187.65	54.8	equivalog	
+TIGR01563	20.6	20	hypoth_equivalog	
+TIGR01564	25	20	subfamily	
+TIGR01565	57.45	34	subfamily_domain	
+TIGR01566	51.1	41.65	domain	
+TIGR01567	121.9	84.45	subfamily_domain	
+TIGR01568	46.45	24.15	domain	
+TIGR01569	41.45	36.2	subfamily	
+TIGR01570	109.55	46.2	subfamily_domain	
+TIGR01571	35.05	27.4	domain	
+TIGR01572	104.2	60.65	paralog	
+TIGR01573	24.5	22	equivalog	
+TIGR01574	355.3	349.15	equivalog	2.-.-.-
+TIGR01575	86.4	82.65	equivalog	2.3.1.128
+TIGR01577	820.7	328.5	hypoth_equivalog	
+TIGR01578	314.7	310.95	hypoth_equivalog	
+TIGR01579	357.05	352.05	hypoth_equivalog	
+TIGR01580	1084.15	600.95	equivalog	1.7.99.4
+TIGR01581	210.3	202.6	hypoth_equivalog	
+TIGR01582	334.7	152.4	equivalog	1.2.1.2
+TIGR01583	115.85	56.1	equivalog	1.2.1.2
+TIGR01584	501.45	284.7	equivalog	2.8.3.10
+TIGR01586	52.95	50.95	domain	
+TIGR01587	102.45	93.1	equivalog_domain	
+TIGR01588	443.4	337.3	equivalog	4.1.3.6
+TIGR01589	36.55	24.85	domain	
+TIGR01590	71.1	46.55	paralog	
+TIGR01591	666.25	610.65	equivalog	1.2.1.2
+TIGR01592	47.3	28.25	equivalog	
+TIGR01593	40.2	38.3	subfamily	
+TIGR01594	55.05	33.15	equivalog	
+TIGR01595	125.8	36.95	subfamily	
+TIGR01596	43.45	42.8	equivalog_domain	3.1.-.-
+TIGR01597	175.5	97.65	paralog	
+TIGR01598	39.7	26.8	equivalog	
+TIGR01599	114.8	75.65	paralog	
+TIGR01600	70.75	33.7	equivalog	
+TIGR01601	54.75	25.35	paralog	
+TIGR01602	48.25	20.15	paralog_domain	
+TIGR01603	35.2	34.95	subfamily	
+TIGR01604	40.35	37.95	paralog_domain	
+TIGR01605	41.4	31.35	paralog	
+TIGR01606	52.85	44	equivalog	
+TIGR01607	218.25	113.5	paralog	
+TIGR01608	63.5	35.05	equivalog	4.1.3.6
+TIGR01609	74.55	46.85	paralog_domain	
+TIGR01610	45.5	30.75	equivalog_domain	
+TIGR01611	102.75	33.95	equivalog	
+TIGR01612	1615.85	1508.8	paralog	
+TIGR01613	108.7	99.35	subfamily_domain	
+TIGR01614	35.95	32.4	domain	
+TIGR01615	80.05	29.8	domain	
+TIGR01616	109	74.15	hypoth_equivalog	
+TIGR01617	75.05	57.5	subfamily	
+TIGR01618	138.75	46.65	hypoth_equivalog	
+TIGR01619	149.4	38.35	hypoth_equivalog	
+TIGR01620	166	89.75	hypoth_equivalog	
+TIGR01621	222.3	157.9	hypoth_equivalog	5.4.99.-
+TIGR01622	231.65	167	subfamily	
+TIGR01623	42	18.5	paralog_domain	
+TIGR01624	36.4	33.05	paralog_domain	
+TIGR01625	71.95	51.8	subfamily_domain	
+TIGR01626	151.1	68.9	hypoth_equivalog	
+TIGR01627	149.85	81.05	domain	
+TIGR01628	497.1	339.15	subfamily	
+TIGR01629	29	21	subfamily	
+TIGR01630	41.65	27.85	hypoth_equivalog	
+TIGR01631	89.75	28.3	paralog	
+TIGR01632	141.85	135.9	equivalog	
+TIGR01633	23.65	22.7	hypoth_equivalog_domain	
+TIGR01634	30.05	24	equivalog	
+TIGR01635	37.65	34.85	equivalog	
+TIGR01636	31.9	31.8	subfamily	
+TIGR01637	43.1	35.3	subfamily	
+TIGR01638	32.05	32.05	paralog_domain	
+TIGR01639	25.75	24.5	paralog_domain	
+TIGR01640	37.9	37.6	domain	
+TIGR01641	39.65	34	domain	
+TIGR01642	310.3	187.3	subfamily	
+TIGR01643	15.8	10.1	repeat	
+TIGR01644	46.75	36.05	subfamily	
+TIGR01645	443.95	206.55	subfamily	
+TIGR01646	121.8	113.6	subfamily	
+TIGR01647	615.5	548.95	equivalog	3.6.3.6
+TIGR01648	317.85	247.3	subfamily	
+TIGR01649	287.4	132.1	subfamily	
+TIGR01650	558.55	140.7	equivalog	6.6.1.2
+TIGR01651	759.05	137.6	equivalog	6.6.1.2
+TIGR01652	431.25	401.2	subfamily	3.6.3.1
+TIGR01653	32.1	30.15	subfamily	
+TIGR01654	189.35	176.55	subfamily	
+TIGR01655	29.65	29.6	subfamily	
+TIGR01656	84.15	62.4	subfamily_domain	
+TIGR01657	618.25	405.8	hypoth_equivalog	
+TIGR01658	195.3	142.75	equivalog_domain	3.1.3.48
+TIGR01659	486.2	217.1	subfamily	
+TIGR01660	524.05	348	equivalog	1.7.99.4
+TIGR01661	279.1	212.05	subfamily	
+TIGR01662	44.6	43	subfamily_domain	
+TIGR01663	502.8	172.25	equivalog	3.1.3.32
+TIGR01664	107.65	46.45	equivalog_domain	3.1.3.32
+TIGR01665	26.75	25.8	subfamily_domain	
+TIGR01666	470.75	242.7	hypoth_equivalog	
+TIGR01667	467.8	302.5	subfamily	
+TIGR01668	89.1	56.35	hypoth_equivalog	3.1.3.-
+TIGR01669	28.2	27.9	equivalog	
+TIGR01670	106.95	52.85	subfamily	3.1.3.45
+TIGR01671	41.3	25.85	hypoth_equivalog	
+TIGR01672	195.8	105.6	hypoth_equivalog	3.1.3.-
+TIGR01673	34.75	34.65	equivalog	
+TIGR01674	74.45	39.55	equivalog	
+TIGR01675	264.3	132.75	equivalog	
+TIGR01676	458.25	339.25	equivalog	1.3.2.3
+TIGR01677	383.1	151.85	subfamily	1.-.-.-
+TIGR01678	396.8	295.4	subfamily	
+TIGR01679	292.25	290.2	subfamily	
+TIGR01680	375.8	375.6	equivalog	
+TIGR01681	35.75	34.7	subfamily_domain	
+TIGR01682	66.15	57.65	equivalog	
+TIGR01683	37.45	29.4	equivalog	
+TIGR01684	134	43.85	hypoth_equivalog	
+TIGR01685	53.75	36.15	equivalog	
+TIGR01686	146.65	60.9	subfamily_domain	
+TIGR01687	49.5	48.25	subfamily	
+TIGR01688	52.35	35.1	equivalog	6.1.1.13
+TIGR01689	162	47.8	subfamily	
+TIGR01690	60.85	24	hypoth_equivalog	
+TIGR01691	128.1	88.95	equivalog	3.1.3.77
+TIGR01692	291.6	231.15	equivalog	1.1.1.31
+TIGR01693	519.4	285.45	equivalog	2.7.7.59
+TIGR01694	274.85	229.8	equivalog	2.4.2.28
+TIGR01695	235.55	142.15	equivalog	
+TIGR01696	341.2	241.75	equivalog	5.4.2.7
+TIGR01697	197.1	143.3	subfamily	2.4.2.1
+TIGR01698	302.6	294.55	equivalog	2.4.2.1
+TIGR01699	370.9	294.4	equivalog	2.4.2.1
+TIGR01700	293.35	288.7	equivalog	2.4.2.1
+TIGR01701	582.15	323.8	hypoth_equivalog	
+TIGR01702	478	210.55	equivalog	1.2.99.2
+TIGR01703	360.8	181.95	equivalog	1.7.-.-
+TIGR01704	73.8	58.2	equivalog	3.2.2.16 3.2.2.9
+TIGR01705	152.2	40.85	hypoth_equivalog	
+TIGR01706	930.55	472.5	equivalog	1.7.99.4
+TIGR01707	44.35	34	equivalog	
+TIGR01708	45.95	44	equivalog	
+TIGR01709	168.05	54.7	equivalog	
+TIGR01710	88.85	51.3	equivalog	
+TIGR01711	64.85	29.65	equivalog	
+TIGR01712	97.05	46.8	equivalog	2.1.1.72
+TIGR01713	101.6	47.3	equivalog	
+TIGR01714	49.8	49.5	hypoth_equivalog_domain	
+TIGR01715	77.35	53.85	equivalog	
+TIGR01716	36.9	35.35	subfamily_domain	
+TIGR01717	364.7	238.1	equivalog	3.2.2.4
+TIGR01718	280.3	209.4	equivalog	2.4.2.3
+TIGR01719	249.95	125.5	equivalog	2.4.2.3
+TIGR01720	74.2	39	subfamily_domain	
+TIGR01721	307.2	199.6	hypoth_equivalog	
+TIGR01722	448.5	392.4	equivalog	1.2.1.27
+TIGR01723	341.45	341.1	equivalog	1.12.98.2
+TIGR01724	167.2	166.65	subfamily	
+TIGR01725	30.8	27.95	hypoth_equivalog	
+TIGR01726	42.2	37.5	subfamily_domain	
+TIGR01727	37.6	33.3	subfamily_domain	
+TIGR01728	163.5	156.8	subfamily	
+TIGR01729	304.25	124.65	equivalog	
+TIGR01730	94.9	84.65	subfamily	
+TIGR01731	18	15.4	repeat	
+TIGR01732	21.35	19.35	subfamily	
+TIGR01733	317.4	254.65	subfamily_domain	
+TIGR01734	559.85	487.6	equivalog	6.1.1.13
+TIGR01735	1123.05	634.5	equivalog	6.3.5.3
+TIGR01736	525.75	347.9	equivalog	6.3.5.3
+TIGR01737	177.8	151.8	equivalog	6.3.5.3
+TIGR01738	206.95	120.4	equivalog	3.1.1.85
+TIGR01739	716.1	544.65	hypoth_equivalog	
+TIGR01740	92.3	75.1	equivalog_domain	4.1.1.23
+TIGR01741	82.05	79.85	subfamily	
+TIGR01742	160.45	151.7	subfamily	
+TIGR01743	258.7	133	equivalog	
+TIGR01744	164.45	78.2	equivalog	2.4.2.22
+TIGR01745	402.9	90.45	equivalog	1.2.1.11
+TIGR01746	213.35	148.4	subfamily_domain	
+TIGR01747	274	112.9	subfamily	4.3.1.15
+TIGR01748	584.95	225.55	equivalog	5.3.1.14
+TIGR01749	238.15	160.1	equivalog	4.2.1.59
+TIGR01750	155.15	125.15	equivalog	4.2.1.-
+TIGR01751	378.55	236.3	equivalog	1.3.1.85
+TIGR01752	146.75	108.1	equivalog	
+TIGR01753	123	90.5	equivalog	
+TIGR01754	163.8	81.5	equivalog	
+TIGR01755	132.5	121.15	equivalog	1.6.5.2
+TIGR01756	486.25	486.05	equivalog	1.1.1.27
+TIGR01757	598.3	424.3	equivalog	1.1.1.82
+TIGR01758	470.4	457.35	equivalog	1.1.1.37
+TIGR01759	345.65	234.85	subfamily	1.1.1.-
+TIGR01760	28.8	27.5	equivalog_domain	
+TIGR01761	188.8	78.4	subfamily	
+TIGR01762	226.3	49.7	subfamily	
+TIGR01763	351.85	285.55	equivalog	1.1.1.37
+TIGR01764	28.8	22.5	domain	
+TIGR01765	47.25	19.1	subfamily_domain	
+TIGR01766	24.8	21.95	equivalog_domain	
+TIGR01767	241.65	64.15	equivalog	2.7.1.100
+TIGR01768	113.25	62.9	subfamily	2.5.1.-
+TIGR01769	161.55	85.85	equivalog	2.5.1.41
+TIGR01770	332.6	196.2	subfamily	
+TIGR01771	303.55	281.9	equivalog	1.1.1.27
+TIGR01772	273.05	201	equivalog	1.1.1.37
+TIGR01773	678.1	491.5	equivalog	
+TIGR01774	678.2	464.45	subfamily	
+TIGR01776	468.8	308	subfamily	
+TIGR01777	207.35	132.75	hypoth_equivalog	
+TIGR01778	472.45	213.9	equivalog	
+TIGR01779	599.7	295.65	equivalog	
+TIGR01780	646.35	499.7	subfamily	1.2.1.-
+TIGR01781	294.45	294.4	paralog	
+TIGR01782	310	123	subfamily	
+TIGR01783	223.5	197.25	subfamily	
+TIGR01784	52.1	28.7	subfamily	
+TIGR01785	316.85	251.65	subfamily	
+TIGR01786	323.75	270.65	subfamily	
+TIGR01787	322.7	233.5	subfamily	5.4.-.-
+TIGR01788	380.4	213.05	equivalog	4.1.1.15
+TIGR01789	215.2	100.4	equivalog	
+TIGR01790	209.5	78.95	subfamily	
+TIGR01791	66.95	63.75	equivalog_domain	5.4.99.5
+TIGR01792	680	212.95	equivalog	3.5.1.5
+TIGR01793	619.75	135.75	equivalog	2.3.3.1
+TIGR01795	107.55	58.8	equivalog	5.4.99.5
+TIGR01796	82	51.3	equivalog	5.4.99.5
+TIGR01797	73.7	72.45	equivalog_domain	5.4.99.5
+TIGR01798	485.15	465.1	equivalog	2.3.3.1
+TIGR01799	95.9	55.9	equivalog_domain	5.4.99.5
+TIGR01800	421.3	418.15	subfamily	
+TIGR01801	106.35	68.3	equivalog_domain	5.4.99.5
+TIGR01802	170.9	89.65	equivalog	5.4.99.5
+TIGR01803	73.35	60.35	subfamily	
+TIGR01804	668.6	619.95	equivalog	1.2.1.8
+TIGR01805	71.2	61.2	equivalog_domain	5.4.99.5
+TIGR01806	74.15	53.6	equivalog	5.4.99.5
+TIGR01807	69.55	66.45	equivalog_domain	5.4.99.5
+TIGR01808	52.15	50.65	equivalog_domain	5.4.99.5
+TIGR01809	196	173.4	equivalog_domain	1.1.1.25
+TIGR01810	732.1	570.25	equivalog	1.1.99.1
+TIGR01811	541.35	452.65	subfamily	1.3.99.1
+TIGR01812	567.3	528.3	subfamily	
+TIGR01813	285.45	218.75	subfamily	
+TIGR01814	246.4	111.75	equivalog	3.7.1.3
+TIGR01815	739.15	432.45	equivalog	4.1.3.27
+TIGR01816	727.35	717.55	equivalog	
+TIGR01817	528.85	421	equivalog	
+TIGR01818	558.6	484.6	equivalog	
+TIGR01819	257.45	106.75	equivalog	2.7.8.28
+TIGR01820	512.05	501.2	equivalog	4.1.3.27
+TIGR01821	338.55	334.75	equivalog_domain	2.3.1.37
+TIGR01822	493	439.1	equivalog	2.3.1.29
+TIGR01823	442.55	433.1	equivalog	2.6.1.85
+TIGR01824	408.55	389.3	equivalog	2.6.1.85
+TIGR01825	535.4	491.85	subfamily	2.3.1.-
+TIGR01826	196	60.75	subfamily	
+TIGR01827	52.1	51.7	equivalog	
+TIGR01828	843.45	321.25	equivalog	2.7.9.1
+TIGR01829	302.1	300.9	subfamily	1.1.1.36
+TIGR01830	297.75	291.1	equivalog	1.1.1.100
+TIGR01831	338.85	273.9	hypoth_equivalog	
+TIGR01832	338.85	284.85	equivalog	1.1.1.125
+TIGR01833	286.2	233.65	equivalog	2.3.3.10
+TIGR01834	154.95	74.3	subfamily	
+TIGR01835	360.35	238.85	equivalog	2.3.3.10
+TIGR01836	365.3	174.75	subfamily	
+TIGR01837	94.7	40.15	subfamily_domain	
+TIGR01838	622.65	532.45	subfamily	
+TIGR01839	855.4	469.95	subfamily	
+TIGR01840	107.85	74.7	subfamily	3.1.1.-
+TIGR01841	30.2	27.25	subfamily_domain	
+TIGR01842	510.15	386.6	subfamily	
+TIGR01843	208.65	136.75	subfamily	
+TIGR01844	225.15	183.8	subfamily	
+TIGR01845	210.05	179.6	subfamily	
+TIGR01846	725.55	505.7	subfamily	
+TIGR01847	15.7	14.75	domain	
+TIGR01848	109.45	52.35	equivalog	
+TIGR01849	300.75	86.5	subfamily	3.1.1.-
+TIGR01850	233.6	171.85	equivalog	1.2.1.38
+TIGR01851	229.85	152.2	equivalog	1.2.1.38
+TIGR01852	231.05	114.05	equivalog	2.3.1.129
+TIGR01853	242.5	112.45	equivalog	2.3.1.191
+TIGR01854	190.35	94.55	equivalog	3.6.1.54
+TIGR01855	105.4	84.35	equivalog	2.4.2.-
+TIGR01856	90.2	38.6	subfamily	
+TIGR01857	1057.05	797.8	equivalog	6.3.5.3
+TIGR01858	443.55	349.45	equivalog	4.1.2.-
+TIGR01859	343.05	338.6	equivalog	4.1.2.13
+TIGR01860	823.1	822.85	equivalog	1.18.6.1
+TIGR01861	873.8	873.55	equivalog	1.18.6.1
+TIGR01862	486.05	414.85	subfamily	1.18.6.1
+TIGR01863	218.65	156.95	equivalog	
+TIGR01865	149	133.9	equivalog	3.1.-.-
+TIGR01866	35	25	equivalog	
+TIGR01868	68.95	66.95	equivalog	
+TIGR01869	178.05	140.5	exception	
+TIGR01870	30.6	29.25	hypoth_equivalog_domain	
+TIGR01873	33.15	27.15	equivalog	
+TIGR01874	23.05	21.7	exception	
+TIGR01875	67.3	43.1	subfamily	
+TIGR01876	85	65	exception	
+TIGR01877	58.65	31.95	equivalog	3.1.-.-
+TIGR01878	53.35	22.85	hypoth_equivalog	
+TIGR01879	204	143.85	subfamily	3.5.-.-
+TIGR01880	338.6	201.9	subfamily	3.5.1.14
+TIGR01881	27.9	26.9	equivalog	
+TIGR01882	285.75	212.95	equivalog	3.4.11.-
+TIGR01883	274.25	174.05	hypoth_equivalog	
+TIGR01884	60.2	42.05	subfamily	
+TIGR01885	378.4	352.3	equivalog	2.6.1.13
+TIGR01886	632	530.2	equivalog	3.4.13.-
+TIGR01887	207.95	192.05	subfamily	3.4.13.-
+TIGR01888	100.4	36.2	equivalog	
+TIGR01889	62.6	51.75	paralog_domain	
+TIGR01890	202.85	174.75	equivalog	2.3.1.1
+TIGR01891	153.75	106.2	subfamily	
+TIGR01892	297.7	239.8	equivalog	3.5.1.16
+TIGR01893	343.75	185.15	subfamily	3.4.13.20
+TIGR01894	28.65	19.3	hypoth_equivalog_domain	
+TIGR01895	96.7	86.45	exception	
+TIGR01896	103.35	88	hypoth_equivalog	
+TIGR01897	110	47.2	hypoth_equivalog	
+TIGR01898	51.1	36.85	equivalog	
+TIGR01899	38.3	28.05	equivalog	
+TIGR01900	304.2	199.95	equivalog	3.5.1.18
+TIGR01901	29.1	15.05	domain	
+TIGR01902	163.1	125.9	subfamily	
+TIGR01903	85.5	32.35	equivalog	
+TIGR01904	19.05	14.9	paralog_domain	
+TIGR01905	25.2	17	subfamily_domain	
+TIGR01906	74.8	49.25	hypoth_equivalog	
+TIGR01907	45.2	40.5	equivalog	
+TIGR01908	19.4	16.85	equivalog_domain	
+TIGR01909	47.4	36.55	subfamily	
+TIGR01910	217.6	214.7	subfamily	3.4.-.-
+TIGR01911	66.35	48.5	subfamily	
+TIGR01912	192.6	176.85	equivalog	
+TIGR01913	76.95	56.55	equivalog	
+TIGR01914	232.5	107.4	exception	
+TIGR01915	149.8	86.85	equivalog	
+TIGR01916	180.65	130.7	equivalog	6.3.2.31
+TIGR01917	602.2	580	equivalog	1.21.4.2
+TIGR01918	65.45	37.1	subfamily	
+TIGR01919	306.45	235.4	equivalog	5.3.1.16 5.3.1.24
+TIGR01920	126.85	124.45	equivalog	2.7.1.71
+TIGR01921	180.6	87.8	equivalog	1.4.1.16
+TIGR01922	158.35	47.8	equivalog	3.5.4.10
+TIGR01923	330.15	313.95	equivalog	6.2.1.26
+TIGR01924	155.05	100.1	equivalog	2.7.11.1
+TIGR01925	91.75	78.9	equivalog	2.7.11.1
+TIGR01926	81.8	55.6	subfamily	
+TIGR01927	130.55	98.05	equivalog	4.2.1.113
+TIGR01928	200.65	140.35	equivalog	4.2.1.113
+TIGR01929	342.7	201.4	equivalog	4.1.3.36
+TIGR01930	240.55	180.65	subfamily	2.3.1.16
+TIGR01931	668.15	425.1	equivalog	1.8.1.2
+TIGR01932	134.4	81	equivalog	
+TIGR01933	159.4	133.1	equivalog	
+TIGR01934	158.35	112.5	subfamily	2.1.1.-
+TIGR01935	123.8	78.35	subfamily	
+TIGR01936	321.05	75.55	equivalog	1.6.5.-
+TIGR01937	349.9	207.25	equivalog	1.6.5.-
+TIGR01938	144	64.5	equivalog	1.6.5.-
+TIGR01939	244.85	189.25	equivalog	1.6.5.-
+TIGR01940	247.55	205.7	equivalog	1.6.5.-
+TIGR01941	295	152.05	equivalog	1.6.5.-
+TIGR01942	305.65	202.8	subfamily	2.7.7.19
+TIGR01943	229.3	210.3	subfamily	
+TIGR01944	68.7	64.05	subfamily	
+TIGR01945	245.95	228.85	subfamily	
+TIGR01946	207.05	193.4	subfamily	
+TIGR01947	102	68.2	subfamily	
+TIGR01948	213.4	187.25	subfamily	
+TIGR01949	299.45	243.4	hypoth_equivalog	4.2.1.-
+TIGR01950	116.9	85.3	equivalog	
+TIGR01951	88.35	77.9	equivalog	
+TIGR01952	74.35	58.3	hypoth_equivalog	
+TIGR01953	253.4	169.1	equivalog_domain	
+TIGR01954	48.15	30.25	equivalog_domain	
+TIGR01955	144.5	93.25	equivalog	
+TIGR01956	103.1	80.1	hypoth_equivalog	
+TIGR01957	142.7	136.65	subfamily	
+TIGR01958	142.4	137.8	subfamily	
+TIGR01959	558.65	537.8	equivalog	1.6.99.5
+TIGR01960	588.7	393.5	subfamily	
+TIGR01961	122.45	121.35	subfamily	
+TIGR01962	459.35	458.35	equivalog_domain	1.6.99.5
+TIGR01963	307.05	240.8	subfamily	
+TIGR01964	293.7	266.75	subfamily	
+TIGR01965	15.5	13.65	repeat	
+TIGR01966	141.5	117.35	equivalog	2.7.7.56
+TIGR01967	722.75	558.45	equivalog	3.6.4.13
+TIGR01968	212.9	200.95	equivalog	
+TIGR01969	201.75	196.65	subfamily	
+TIGR01970	546.15	400.3	equivalog	3.6.4.-
+TIGR01971	113.05	103.55	subfamily	
+TIGR01972	263.8	250.6	subfamily	
+TIGR01973	470.05	439.55	equivalog	1.6.99.5
+TIGR01974	407.5	392	subfamily	1.6.-.-
+TIGR01975	331.25	101.8	equivalog	3.4.19.5
+TIGR01976	352.35	283.7	hypoth_equivalog	
+TIGR01977	377	339	hypoth_equivalog	
+TIGR01978	212.8	127.85	equivalog	
+TIGR01979	475.1	352.7	subfamily	
+TIGR01980	346.4	297.8	equivalog	
+TIGR01981	222	215	equivalog	
+TIGR01982	487.55	465.35	equivalog	1.14.13.-
+TIGR01983	102.95	77.3	equivalog	2.1.1.64
+TIGR01984	392.2	355.4	equivalog	1.14.13.-
+TIGR01985	99.7	76.65	equivalog	
+TIGR01986	329.8	163.05	equivalog	6.3.2.3
+TIGR01987	55.8	42.2	subfamily	
+TIGR01988	224.65	193.65	subfamily	1.14.13.-
+TIGR01989	489.3	353.9	equivalog	1.14.13.-
+TIGR01990	189.4	146.1	equivalog	5.4.2.6
+TIGR01991	708.55	668.45	equivalog	
+TIGR01992	591.95	555.25	equivalog_domain	2.7.1.69
+TIGR01993	142.9	81.7	hypoth_equivalog	3.1.3.5
+TIGR01994	92.5	79.8	equivalog	
+TIGR01995	614.7	606.25	subfamily	2.7.1.69
+TIGR01996	559.3	548	equivalog_domain	2.7.1.69
+TIGR01997	136.2	133.8	equivalog	
+TIGR01998	553.2	510.15	equivalog_domain	2.7.1.69
+TIGR01999	192.4	155.9	equivalog_domain	
+TIGR02000	273.3	167.9	equivalog	
+TIGR02001	47.15	34.75	subfamily	
+TIGR02002	591.8	585.35	equivalog_domain	2.7.1.69
+TIGR02003	649.85	442.35	hypoth_equivalog_domain	2.7.1.69
+TIGR02004	632.2	511.9	hypoth_equivalog_domain	2.7.1.69
+TIGR02005	607.3	386.8	subfamily_domain	2.7.1.69
+TIGR02006	643.2	621.9	equivalog	2.8.1.7
+TIGR02007	132.1	110.7	equivalog	
+TIGR02008	81.15	68.05	subfamily	
+TIGR02009	153.35	145.85	subfamily	
+TIGR02010	207.55	174.35	equivalog	
+TIGR02011	150.6	133.3	equivalog	
+TIGR02012	325.3	122.35	equivalog	
+TIGR02013	801.15	610.1	equivalog	2.7.7.6
+TIGR02014	529	330.25	equivalog	1.18.-.-
+TIGR02015	425.15	250.15	equivalog	1.18.1.-
+TIGR02016	331.2	282.2	equivalog	
+TIGR02017	278.75	127.2	equivalog	3.5.1.68
+TIGR02018	253.2	159.85	equivalog	
+TIGR02019	74.3	28.8	equivalog	
+TIGR02020	101.35	101.05	equivalog	4.2.1.-
+TIGR02021	158.9	86	equivalog	2.1.1.11
+TIGR02022	413.05	213.9	equivalog	3.5.3.13
+TIGR02023	343.3	215.7	subfamily	1.3.1.-
+TIGR02024	221.25	164.8	equivalog	2.1.2.5
+TIGR02025	829	823.75	equivalog	6.6.1.1
+TIGR02026	481.35	328.8	equivalog	
+TIGR02027	227.8	112.4	equivalog	2.7.7.6
+TIGR02028	505.3	418.9	equivalog	
+TIGR02029	192.5	120.55	equivalog	1.14.13.81
+TIGR02030	466.95	458.15	equivalog	6.6.1.1
+TIGR02031	499.55	478.55	equivalog	6.6.1.1
+TIGR02032	158.8	149.35	subfamily	1.3.1.-
+TIGR02033	393.25	322.65	equivalog	3.5.2.2
+TIGR02034	336.1	327.65	subfamily	2.7.7.4
+TIGR02035	368.25	159.25	equivalog	4.3.1.18
+TIGR02036	352.4	258.45	equivalog	
+TIGR02037	416.2	365.8	subfamily	3.4.21.-
+TIGR02038	422.95	291.85	equivalog	3.4.21.-
+TIGR02039	396.6	213.25	subfamily	2.7.7.4
+TIGR02040	275.4	149.05	equivalog	
+TIGR02041	756.55	707.5	equivalog	1.8.1.2
+TIGR02042	731.5	574.7	equivalog	1.8.7.1
+TIGR02043	167.95	121.7	equivalog	
+TIGR02044	147.4	116.9	equivalog	
+TIGR02045	408.1	404.3	equivalog	2.7.1.146
+TIGR02046	96	56.5	subfamily	
+TIGR02047	151.45	139.35	equivalog	
+TIGR02048	249.05	72.7	equivalog	6.3.2.2
+TIGR02049	293.9	206.5	equivalog	6.3.2.2
+TIGR02050	176.4	150.95	subfamily	6.3.-.-
+TIGR02051	150.85	123.7	equivalog	
+TIGR02052	92.55	65.2	equivalog	
+TIGR02053	454.45	419.65	equivalog	1.16.1.1
+TIGR02054	103.65	69.95	equivalog	
+TIGR02055	235.3	232.8	subfamily	1.8.4.10
+TIGR02056	436.45	381.25	equivalog	2.5.1.62
+TIGR02057	254.2	228.85	equivalog	1.8.4.8
+TIGR02058	56.85	27.85	subfamily	
+TIGR02059	40.1	35.3	domain	
+TIGR02060	135.65	55.15	equivalog	1.8.99.2
+TIGR02061	641.75	326	equivalog	1.8.99.2
+TIGR02062	641.9	328.55	equivalog	3.1.13.1
+TIGR02063	597.85	424.2	equivalog	3.1.-.-
+TIGR02064	392.85	222.85	equivalog	1.8.99.3
+TIGR02065	318.7	292.55	equivalog	3.1.13.-
+TIGR02066	341.5	205.25	equivalog	1.8.99.3
+TIGR02067	275.15	190.95	equivalog	3.1.3.15
+TIGR02068	730.7	319.25	equivalog	6.3.2.29 6.3.2.30
+TIGR02069	126.6	73.3	equivalog	3.4.15.6
+TIGR02070	182.65	176.55	equivalog	2.4.2.-
+TIGR02071	717.75	425.8	equivalog	
+TIGR02072	184.95	134.85	equivalog	2.1.1.-
+TIGR02073	494.2	407.25	equivalog	
+TIGR02074	508.75	506.7	subfamily	
+TIGR02075	243.9	124.7	equivalog	2.7.4.22
+TIGR02076	158.05	114.5	hypoth_equivalog	2.7.4.-
+TIGR02077	22.95	20.95	equivalog	
+TIGR02078	242.4	167.1	subfamily	2.7.2.4
+TIGR02079	440.55	373.55	equivalog	4.3.1.19
+TIGR02080	504.55	450.65	equivalog	2.5.1.48
+TIGR02081	189.5	56.95	equivalog	
+TIGR02082	1010.85	486.1	equivalog	2.1.1.13
+TIGR02083	610.65	578.95	equivalog	4.2.1.33
+TIGR02084	245.85	231.4	equivalog	4.2.1.33
+TIGR02085	429.5	204.95	equivalog	2.1.1.189
+TIGR02086	410.15	399.05	subfamily	
+TIGR02087	108.95	105.85	subfamily	
+TIGR02088	409.8	342.85	subfamily	
+TIGR02089	470.4	397.35	equivalog	1.1.1.93
+TIGR02090	484.75	473.05	subfamily	
+TIGR02091	424.9	343.55	equivalog	2.7.7.27
+TIGR02092	236.6	231.25	equivalog	2.7.7.27
+TIGR02093	552.9	250.4	subfamily	2.4.1.1
+TIGR02094	191.7	148.2	subfamily	2.4.1.1
+TIGR02095	328.45	219.55	subfamily	2.4.1.21
+TIGR02096	97.1	41.75	subfamily	
+TIGR02097	38.05	23.1	domain	
+TIGR02098	20.9	19.7	domain	
+TIGR02099	519.15	386.5	hypoth_equivalog	
+TIGR02100	640.9	275.35	equivalog	3.2.1.-
+TIGR02101	130.75	95.1	subfamily	
+TIGR02102	1042.25	487.75	equivalog_domain	
+TIGR02103	697.6	384.05	subfamily_domain	3.2.1.41
+TIGR02104	504.5	431.75	equivalog	3.2.1.41
+TIGR02105	41.7	28.25	equivalog	
+TIGR02106	31.6	22.05	equivalog	
+TIGR02107	20	19	equivalog	
+TIGR02108	303.55	76.85	equivalog	
+TIGR02109	381.35	174.15	equivalog	
+TIGR02110	320	275	equivalog	3.4.24.-
+TIGR02111	240	70	equivalog	1.3.3.11
+TIGR02112	89.55	45.45	equivalog	
+TIGR02113	261.4	213.2	equivalog	4.1.1.36
+TIGR02114	217.2	116.2	equivalog	6.3.2.5
+TIGR02115	26.85	20.55	equivalog	3.6.3.12
+TIGR02116	51.8	41.6	equivalog	
+TIGR02117	131	69.95	hypoth_equivalog	
+TIGR02118	30.5	30.3	subfamily	
+TIGR02119	328.05	323.05	equivalog	
+TIGR02120	424	395.55	equivalog	
+TIGR02121	515.5	260.75	equivalog	
+TIGR02122	84.35	69.25	subfamily	
+TIGR02123	320.65	250.4	subfamily	
+TIGR02124	251.6	148.35	equivalog	
+TIGR02125	121.5	73.95	equivalog	
+TIGR02126	37	22.8	equivalog	
+TIGR02127	110.6	98.1	equivalog	4.1.1.23
+TIGR02128	213.9	111.1	equivalog	5.3.1.9
+TIGR02129	229.3	149.8	equivalog	5.3.1.16
+TIGR02130	294.55	117.15	equivalog	1.17.1.8
+TIGR02131	109.3	108.85	equivalog	
+TIGR02132	148.4	47.4	equivalog	
+TIGR02133	168.2	163.4	hypoth_equivalog	5.3.1.6
+TIGR02134	281.95	193.65	equivalog	2.2.1.2
+TIGR02135	130.25	119.05	equivalog	
+TIGR02136	206.6	148.8	subfamily	
+TIGR02137	223.4	77.65	equivalog	3.1.3.3
+TIGR02138	196.45	194.4	equivalog	
+TIGR02139	246.1	225.6	equivalog	
+TIGR02140	329.1	212.2	equivalog	
+TIGR02141	182.6	181.85	equivalog	
+TIGR02142	285.05	241.1	equivalog	3.6.3.29
+TIGR02143	334.65	165.4	equivalog	2.1.1.35
+TIGR02144	275.6	201.55	equivalog	
+TIGR02145	41.65	21	domain	
+TIGR02146	413.55	400.45	hypoth_equivalog	2.3.3.14
+TIGR02147	50	40	paralog	
+TIGR02148	45	23.05	domain	
+TIGR02149	302.4	287.1	subfamily	
+TIGR02150	105.8	59.45	equivalog	5.3.3.2
+TIGR02151	281.3	153.7	equivalog	5.3.3.2
+TIGR02152	299.65	172.4	equivalog	2.7.1.15
+TIGR02153	324	258.35	equivalog	6.3.5.-
+TIGR02154	296.2	260.85	equivalog	
+TIGR02155	646.3	597.5	equivalog	6.2.1.30
+TIGR02156	348.2	219.05	hypoth_equivalog	
+TIGR02157	85.45	42.5	hypoth_equivalog	
+TIGR02158	133.35	79.1	hypoth_equivalog	
+TIGR02159	108.15	74.4	equivalog	
+TIGR02160	420.8	409.3	hypoth_equivalog	
+TIGR02161	310.6	296.05	subfamily	
+TIGR02162	478.2	372.15	equivalog	
+TIGR02163	213.05	104.7	subfamily	
+TIGR02164	1465	1100	equivalog	1.7.2.3
+TIGR02165	45	30	equivalog	
+TIGR02166	777.7	525.1	subfamily	
+TIGR02167	16.6	16.3	repeat	
+TIGR02168	567.35	557.95	equivalog	
+TIGR02169	729.4	694.65	equivalog	
+TIGR02170	87.9	67.1	equivalog	2.1.1.148
+TIGR02171	544.35	465.2	paralog	
+TIGR02172	228.2	69.05	paralog	
+TIGR02173	102.1	77.65	hypoth_equivalog	2.7.4.14
+TIGR02174	34.2	30	domain	
+TIGR02175	81.1	72.4	subfamily	
+TIGR02176	911.35	659.3	equivalog	1.2.7.1
+TIGR02177	261.9	258.85	subfamily	
+TIGR02178	264.05	199.65	hypoth_equivalog	
+TIGR02179	60.05	55.55	subfamily	
+TIGR02180	87.25	79.95	equivalog	
+TIGR02181	90	82.45	equivalog	
+TIGR02182	186.65	134.2	equivalog	
+TIGR02183	106.5	68.25	equivalog	
+TIGR02184	28.5	20.4	paralog_domain	
+TIGR02185	76.45	57.65	subfamily	
+TIGR02186	255.25	69.6	hypoth_equivalog	
+TIGR02187	161.3	126.3	hypoth_equivalog	
+TIGR02188	724.95	684.65	equivalog	6.2.1.1
+TIGR02189	93.8	92.8	paralog	
+TIGR02190	99.3	82.9	hypoth_equivalog_domain	
+TIGR02191	166.25	165.7	equivalog	3.1.26.3
+TIGR02192	264.9	109.05	hypoth_equivalog	
+TIGR02193	185.3	144	equivalog	2.4.-.-
+TIGR02194	85.75	72.05	subfamily	
+TIGR02195	134.6	106.95	equivalog	2.4.-.-
+TIGR02196	88.55	76.2	hypoth_equivalog	
+TIGR02197	274.6	199.7	equivalog	5.1.3.20
+TIGR02198	345	116.9	equivalog_domain	2.7.1.-
+TIGR02199	181.5	91.55	equivalog_domain	2.7.7.-
+TIGR02200	89.5	76.45	hypoth_equivalog	
+TIGR02201	170.2	148.85	equivalog	2.4.1.-
+TIGR02202	80	40	paralog_domain	
+TIGR02203	602	575.55	equivalog	
+TIGR02204	780.4	598.1	hypoth_equivalog	
+TIGR02205	119.65	95.35	equivalog	
+TIGR02206	75	57.95	hypoth_equivalog	
+TIGR02207	297.8	248.25	subfamily	2.3.1.-
+TIGR02208	336.05	268.6	equivalog	2.3.1.-
+TIGR02209	42.45	29.8	equivalog	
+TIGR02210	336.7	313.5	equivalog	
+TIGR02211	307.75	284.45	equivalog	3.6.3.-
+TIGR02212	362.45	242.1	subfamily	
+TIGR02213	540.35	485.15	equivalog	
+TIGR02214	688	590.65	equivalog	
+TIGR02215	39	30.8	hypoth_equivalog	
+TIGR02216	56.1	28.15	hypoth_equivalog	
+TIGR02217	136.65	29.35	subfamily	
+TIGR02218	80.5	53.85	subfamily	
+TIGR02219	81.9	62.25	hypoth_equivalog	
+TIGR02220	66.65	20.1	hypoth_equivalog_domain	
+TIGR02221	76.25	65.3	hypoth_equivalog	
+TIGR02222	119.65	94.4	subfamily	
+TIGR02223	107.65	65.55	equivalog	
+TIGR02224	335.15	316.75	equivalog	
+TIGR02225	329.6	326.65	equivalog	
+TIGR02226	23.05	21	domain	
+TIGR02227	47	43	equivalog	3.4.21.89
+TIGR02228	51.85	42.15	equivalog	3.4.21.89
+TIGR02229	37.25	27.05	subfamily	
+TIGR02230	46.7	31.4	hypoth_equivalog	3.6.3.-
+TIGR02231	112.6	82	subfamily	
+TIGR02232	20.8	20.6	repeat	
+TIGR02234	71.15	23.35	hypoth_equivalog	
+TIGR02235	225	155.1	equivalog	2.5.1.-
+TIGR02236	361.15	355.6	equivalog	
+TIGR02237	172.4	155.4	equivalog	
+TIGR02238	447.7	443.55	equivalog	
+TIGR02239	478.05	457.1	equivalog	
+TIGR02240	250.6	182.5	equivalog	3.1.1.-
+TIGR02241	62.4	31.7	subfamily	
+TIGR02242	51.85	33.45	domain	
+TIGR02243	155.8	88.05	equivalog	
+TIGR02244	237.15	118.4	subfamily	
+TIGR02245	192.25	130.25	hypoth_equivalog	
+TIGR02246	33.95	27.6	subfamily	
+TIGR02247	125.4	69.85	subfamily_domain	
+TIGR02248	229.9	50.1	equivalog	
+TIGR02249	265	260	subfamily	
+TIGR02250	135.25	102.3	subfamily_domain	3.1.3.16
+TIGR02251	139.15	101.65	subfamily_domain	
+TIGR02252	155.2	120.15	subfamily	
+TIGR02253	169.75	148.7	subfamily	
+TIGR02254	159.9	152.1	equivalog	3.1.3.5
+TIGR02256	127.6	34.55	hypoth_equivalog	
+TIGR02257	822.05	622.05	equivalog	6.6.1.2
+TIGR02258	65.7	47.3	equivalog	6.5.1.-
+TIGR02259	578	168.45	equivalog	1.3.7.8
+TIGR02260	486.55	179.8	equivalog	1.3.7.8
+TIGR02261	312.85	131.05	equivalog	1.3.7.8
+TIGR02262	375.25	362.25	subfamily	
+TIGR02263	421.15	141.8	equivalog	1.3.7.8
+TIGR02264	100.15	99.8	paralog	
+TIGR02265	25	20	subfamily	
+TIGR02266	68.7	54.3	paralog_domain	
+TIGR02267	60	40	domain	
+TIGR02268	76.15	62.75	paralog	
+TIGR02269	85.75	85.45	paralog	
+TIGR02270	206.8	91.7	subfamily	
+TIGR02271	49.75	26.15	domain	
+TIGR02272	442.1	225.95	equivalog	1.13.11.4
+TIGR02273	66.2	60.55	equivalog	
+TIGR02274	92.8	52.7	equivalog	3.5.4.13
+TIGR02275	723.55	373.45	equivalog	2.7.7.58
+TIGR02276	27.85	20.5	repeat	
+TIGR02277	264.55	216.8	equivalog	
+TIGR02278	562.8	232.25	equivalog	
+TIGR02279	669.4	593.65	equivalog	1.1.1.-
+TIGR02280	345.15	303.4	equivalog	4.2.1.17
+TIGR02281	57.95	40.45	subfamily	3.4.23.-
+TIGR02282	281.4	222.4	equivalog	2.4.-.-
+TIGR02283	248.45	198.2	subfamily	2.4.-.-
+TIGR02284	44.8	29.3	subfamily	
+TIGR02285	143.3	38.75	subfamily	
+TIGR02286	118.9	77	equivalog	
+TIGR02287	319.6	304.75	equivalog	
+TIGR02288	578.75	271.8	equivalog	
+TIGR02289	442.35	184.15	subfamily	3.4.24.-
+TIGR02290	561.7	410.4	subfamily	3.4.24.-
+TIGR02291	314.2	160.1	hypoth_equivalog	
+TIGR02292	33.8	33.5	subfamily	
+TIGR02293	57	38.25	hypoth_equivalog	
+TIGR02294	393	282.2	equivalog	
+TIGR02295	321.4	264.7	equivalog	1.13.11.15
+TIGR02296	205.95	178.9	equivalog	1.14.14.9
+TIGR02297	274.65	197.3	equivalog	
+TIGR02298	315.95	127.9	equivalog	1.13.11.15
+TIGR02299	638.35	593.45	equivalog	1.2.1.60
+TIGR02300	41.65	35.7	hypoth_equivalog	
+TIGR02301	42.55	41.25	hypoth_equivalog	
+TIGR02302	394.3	187.25	hypoth_equivalog	
+TIGR02303	276.4	242.8	equivalog_domain	4.1.1.68 5.3.3.10
+TIGR02304	251.9	110.7	hypoth_equivalog	
+TIGR02305	228.65	203.25	equivalog_domain	4.1.1.68 5.3.3.10
+TIGR02306	151.15	49.3	equivalog	6.5.1.3
+TIGR02307	197.15	62.35	equivalog	6.5.1.3
+TIGR02308	242.25	74.9	equivalog	6.5.1.3
+TIGR02309	480.2	332.7	equivalog	1.14.14.9
+TIGR02310	885.2	741.3	equivalog	1.14.14.9
+TIGR02311	368.8	360.35	equivalog	4.1.2.-
+TIGR02312	351.5	311.45	equivalog	4.2.-.-
+TIGR02313	396.7	370.9	exception	4.1.2.-
+TIGR02314	499.7	424.85	equivalog	3.6.3.-
+TIGR02315	266.1	251.85	equivalog	3.6.3.28
+TIGR02316	827.4	760.8	equivalog	6.2.1.17
+TIGR02317	354.4	318.8	equivalog	4.1.3.30
+TIGR02318	390.55	113.95	equivalog	
+TIGR02319	420.05	255.2	equivalog	2.7.8.23
+TIGR02320	319.55	284.5	equivalog	5.4.2.9
+TIGR02321	374.4	258.45	equivalog	3.11.1.3
+TIGR02322	156	73.35	equivalog	
+TIGR02323	302.85	158.5	equivalog	
+TIGR02324	256.3	153.25	equivalog	
+TIGR02325	156.8	155.35	equivalog	
+TIGR02326	400.8	339.35	equivalog	2.6.1.37
+TIGR02327	39.65	30.65	hypoth_equivalog	
+TIGR02328	121.15	30.9	hypoth_equivalog	
+TIGR02329	499.2	428.2	equivalog	
+TIGR02330	458	330.7	equivalog	4.2.1.79
+TIGR02331	35.25	24.05	repeat	
+TIGR02332	615.4	527.9	equivalog	
+TIGR02333	1419.85	1137.3	equivalog	4.2.1.99
+TIGR02334	440.55	415.9	equivalog	
+TIGR02335	407.55	84.5	equivalog	3.11.1.2
+TIGR02336	560.3	263	equivalog	2.4.1.211
+TIGR02337	121.2	88.55	equivalog	
+TIGR02338	73	49.65	equivalog	
+TIGR02339	671.1	539.8	subfamily	
+TIGR02340	800.2	506.05	equivalog	
+TIGR02341	522.15	504	equivalog	
+TIGR02342	695.35	516.4	equivalog	
+TIGR02343	710.5	516.7	equivalog	
+TIGR02344	553.45	530.4	equivalog	
+TIGR02345	669.2	472.15	equivalog	
+TIGR02346	455.9	422.25	equivalog	
+TIGR02347	587.15	422.4	equivalog	
+TIGR02348	582.1	306.8	equivalog	
+TIGR02349	377.2	277.65	equivalog	
+TIGR02350	822.55	641.45	equivalog	
+TIGR02351	377.8	165.85	equivalog	
+TIGR02352	250.8	222.75	equivalog	1.4.3.19
+TIGR02353	423.1	97.8	hypoth_equivalog_domain	
+TIGR02354	152.2	114.6	equivalog	
+TIGR02355	376.55	340.15	equivalog	
+TIGR02356	275.25	269.75	equivalog	2.7.7.73
+TIGR02357	108.45	61.35	equivalog	
+TIGR02358	309.85	170.55	hypoth_equivalog	
+TIGR02359	84.35	33.75	equivalog	
+TIGR02360	538.7	219.25	equivalog	1.14.13.2
+TIGR02361	574.95	448.75	equivalog	2.7.1.29
+TIGR02362	413.25	409.2	equivalog	
+TIGR02363	406.25	393.9	equivalog	2.7.1.-
+TIGR02364	98.25	96.95	equivalog_domain	
+TIGR02365	138.3	136.2	equivalog	2.7.-.-
+TIGR02366	129	82.05	hypoth_equivalog	
+TIGR02367	178.15	177.85	equivalog_domain	6.1.1.26
+TIGR02368	369.1	369	equivalog	2.1.1.249
+TIGR02369	575.35	290.15	equivalog	2.1.1.250
+TIGR02370	215.3	184.95	subfamily_domain	
+TIGR02371	409.15	255.45	equivalog	1.4.1.1
+TIGR02372	334.7	137.8	equivalog	6.2.1.12
+TIGR02373	143.05	41.7	equivalog	
+TIGR02374	578.35	442.75	equivalog_domain	1.7.1.4
+TIGR02375	109.85	61.85	equivalog	
+TIGR02376	296.3	169.1	equivalog	1.7.2.1
+TIGR02377	136.15	96.2	subfamily	
+TIGR02378	74.65	69.85	equivalog_domain	1.7.1.4
+TIGR02379	434.85	340.3	subfamily	
+TIGR02380	326.05	191.9	equivalog	2.7.8.33
+TIGR02381	115.4	113	equivalog	
+TIGR02382	195.1	95.1	equivalog	
+TIGR02383	61.7	31.15	equivalog	
+TIGR02384	45.65	33.45	subfamily	
+TIGR02385	27.9	27	subfamily	
+TIGR02386	963.5	919.3	equivalog	2.7.7.6
+TIGR02387	975.9	969.35	equivalog	2.7.7.6
+TIGR02388	467.4	461.75	equivalog	2.7.7.6
+TIGR02389	420.65	310.25	equivalog	2.7.7.6
+TIGR02390	1042.55	962.9	equivalog	2.7.7.6
+TIGR02391	39.45	35.5	hypoth_equivalog_domain	
+TIGR02392	323.1	185.4	equivalog	
+TIGR02393	354	343.7	equivalog_domain	
+TIGR02394	378.7	339.75	equivalog	
+TIGR02395	277.35	158.45	equivalog	
+TIGR02396	74.55	46.55	hypoth_equivalog	
+TIGR02397	250	149.8	equivalog	2.7.7.7
+TIGR02398	569	388.8	equivalog	2.4.1.213
+TIGR02399	365.5	140.75	equivalog	3.1.3.69
+TIGR02400	564.85	428.7	equivalog	2.4.1.15
+TIGR02401	498.65	380.65	equivalog	5.4.99.15
+TIGR02402	538.8	226.7	equivalog	3.2.1.141
+TIGR02403	799.05	751.9	equivalog	3.2.1.93
+TIGR02404	211.95	180.25	equivalog	
+TIGR02405	357.35	212.95	equivalog	
+TIGR02406	120.6	63.05	equivalog	2.3.1.178
+TIGR02407	552.2	407.45	equivalog	2.6.1.76
+TIGR02408	336.5	209.45	equivalog	1.-.-.-
+TIGR02409	414.75	316.65	equivalog	1.14.11.1
+TIGR02410	268.3	232.85	equivalog	1.14.11.8
+TIGR02411	761.7	526	equivalog	3.3.2.6 3.4.11.-
+TIGR02412	591.2	412.75	equivalog	3.4.11.2
+TIGR02413	47.05	22.4	paralog	
+TIGR02414	718.2	403.85	equivalog	3.4.11.2
+TIGR02415	304.35	242.75	subfamily	1.1.1.-
+TIGR02416	991.15	507.7	equivalog	1.2.99.2
+TIGR02417	389.55	205.15	subfamily	
+TIGR02418	551.1	509.25	equivalog	2.2.1.6
+TIGR02419	59.7	46.5	subfamily	
+TIGR02420	115.5	53.7	equivalog	
+TIGR02421	338.65	158.35	hypoth_equivalog	
+TIGR02422	296.4	144.9	equivalog	1.13.11.3
+TIGR02423	126.25	123.8	equivalog	1.13.11.3
+TIGR02424	303.8	302.4	equivalog	
+TIGR02425	155.7	138.1	equivalog	4.1.1.44
+TIGR02426	355.75	298.3	equivalog	5.5.1.2
+TIGR02427	255.85	179.4	equivalog	3.1.1.24
+TIGR02428	243.55	77.05	subfamily	2.8.3.-
+TIGR02429	128.5	103.7	subfamily	2.8.3.-
+TIGR02430	597	501.6	equivalog	2.3.1.174
+TIGR02431	284.75	219.6	subfamily	
+TIGR02432	93.6	85.8	equivalog_domain	6.3.4.-
+TIGR02433	20.2	18.95	equivalog_domain	6.-.-.-
+TIGR02434	195.8	119.45	equivalog	2.1.1.152
+TIGR02435	234.8	222.65	equivalog	1.14.13.83
+TIGR02436	24	23.3	subfamily	
+TIGR02437	933.55	726.7	equivalog	4.2.1.17 5.3.3.8 1.1.1.35 5.1.2.3
+TIGR02438	404.4	346.5	equivalog	1.13.11.1
+TIGR02439	392	192.45	equivalog	1.13.11.1
+TIGR02440	968.45	723	equivalog	4.2.1.17 1.1.1.35 5.1.2.3
+TIGR02441	964.65	771.75	equivalog	4.2.1.17 1.1.1.35
+TIGR02442	779.45	737.9	hypoth_equivalog	6.6.1.2
+TIGR02443	49.45	23.75	hypoth_equivalog	
+TIGR02444	48.3	29.75	hypoth_equivalog	
+TIGR02445	591	418.2	equivalog	2.3.1.16
+TIGR02446	711.55	428.1	equivalog	2.3.1.16
+TIGR02447	97.1	39.25	subfamily_domain	
+TIGR02448	53.85	26.5	subfamily_domain	
+TIGR02449	55.4	28.15	hypoth_equivalog	
+TIGR02450	36.85	26.35	hypoth_equivalog	
+TIGR02451	124.5	58.2	subfamily	
+TIGR02452	50	30	hypoth_equivalog	
+TIGR02453	105.4	68.65	subfamily_domain	
+TIGR02454	111.8	105.15	equivalog	
+TIGR02455	719.4	163.4	equivalog	5.4.99.16
+TIGR02456	678.35	376.75	equivalog_domain	5.4.99.16
+TIGR02457	375.05	135.95	hypoth_equivalog_domain	
+TIGR02458	182.9	104.1	hypoth_equivalog	
+TIGR02459	64.4	24.15	hypoth_equivalog	
+TIGR02460	351.2	132	equivalog	2.4.1.217
+TIGR02461	244.35	176.5	equivalog	3.1.3.70
+TIGR02462	544.9	106.55	equivalog	1.1.3.10
+TIGR02463	282	184.75	hypoth_equivalog	3.1.3.-
+TIGR02464	73.7	47.2	subfamily_domain	
+TIGR02465	359.25	257.05	equivalog	
+TIGR02466	62.5	42.9	subfamily	
+TIGR02467	92.9	84.6	equivalog_domain	2.1.1.132
+TIGR02468	1143.95	592.8	equivalog	2.4.1.14
+TIGR02469	78.3	67.15	equivalog_domain	2.1.1.132
+TIGR02470	810.4	348.6	equivalog	2.4.1.13
+TIGR02471	209.75	171	equivalog_domain	
+TIGR02472	576	239.8	equivalog_domain	2.4.1.14
+TIGR02473	50.45	29.3	equivalog	
+TIGR02474	189.8	31.8	equivalog	4.2.2.2
+TIGR02475	332.1	255.35	equivalog	
+TIGR02476	150	120	equivalog	1.14.99.40
+TIGR02477	587.95	197.9	equivalog	2.7.1.90
+TIGR02478	708.4	357.3	equivalog	2.7.1.11
+TIGR02479	189.6	153.2	subfamily	
+TIGR02480	84.05	58.35	equivalog_domain	
+TIGR02481	51.75	43.55	domain	
+TIGR02482	371.35	359.45	equivalog	2.7.1.11
+TIGR02483	430.55	373.85	subfamily	
+TIGR02484	246.6	166.2	subfamily_domain	
+TIGR02485	372.55	180.55	hypoth_equivalog	
+TIGR02486	160.35	132.25	subfamily	1.97.1.-
+TIGR02487	326.35	261.75	equivalog	1.17.4.2
+TIGR02488	252.75	238.85	equivalog	
+TIGR02489	412.85	180.4	equivalog	
+TIGR02490	178.5	176.2	equivalog	
+TIGR02491	126.1	114.4	equivalog	1.97.1.-
+TIGR02492	170.75	121.3	equivalog	
+TIGR02493	231.75	203.45	equivalog	1.97.1.4
+TIGR02494	174.35	171.4	subfamily	1.97.1.-
+TIGR02495	131.15	101.5	equivalog	1.97.-.-
+TIGR02497	23.45	21.8	equivalog_domain	
+TIGR02498	56.15	32.75	hypoth_equivalog	
+TIGR02499	78.7	75.1	equivalog	
+TIGR02500	86	56.85	equivalog	
+TIGR02501	38.25	32.7	hypoth_equivalog	
+TIGR02502	99.2	44.85	equivalog	
+TIGR02503	84.55	37.05	equivalog	
+TIGR02504	399.95	398.35	equivalog	1.17.4.1
+TIGR02505	340.05	154.15	equivalog	1.17.4.2
+TIGR02506	341.05	319	equivalog	1.17.4.1
+TIGR02507	25	22	equivalog_domain	2.1.1.86
+TIGR02508	97.15	48.35	equivalog	
+TIGR02509	114	55.25	equivalog	
+TIGR02510	602.25	516.7	equivalog	1.17.4.1
+TIGR02511	25.9	25.6	equivalog_domain	
+TIGR02512	405.95	300.65	subfamily	1.12.-.-
+TIGR02513	90.05	89.7	equivalog	
+TIGR02514	76.5	35.7	equivalog_domain	
+TIGR02515	284.35	202.4	subfamily	
+TIGR02516	238.45	198.4	equivalog	
+TIGR02517	351.35	231.85	equivalog	
+TIGR02518	620.1	552.15	equivalog	1.2.1.10
+TIGR02519	250.2	193.3	equivalog	
+TIGR02520	287.65	119.1	equivalog	
+TIGR02521	154	97.25	equivalog	
+TIGR02522	94.45	48.55	subfamily	
+TIGR02523	52.2	44.3	equivalog	
+TIGR02524	463.3	230.4	equivalog	
+TIGR02525	368.3	368.15	equivalog	
+TIGR02526	250.3	175.15	hypoth_equivalog	
+TIGR02527	99.1	98.85	equivalog	
+TIGR02528	138.35	102.15	equivalog	
+TIGR02529	152.1	85.8	subfamily	
+TIGR02530	83.2	47.75	hypoth_equivalog	
+TIGR02531	42.2	41.75	hypoth_equivalog	
+TIGR02532	16.3	16.3	domain	
+TIGR02533	630.25	594.1	equivalog	
+TIGR02534	334.95	276.75	subfamily	5.5.1.-
+TIGR02535	446.3	387.1	hypoth_equivalog	
+TIGR02536	152.6	54.25	hypoth_equivalog	
+TIGR02537	15.3	15.3	domain	
+TIGR02538	675.65	625.75	equivalog	
+TIGR02539	365.25	214.4	equivalog	2.5.1.73
+TIGR02540	207.3	180.7	equivalog	1.11.1.9
+TIGR02541	193	139.15	equivalog	
+TIGR02542	67	30	domain	
+TIGR02543	20.95	17.4	domain	
+TIGR02544	161.95	100.05	equivalog	
+TIGR02546	604.75	604.05	equivalog	3.6.3.14
+TIGR02547	70.05	46.4	equivalog	
+TIGR02548	42.55	27.5	equivalog	
+TIGR02549	15.1	14.7	domain	
+TIGR02550	127.2	123.45	equivalog	
+TIGR02551	100.8	79	equivalog	
+TIGR02552	104.8	89.4	equivalog	
+TIGR02553	219.25	75.9	equivalog	
+TIGR02554	188.6	166.7	equivalog	
+TIGR02555	118.6	70.15	equivalog	
+TIGR02556	156.95	88.55	hypoth_equivalog	
+TIGR02557	184.8	173.8	equivalog	
+TIGR02558	93.3	54	equivalog	
+TIGR02559	134.4	73.85	equivalog	
+TIGR02560	167.45	108.6	equivalog	
+TIGR02561	123.85	60.8	equivalog	
+TIGR02562	565.95	452.4	equivalog	
+TIGR02563	36.25	29.3	equivalog	3.1.-.-
+TIGR02564	169.4	94.6	equivalog	
+TIGR02565	154.1	30.95	equivalog	
+TIGR02566	157.55	104.85	equivalog	
+TIGR02567	58.2	58	equivalog	
+TIGR02568	89.5	51.6	equivalog	
+TIGR02569	136.75	75.25	hypoth_equivalog	
+TIGR02570	38	35	equivalog_domain	
+TIGR02571	219.45	181.45	equivalog	
+TIGR02572	139.5	36.7	equivalog	
+TIGR02573	90.8	51.4	equivalog	
+TIGR02574	31.9	25.7	hypoth_equivalog	
+TIGR02577	79.4	66.4	hypoth_equivalog	
+TIGR02578	171.65	59.2	hypoth_equivalog	
+TIGR02579	55.4	30.15	hypoth_equivalog	
+TIGR02580	87	65.4	equivalog	
+TIGR02581	108.05	89.4	hypoth_equivalog	
+TIGR02582	90	88	equivalog	
+TIGR02583	212.6	107.4	exception	
+TIGR02584	80.65	20.8	hypoth_equivalog	
+TIGR02585	72.75	45.6	exception	
+TIGR02586	111.5	58.3	exception	
+TIGR02587	183.7	89.8	hypoth_equivalog	
+TIGR02588	95	19.2	hypoth_equivalog	
+TIGR02589	182.25	142.75	exception	
+TIGR02590	171.55	118.65	exception	
+TIGR02591	104.05	33.25	hypoth_equivalog_domain	
+TIGR02592	97	42.05	exception	
+TIGR02593	17.8	15.8	subfamily_domain	
+TIGR02594	70.55	49.8	subfamily	
+TIGR02595	16	9.55	domain	
+TIGR02596	70	63	subfamily	
+TIGR02597	50	43	paralog	
+TIGR02598	51.4	26.95	subfamily	
+TIGR02599	256.5	35.45	subfamily	
+TIGR02600	332.3	242.55	subfamily	
+TIGR02601	19.85	16.05	repeat	
+TIGR02602	105.55	53.7	subfamily	3.4.22.-
+TIGR02603	68.15	39.45	domain	
+TIGR02604	122.2	105.05	subfamily_domain	
+TIGR02605	31.3	29.4	subfamily_domain	
+TIGR02606	46.2	33.35	hypoth_equivalog	
+TIGR02607	47.7	40	equivalog	
+TIGR02608	76.5	67	domain	
+TIGR02609	55.9	41.8	hypoth_equivalog	
+TIGR02610	40.25	33.25	hypoth_equivalog	
+TIGR02611	70.6	43.2	hypoth_equivalog	
+TIGR02612	122.6	76.25	hypoth_equivalog	
+TIGR02613	124.4	124.25	hypoth_equivalog	
+TIGR02614	337.5	314.7	equivalog	
+TIGR02615	448.8	420.15	exception	
+TIGR02616	23.55	23.35	equivalog	
+TIGR02617	825.8	571.05	equivalog	4.1.99.1
+TIGR02618	720.7	607.5	equivalog	4.1.99.2
+TIGR02619	37.45	26.9	domain	
+TIGR02620	46.35	19.7	hypoth_equivalog_domain	
+TIGR02621	218.25	66.75	exception	3.6.4.-
+TIGR02622	278.45	148.25	equivalog	4.2.1.45
+TIGR02623	300.25	143.35	equivalog	2.7.7.33
+TIGR02624	400.95	146.2	equivalog	4.1.2.19
+TIGR02625	99.6	84.7	equivalog	5.1.3.-
+TIGR02627	527.95	490	equivalog	2.7.1.5
+TIGR02628	470.9	296.85	equivalog	2.7.1.51
+TIGR02629	646.75	416.75	equivalog	5.3.1.-
+TIGR02630	533.25	164.1	equivalog	5.3.1.5
+TIGR02631	447	150.55	equivalog	5.3.1.5
+TIGR02632	567.75	502.35	equivalog	4.1.2.19 1.1.1.1
+TIGR02633	723.65	666.3	equivalog	3.6.3.17
+TIGR02634	389.55	232.05	equivalog	
+TIGR02635	531.35	436.05	hypoth_equivalog	5.3.1.14
+TIGR02636	397.65	346.8	equivalog	5.1.3.3
+TIGR02637	342.25	279.7	equivalog	
+TIGR02638	523.15	479.25	equivalog	1.1.1.77
+TIGR02639	993.15	940.3	equivalog	
+TIGR02640	266.8	80.85	equivalog	
+TIGR02641	18.8	18.65	equivalog_domain	
+TIGR02642	101.4	30.8	hypoth_equivalog	
+TIGR02643	570.7	471.85	equivalog	2.4.2.4
+TIGR02644	409.05	275.15	subfamily	2.4.2.2
+TIGR02645	434.6	302.45	hypoth_equivalog	2.4.2.4
+TIGR02646	52.15	31.8	hypoth_equivalog	
+TIGR02647	44.6	44.1	hypoth_equivalog	
+TIGR02648	178.3	57.7	equivalog	
+TIGR02649	563.7	416.45	exception	3.1.-.-
+TIGR02650	507.05	92.35	equivalog	3.1.26.11
+TIGR02651	292.95	147.9	equivalog	3.1.26.11
+TIGR02652	99.55	99.2	hypoth_equivalog	
+TIGR02653	628.25	278.65	hypoth_equivalog	
+TIGR02654	145.3	125.05	equivalog	
+TIGR02655	546.25	364.05	equivalog	2.7.11.1
+TIGR02656	87.85	60.15	equivalog	
+TIGR02657	110.2	61.95	equivalog	
+TIGR02658	454.45	90.5	equivalog	1.4.9.1
+TIGR02659	196.85	85.8	equivalog	1.4.9.1
+TIGR02660	462.9	400.2	equivalog	2.3.3.14
+TIGR02661	188.6	52.55	equivalog	
+TIGR02662	337.05	175.4	equivalog	3.2.2.24
+TIGR02663	112	82.55	equivalog	
+TIGR02664	110	54.45	subfamily	
+TIGR02665	151.85	125.95	equivalog	2.7.7.77
+TIGR02666	284.05	270.95	equivalog	
+TIGR02667	222.4	177.5	equivalog	
+TIGR02668	325.25	281.4	hypoth_equivalog	
+TIGR02669	83.3	37.35	domain	
+TIGR02670	201.75	201.4	equivalog	
+TIGR02671	156.65	156.05	equivalog	
+TIGR02672	248.6	73.05	equivalog	
+TIGR02673	264.85	240	equivalog	
+TIGR02674	177.3	74.55	hypoth_equivalog	
+TIGR02675	21.35	19.05	domain	
+TIGR02677	165.85	75.7	hypoth_equivalog	
+TIGR02678	124.65	48.75	hypoth_equivalog	
+TIGR02679	196	77.75	hypoth_equivalog	
+TIGR02680	462.85	462.55	hypoth_equivalog	
+TIGR02681	45.95	37.2	subfamily	
+TIGR02682	248.95	241.1	hypoth_equivalog	
+TIGR02683	62.85	36.3	hypoth_equivalog	
+TIGR02684	53.7	37.1	hypoth_equivalog	
+TIGR02685	321.7	199.55	equivalog	1.5.1.33
+TIGR02686	145.5	34.3	domain	
+TIGR02687	270.35	268.35	hypoth_equivalog	
+TIGR02688	329.3	113.3	hypoth_equivalog	
+TIGR02689	157.6	113.8	equivalog	1.20.4.1
+TIGR02690	292.25	138.1	equivalog	
+TIGR02691	174.3	112.1	equivalog	1.20.4.- 3.1.3.48
+TIGR02692	438.8	402	equivalog	2.7.7.72
+TIGR02693	359.05	357.05	equivalog	1.20.9.1
+TIGR02694	95.65	61.7	equivalog	1.20.9.1
+TIGR02695	105.1	58.65	equivalog	
+TIGR02696	1106.75	892.55	exception	2.7.-.- 2.7.7.8
+TIGR02697	27.55	27.3	domain	
+TIGR02698	121.95	112.15	equivalog	
+TIGR02699	192.45	184.25	hypoth_equivalog	
+TIGR02700	251.35	154.85	hypoth_equivalog	
+TIGR02701	241.05	235.3	equivalog	4.2.1.1
+TIGR02702	178.8	141.35	equivalog	
+TIGR02703	131.8	108.1	equivalog	
+TIGR02704	88.9	88.7	equivalog	
+TIGR02705	154.4	59.9	equivalog	3.6.1.-
+TIGR02706	410.5	339.4	equivalog	2.3.1.19
+TIGR02707	289.1	129.35	equivalog	2.7.2.7
+TIGR02708	645.5	435.5	equivalog	1.1.3.-
+TIGR02709	475.15	271.4	equivalog	2.3.1.-
+TIGR02710	83.9	78.35	hypoth_equivalog	
+TIGR02711	1099.25	893.3	equivalog	
+TIGR02712	1303.85	655.9	equivalog	6.3.4.6
+TIGR02713	511.05	274.55	equivalog	3.5.1.54
+TIGR02714	153.1	81.05	subfamily	3.5.2.-
+TIGR02715	425.75	371.7	subfamily	3.-.-.-
+TIGR02716	276.1	275.9	equivalog	2.1.1.-
+TIGR02717	567.15	463	equivalog_domain	6.2.1.13
+TIGR02718	356.15	217.8	subfamily	
+TIGR02719	139.35	66.35	equivalog	
+TIGR02720	637.85	455.9	equivalog	1.2.3.3
+TIGR02721	299.45	98.95	equivalog	2.7.1.89
+TIGR02722	110.55	76.85	hypoth_equivalog	
+TIGR02723	564.6	244.3	equivalog	4.1.1.-
+TIGR02724	468.95	386.3	equivalog	
+TIGR02725	135.55	56.45	equivalog	
+TIGR02726	281.95	178.85	equivalog	
+TIGR02727	84.9	50.25	equivalog	6.3.3.2
+TIGR02728	88.95	41.75	equivalog	
+TIGR02729	280.25	111	equivalog	
+TIGR02730	586.9	296.4	equivalog	5.-.-.-
+TIGR02731	569.4	357.05	equivalog	1.14.99.-
+TIGR02732	622.15	344.15	equivalog	1.3.5.6
+TIGR02733	549.7	214.2	equivalog	1.3.99.-
+TIGR02734	238.1	165.95	subfamily	1.14.99.-
+TIGR02735	394.2	265.4	equivalog	6.3.2.6
+TIGR02736	61.55	32.4	equivalog	1.9.3.1
+TIGR02737	279.35	92.6	equivalog	
+TIGR02738	132	102.8	equivalog	
+TIGR02739	204.6	183.65	equivalog	
+TIGR02740	232.25	183.85	hypoth_equivalog	
+TIGR02741	111.6	43.4	equivalog	
+TIGR02742	66.45	39.45	equivalog	
+TIGR02743	174.75	113.15	equivalog	
+TIGR02744	83.65	54.2	equivalog	
+TIGR02745	316.7	171.7	equivalog	
+TIGR02746	567.05	286.55	equivalog	
+TIGR02747	44.75	37.25	equivalog	
+TIGR02748	456.55	292.3	equivalog	2.5.1.30
+TIGR02749	383.2	328.3	equivalog	2.5.1.-
+TIGR02750	422.45	247.45	equivalog	
+TIGR02751	146.05	145.2	equivalog	4.1.1.31
+TIGR02752	419.85	409.3	equivalog	2.1.1.163
+TIGR02753	90	50.9	equivalog	1.15.1.1
+TIGR02754	63.25	55.1	equivalog	3.4.21.-
+TIGR02755	149.35	104.7	equivalog	2.3.1.-
+TIGR02756	124	63.05	equivalog	
+TIGR02757	139.2	60.1	hypoth_equivalog	
+TIGR02758	76.55	39.7	equivalog	
+TIGR02759	521.35	327.8	equivalog	
+TIGR02760	929.85	664.4	equivalog	3.6.4.12
+TIGR02761	109.05	62.8	equivalog	
+TIGR02762	30.95	28.95	equivalog	
+TIGR02763	104.95	41.4	equivalog	
+TIGR02764	237.4	195.15	equivalog	
+TIGR02765	317.05	267.5	subfamily	
+TIGR02766	603.85	596.6	subfamily	
+TIGR02767	686.2	543.8	equivalog	
+TIGR02768	590.45	348.55	equivalog	
+TIGR02769	332.55	303.55	equivalog	3.6.3.24
+TIGR02770	318.7	304.1	equivalog	
+TIGR02771	100.25	65.35	equivalog	
+TIGR02772	204.3	89.95	equivalog	
+TIGR02773	903.7	453.5	equivalog	3.1.-.- 3.6.4.12
+TIGR02774	718.35	523.55	equivalog	
+TIGR02775	180.85	99.65	equivalog	
+TIGR02776	373.2	221.1	equivalog	
+TIGR02777	144	65.7	equivalog_domain	
+TIGR02778	214.7	122.65	equivalog_domain	
+TIGR02779	227.75	206.4	equivalog_domain	6.5.1.1
+TIGR02780	100.55	26.9	equivalog	
+TIGR02781	217.7	130.25	equivalog	
+TIGR02782	304.55	248.8	equivalog	
+TIGR02783	128.85	70.35	equivalog	
+TIGR02784	860.75	357.85	equivalog	
+TIGR02785	707.65	379.8	equivalog	3.1.-.- 3.6.4.12
+TIGR02786	486.5	458.4	equivalog	
+TIGR02787	267.2	133.85	equivalog	
+TIGR02788	249.95	241.25	equivalog	
+TIGR02789	447	342.95	equivalog	3.6.3.24
+TIGR02790	358.45	348.25	equivalog	3.6.3.24
+TIGR02791	132.25	114.65	equivalog	
+TIGR02792	108.6	43.75	equivalog	1.13.11.8
+TIGR02793	175.45	71.75	equivalog	
+TIGR02794	59.45	48.35	equivalog	
+TIGR02795	90.1	77.1	equivalog	
+TIGR02796	221	201.15	equivalog	
+TIGR02797	206.2	194.55	equivalog	
+TIGR02798	304.5	215.55	equivalog	4.1.-.- 4.1.1.3
+TIGR02799	141.35	88.85	equivalog	3.1.2.-
+TIGR02800	343.15	143.7	equivalog	
+TIGR02801	127.3	121.75	equivalog	
+TIGR02802	125.35	111.55	equivalog	
+TIGR02803	152.95	130.8	equivalog	
+TIGR02804	123.45	86.35	equivalog	
+TIGR02805	135.35	86.45	equivalog	
+TIGR02806	436.25	60.25	equivalog	3.4.22.8
+TIGR02807	98.85	53.75	equivalog	
+TIGR02808	40	38	hypoth_equivalog	
+TIGR02809	65.85	29.6	equivalog	
+TIGR02810	568.8	191.6	equivalog	4.1.2.40
+TIGR02811	48.45	30.8	hypoth_equivalog	
+TIGR02812	249.2	85.4	equivalog	
+TIGR02813	1010.1	671.05	subfamily	
+TIGR02814	449.25	147.65	subfamily_domain	
+TIGR02815	529.2	328.05	subfamily	
+TIGR02816	144.3	55.5	subfamily	
+TIGR02817	284.05	222.75	subfamily	
+TIGR02818	543.95	509.55	equivalog	1.1.1.284 1.1.1.1
+TIGR02819	636.95	425.15	equivalog	1.2.1.46
+TIGR02820	234.55	135.65	equivalog	4.4.1.22
+TIGR02821	281.7	131.95	equivalog	3.1.2.12
+TIGR02822	283.5	229.4	subfamily	1.-.-.-
+TIGR02823	297.25	146.9	subfamily	
+TIGR02824	296.8	293.7	subfamily	
+TIGR02825	579.85	314.35	equivalog	1.3.1.74 1.3.1.48
+TIGR02826	151.7	77.35	equivalog	1.97.1.-
+TIGR02827	568.3	197.75	equivalog	1.17.4.2
+TIGR02828	154.4	50.3	hypoth_equivalog_domain	
+TIGR02829	247.45	75.4	equivalog	
+TIGR02830	147.7	28.55	equivalog	
+TIGR02831	100.2	65.9	equivalog	
+TIGR02832	111.9	72.4	equivalog	
+TIGR02833	146.5	30.05	equivalog	
+TIGR02834	206.95	71.6	equivalog	
+TIGR02835	348.6	306.75	equivalog	
+TIGR02836	459.9	190.65	equivalog	
+TIGR02837	151.9	64.15	equivalog	
+TIGR02838	164	70.3	equivalog	
+TIGR02839	131.1	86.05	equivalog	
+TIGR02840	149.6	71.2	equivalog	
+TIGR02841	84.9	34.35	equivalog	
+TIGR02842	223.75	214	equivalog	1.10.3.-
+TIGR02843	1020.35	910.3	equivalog	1.10.3.-
+TIGR02844	111.5	66.7	equivalog	
+TIGR02845	411.8	123.9	equivalog	
+TIGR02846	298.65	278.75	equivalog	
+TIGR02847	81.45	64.95	equivalog	1.10.3.-
+TIGR02848	56.65	37.6	equivalog	
+TIGR02849	85.6	38.5	equivalog	
+TIGR02850	457	324.75	equivalog	
+TIGR02851	235.9	71.65	equivalog	
+TIGR02852	229	102.2	equivalog	
+TIGR02853	319.65	98.7	equivalog	
+TIGR02854	209.55	74.5	equivalog	3.4.23.-
+TIGR02855	270.4	100.2	equivalog	
+TIGR02856	77.8	29.7	equivalog	
+TIGR02857	435	435	equivalog	
+TIGR02858	281.3	77.85	equivalog	
+TIGR02859	294.8	82.5	equivalog	
+TIGR02860	305.25	148.7	equivalog	3.4.21.116
+TIGR02861	47.9	29.35	subfamily	
+TIGR02862	53.35	34	subfamily	
+TIGR02863	37.85	17.45	equivalog	
+TIGR02864	30.55	30.05	equivalog	
+TIGR02865	490.8	201.15	equivalog	3.1.3.16
+TIGR02866	147.7	144.3	equivalog	1.9.3.1
+TIGR02867	123.15	43.65	subfamily	
+TIGR02868	329.05	324.7	equivalog	
+TIGR02869	236.5	197.25	equivalog	
+TIGR02870	234.75	228.7	equivalog	
+TIGR02871	304.65	138.2	equivalog	
+TIGR02872	198.15	147.55	equivalog	
+TIGR02873	391.5	199.95	hypoth_equivalog	
+TIGR02874	116.3	79.75	equivalog	
+TIGR02875	200	180	equivalog	
+TIGR02876	256.7	94.6	equivalog	
+TIGR02877	467.95	282.9	equivalog	
+TIGR02878	229.15	39.7	equivalog	
+TIGR02880	459.25	275.25	equivalog	
+TIGR02881	422.95	325.3	equivalog	
+TIGR02882	1015.5	954.7	equivalog	1.10.3.-
+TIGR02883	221.55	142.1	equivalog	3.5.1.28
+TIGR02884	298	164.95	equivalog	3.5.-.-
+TIGR02885	321.45	317.6	equivalog	
+TIGR02886	114.75	77.05	equivalog	
+TIGR02887	163.25	119.15	subfamily	
+TIGR02888	44.2	43	subfamily	
+TIGR02889	303.55	73.45	equivalog	
+TIGR02890	134.4	128.8	subfamily	
+TIGR02891	670.75	617.4	equivalog	1.9.3.1
+TIGR02892	75.4	46.15	equivalog	
+TIGR02893	78.05	45.7	equivalog	
+TIGR02894	126.45	34.4	subfamily	
+TIGR02895	185	81.55	equivalog	
+TIGR02896	61.3	39.2	equivalog	
+TIGR02897	239.9	228.6	equivalog	1.10.3.-
+TIGR02898	99.75	52.7	subfamily	
+TIGR02899	67.85	58.9	subfamily_domain	
+TIGR02900	372.3	255.35	equivalog	
+TIGR02901	85.6	61.9	equivalog	1.10.3.-
+TIGR02902	723.3	595.1	equivalog	3.4.21.-
+TIGR02903	678.8	583.3	equivalog	3.4.21.-
+TIGR02904	263.55	122.45	equivalog	
+TIGR02905	215.05	79.55	equivalog	
+TIGR02906	172.7	105.3	subfamily	
+TIGR02907	169.85	34.95	equivalog	
+TIGR02908	117.85	117.7	equivalog	1.9.3.1
+TIGR02909	171	143.8	subfamily_domain	
+TIGR02910	323.15	223.6	equivalog	1.8.-.-
+TIGR02911	288.6	226.95	equivalog	1.8.-.-
+TIGR02912	324.1	194.3	equivalog	1.8.-.-
+TIGR02913	22.65	20.25	repeat	
+TIGR02914	42.8	42.45	equivalog_domain	
+TIGR02915	502.6	461.1	equivalog	
+TIGR02916	300	200	equivalog	2.7.13.3
+TIGR02917	312.2	217.45	equivalog	
+TIGR02918	574.6	190.6	equivalog	2.4.1.-
+TIGR02919	338.3	109.05	equivalog	2.4.1.-
+TIGR02920	249.6	222.55	equivalog	
+TIGR02921	200	100	hypoth_equivalog	
+TIGR02922	64.95	62.65	hypoth_equivalog	
+TIGR02923	240.5	169	equivalog	3.6.3.14
+TIGR02924	561.35	403.25	equivalog	1.1.1.-
+TIGR02925	108.9	56.6	equivalog	5.2.1.8
+TIGR02926	48.5	38.75	equivalog	3.6.3.14
+TIGR02927	423.45	379.5	equivalog	2.3.1.61
+TIGR02928	181.3	175.55	subfamily	
+TIGR02929	124.7	124.5	equivalog	1.18.6.1
+TIGR02930	141.7	122.35	equivalog	1.18.6.1
+TIGR02931	853.85	853.75	equivalog	1.18.6.1
+TIGR02932	873.95	821.85	equivalog	1.18.6.1
+TIGR02933	168.2	135.85	equivalog	
+TIGR02934	41	37.4	equivalog	
+TIGR02935	132.05	52.25	hypoth_equivalog	
+TIGR02936	80.55	61.25	equivalog	
+TIGR02937	42.9	34.2	superfamily	
+TIGR02938	242.45	160.2	equivalog	
+TIGR02939	236.15	170.45	equivalog	
+TIGR02940	129.15	78.8	equivalog	
+TIGR02941	315	258.9	equivalog	
+TIGR02943	162.2	116.85	hypoth_equivalog	
+TIGR02944	110.65	104.2	equivalog	
+TIGR02945	143.4	118	hypoth_equivalog	
+TIGR02946	309.95	161.3	subfamily	2.3.1.-
+TIGR02947	251.55	200.15	hypoth_equivalog	
+TIGR02948	243.1	162.4	equivalog	
+TIGR02949	61.15	40.7	hypoth_equivalog	
+TIGR02950	147.95	129.8	subfamily	
+TIGR02951	214.1	149.95	equivalog	
+TIGR02952	206.45	166	hypoth_equivalog	
+TIGR02953	41	24.05	subfamily	
+TIGR02954	188.5	158.05	hypoth_equivalog	
+TIGR02955	310	107.05	equivalog	
+TIGR02956	676.5	446	equivalog	2.7.13.3
+TIGR02957	323.25	319.4	subfamily	
+TIGR02959	168.65	150.85	hypoth_equivalog	
+TIGR02960	264.75	180.5	hypoth_equivalog	
+TIGR02961	277.9	118.6	equivalog	3.5.3.4
+TIGR02962	87.45	79.8	equivalog	3.5.2.17
+TIGR02963	467	283.2	equivalog	1.17.1.4
+TIGR02964	161.6	152.75	equivalog	
+TIGR02965	849.5	691	equivalog	1.17.1.4
+TIGR02966	334.2	326.8	equivalog	2.7.3.-
+TIGR02967	375.4	285.3	equivalog	3.5.4.3
+TIGR02968	41.8	39.3	equivalog	
+TIGR02969	1912.3	1910.3	subfamily	1.2.3.1
+TIGR02970	52.3	40.65	equivalog	
+TIGR02971	129	110.15	subfamily	
+TIGR02972	77.75	67.85	equivalog	
+TIGR02973	68.8	66.75	equivalog	
+TIGR02974	443.55	339.45	equivalog	
+TIGR02975	53.7	34.1	equivalog	
+TIGR02976	51.7	32.35	equivalog	
+TIGR02977	242.95	170.25	equivalog	
+TIGR02978	104	71.35	equivalog	
+TIGR02979	64.2	38.5	hypoth_equivalog	
+TIGR02980	234.35	205.5	subfamily	
+TIGR02981	126.3	72.85	exception	2.8.1.1
+TIGR02982	295.8	241.85	subfamily	
+TIGR02983	141.55	127.6	subfamily	
+TIGR02984	183.75	109.35	subfamily	
+TIGR02985	126.4	114.8	subfamily	
+TIGR02986	443.85	207.6	equivalog	3.1.21.4
+TIGR02987	353.5	116.1	subfamily_domain	2.1.1.72
+TIGR02988	84.75	82.75	hypoth_equivalog	
+TIGR02989	124.55	115.2	subfamily	
+TIGR02990	318	232.7	equivalog	
+TIGR02991	413.35	358.95	equivalog	
+TIGR02992	471.65	324.45	equivalog	
+TIGR02993	613	505.15	equivalog	3.-.-.-
+TIGR02994	402.7	330.65	equivalog	
+TIGR02995	190.9	172.5	equivalog	
+TIGR02996	29.05	20.4	domain	
+TIGR02997	384.5	361.85	subfamily	
+TIGR02998	241.25	224.35	equivalog	
+TIGR02999	126.15	88	subfamily	
+TIGR03000	43.1	34	domain	
+TIGR03001	154.6	76.8	subfamily	
+TIGR03002	71.7	34.8	equivalog	
+TIGR03003	205.2	197.05	equivalog	
+TIGR03004	196.95	185.45	equivalog	
+TIGR03005	345.4	345.2	equivalog	
+TIGR03006	276.2	147.1	subfamily	
+TIGR03007	278.85	184.85	subfamily	
+TIGR03008	81.05	61.1	hypoth_equivalog	
+TIGR03009	90.5	51.25	subfamily	
+TIGR03010	94.15	54.35	equivalog	
+TIGR03011	49.2	29.4	equivalog_domain	2.8.-.-
+TIGR03012	89.25	57.15	hypoth_equivalog	
+TIGR03013	393.35	373.1	subfamily	
+TIGR03014	309.6	210.75	hypoth_equivalog	
+TIGR03015	324.5	306.3	hypoth_equivalog	
+TIGR03016	90.85	30	hypoth_equivalog	
+TIGR03017	422.75	328.55	hypoth_equivalog	
+TIGR03018	230.65	190.65	hypoth_equivalog_domain	2.7.10.2
+TIGR03019	260.35	180.8	hypoth_equivalog	
+TIGR03020	223.3	122.9	equivalog	
+TIGR03021	34.65	28.45	hypoth_equivalog	
+TIGR03022	403	308.55	subfamily	2.7.8.6
+TIGR03023	410.75	364.25	equivalog	2.7.8.-
+TIGR03024	23	22	domain	
+TIGR03025	295.55	292.45	subfamily	
+TIGR03026	189.8	105.1	subfamily	
+TIGR03027	216.3	132.55	hypoth_equivalog	
+TIGR03028	262.65	166.9	equivalog	
+TIGR03029	313.8	206.9	equivalog	
+TIGR03030	699.1	598.15	equivalog_domain	2.4.1.12
+TIGR03031	399.4	399	equivalog	3.1.-.-
+TIGR03032	251.5	71.3	hypoth_equivalog	
+TIGR03033	68.05	56.2	subfamily_domain	
+TIGR03034	156.45	77.55	subfamily	
+TIGR03035	223.05	179.75	equivalog	3.5.1.9
+TIGR03036	390.7	118.9	equivalog	1.13.11.11
+TIGR03037	145.95	57.6	equivalog	1.13.11.6
+TIGR03038	35.05	35	equivalog	
+TIGR03039	630.8	325.65	equivalog	
+TIGR03041	335	318.8	subfamily	
+TIGR03042	106.9	66.4	equivalog	
+TIGR03043	39.95	32.6	equivalog	
+TIGR03044	117.35	56.75	equivalog	
+TIGR03045	177.75	145.8	equivalog	
+TIGR03046	148.35	147.95	equivalog	
+TIGR03047	61.1	38.25	equivalog	
+TIGR03048	130.65	66.3	equivalog	1.97.1.12
+TIGR03049	67.95	42.8	equivalog	
+TIGR03050	105.3	50.5	equivalog	
+TIGR03051	104.55	31.5	equivalog	
+TIGR03052	38.2	33.45	equivalog	
+TIGR03053	22.85	22.6	equivalog	
+TIGR03054	71.7	46.6	hypoth_equivalog	
+TIGR03055	164.05	37.55	hypoth_equivalog	
+TIGR03056	172.55	172.3	hypoth_equivalog	
+TIGR03057	18.6	13.35	repeat	
+TIGR03058	60	25	equivalog_domain	
+TIGR03059	107.85	44.35	equivalog	
+TIGR03060	139.3	92.1	equivalog	
+TIGR03061	96.15	51.9	subfamily_domain	
+TIGR03062	102.2	88.9	subfamily_domain	
+TIGR03063	18.15	17.6	domain	
+TIGR03064	153.75	65	equivalog	3.4.22.71
+TIGR03065	21.35	21.2	subfamily_domain	
+TIGR03066	93.25	33.55	paralog_domain	
+TIGR03067	40.15	24.85	domain	
+TIGR03068	24.5	23.5	domain	
+TIGR03069	201.55	201.35	equivalog	
+TIGR03070	71.65	61.3	subfamily	
+TIGR03071	27.8	20.35	domain	
+TIGR03072	166.65	142.7	equivalog	
+TIGR03073	271.8	234.7	hypoth_equivalog	
+TIGR03074	832.65	552.25	subfamily	1.1.-.-
+TIGR03075	480.05	249.8	subfamily	1.1.2.-
+TIGR03076	509.5	159.2	hypoth_equivalog	
+TIGR03077	144.05	143.85	hypoth_equivalog	
+TIGR03078	280.6	124.6	equivalog	1.14.13.25
+TIGR03079	394.9	202.1	equivalog	1.14.13.25
+TIGR03080	318.15	92.5	equivalog	1.14.13.25
+TIGR03081	114.95	60.3	equivalog	5.1.99.1
+TIGR03082	94.7	70.45	domain	
+TIGR03083	50	41.55	domain	
+TIGR03084	247.95	91.35	hypoth_equivalog	
+TIGR03085	138.85	75.55	hypoth_equivalog	
+TIGR03086	83	56.75	hypoth_equivalog	
+TIGR03087	316.65	244.3	hypoth_equivalog	
+TIGR03088	409.05	249.55	hypoth_equivalog	
+TIGR03089	157.55	65.85	hypoth_equivalog	
+TIGR03090	72.9	35.95	equivalog	
+TIGR03091	57.15	35.1	equivalog	
+TIGR03092	58.35	31.9	equivalog	
+TIGR03093	51.85	26.65	equivalog	
+TIGR03094	168.4	58.85	equivalog	
+TIGR03095	146.7	68.5	equivalog	
+TIGR03096	142.85	41.9	equivalog	
+TIGR03097	188.1	124.05	hypoth_equivalog	
+TIGR03098	592.35	525.25	hypoth_equivalog	
+TIGR03099	478.45	416.1	hypoth_equivalog	
+TIGR03100	168.45	166.15	hypoth_equivalog	
+TIGR03101	202.75	111.9	hypoth_equivalog	
+TIGR03102	93.8	78.4	subfamily_domain	
+TIGR03103	569	306.3	hypoth_equivalog	
+TIGR03104	570.1	413.3	hypoth_equivalog	
+TIGR03105	469.6	446.3	equivalog	6.3.1.2
+TIGR03106	397.75	397.55	hypoth_equivalog	
+TIGR03107	469.7	469.5	equivalog	3.4.11.7
+TIGR03108	816.9	728.35	hypoth_equivalog	
+TIGR03109	265.9	204.5	hypoth_equivalog	3.4.22.-
+TIGR03110	102.75	67.95	hypoth_equivalog	
+TIGR03111	363.95	235.7	hypoth_equivalog	
+TIGR03112	69.35	69	hypoth_equivalog_domain	
+TIGR03113	275	240	hypoth_equivalog	
+TIGR03114	197.55	22.65	hypoth_equivalog	
+TIGR03115	102.85	24.05	hypoth_equivalog	
+TIGR03116	210.15	17.2	hypoth_equivalog	
+TIGR03117	592.45	47.45	hypoth_equivalog	
+TIGR03118	79.95	77.85	hypoth_equivalog_domain	
+TIGR03119	292.6	94.05	equivalog	2.3.1.101
+TIGR03120	228.8	147.25	equivalog	3.5.4.27
+TIGR03121	392.75	69.3	equivalog	1.2.99.5
+TIGR03122	130.65	125.6	equivalog	1.2.99.5
+TIGR03123	244.1	113	hypoth_equivalog	
+TIGR03124	105.25	57.15	equivalog_domain	2.7.7.61
+TIGR03125	272.3	252.45	equivalog_domain	2.4.2.52
+TIGR03126	118.05	31.15	equivalog_domain	
+TIGR03127	192.05	101.95	equivalog_domain	5.3.-.-
+TIGR03128	243.4	146.85	equivalog_domain	4.1.2.43
+TIGR03129	327.8	145.25	equivalog	1.2.99.5
+TIGR03130	84.1	48.75	equivalog	
+TIGR03131	297.9	271.6	equivalog	
+TIGR03132	282.35	279.65	equivalog	2.4.2.52
+TIGR03133	278.15	127.8	equivalog	4.1.1.88
+TIGR03134	237.15	71.75	equivalog	4.1.1.88
+TIGR03135	99.7	81.4	equivalog	2.7.7.66
+TIGR03136	596.9	537.9	equivalog	
+TIGR03137	272	208.15	equivalog	1.11.1.15
+TIGR03138	293.45	223.6	equivalog	1.7.1.13
+TIGR03139	86.9	81.05	equivalog	1.7.1.13
+TIGR03140	502.9	400.1	equivalog	1.8.1.-
+TIGR03141	25.95	25.7	equivalog	
+TIGR03142	29.3	28.75	equivalog_domain	
+TIGR03143	687.65	466.9	hypoth_equivalog	1.6.4.-
+TIGR03144	187.6	138.75	equivalog	
+TIGR03145	927.3	780.3	exception	
+TIGR03146	166.6	68.35	equivalog	1.7.2.2
+TIGR03147	159.2	155.65	exception	
+TIGR03148	347.6	300.15	equivalog	1.7.2.2
+TIGR03149	377.6	337.8	equivalog	1.7.2.2
+TIGR03150	493.75	437.4	equivalog	2.3.1.179
+TIGR03151	453.1	314.55	hypoth_equivalog	1.3.1.-
+TIGR03152	692.5	576.85	exception	1.7.2.2
+TIGR03153	134.2	75.3	equivalog	1.7.2.2
+TIGR03154	468.4	27.45	equivalog	
+TIGR03155	150.4	150.2	equivalog	
+TIGR03156	216.75	123.05	equivalog	
+TIGR03157	38	37.6	hypoth_equivalog	
+TIGR03158	69.1	52.25	exception	
+TIGR03159	41.4	39.7	hypoth_equivalog	
+TIGR03160	319.3	137.65	equivalog	2.4.2.21
+TIGR03161	152.5	84	equivalog	3.1.3.73
+TIGR03162	162.9	155.6	equivalog	3.1.3.73
+TIGR03164	96.25	83.45	equivalog_domain	4.1.1.-
+TIGR03165	55.5	31.85	hypoth_equivalog	3.6.3.-
+TIGR03166	100.1	54.05	hypoth_equivalog	3.6.3.-
+TIGR03167	219.75	109.85	equivalog	2.9.1.-
+TIGR03168	216.4	163.8	subfamily	2.7.1.-
+TIGR03169	310	300	hypoth_equivalog_domain	
+TIGR03170	54.65	45.75	equivalog_domain	
+TIGR03171	582.1	581.95	equivalog	
+TIGR03172	73.05	33.35	equivalog	
+TIGR03173	414.15	371.25	subfamily	
+TIGR03174	60	25	equivalog	
+TIGR03175	496.2	410.6	equivalog	1.1.1.154
+TIGR03176	597.75	535.15	equivalog	3.5.3.9
+TIGR03177	71	45.3	equivalog	
+TIGR03178	357.85	305.2	equivalog	3.5.2.5
+TIGR03180	139.4	85.1	equivalog_domain	4.1.1.-
+TIGR03181	411.35	405.85	equivalog	1.2.4.1
+TIGR03182	393.85	371.65	equivalog	1.2.4.1
+TIGR03183	290.4	218.7	equivalog	
+TIGR03184	71.85	25.1	equivalog	
+TIGR03185	245.85	38.5	equivalog	
+TIGR03186	1408.3	1356.4	exception	
+TIGR03187	58.85	51.45	domain	
+TIGR03188	42.7	30.95	equivalog_domain	3.6.1.31
+TIGR03189	292.5	122.95	equivalog	4.2.1.100
+TIGR03190	453.8	173.15	equivalog	1.3.7.8
+TIGR03191	448.6	261.45	equivalog	1.3.7.8
+TIGR03192	380.2	280.95	equivalog	1.3.7.8
+TIGR03193	257.8	203.85	equivalog	1.3.7.9
+TIGR03194	994.55	663.75	equivalog	1.3.7.9
+TIGR03195	404.55	188	equivalog	1.3.7.9
+TIGR03196	783.65	665.15	equivalog	1.17.1.4
+TIGR03197	174.2	150.7	equivalog_domain	
+TIGR03198	254.3	197.75	equivalog	1.17.1.4
+TIGR03199	306.05	164	equivalog	1.17.1.4
+TIGR03200	464.45	187.35	equivalog	3.-.-.-
+TIGR03201	338.65	213.5	equivalog	1.1.1.-
+TIGR03202	235.05	148.05	hypoth_equivalog	
+TIGR03203	652.7	436.2	equivalog	1.3.1.62
+TIGR03204	623.85	564.55	equivalog	1.3.1.62
+TIGR03205	705.6	469.35	equivalog	6.2.1.23
+TIGR03206	431.2	347.25	equivalog	1.1.1.-
+TIGR03207	575.35	278.45	equivalog	1.1.1.-
+TIGR03208	792.3	492.6	equivalog	6.2.1.-
+TIGR03209	138.35	54.25	equivalog	
+TIGR03210	467.6	352.35	equivalog	3.7.-.-
+TIGR03211	320.2	237.95	equivalog	1.13.11.2
+TIGR03212	424.6	391.6	hypoth_equivalog_domain	
+TIGR03213	366.45	154.4	equivalog	1.13.11.39
+TIGR03214	297.15	230.9	hypoth_equivalog	
+TIGR03215	282.25	98.2	equivalog	1.2.1.10
+TIGR03216	693.25	576.75	equivalog	1.2.1.-
+TIGR03217	286	147.55	equivalog	4.1.3.39
+TIGR03218	350.55	294.2	equivalog	4.1.1.77
+TIGR03219	446.35	353.45	equivalog	1.14.13.1
+TIGR03220	408.8	247.25	equivalog	4.2.-.-
+TIGR03221	130.6	33.5	equivalog	5.3.3.4
+TIGR03222	712.3	228.25	equivalog	4.1.2.44
+TIGR03223	248.95	238.4	hypoth_equivalog	
+TIGR03224	459.2	260.8	equivalog	1.14.12.21
+TIGR03225	499.1	219.65	equivalog	1.14.12.21
+TIGR03226	283.45	214.05	equivalog	
+TIGR03227	395.3	234.75	equivalog	
+TIGR03228	671.9	671.65	equivalog	1.14.12.1
+TIGR03229	780.95	566.1	equivalog	1.14.12.10
+TIGR03230	822.75	658.9	equivalog	3.1.1.34
+TIGR03231	213.5	176.2	equivalog	1.14.12.1
+TIGR03232	225.55	199.9	equivalog	1.14.12.10
+TIGR03233	328	166.95	hypoth_equivalog	
+TIGR03234	353.45	349.15	equivalog	5.3.1.22
+TIGR03235	480	465	equivalog	2.8.1.7
+TIGR03236	20	10	equivalog	
+TIGR03237	620.65	423.35	equivalog	
+TIGR03238	50	30	equivalog	
+TIGR03239	406.75	372.15	equivalog	4.1.2.20
+TIGR03240	579.3	353.65	equivalog	1.2.1.71
+TIGR03241	538.3	289.85	equivalog	3.5.3.23
+TIGR03242	305.65	46.2	equivalog	3.5.1.96
+TIGR03243	284.35	99.9	subfamily	2.3.1.-
+TIGR03244	391	358.2	equivalog	2.3.1.109
+TIGR03245	458.8	387.7	equivalog	2.3.1.109
+TIGR03246	609.95	579.1	subfamily	2.6.1.81
+TIGR03247	828.7	626.05	equivalog	4.2.1.40
+TIGR03248	730.85	634.95	equivalog	4.2.1.42
+TIGR03249	373.95	332.85	equivalog	4.2.1.41
+TIGR03250	635.65	457.95	equivalog	1.2.1.-
+TIGR03251	520.8	271.5	equivalog	2.6.1.36
+TIGR03252	136.5	66.4	hypoth_equivalog	
+TIGR03253	504.2	371.3	equivalog	2.8.3.16
+TIGR03254	739.4	649.8	equivalog	4.1.1.8
+TIGR03255	358.7	251.85	equivalog	
+TIGR03256	767.75	314.45	equivalog	2.8.4.1
+TIGR03257	516.25	173.35	equivalog	2.8.4.1
+TIGR03258	499.15	399.1	equivalog	
+TIGR03259	172.1	171.6	equivalog	2.8.4.1
+TIGR03260	100	50	equivalog	
+TIGR03261	392.75	265.65	equivalog	
+TIGR03262	593.25	358.2	equivalog	
+TIGR03263	160.45	132.6	equivalog	2.7.4.8
+TIGR03264	213.5	51.55	equivalog	
+TIGR03265	457.7	436.65	equivalog	
+TIGR03266	365	265	hypoth_equivalog	
+TIGR03267	365	335	hypoth_equivalog	
+TIGR03268	234.45	231.8	hypoth_equivalog	
+TIGR03269	517.1	410.9	equivalog	
+TIGR03270	190	185	hypoth_equivalog	
+TIGR03271	140.25	43.9	hypoth_equivalog	
+TIGR03272	125.95	76.7	hypoth_equivalog	
+TIGR03274	349.15	168.25	hypoth_equivalog	
+TIGR03275	232.7	114.4	hypoth_equivalog	
+TIGR03276	214.6	195.05	hypoth_equivalog	
+TIGR03277	96.2	95.6	hypoth_equivalog_domain	
+TIGR03278	350	250	equivalog	
+TIGR03279	574.7	170.25	hypoth_equivalog	
+TIGR03280	255.8	127.6	hypoth_equivalog	
+TIGR03281	180.85	159	hypoth_equivalog	
+TIGR03282	268.4	263.9	hypoth_equivalog	
+TIGR03283	174.55	112.65	equivalog	2.1.1.-
+TIGR03284	108.35	90.6	equivalog	2.1.1.45
+TIGR03285	274	273.7	hypoth_equivalog	
+TIGR03286	455.75	275.55	hypoth_equivalog	
+TIGR03287	363.95	232.7	hypoth_equivalog	
+TIGR03288	345.15	257.95	equivalog	1.8.98.1
+TIGR03289	331.5	277.95	equivalog	1.12.98.1
+TIGR03290	160	125	equivalog	1.8.98.1
+TIGR03291	67.1	64.8	hypoth_equivalog	
+TIGR03292	91.5	58.65	equivalog	
+TIGR03293	89	47.3	equivalog	
+TIGR03294	245.5	167.65	equivalog	1.12.98.1
+TIGR03295	392.5	280.8	equivalog	1.12.98.1
+TIGR03296	110.8	31.3	domain	3.4.24.-
+TIGR03297	312.5	237.85	equivalog	4.1.1.82
+TIGR03298	273.55	127.45	subfamily	
+TIGR03299	110.7	102.35	subfamily	
+TIGR03300	285.2	249.65	equivalog	
+TIGR03301	360.8	290.05	subfamily	2.6.1.-
+TIGR03302	81.4	69	subfamily	
+TIGR03303	297.15	192.15	equivalog	
+TIGR03304	10	7.5	domain	
+TIGR03305	752	678	exception	3.6.3.-
+TIGR03306	302.1	250.2	exception	3.6.3.-
+TIGR03307	272.25	188.2	equivalog	
+TIGR03308	201.65	175.65	hypoth_equivalog	
+TIGR03309	220	205	hypoth_equivalog	
+TIGR03310	186.45	182.8	equivalog	2.7.7.76
+TIGR03311	830.45	680.95	equivalog	1.17.1.4
+TIGR03312	241.5	87.85	hypoth_equivalog	
+TIGR03313	1101.9	526.5	hypoth_equivalog	
+TIGR03314	455.5	348.85	subfamily	
+TIGR03315	835.3	354.45	equivalog	
+TIGR03316	500	300	equivalog	2.1.3.-
+TIGR03317	34.4	33.25	signature	
+TIGR03318	49.7	40.6	hypoth_equivalog	
+TIGR03319	454.35	251.35	equivalog	3.1.-.-
+TIGR03321	224.7	152.75	exception	3.6.3.-
+TIGR03322	130.85	120.45	exception	3.6.3.-
+TIGR03323	282.35	115.3	exception	3.6.3.-
+TIGR03324	750.5	708.6	exception	3.6.3.-
+TIGR03325	459.85	417.05	equivalog	1.3.1.56
+TIGR03326	497.45	497.05	equivalog	4.1.1.39
+TIGR03327	535	516.45	equivalog	2.4.-.-
+TIGR03328	137.05	128.75	equivalog	4.2.-.-
+TIGR03329	632.8	501.95	hypoth_equivalog	
+TIGR03330	75.65	70.45	equivalog	4.1.1.50
+TIGR03331	255.8	157.3	equivalog	4.1.1.50
+TIGR03332	513.6	359.2	equivalog	5.3.2.-
+TIGR03333	303.2	129.15	equivalog	3.1.3.-
+TIGR03334	205.8	88.7	equivalog	1.2.7.8
+TIGR03335	458.7	458.45	equivalog	2.7.7.-
+TIGR03336	650.9	343.55	equivalog	1.2.7.8
+TIGR03337	296.75	294.6	equivalog	
+TIGR03338	271.5	242.05	equivalog	
+TIGR03339	341.1	238.95	subfamily	
+TIGR03340	288.15	199.35	hypoth_equivalog	
+TIGR03341	269.35	97.85	hypoth_equivalog	
+TIGR03342	53.5	40.95	subfamily	
+TIGR03343	462.15	425.45	equivalog	3.7.1.-
+TIGR03344	58.9	32.4	subfamily	
+TIGR03345	884.95	881.25	equivalog	
+TIGR03346	1232.1	1085.1	equivalog	
+TIGR03347	143.3	113.85	hypoth_equivalog	
+TIGR03348	388.15	382.05	hypoth_equivalog	
+TIGR03349	89.95	51.4	subfamily_domain	
+TIGR03350	139.8	133.8	equivalog_domain	
+TIGR03351	218.9	116.85	hypoth_equivalog	
+TIGR03352	31.6	26.4	hypoth_equivalog	
+TIGR03353	211.6	139.2	hypoth_equivalog	
+TIGR03354	120.25	92.95	hypoth_equivalog	
+TIGR03355	271.5	110.15	hypoth_equivalog	
+TIGR03356	478.5	453.85	equivalog	
+TIGR03357	53.2	50.6	hypoth_equivalog	
+TIGR03358	97.25	35.5	hypoth_equivalog	
+TIGR03359	260.3	213.3	hypoth_equivalog	
+TIGR03360	124.2	26.15	hypoth_equivalog	
+TIGR03361	186.35	180.6	subfamily_domain	
+TIGR03362	230.1	105.8	hypoth_equivalog	
+TIGR03363	160.85	98.15	hypoth_equivalog	
+TIGR03364	285.1	179.4	hypoth_equivalog	
+TIGR03365	206.1	99.25	equivalog	
+TIGR03366	328.1	246.55	hypoth_equivalog	
+TIGR03367	89.25	76.9	equivalog	
+TIGR03368	410.2	208.5	hypoth_equivalog	
+TIGR03369	244.65	121.3	equivalog	
+TIGR03370	25.35	17.6	subfamily_domain	
+TIGR03371	157.85	104.25	equivalog	
+TIGR03372	658.65	467.15	equivalog	2.6.1.82
+TIGR03373	41.2	33.7	hypoth_equivalog_domain	
+TIGR03374	909.3	475.65	equivalog	1.2.1.19
+TIGR03375	693.1	586.85	subfamily	
+TIGR03376	285.5	242.7	equivalog	1.1.1.8
+TIGR03377	552.8	485.3	equivalog	1.1.5.3
+TIGR03378	174.15	113.6	equivalog	1.1.5.3
+TIGR03379	279.9	222.45	equivalog	1.1.5.3
+TIGR03380	381.8	309.3	equivalog	3.5.3.12
+TIGR03381	410.25	304.05	equivalog	3.5.1.53
+TIGR03382	15.85	14.85	domain	
+TIGR03383	168.4	78.9	equivalog	1.7.3.3
+TIGR03384	201.3	127.7	equivalog	
+TIGR03385	578.8	530.8	equivalog	1.8.1.14
+TIGR03388	614.8	402.5	equivalog	1.10.3.3
+TIGR03389	558.9	368.45	equivalog	1.10.3.2
+TIGR03390	445.35	295.4	equivalog	1.10.3.3
+TIGR03391	136.4	136.15	equivalog	2.8.1.7
+TIGR03392	493.6	493.4	equivalog	2.8.1.7
+TIGR03393	946	696	equivalog	4.1.1.74
+TIGR03394	554.5	464.6	equivalog	4.1.1.74 4.1.1.43
+TIGR03395	248.2	178.8	equivalog	3.1.4.12
+TIGR03396	580.25	465.55	equivalog	3.1.4.3
+TIGR03397	362.75	129.05	subfamily	3.1.-.-
+TIGR03398	99.1	98.6	equivalog	
+TIGR03399	250.05	146.1	equivalog	6.5.1.4
+TIGR03400	227.95	189.65	equivalog	
+TIGR03401	109.85	78.85	subfamily	4.2.1.-
+TIGR03402	530.75	445.25	equivalog	2.8.1.7
+TIGR03403	587.7	446.3	equivalog	2.8.1.7
+TIGR03404	254.2	151.1	subfamily	
+TIGR03405	423.7	256.1	hypoth_equivalog	
+TIGR03406	202.6	153.3	hypoth_equivalog	
+TIGR03407	492.75	378.35	exception	
+TIGR03408	296.2	165.95	equivalog	
+TIGR03409	250.3	217.9	equivalog	
+TIGR03410	285.8	252.55	equivalog	
+TIGR03411	304.1	268.4	equivalog	
+TIGR03412	40.4	24.95	equivalog	
+TIGR03413	200.8	133	equivalog	3.1.2.6
+TIGR03414	379.05	191.5	subfamily	
+TIGR03415	483.75	428.45	equivalog	
+TIGR03416	363	353.05	equivalog	
+TIGR03417	433.45	224.8	equivalog	3.1.6.6
+TIGR03418	324.8	282.4	hypoth_equivalog	
+TIGR03419	187.9	181.15	equivalog	
+TIGR03420	194.8	128.1	equivalog	
+TIGR03421	53.25	47.8	equivalog	
+TIGR03422	94	80.9	exception	
+TIGR03423	455	390.25	equivalog	
+TIGR03424	284.7	181.85	hypoth_equivalog	
+TIGR03425	205.95	198.45	hypoth_equivalog	
+TIGR03426	34.85	27.15	equivalog	
+TIGR03427	333.9	167.2	hypoth_equivalog	
+TIGR03428	740.45	315	hypoth_equivalog	
+TIGR03429	163.85	69.85	subfamily	2.5.-.-
+TIGR03430	740.75	353.75	equivalog	2.5.1.34
+TIGR03431	261.1	230.15	equivalog	
+TIGR03432	808.15	486.05	hypoth_equivalog	
+TIGR03433	101.8	99.3	paralog	
+TIGR03434	622.3	303.15	paralog	
+TIGR03435	40	22	paralog	
+TIGR03436	81.25	61.4	subfamily_domain	
+TIGR03437	29.05	21.95	paralog_domain	
+TIGR03438	290.9	210	equivalog	2.1.1.44
+TIGR03439	205.55	205.25	subfamily_domain	2.1.1.-
+TIGR03440	240	210	subfamily	
+TIGR03441	274.6	178.5	equivalog	
+TIGR03442	218.65	200.1	equivalog	
+TIGR03443	1030.1	715.1	equivalog	1.2.1.31
+TIGR03444	370.8	278.85	equivalog	6.3.2.2
+TIGR03445	224.35	203	equivalog	3.5.1.103
+TIGR03446	277.15	227.9	equivalog	
+TIGR03447	485.1	427.15	equivalog	6.3.1.13
+TIGR03448	163.1	55.9	equivalog	2.3.1.189
+TIGR03449	462.5	386.1	equivalog	2.4.1.250
+TIGR03450	638	582.4	equivalog	5.5.1.-
+TIGR03451	512.9	512.15	equivalog	1.1.1.306
+TIGR03452	635.65	411.55	equivalog	1.8.1.15
+TIGR03453	348.45	228.65	equivalog	
+TIGR03454	201.5	106	equivalog	
+TIGR03455	40.05	34.1	equivalog_domain	2.4.2.17
+TIGR03457	676.4	462.4	equivalog	2.3.3.15
+TIGR03458	658.7	610.3	subfamily	2.8.3.-
+TIGR03459	439.4	301.6	hypoth_equivalog	
+TIGR03460	154.7	131.6	hypoth_equivalog	
+TIGR03461	176.85	152.05	equivalog	4.1.3.38
+TIGR03462	39.4	29.5	subfamily_domain	
+TIGR03463	851	850.75	subfamily	5.4.99.8
+TIGR03464	250.45	201	equivalog	2.4.1.21
+TIGR03465	278.6	251.35	equivalog	2.5.1.21
+TIGR03466	367.65	307.9	hypoth_equivalog	
+TIGR03467	283.05	261.9	hypoth_equivalog	
+TIGR03468	187.1	169.05	hypoth_equivalog	
+TIGR03469	379.25	242.4	hypoth_equivalog	
+TIGR03470	225.05	162.35	hypoth_equivalog	
+TIGR03471	577.6	577.4	hypoth_equivalog	
+TIGR03472	310	242.15	hypoth_equivalog	
+TIGR03473	232.6	190.85	hypoth_equivalog	
+TIGR03474	446.9	58.15	equivalog	
+TIGR03475	35.05	34	equivalog	
+TIGR03476	195.65	167	subfamily	
+TIGR03477	169.85	37.65	subfamily	
+TIGR03478	480.7	319.4	subfamily	
+TIGR03479	984.75	559.05	subfamily	
+TIGR03480	751.85	401.6	hypoth_equivalog	
+TIGR03481	160.1	128.75	hypoth_equivalog	
+TIGR03482	152.3	83.3	subfamily	
+TIGR03483	62.95	27.6	equivalog_domain	
+TIGR03485	80.85	80.35	hypoth_equivalog_domain	
+TIGR03486	47.4	29.65	hypoth_equivalog_domain	
+TIGR03487	461.75	461.45	hypoth_equivalog	
+TIGR03488	100	40	equivalog	
+TIGR03489	340.65	29.2	hypoth_equivalog	
+TIGR03490	325.5	94.9	paralog	
+TIGR03491	97.45	40.05	subfamily_domain	
+TIGR03492	219.2	49.25	hypoth_equivalog	
+TIGR03493	56	29.05	equivalog	
+TIGR03494	325.15	221.4	equivalog	5.4.4.2 4.1.3.-
+TIGR03495	92.75	39.25	subfamily	
+TIGR03496	619.1	618.9	equivalog	3.6.3.14
+TIGR03497	629.8	627.5	equivalog	3.6.3.14
+TIGR03498	587.45	587.25	equivalog	3.6.3.14
+TIGR03499	174.15	171.7	equivalog	
+TIGR03500	55.25	51.6	equivalog	
+TIGR03501	15.5	14.4	domain	
+TIGR03502	383.9	221.8	subfamily	3.1.-.-
+TIGR03503	305.6	46.3	hypoth_equivalog	
+TIGR03504	30.65	23.45	hypoth_equivalog_domain	
+TIGR03505	43.45	42.3	equivalog_domain	
+TIGR03506	70.25	66.9	subfamily	
+TIGR03507	209.3	60.05	subfamily	
+TIGR03508	192.2	98.6	subfamily	
+TIGR03509	240.05	165.6	subfamily	
+TIGR03510	27.8	19.95	domain	
+TIGR03511	78.7	30.6	subfamily	
+TIGR03512	179	68.7	equivalog	
+TIGR03513	68.3	51.8	subfamily	
+TIGR03514	317.2	302.35	equivalog	
+TIGR03515	102.15	57.5	equivalog	
+TIGR03516	157.6	101.2	equivalog	
+TIGR03517	269.35	97.3	subfamily	
+TIGR03518	288.5	252.5	equivalog	
+TIGR03519	90.55	73.05	subfamily	
+TIGR03520	376.05	329.2	subfamily	
+TIGR03521	389.85	133.7	equivalog	
+TIGR03522	402.6	362.2	equivalog	
+TIGR03523	85.9	84.7	subfamily	
+TIGR03524	458.2	113.15	equivalog	
+TIGR03525	487.1	164.45	equivalog	
+TIGR03526	321.5	153.2	hypoth_equivalog	
+TIGR03527	110	105	hypoth_equivalog	
+TIGR03528	532.25	388.4	equivalog	4.3.1.15
+TIGR03529	584.1	359.8	equivalog	
+TIGR03530	382.9	158.95	equivalog	
+TIGR03531	224.85	117.85	equivalog	2.9.1.2
+TIGR03532	231.75	182.2	equivalog	2.3.1.89
+TIGR03533	229.7	206.4	equivalog	2.1.1.-
+TIGR03534	199.1	198.7	equivalog	2.1.1.-
+TIGR03535	441.5	441.35	equivalog	2.3.1.117
+TIGR03536	518.45	445.05	equivalog	2.3.1.117
+TIGR03537	453.6	350.2	equivalog	2.6.1.17
+TIGR03538	474.6	424.35	equivalog	2.6.1.17
+TIGR03539	355.65	318.95	equivalog	2.6.1.17
+TIGR03540	593.25	583.3	hypoth_equivalog	2.6.1.83
+TIGR03541	215.6	215.45	hypoth_equivalog	
+TIGR03542	364.7	246.55	equivalog	2.6.1.83
+TIGR03543	154.2	46.95	hypoth_equivalog	
+TIGR03544	22	20.65	domain	
+TIGR03545	173.35	62.6	subfamily	
+TIGR03546	79.45	46.3	subfamily	
+TIGR03547	256.35	156	subfamily	5.1.-.-
+TIGR03548	243.2	172.3	subfamily	
+TIGR03549	900	800	hypoth_equivalog	
+TIGR03550	213.35	106.85	equivalog_domain	2.5.1.77
+TIGR03551	374.1	369.75	equivalog_domain	2.5.1.77
+TIGR03552	105	85.4	equivalog	2.7.7.68
+TIGR03553	249.55	77.75	equivalog_domain	
+TIGR03554	420	240	equivalog	1.1.98.2
+TIGR03555	348.7	200.55	equivalog	1.5.98.2
+TIGR03556	884.6	732.3	exception	4.1.99.3
+TIGR03557	210.4	128.4	subfamily	1.-.-.-
+TIGR03558	166.95	127.85	subfamily	1.-.-.-
+TIGR03559	335	221.1	subfamily	
+TIGR03560	231.4	231	subfamily	
+TIGR03561	88.85	73.45	subfamily	
+TIGR03562	85.8	84.8	subfamily	
+TIGR03563	166.15	53.65	subfamily	
+TIGR03564	234.25	187.85	subfamily	1.-.-.-
+TIGR03565	518.2	368.4	equivalog	1.14.14.5
+TIGR03566	212.5	119.5	equivalog	1.5.1.-
+TIGR03567	164.05	112.25	equivalog	1.5.1.38
+TIGR03568	235.9	152.75	equivalog	5.1.3.- 3.1.4.-
+TIGR03569	399.65	394.85	equivalog	2.5.1.56
+TIGR03570	160.8	124.65	subfamily	
+TIGR03571	303.9	135.6	subfamily	1.-.-.-
+TIGR03572	299.7	299.35	equivalog	
+TIGR03573	203.2	202.85	subfamily	6.3.4.-
+TIGR03574	290.5	190.9	equivalog	2.7.1.164
+TIGR03575	382.35	100.6	equivalog	2.7.1.164
+TIGR03576	304.45	96.1	hypoth_equivalog	
+TIGR03577	141.1	74	hypoth_equivalog	
+TIGR03578	89.65	38.7	hypoth_equivalog	
+TIGR03579	215.45	61.7	hypoth_equivalog	
+TIGR03580	301.1	115.55	hypoth_equivalog	
+TIGR03581	222.4	69.3	hypoth_equivalog	
+TIGR03582	69.35	31.4	hypoth_equivalog	
+TIGR03583	432.15	348.5	hypoth_equivalog	
+TIGR03584	205.7	199.8	equivalog	2.7.7.81
+TIGR03585	93.1	81.6	equivalog	2.3.1.202
+TIGR03586	340.25	340.05	equivalog	2.5.1.97
+TIGR03587	112.05	111.8	hypoth_equivalog	
+TIGR03588	423.5	419.2	equivalog	2.6.1.92
+TIGR03589	407.75	407.6	equivalog	4.2.1.115
+TIGR03590	153.55	152.9	equivalog	3.6.1.57
+TIGR03591	525.05	344.6	equivalog	2.7.7.8
+TIGR03592	84.3	72.05	subfamily_domain	
+TIGR03593	58.25	34.3	equivalog_domain	
+TIGR03594	306.7	230.2	equivalog	
+TIGR03595	37.65	32.55	equivalog_domain	
+TIGR03596	208.2	207.25	equivalog	
+TIGR03597	297.4	262.9	equivalog	
+TIGR03598	124.45	102.8	equivalog	
+TIGR03599	396.1	286.95	subfamily	
+TIGR03600	498.65	498.45	exception	
+TIGR03601	35	33	subfamily	
+TIGR03602	39.95	17.8	subfamily	
+TIGR03603	187.65	55.2	subfamily	6.3.-.-
+TIGR03604	219.25	94.1	subfamily_domain	
+TIGR03605	78.4	47.35	domain	
+TIGR03606	434.55	198.3	subfamily	
+TIGR03607	262.45	154.55	subfamily_domain	
+TIGR03608	254.85	225.8	subfamily	
+TIGR03609	213.1	145.65	equivalog	2.-.-.-
+TIGR03610	169.1	137.35	equivalog	
+TIGR03611	238.5	195.25	equivalog	
+TIGR03612	498.3	434.65	equivalog	
+TIGR03613	368	362	equivalog	
+TIGR03614	377.95	255.05	equivalog	
+TIGR03615	254.75	248.55	equivalog	1.5.1.42
+TIGR03616	758.65	744.65	equivalog	
+TIGR03617	278.15	177.1	subfamily	1.-.-.-
+TIGR03618	79.05	65.9	subfamily	
+TIGR03619	166.9	166.5	subfamily_domain	1.-.-.-
+TIGR03620	219.8	113.25	subfamily	
+TIGR03621	213.15	163.05	subfamily	
+TIGR03622	374.25	292.65	equivalog	
+TIGR03623	299.6	299	subfamily	
+TIGR03624	136.05	98.55	subfamily	
+TIGR03625	142.9	107.4	equivalog	
+TIGR03626	308.7	303.95	equivalog	
+TIGR03627	162.75	160.5	equivalog	
+TIGR03628	182.35	181.95	equivalog	
+TIGR03629	175.55	175.2	equivalog	
+TIGR03630	105	90	equivalog	
+TIGR03631	130.45	88.35	equivalog	
+TIGR03632	154.5	117.2	equivalog	
+TIGR03633	287.35	276.45	equivalog	3.4.25.1
+TIGR03634	224	172	equivalog	3.4.25.1
+TIGR03635	88.7	79.4	equivalog	
+TIGR03636	94.95	91.6	equivalog	
+TIGR03637	150	69.85	exception	
+TIGR03638	215.6	128.35	exception	
+TIGR03639	120	110	exception	3.1.-.-
+TIGR03640	385	365	exception	
+TIGR03641	304.1	213.65	exception	
+TIGR03642	90.35	52.1	hypoth_equivalog_domain	
+TIGR03643	66.55	30.6	hypoth_equivalog	
+TIGR03644	514	481.9	hypoth_equivalog	
+TIGR03645	262.05	203.15	hypoth_equivalog	
+TIGR03646	155.35	59.95	subfamily	
+TIGR03647	26.05	19.45	subfamily_domain	
+TIGR03648	320.75	255.25	subfamily	
+TIGR03649	256.4	247.95	subfamily	
+TIGR03650	177.05	173.45	equivalog	
+TIGR03651	30.7	24.85	subfamily	
+TIGR03652	204.7	99.1	equivalog	
+TIGR03653	185.4	183.35	equivalog	
+TIGR03654	168.55	167.05	equivalog	
+TIGR03655	39.6	37	subfamily	
+TIGR03656	155.85	153.85	equivalog	
+TIGR03657	1231.5	766.85	equivalog	
+TIGR03658	1400.25	1044	equivalog	
+TIGR03659	298.65	249.7	equivalog	
+TIGR03660	66.05	52.75	domain	
+TIGR03661	17.6	7.9	domain	
+TIGR03662	300.25	232.6	subfamily_domain	
+TIGR03663	126.25	84.25	subfamily	
+TIGR03664	124.7	102.55	equivalog	3.2.2.26
+TIGR03665	114.2	98.8	equivalog	
+TIGR03666	84.9	50.75	subfamily	1.-.-.-
+TIGR03667	125.3	64.25	hypoth_equivalog	1.-.-.-
+TIGR03668	119.15	77.5	hypoth_equivalog	
+TIGR03669	494.8	281.15	equivalog	
+TIGR03670	811	790.35	equivalog	2.7.7.6
+TIGR03671	281.3	168.25	equivalog	2.7.7.25 2.7.7.21
+TIGR03672	269.75	261.85	equivalog	
+TIGR03673	191.45	191.2	equivalog	
+TIGR03674	351.95	351.8	equivalog	3.1.-.-
+TIGR03675	580.2	580	equivalog	
+TIGR03676	234.7	146.15	equivalog	
+TIGR03677	134.6	134.35	equivalog	
+TIGR03678	39.6	28	subfamily_domain	
+TIGR03679	197.3	193.45	equivalog	
+TIGR03680	514.5	514.25	equivalog	
+TIGR03682	202.8	201.65	equivalog	
+TIGR03683	744.7	741.7	equivalog	6.1.1.7
+TIGR03684	120.6	120.45	equivalog	
+TIGR03685	100	99.85	equivalog	
+TIGR03686	551.3	429.85	equivalog	6.3.2.-
+TIGR03687	41.45	24.8	equivalog_domain	
+TIGR03688	492.3	406.65	equivalog	6.3.2.-
+TIGR03689	504.75	251.6	equivalog	3.6.4.8
+TIGR03690	191.9	118.05	equivalog	3.4.25.1
+TIGR03691	139.05	62.65	equivalog	3.4.25.1
+TIGR03692	157.75	94.9	equivalog	3.4.25.2
+TIGR03693	561.9	142.3	hypoth_equivalog	
+TIGR03694	111.95	52.8	subfamily	2.3.1.-
+TIGR03695	208.55	127.95	equivalog	4.2.99.20
+TIGR03696	32.5	26.5	domain	
+TIGR03697	244.95	227.45	equivalog	
+TIGR03698	57.35	42.35	subfamily	3.4.23.-
+TIGR03699	428.1	397.65	equivalog	
+TIGR03700	434.55	422.35	equivalog	
+TIGR03701	495.9	490.95	equivalog	
+TIGR03702	387.45	197.5	equivalog	2.7.1.-
+TIGR03703	618.5	336.7	equivalog	2.3.1.15
+TIGR03704	248.8	205.8	equivalog	2.1.1.-
+TIGR03705	465.85	241.75	equivalog	2.7.4.1
+TIGR03706	307	268	exception	3.6.1.11
+TIGR03707	301.8	248.45	equivalog	2.7.4.1
+TIGR03708	547.65	459.1	equivalog	2.7.4.-
+TIGR03709	247.2	240.85	hypoth_equivalog	2.7.4.-
+TIGR03710	482.75	459.15	subfamily	
+TIGR03711	67.25	49.2	equivalog	
+TIGR03712	210.75	210.45	equivalog	
+TIGR03713	136.1	121.7	equivalog	
+TIGR03714	930	927	equivalog	
+TIGR03715	18	17	domain	
+TIGR03716	138.5	123.65	subfamily	
+TIGR03717	134.8	108.9	subfamily	
+TIGR03718	246.4	149.25	subfamily	
+TIGR03719	806.75	591.3	subfamily	
+TIGR03720	20.1	20.1	domain	
+TIGR03721	93.15	65.75	domain	
+TIGR03722	430.9	426.45	equivalog_domain	
+TIGR03723	296.1	287.85	equivalog	
+TIGR03724	64.4	61.2	equivalog_domain	2.7.-.-
+TIGR03725	69.3	67.75	equivalog	
+TIGR03726	20.85	17.7	equivalog_domain	
+TIGR03727	575.55	421.65	equivalog	
+TIGR03728	290.75	133	hypoth_equivalog	
+TIGR03729	148.25	103.05	subfamily	
+TIGR03730	242.75	94.5	equivalog	
+TIGR03731	29.3	28.8	subfamily	
+TIGR03732	145.2	98.4	subfamily	
+TIGR03733	117.2	79.1	subfamily	
+TIGR03734	278.6	176.15	hypoth_equivalog	
+TIGR03735	101.8	42	hypoth_equivalog	
+TIGR03736	144.75	98.5	hypoth_equivalog	
+TIGR03737	131.45	61.1	hypoth_equivalog	
+TIGR03738	45.95	22.95	hypoth_equivalog_domain	
+TIGR03739	214.8	89.8	hypoth_equivalog	
+TIGR03740	309.75	277.9	subfamily	
+TIGR03741	37.95	28.7	subfamily_domain	
+TIGR03742	58.4	31.4	subfamily	
+TIGR03743	366	240.45	subfamily	
+TIGR03744	520.6	450.1	equivalog	
+TIGR03745	52.5	41.5	hypoth_equivalog	
+TIGR03746	137.25	94.15	hypoth_equivalog	
+TIGR03747	138.5	75.25	hypoth_equivalog	
+TIGR03748	64.15	48.45	hypoth_equivalog_domain	
+TIGR03749	138.8	102.25	hypoth_equivalog	
+TIGR03750	70.75	33.75	hypoth_equivalog	
+TIGR03751	77.7	39.15	hypoth_equivalog	
+TIGR03752	241	97.75	hypoth_equivalog	
+TIGR03753	95.25	58.05	subfamily	1.14.99.36
+TIGR03754	647.55	485.15	equivalog	
+TIGR03755	270.45	140.1	equivalog	
+TIGR03756	188.35	102.05	hypoth_equivalog	
+TIGR03757	73.2	44.15	hypoth_equivalog	
+TIGR03758	42.7	30.15	hypoth_equivalog	
+TIGR03759	126.4	48.5	hypoth_equivalog	
+TIGR03760	161.4	144.1	equivalog_domain	
+TIGR03761	110.7	80.75	hypoth_equivalog	
+TIGR03762	100	60	equivalog	3.4.22.-
+TIGR03763	150	95	equivalog	3.4.22.-
+TIGR03764	143.75	99.9	hypoth_equivalog_domain	
+TIGR03765	59.75	47.45	subfamily_domain	
+TIGR03766	288.45	264.5	hypoth_equivalog	
+TIGR03767	330.75	222.55	hypoth_equivalog	
+TIGR03768	387.4	341.1	hypoth_equivalog	
+TIGR03769	30.9	23.35	domain	
+TIGR03770	296.8	296.65	equivalog	
+TIGR03771	268.8	237.6	equivalog	
+TIGR03772	350.45	238.25	equivalog	
+TIGR03773	190.3	176.7	hypoth_equivalog	
+TIGR03774	36.15	34.5	domain	
+TIGR03775	30.25	23.45	domain	
+TIGR03776	29.45	28.3	domain	
+TIGR03777	23.95	22.9	domain	
+TIGR03778	22	21	subfamily_domain	
+TIGR03779	172.45	109.1	equivalog	
+TIGR03780	164.1	126.45	equivalog	
+TIGR03781	152.45	103.85	equivalog	
+TIGR03782	289.95	136.05	equivalog	
+TIGR03783	261.55	254.35	subfamily	
+TIGR03784	158.25	136.95	equivalog	
+TIGR03785	612.2	437.9	equivalog	
+TIGR03786	31.85	29.45	domain	
+TIGR03787	335.7	310.6	equivalog	
+TIGR03788	551.65	550.25	equivalog	
+TIGR03789	152.2	146.35	hypoth_equivalog	
+TIGR03790	67	41.9	subfamily	
+TIGR03791	443.85	394.5	equivalog	
+TIGR03792	45.75	45.7	hypoth_equivalog	
+TIGR03793	50.9	43.4	domain	
+TIGR03794	156.2	135.65	equivalog	
+TIGR03795	41	34.55	subfamily	
+TIGR03796	853.3	691.9	equivalog	
+TIGR03797	709.4	613.4	equivalog	
+TIGR03798	32.3	29.7	subfamily	
+TIGR03799	606.1	375.4	equivalog	4.1.1.-
+TIGR03800	105.55	83.65	equivalog	2.6.-.-
+TIGR03801	435.1	213	equivalog	4.1.1.12
+TIGR03802	546.95	418.9	equivalog	
+TIGR03803	35.65	20.6	repeat	
+TIGR03804	19.45	15.6	repeat	
+TIGR03805	141.5	107.3	hypoth_equivalog	
+TIGR03806	313.3	200.05	hypoth_equivalog_domain	
+TIGR03807	15.75	14.8	repeat	
+TIGR03808	120	90	equivalog	
+TIGR03809	50.15	49.2	hypoth_equivalog	
+TIGR03810	591	588.75	equivalog	
+TIGR03811	905.3	599	equivalog	4.1.1.25
+TIGR03812	299.4	274.8	equivalog	4.1.1.25
+TIGR03813	546.85	404.65	hypoth_equivalog	
+TIGR03814	255.4	246	equivalog	3.5.1.2
+TIGR03815	154.45	135.1	hypoth_equivalog	
+TIGR03816	50.95	48.7	hypoth_equivalog	
+TIGR03817	874.1	871.2	hypoth_equivalog	
+TIGR03818	303.8	277.1	equivalog	
+TIGR03819	373.15	362.35	hypoth_equivalog	
+TIGR03820	525.4	525.15	equivalog	5.4.3.2
+TIGR03821	369.3	277.9	equivalog	5.4.3.-
+TIGR03822	396.25	359.75	hypoth_equivalog	5.4.3.-
+TIGR03823	159.3	86.95	equivalog	
+TIGR03824	40.75	37.45	equivalog	
+TIGR03825	148.9	129.35	equivalog	
+TIGR03826	124.15	105.8	hypoth_equivalog	
+TIGR03827	205.1	107	equivalog	2.3.1.-
+TIGR03828	292	288	equivalog	2.7.1.56
+TIGR03829	90.85	49.75	hypoth_equivalog	
+TIGR03830	61.8	58.85	subfamily	
+TIGR03831	20.2	19.8	domain	
+TIGR03832	501	492.7	equivalog	5.4.3.6
+TIGR03833	63.4	32.1	hypoth_equivalog	
+TIGR03834	34.1	26.1	domain	
+TIGR03835	512.25	333	equivalog	
+TIGR03836	85.2	85.2	equivalog_domain	
+TIGR03837	347.05	108.15	equivalog	
+TIGR03838	276.7	264.1	equivalog	6.1.1.-
+TIGR03839	625.6	604.15	equivalog	
+TIGR03840	223.2	189.85	equivalog	2.1.1.67
+TIGR03841	213.65	179.95	subfamily	1.-.-.-
+TIGR03842	295.45	295.1	hypoth_equivalog	
+TIGR03843	172.4	90.6	hypoth_equivalog	
+TIGR03844	324.9	215.8	equivalog	2.5.1.76
+TIGR03845	147.95	100.3	equivalog_domain	4.1.1.79
+TIGR03846	221.5	186.4	equivalog	4.1.1.79
+TIGR03847	117.25	51.5	subfamily	
+TIGR03848	203.85	173.95	subfamily	5.4.2.-
+TIGR03849	331.9	331.7	equivalog	4.4.1.19
+TIGR03850	299	298.8	hypoth_equivalog	
+TIGR03851	399.65	312.05	equivalog	
+TIGR03852	334.4	240.75	equivalog	2.4.1.7
+TIGR03853	65.7	31.2	hypoth_equivalog	
+TIGR03854	295.6	156.6	hypoth_equivalog	
+TIGR03855	206.55	190.7	equivalog	1.4.1.21
+TIGR03856	243.7	241.15	subfamily	
+TIGR03857	218.4	216.85	hypoth_equivalog	
+TIGR03858	462.25	383.95	hypoth_equivalog	1.-.-.-
+TIGR03859	46	45	equivalog	
+TIGR03860	279.7	262.35	subfamily	1.-.-.-
+TIGR03861	241.35	183.55	subfamily	
+TIGR03862	242.65	226.65	subfamily	
+TIGR03863	413.6	76.1	subfamily	
+TIGR03864	302.25	266.5	hypoth_equivalog	
+TIGR03865	128.05	66.65	subfamily	
+TIGR03866	287.3	248.45	subfamily	
+TIGR03867	19.7	18.35	equivalog_domain	3.4.21.-
+TIGR03868	392.4	392.2	hypoth_equivalog	
+TIGR03869	437.35	437.05	hypoth_equivalog	
+TIGR03870	258.1	164.6	equivalog	
+TIGR03871	212.15	194.6	subfamily	
+TIGR03872	147.8	61.05	equivalog	
+TIGR03873	372.4	372.2	hypoth_equivalog	
+TIGR03874	161.75	136.55	equivalog	
+TIGR03875	95.3	90.65	hypoth_equivalog	
+TIGR03876	222.5	222.1	hypoth_equivalog	
+TIGR03877	307.25	303.45	hypoth_equivalog	
+TIGR03878	232.2	228.95	hypoth_equivalog	
+TIGR03879	65.1	48.05	domain	
+TIGR03880	249.45	205.15	hypoth_equivalog	
+TIGR03881	247.8	231	hypoth_equivalog	
+TIGR03882	36.9	31.9	equivalog_domain	6.3.-.-
+TIGR03883	171.35	161.1	subfamily	
+TIGR03884	44.65	44.45	equivalog	
+TIGR03885	398.7	369.35	hypoth_equivalog	1.-.-.-
+TIGR03886	437.55	437.3	hypoth_equivalog	
+TIGR03887	291.45	291.05	equivalog	3.5.5.8
+TIGR03888	152.2	136.35	equivalog	4.2.1.84
+TIGR03889	46	44	equivalog	
+TIGR03890	159.45	120.65	hypoth_equivalog	
+TIGR03891	48.45	38	subfamily_domain	
+TIGR03892	25	21.35	subfamily	
+TIGR03893	32.95	32.65	subfamily	
+TIGR03894	67.75	67.3	hypoth_equivalog	
+TIGR03895	421.05	202.8	subfamily_domain	3.4.21.-
+TIGR03896	161.05	160.85	subfamily	
+TIGR03897	304	287.6	subfamily	
+TIGR03898	23.5	22.05	subfamily	
+TIGR03899	155.65	106.05	hypoth_equivalog	
+TIGR03900	660.95	660.65	hypoth_equivalog	3.4.21.-
+TIGR03901	25.5	15	domain	
+TIGR03902	84	78	equivalog	3.4.21.-
+TIGR03903	705.75	668.05	hypoth_equivalog	
+TIGR03904	462.35	177.6	hypoth_equivalog	
+TIGR03905	67.7	47.3	hypoth_equivalog	
+TIGR03906	453	451.95	equivalog	
+TIGR03907	223.2	222.95	equivalog	1.-.-.-
+TIGR03908	274.35	273.4	equivalog	1.4.-.-
+TIGR03909	248.3	247.05	equivalog	
+TIGR03910	348.2	347.9	equivalog	
+TIGR03911	150.05	148.85	equivalog	
+TIGR03912	51.15	50.4	equivalog_domain	6.1.1.26
+TIGR03913	591.75	591.45	hypoth_equivalog	
+TIGR03914	189.95	170.2	hypoth_equivalog_domain	3.2.2.-
+TIGR03915	112.25	55.8	equivalog_domain	
+TIGR03916	343.5	327.85	hypoth_equivalog_domain	
+TIGR03917	40	23	paralog_domain	
+TIGR03918	325.55	225	equivalog	
+TIGR03919	154	142	equivalog	
+TIGR03920	94.95	75.75	equivalog	
+TIGR03921	278.75	242	equivalog	3.4.21.-
+TIGR03922	466.65	266.65	equivalog	
+TIGR03923	108	42.15	equivalog_domain	
+TIGR03924	509.15	442.15	equivalog_domain	
+TIGR03925	346.55	251.05	equivalog_domain	
+TIGR03926	229.75	140.1	equivalog	
+TIGR03927	32.45	30	equivalog	
+TIGR03928	778.4	653.55	equivalog	
+TIGR03929	122	121.2	equivalog_domain	
+TIGR03930	44.85	34.45	subfamily	
+TIGR03931	47.6	46.75	hypoth_equivalog_domain	
+TIGR03932	69.05	44.3	equivalog	
+TIGR03933	248.35	200.1	equivalog	3.5.1.-
+TIGR03934	30.4	22	domain	
+TIGR03935	190.7	190.6	equivalog	3.4.24.74
+TIGR03936	71.9	65.2	hypoth_equivalog_domain	
+TIGR03937	422.3	206.8	equivalog	2.4.1.-
+TIGR03938	321.9	168.65	equivalog	3.5.1.-
+TIGR03939	366.65	288	equivalog	
+TIGR03940	31.45	24.2	equivalog	
+TIGR03941	53.6	42.2	hypoth_equivalog	
+TIGR03942	349.45	228.7	equivalog	1.1.99.-
+TIGR03943	88.8	69.9	hypoth_equivalog	
+TIGR03944	326.9	254.65	equivalog	
+TIGR03945	349.95	294.65	equivalog	
+TIGR03946	418.6	216.15	equivalog	1.14.-.-
+TIGR03947	390.9	390.75	equivalog	
+TIGR03948	674.8	514.65	equivalog	2.8.3.-
+TIGR03949	21.5	21	subfamily	
+TIGR03950	137.9	70.35	hypoth_equivalog	1.-.-.-
+TIGR03951	63.85	59.15	equivalog	1.-.-.-
+TIGR03952	208.1	76.65	equivalog	3.4.24.-
+TIGR03953	130.1	98.5	equivalog	
+TIGR03954	33.25	32.85	domain	
+TIGR03955	312.15	311.8	equivalog	
+TIGR03956	254.6	250	equivalog	
+TIGR03957	320.9	132.7	equivalog	
+TIGR03958	407	406.85	equivalog	
+TIGR03959	60.8	50.45	hypoth_equivalog	
+TIGR03960	462.3	453.8	hypoth_equivalog_domain	
+TIGR03961	306.05	305.75	hypoth_equivalog	
+TIGR03962	265	225	equivalog	
+TIGR03963	260.1	196.65	equivalog	
+TIGR03964	172	168	hypoth_equivalog	
+TIGR03965	280	220	hypoth_equivalog	
+TIGR03966	470.85	470.65	hypoth_equivalog	1.-.-.-
+TIGR03967	38	30	hypoth_equivalog	
+TIGR03968	224.9	176.4	hypoth_equivalog	
+TIGR03969	25	19	equivalog	
+TIGR03970	387.45	387.15	hypoth_equivalog	1.-.-.-
+TIGR03971	300	295	subfamily	1.1.99.-
+TIGR03972	317.95	315.95	equivalog	
+TIGR03973	50	35	hypoth_equivalog	
+TIGR03974	425	380	hypoth_equivalog	
+TIGR03975	281.85	255.45	subfamily	
+TIGR03976	50	30	hypoth_equivalog	
+TIGR03977	267.9	181.65	hypoth_equivalog	
+TIGR03978	370	325	hypoth_equivalog	
+TIGR03979	121.65	63.8	hypoth_equivalog	
+TIGR03980	44.95	44.15	subfamily_domain	
+TIGR03981	514.65	234.35	hypoth_equivalog	
+TIGR03982	90	89.6	hypoth_equivalog	
+TIGR03983	358.05	255.95	equivalog_domain	
+TIGR03984	81.25	37.3	hypoth_equivalog	
+TIGR03985	60	30	hypoth_equivalog	
+TIGR03986	161.35	115.15	hypoth_equivalog	
+TIGR03987	78.2	53.5	hypoth_equivalog	
+TIGR03988	62.5	46.3	equivalog	
+TIGR03989	440	360	subfamily	1.1.99.36
+TIGR03990	439	400.3	equivalog	5.4.2.10
+TIGR03991	225.3	223.5	hypoth_equivalog	2.7.7.23 2.3.1.157
+TIGR03992	292.1	286.15	subfamily	2.7.7.23 2.3.1.157
+TIGR03993	78.5	50.4	subfamily_domain	
+TIGR03994	321.4	259.85	equivalog	1.3.99.22
+TIGR03995	87.6	81.2	hypoth_equivalog	
+TIGR03996	627.9	600.2	hypoth_equivalog	1.-.-.-
+TIGR03997	793.15	636.6	hypoth_equivalog	1.-.-.-
+TIGR03998	265.8	218.6	equivalog	
+TIGR03999	273.7	173.85	equivalog	2.4.1.-
+TIGR04000	195.25	137.85	equivalog	3.-.-.-
+TIGR04001	182.5	151.25	equivalog	3.-.-.-
+TIGR04002	120	100	hypoth_equivalog	
+TIGR04003	496.45	496.25	equivalog	1.97.-.-
+TIGR04004	794.6	794.4	equivalog	
+TIGR04005	537.6	537.4	equivalog	2.4.-.-
+TIGR04006	727.1	726.9	equivalog	2.-.-.-
+TIGR04007	800.45	722.05	equivalog	2.4.-.-
+TIGR04008	326.3	326.05	equivalog	2.3.1.-
+TIGR04009	369.2	305.95	equivalog	2.4.-.-
+TIGR04010	589.65	485.65	equivalog	
+TIGR04011	96.45	66.3	equivalog	6.3.2.-
+TIGR04012	222.7	116.35	equivalog	6.3.2.-
+TIGR04013	251	250.7	hypoth_equivalog	
+TIGR04014	360	358.85	hypoth_equivalog	
+TIGR04015	784.85	688.05	equivalog	2.4.-.-
+TIGR04016	194.65	116.75	equivalog	2.3.1.-
+TIGR04017	495.75	495.55	equivalog	2.4.-.-
+TIGR04018	339.9	165.7	hypoth_equivalog	1.8.-.-
+TIGR04019	77.25	29.15	hypoth_equivalog	
+TIGR04020	244.45	158.6	subfamily_domain	1.-.-.-
+TIGR04021	382.95	333.45	equivalog	1.14.-.-
+TIGR04022	430.9	399.35	equivalog	1.-.-.-
+TIGR04023	85.6	61.5	subfamily	1.-.-.-
+TIGR04024	345.4	293.45	hypoth_equivalog	1.14.-.-
+TIGR04025	170	154.4	subfamily	1.-.-.-
+TIGR04026	140.55	121.4	subfamily	1.-.-.-
+TIGR04027	412.9	316.75	hypoth_equivalog	1.-.-.-
+TIGR04028	468.5	468.2	hypoth_equivalog	
+TIGR04029	100.75	98.25	hypoth_equivalog_domain	
+TIGR04030	233.15	187.85	hypoth_equivalog_domain	
+TIGR04031	57.2	56.65	subfamily	
+TIGR04032	99.2	37.15	subfamily	
+TIGR04033	178.4	77.6	subfamily	
+TIGR04034	53.1	52.6	subfamily	
+TIGR04035	147.7	44.1	repeat	
+TIGR04036	479.1	369.25	subfamily	1.-.-.-
+TIGR04037	175.9	169.95	subfamily	1.-.-.-
+TIGR04038	129.7	73.15	subfamily_domain	
+TIGR04039	362.85	361.95	hypoth_equivalog	
+TIGR04040	498.3	210.55	hypoth_equivalog	
+TIGR04041	250.2	205	hypoth_equivalog	1.97.1.-
+TIGR04042	79.85	39.95	hypoth_equivalog	
+TIGR04043	303.7	170.55	hypoth_equivalog	
+TIGR04044	109.85	108.9	hypoth_equivalog	
+TIGR04045	68.45	67.95	hypoth_equivalog	
+TIGR04046	498.35	498.15	hypoth_equivalog	
+TIGR04047	259.85	257.25	hypoth_equivalog	
+TIGR04048	502.6	371.2	equivalog_domain	3.5.5.-
+TIGR04049	321.3	321.1	hypoth_equivalog	
+TIGR04050	312.2	311.6	hypoth_equivalog_domain	
+TIGR04051	515.45	447.15	equivalog	
+TIGR04052	95.05	90.75	hypoth_equivalog	
+TIGR04053	381.15	375.9	subfamily	
+TIGR04054	650	600	equivalog	
+TIGR04055	500	425	equivalog	1.3.99.-
+TIGR04056	368.25	338.25	subfamily	
+TIGR04057	46.2	33.6	signature	
+TIGR04058	449.7	449.55	equivalog	1.1.1.-
+TIGR04059	222.65	144.45	equivalog	4.1.99.5
+TIGR04060	290.1	289.9	equivalog	
+TIGR04061	124.15	123.9	subfamily	
+TIGR04062	74.25	40.95	hypoth_equivalog	
+TIGR04063	442.05	330.75	hypoth_equivalog	2.4.-.-
+TIGR04064	518.7	313.3	equivalog	
+TIGR04065	26	20	hypoth_equivalog	
+TIGR04066	200	125	hypoth_equivalog	
+TIGR04067	45	30	equivalog	
+TIGR04068	500	375	equivalog	
+TIGR04069	70	50	hypoth_equivalog	
+TIGR04070	400	350	equivalog	4.1.99.14
+TIGR04071	27.5	22.5	subfamily	
+TIGR04072	180	170	hypoth_equivalog	
+TIGR04073	50	40	subfamily	
+TIGR04074	340	200	equivalog	2.1.1.-
+TIGR04075	750	550	equivalog	
+TIGR04076	33	17	subfamily	
+TIGR04077	35	25	subfamily	
+TIGR04078	300	220	equivalog	
+TIGR04079	35	25	subfamily	
+TIGR04080	500	100	equivalog	
+TIGR04081	32	28	subfamily	
+TIGR04082	350	250	hypoth_equivalog	
+TIGR04083	300	200	hypoth_equivalog	
+TIGR04084	225	175	subfamily	
+TIGR04085	27	16	domain	
+TIGR04086	30	27	hypoth_equivalog	
+TIGR04087	80	30	equivalog	
+TIGR04088	19	16	domain	
+TIGR04089	60	25	subfamily	
+TIGR04090	60	42	subfamily	
+TIGR04091	375	250	equivalog	
+TIGR04092	150	125	equivalog	
+TIGR04093	385	340	exception	
+TIGR04094	200	160	equivalog	
+TIGR04095	600	550	equivalog_domain	
+TIGR04096	150	75	subfamily	2.-.-.-
+TIGR04098	100	35	domain	
+TIGR04099	125	90	hypoth_equivalog	
+TIGR04100	262	260	hypoth_equivalog	
+TIGR04101	28	22	hypoth_equivalog	
+TIGR04102	68	55	hypoth_equivalog	
+TIGR04103	725	675	equivalog	
+TIGR04104	45	35	subfamily	
+TIGR04105	450	380	subfamily	1.12.-.-
+TIGR04106	125	30	equivalog	
+TIGR04107	400	275	equivalog	
+TIGR04108	110	80	hypoth_equivalog	
+TIGR04109	240	180	equivalog	1.14.99.3
+TIGR04110	225	210	equivalog	
+TIGR04111	34	31	hypoth_equivalog	
+TIGR04112	200	90	hypoth_equivalog	
+TIGR04113	150	30	hypoth_equivalog	
+TIGR04114	20	16	repeat	
+TIGR04115	350	200	equivalog_domain	
+TIGR04116	50	27	hypoth_equivalog	
+TIGR04117	50	40	paralog	
+TIGR04118	35	25	subfamily	
+TIGR04119	150	85	equivalog_domain	
+TIGR04120	400	340	equivalog	6.5.1.1
+TIGR04121	850	750	equivalog	3.6.4.-
+TIGR04122	325	275	equivalog	
+TIGR04123	150	130	hypoth_equivalog	
+TIGR04124	95	65	hypoth_equivalog	
+TIGR04125	75	60	equivalog	3.4.22.-
+TIGR04126	24.5	22.5	domain	
+TIGR04127	35	25	hypoth_equivalog	
+TIGR04128	90	70	equivalog	
+TIGR04129	35	25	hypoth_equivalog	
+TIGR04130	730	650	equivalog	5.1.3.- 4.2.1.-
+TIGR04131	35	27	domain	
+TIGR04132	350	250	hypoth_equivalog	6.3.2.-
+TIGR04133	425	375	hypoth_equivalog	
+TIGR04134	39.8	38	hypoth_equivalog	
+TIGR04135	45	35	subfamily	
+TIGR04136	400	250	hypoth_equivalog	
+TIGR04137	50	27	hypoth_equivalog	
+TIGR04138	60	25	hypoth_equivalog	
+TIGR04139	40	30	subfamily	
+TIGR04140	45	35	subfamily	
+TIGR04141	35	25	subfamily	
+TIGR04142	250	75	hypoth_equivalog	
+TIGR04143	30	25	domain	
+TIGR04144	150	70	equivalog	3.4.22.-
+TIGR04145	35	25	hypoth_equivalog_domain	
+TIGR04146	320	270	equivalog	2.5.1.41
+TIGR04147	300	275	equivalog	2.5.1.41
+TIGR04148	300	240	equivalog	
+TIGR04149	25	22	domain	
+TIGR04150	250	75	subfamily	
+TIGR04151	300	200	exception	3.4.22.-
+TIGR04152	400	275	exception	3.4.22.-
+TIGR04153	100	25	subfamily	
+TIGR04154	450	350	subfamily	2.4.1.-
+TIGR04155	21.6	18.75	subfamily_domain	
+TIGR04156	300	80	hypoth_equivalog	3.4.22.-
+TIGR04157	400	300	subfamily	2.4.1.-
+TIGR04158	400	260	equivalog	4.1.-.-
+TIGR04159	120	110	equivalog	
+TIGR04160	75	50	equivalog_domain	
+TIGR04161	33	30	hypoth_equivalog_domain	
+TIGR04162	150	100	equivalog	3.4.22.-
+TIGR04163	375	250	equivalog	
+TIGR04164	35	25	equivalog	
+TIGR04165	60	50	hypoth_equivalog	
+TIGR04166	50	35	equivalog	2.1.1.86
+TIGR04167	300	140	subfamily	
+TIGR04168	200	50	hypoth_equivalog	
+TIGR04169	120	95	hypoth_equivalog	
+TIGR04170	750	500	exception	1.17.4.1
+TIGR04171	355	270	exception	1.17.4.1
+TIGR04172	450	250	hypoth_equivalog	
+TIGR04173	30	25	subfamily_domain	
+TIGR04174	20.5	20	subfamily_domain	
+TIGR04175	125	75	hypoth_equivalog	3.4.22.-
+TIGR04176	88	85	equivalog	
+TIGR04177	86	85	hypoth_equivalog	3.4.22.-
+TIGR04178	23	22	signature	
+TIGR04179	150	30	hypoth_equivalog	
+TIGR04180	475	365	hypoth_equivalog	
+TIGR04181	420	416	hypoth_equivalog	
+TIGR04182	325	275	equivalog	
+TIGR04183	23	20	domain	
+TIGR04184	475	450	equivalog	
+TIGR04185	425	400	equivalog	
+TIGR04186	25	21	domain	
+TIGR04187	350	325	subfamily	
+TIGR04188	380	350	subfamily	
+TIGR04189	200	30	equivalog	
+TIGR04190	500	300	hypoth_equivalog	
+TIGR04191	100	25	subfamily	1.-.-.-
+TIGR04192	230	220	equivalog	
+TIGR04193	175	125	equivalog	
+TIGR04194	33	25	domain	
+TIGR04195	350	250	equivalog	2.4.1.-
+TIGR04196	40	33	subfamily	
+TIGR04197	26	21	subfamily	
+TIGR04198	185	50	equivalog_domain	
+TIGR04199	200	85	exception	3.4.22.-
+TIGR04200	40	29	paralog	
+TIGR04201	25	22	repeat	
+TIGR04202	40	25	signature	3.1.-.-
+TIGR04203	60	33	repeat	
+TIGR04204	150	55	subfamily_domain	
+TIGR04205	65	50	hypoth_equivalog	
+TIGR04206	90	20	hypoth_equivalog	
+TIGR04207	24.6	24	domain	
+TIGR04209	45	40	subfamily	
+TIGR04210	28	22	equivalog_domain	
+TIGR04211	65	60	hypoth_equivalog	
+TIGR04212	295	210	hypoth_equivalog	
+TIGR04213	28	22	domain	
+TIGR04214	25	21.5	domain	
+TIGR04215	29	23	domain	
+TIGR04216	400	150	equivalog	
+TIGR04217	200	155	exception	2.7.8.-
+TIGR04218	45	30	subfamily	
+TIGR04219	105	80	subfamily	
+TIGR04220	55	33	hypoth_equivalog	
+TIGR04221	725	690	equivalog	
+TIGR04222	43	28	domain	
+TIGR04223	19	16.8	subfamily	
+TIGR04224	25	23	equivalog_domain	
+TIGR04225	60	40	repeat	
+TIGR04226	30	28	domain	
+TIGR04227	50	21	repeat	
+TIGR04228	36	25	domain	
+TIGR04229	30	26	hypoth_equivalog	
+TIGR04230	75	25	equivalog	
+TIGR04231	80	27	equivalog	
+TIGR04232	100	25	equivalog	
+TIGR04233	75	24	equivalog	
+TIGR04234	150	35	equivalog	2.7.7.48
+TIGR04235	80	25	equivalog	
+TIGR04236	125	22	equivalog	
+TIGR04237	45	24	equivalog	
+TIGR04238	125	105	equivalog	
+TIGR04239	250	220	equivalog	3.4.21.105
+TIGR04240	26	25	equivalog_domain	
+TIGR04241	37	25	equivalog_domain	
+TIGR04242	550	350	equivalog	2.4.1.-
+TIGR04243	240	210	equivalog	3.5.1.-
+TIGR04244	625	525	equivalog	1.7.2.4
+TIGR04245	175	125	subfamily	
+TIGR04246	625	550	equivalog_domain	1.7.2.4
+TIGR04247	300	290	subfamily	
+TIGR04248	100	80	equivalog	
+TIGR04249	125	65	hypoth_equivalog	
+TIGR04250	400	175	equivalog	
+TIGR04251	400	200	equivalog	
+TIGR04252	35	25	hypoth_equivalog	
+TIGR04253	725	625	equivalog	5.-.-.-
+TIGR04254	44	22	subfamily	
+TIGR04255	30	22	subfamily	
+TIGR04256	35	32	subfamily	
+TIGR04257	40	30	domain	
+TIGR04258	40	23	equivalog_domain	
+TIGR04259	335	290	equivalog	
+TIGR04260	31	28	hypoth_equivalog	
+TIGR04261	310	275	subfamily	
+TIGR04262	190	140	subfamily	
+TIGR04263	60	40	subfamily_domain	
+TIGR04264	250	100	equivalog_domain	
+TIGR04265	290	280	equivalog	2.7.8.-
+TIGR04266	625	400	equivalog	1.1.99.37
+TIGR04267	25	24	domain	
+TIGR04268	28	22	hypoth_equivalog	
+TIGR04269	370	355	subfamily_domain	
+TIGR04270	500	200	subfamily	
+TIGR04271	70	55	equivalog_domain	
+TIGR04272	36	24	domain	
+TIGR04273	250	100	equivalog	
+TIGR04274	80	50	equivalog	3.2.2.15
+TIGR04275	85	36	repeat	
+TIGR04276	55	40	hypoth_equivalog_domain	
+TIGR04277	500	300	equivalog_domain	4.2.1.123
+TIGR04278	450	425	equivalog	
+TIGR04279	35	20	domain	
+TIGR04280	400	275	hypoth_equivalog	
+TIGR04281	325	240	hypoth_equivalog	
+TIGR04282	134	125	hypoth_equivalog	2.-.-.-
+TIGR04283	182	175	hypoth_equivalog	2.-.-.-
+TIGR04284	775	750	hypoth_equivalog	1.2.1.-
+TIGR04285	315	290	exception	
+TIGR04286	150	80	equivalog	
+TIGR04287	55	40	equivalog	3.4.22.-
+TIGR04288	18	16	domain	
+TIGR04289	50	33	domain	
+TIGR04290	300	250	hypoth_equivalog	2.1.1.-
+TIGR04291	650	525	equivalog	3.6.1.-
+TIGR04292	200	90	hypoth_equivalog	
+TIGR04293	150	45	hypoth_equivalog	
+TIGR04294	16	10	domain	
+TIGR04295	400	260	hypoth_equivalog	
+TIGR04296	25	24	domain	
+TIGR04297	250	40	hypoth_equivalog	
+TIGR04298	750	725	equivalog	
+TIGR04299	560	550	equivalog	
+TIGR04300	125	70	exception	
+TIGR04301	1310	1305	exception	4.1.1.17
+TIGR04302	100	50	hypoth_equivalog	
+TIGR04303	400	225	hypoth_equivalog	
+TIGR04304	300	75	hypoth_equivalog	
+TIGR04305	200	175	subfamily	
+TIGR04306	130	120	equivalog	3.5.99.2
+TIGR04307	40	16	repeat	
+TIGR04308	35	27	repeat	
+TIGR04309	35	34	subfamily	
+TIGR04310	35	22	subfamily	
+TIGR04311	400	300	subfamily	
+TIGR04312	100	90	subfamily_domain	
+TIGR04313	40	28.5	subfamily	
+TIGR04314	250	75	equivalog	
+TIGR04315	375	325	subfamily	1.-.-.-
+TIGR04316	300	285	equivalog	1.3.1.28
+TIGR04317	380	325	equivalog	
+TIGR04318	950	860	hypoth_equivalog	4.1.1.-
+TIGR04319	120	100	repeat	
+TIGR04320	70	65	domain	
+TIGR04321	250	125	subfamily	
+TIGR04322	200	160	equivalog	
+TIGR04323	55	35	subfamily	
+TIGR04324	150	80	subfamily	1.-.-.-
+TIGR04325	80	40	subfamily	2.1.1.-
+TIGR04326	250	50	subfamily	
+TIGR04327	120	40	subfamily	
+TIGR04328	70	60	exception	
+TIGR04329	300	160	exception	
+TIGR04330	300	30	equivalog	
+TIGR04331	225	50	subfamily	
+TIGR04332	100	30	subfamily	
+TIGR04333	31	25	subfamily	
+TIGR04334	600	500	equivalog	
+TIGR04335	99	96	hypoth_equivalog	
+TIGR04336	26	20	hypoth_equivalog	
+TIGR04337	220	160	hypoth_equivalog	
+TIGR04338	90	30	hypoth_equivalog	
+TIGR04339	75	35	hypoth_equivalog	
+TIGR04340	400	300	hypoth_equivalog	
+TIGR04341	28	24	subfamily	
+TIGR04342	32	27	subfamily	
+TIGR04343	400	375	equivalog	4.4.-.-
+TIGR04344	400	325	equivalog_domain	
+TIGR04345	170	155	equivalog_domain	
+TIGR04346	100	40	subfamily	
+TIGR04347	525	480	subfamily	
+TIGR04348	300	275	hypoth_equivalog	2.4.1.-
+TIGR04349	300	295	hypoth_equivalog	
+TIGR04350	340	325	subfamily	4.4.-.-
+TIGR04351	65	60	subfamily	
+TIGR04352	200	140	hypoth_equivalog	
+TIGR04353	35	34	subfamily	
+TIGR04354	31	28	domain	
+TIGR04355	200	60	hypoth_equivalog	
+TIGR04356	300	175	hypoth_equivalog	
+TIGR04357	340	220	hypoth_equivalog	
+TIGR04358	40	30	subfamily_domain	
+TIGR04359	23	22	equivalog	
+TIGR04360	33	26	hypoth_equivalog	
+TIGR04361	50	40	equivalog	
+TIGR04362	120	100	subfamily_domain	
+TIGR04363	30	25	subfamily	
+TIGR04364	320	225	equivalog_domain	
+TIGR04365	170	160	equivalog	
+TIGR04366	42	39	subfamily	
+TIGR04367	650	350	equivalog	
+TIGR04368	650	525	equivalog	5.4.3.9
+TIGR04369	700	550	hypoth_equivalog	
+TIGR04370	40	35	subfamily	
+TIGR04371	44	41	subfamily	2.1.1.-
+TIGR04372	45	40	domain	
+TIGR04373	71	69	signature	
+TIGR04374	70	35	hypoth_equivalog	
+TIGR04375	125	90	hypoth_equivalog	
+TIGR04376	125	90	hypoth_equivalog	
+TIGR04377	715	695	equivalog	3.7.1.-
+TIGR04378	205	180	equivalog	5.3.1.-
+TIGR04379	290	250	equivalog	4.2.1.44
+TIGR04380	355	330	equivalog	1.1.1.18
+TIGR04381	30	28	domain	
+TIGR04382	300	270	equivalog_domain	2.7.1.92
+TIGR04383	50	40	equivalog	
+TIGR04384	500	450	equivalog	2.1.3.6
+TIGR04385	450	300	hypoth_equivalog	
+TIGR04386	700	675	exception	
+TIGR04387	60	30	equivalog	
+TIGR04388	45	40	subfamily	
+TIGR04389	100	40	subfamily	
+TIGR04390	32	31.5	domain	
+TIGR04391	24	22	subfamily	
+TIGR04392	200	30	equivalog	
+TIGR04393	23	20	repeat	
+TIGR04394	1050	825	equivalog	4.3.99.4
+TIGR04395	360	345	equivalog	1.97.-.-
+TIGR04396	56	55	subfamily_domain	
+TIGR04397	1085	1080	exception	
+TIGR04398	28.5	25	domain	
+TIGR04399	250	200	equivalog	
+TIGR04400	200	50	hypoth_equivalog	3.1.3.-
+TIGR04401	100	70	subfamily	
+TIGR04402	65	35	subfamily	
+TIGR04403	300	200	equivalog	
+TIGR04404	45	25	equivalog	
+TIGR04405	150	25	equivalog	
+TIGR04406	240	200	equivalog	
+TIGR04407	230	170	equivalog	
+TIGR04408	240	150	equivalog	
+TIGR04409	38	37.5	equivalog	
+TIGR04410	50	30	equivalog	
+TIGR04411	50	49.5	equivalog	
+TIGR04412	60	36	equivalog	
+TIGR04413	150	50	hypoth_equivalog	
+TIGR04414	200	65	equivalog	2.4.1.-
+TIGR04415	30	20	repeat	
+TIGR04416	300	180	equivalog	2.7.7.49
+TIGR04417	100	25	subfamily	
+TIGR04418	72	70	exception	
+TIGR04419	300	200	equivalog	
+TIGR04420	90	40	hypoth_equivalog	
+TIGR04421	250	125	hypoth_equivalog	
+TIGR04422	75	50	hypoth_equivalog	
+TIGR04423	40	25	hypoth_equivalog	
+TIGR04424	65	25	subfamily	
+TIGR04425	400	340	subfamily	4.2.3.-
+TIGR04426	450	80	equivalog	
+TIGR04427	650	580	equivalog	2.-.-.-
+TIGR04428	500	300	equivalog	2.1.1.106
+TIGR04429	25	23.7	subfamily_domain	
+TIGR04430	135	120	equivalog	
+TIGR04431	260	235	equivalog	2.3.1.82
+TIGR04432	550	450	equivalog	2.1.1.224
+TIGR04433	25	23	subfamily	
+TIGR04434	550	400	hypoth_equivalog	
+TIGR04435	300	200	hypoth_equivalog	
+TIGR04436	200	65	subfamily	1.-.-.-
+TIGR04437	200	40	equivalog	2.4.1.-
+TIGR04438	36	28	hypoth_equivalog	
+TIGR04439	700	550	equivalog	1.14.13.-
+TIGR04440	70	68	domain	2.-.-.-
+TIGR04441	150	30	subfamily	
+TIGR04442	150	40	hypoth_equivalog	
+TIGR04443	300	150	equivalog	6.3.2.32
+TIGR04444	325	275	subfamily	4.1.3.-
+TIGR04445	140	30	subfamily	2.5.1.-
+TIGR04446	35	31	subfamily	
+TIGR04447	30	25	domain	
+TIGR04448	235	215	equivalog	3.5.2.10
+TIGR04449	24	22.5	subfamily_domain	
+TIGR04450	27	25	subfamily	
+TIGR04451	40	25	equivalog	
+TIGR04452	28	24	subfamily	
+TIGR04453	34	25	subfamily	
+TIGR04454	35	25	hypoth_equivalog	
+TIGR04455	60	30	hypoth_equivalog	
+TIGR04456	36	28	domain	
+TIGR04457	50	25	equivalog	
+TIGR04458	500	250	equivalog	1.-.-.-
+TIGR04459	38	25	equivalog	
+TIGR04460	380	240	equivalog	
+TIGR04461	540	400	equivalog	2.-.-.-
+TIGR04462	450	300	equivalog	2.-.-.-
+TIGR04463	525	400	equivalog	
+TIGR04464	60	33	equivalog	
+TIGR04465	470	280	equivalog	1.-.-.-
+TIGR04466	400	125	equivalog	4.1.-.-
+TIGR04467	300	100	equivalog	2.4.1.-
+TIGR04468	600	500	equivalog	5.4.3.-
+TIGR04469	150	50	equivalog	
+TIGR04470	410	375	hypoth_equivalog	
+TIGR04471	355	280	hypoth_equivalog	
+TIGR04472	240	200	hypoth_equivalog	
+TIGR04473	1250	850	exception	5.4.3.10
+TIGR04474	53	40	subfamily	
+TIGR04475	800	525	equivalog	5.4.3.11
+TIGR04476	200	100	equivalog	3.4.22.-
+TIGR04477	250	125	hypoth_equivalog	
+TIGR04478	250	120	equivalog	
+TIGR04479	600	400	subfamily	2.1.-.-
+TIGR04480	700	350	equivalog	1.21.4.1
+TIGR04481	490	300	equivalog	
+TIGR04482	320	310	equivalog	
+TIGR04483	300	225	equivalog	1.21.4.1
+TIGR04484	110	100	equivalog	
+TIGR04485	61	60	equivalog	
+TIGR04486	550	375	equivalog	
+TIGR04487	172	162	exception	
+TIGR04488	125	120	equivalog	
+TIGR04489	250	90	equivalog	3.4.22.-
+TIGR04490	76	69	equivalog	
+TIGR04491	400	100	equivalog	
+TIGR04492	1250	1100	equivalog	
+TIGR04493	50	35	equivalog	
+TIGR04494	122	118	equivalog	
+TIGR04495	33	25	subfamily	
+TIGR04496	450	330	equivalog	
+TIGR04497	32	28	subfamily	
+TIGR04498	27	23	subfamily	
+TIGR04499	250	150	subfamily	
+TIGR04500	180	120	subfamily	
+TIGR04501	310	250	equivalog	
+TIGR04502	300	250	equivalog	
+TIGR04503	200	160	hypoth_equivalog	
+TIGR04504	250	235	subfamily	1.1.99.-
+TIGR04505	175	125	equivalog	
+TIGR04506	650	350	equivalog	2.2.1.8
+TIGR04507	400	225	equivalog	2.5.1.63
+TIGR04508	240	200	equivalog	4.3.99.3
+TIGR04509	34	33	subfamily	
+TIGR04510	400	320	subfamily	
+TIGR04511	240	220	exception	
+TIGR04512	125	40	subfamily	
+TIGR04513	32	26	subfamily_domain	
+TIGR04514	28	26	domain	
+TIGR04515	343	280	subfamily	
+TIGR04516	440	400	subfamily	2.4.1.-
+TIGR04517	325	300	subfamily	
+TIGR04518	60	45	subfamily	
+TIGR04519	20.6	20.5	equivalog_domain	
+TIGR04520	315	270	equivalog	3.6.3.-
+TIGR04521	330	280	equivalog	3.6.3.-
+TIGR04522	60	56	hypoth_equivalog	
+TIGR04523	270	200	subfamily	
+TIGR04524	40	28	domain	
+TIGR04525	140	40	equivalog	
+TIGR04526	150	45	subfamily	
+TIGR04527	125	85	subfamily	
+TIGR04528	650	575	subfamily	
+TIGR04529	32	30	subfamily	
+TIGR04530	120	100	equivalog	
+TIGR04531	300	180	subfamily	1.14.-.-
+TIGR04532	168	165	subfamily_domain	
+TIGR04533	65	45	hypoth_equivalog	
+TIGR04534	30	21	repeat	
+TIGR04535	125	115	hypoth_equivalog	
+TIGR04536	100	30	hypoth_equivalog	
+TIGR04537	11	10.8	domain	
+TIGR04538	500	400	subfamily	
+TIGR04539	45	34	subfamily	
+TIGR04540	50	33	hypoth_equivalog	
+TIGR04541	175	50	equivalog	2.5.1.2
+TIGR04542	400	325	hypoth_equivalog	1.-.-.-
+TIGR04543	425	400	equivalog	2.1.1.243
+TIGR04544	350	180	equivalog	2.6.-.-
+TIGR04545	500	425	equivalog	1.3.99.-
+TIGR04546	650	600	equivalog	
+TIGR04547	65	55	subfamily	
+TIGR04548	100	75	hypoth_equivalog	
+TIGR04549	75	65	subfamily	
+TIGR04550	80	28	equivalog	
+TIGR04551	300	110	subfamily	
+TIGR04552	125	35	subfamily	
+TIGR04553	250	240	hypoth_equivalog	
+TIGR04554	40	30	hypoth_equivalog	
+TIGR04555	420	330	equivalog	1.8.2.1
+TIGR04556	80	40	domain	
+TIGR04557	140	135	equivalog	
+TIGR04558	300	240	hypoth_equivalog	
+TIGR04559	280	240	hypoth_equivalog_domain	3.-.-.-
+TIGR04560	26	24	equivalog	
+TIGR04561	30	29.5	hypoth_equivalog	
+TIGR04562	140	40	subfamily	
+TIGR04563	65	35	subfamily	
+TIGR04564	22.5	21.9	domain	
+TIGR04565	60	50	subfamily_domain	
+TIGR04566	80	35	subfamily_domain	
+TIGR04567	42	40	equivalog	2.7.7.6
+TIGR04568	200	135	equivalog	
+TIGR04569	180	110	equivalog	
+TIGR04570	50	27.5	hypoth_equivalog	
+TIGR04571	325	275	exception	2.1.1.-

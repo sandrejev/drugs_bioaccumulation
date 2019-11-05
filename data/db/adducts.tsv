@@ -1,0 +1,19 @@
+# https://fiehnlab.ucdavis.edu/staff/kind/Metabolomics/MS-Adduct-Calculator/					
+# http://www.proteomicsresource.washington.edu/protocols05/esi_background_ions_repeat_units.php					
+# https://www.researchgate.net/file.PostFileLoader.html?id=556d0b746225ff93358b45f8&assetKey=AS%3A273787898007554%401442287529432
+adduct_polarity	adduct_name	adduct_formula	adduct_charge	adduct_nmol	adduct_massdiff
+negative	[M-3H]3-	-H3	-3	1	-1.007276
+negative	[M-2H]2-	-H2	-2	1	-1.007276
+negative	[M-H2O-H]-	-H2OH	-1	1	-19.01839
+negative	[M-H]-	-H	-1	1	-1.007276
+negative	[M+Na-2H]-	Na-H2	-1	1	20.974666
+negative	[M+Cl]-	Cl	-1	1	34.969402
+negative	[M+K-2H]-	K-H2	-1	1	36.948606
+negative	[M+FA-H]-	HCOOH-H	-1	1	44.998201
+negative	[M+Hac-H]-	CH3COOH-H	-1	1	59.013851
+negative	[M+Br]-	Br	-1	1	78.918885
+negative	[M+TFA-H]-	CF3COOH-H	-1	1	112.985586
+negative	[2M-H]-	-H	-1	2	-1.007276
+negative	[2M+FA-H]-	HCOOH-H	-1	2	44.998201
+negative	[2M+Hac-H]-	CH3COOH-H	-1	2	59.013851
+negative	[3M-H]-	-H	-1	3	-1.007276
