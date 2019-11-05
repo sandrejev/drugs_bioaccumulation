@@ -20,8 +20,8 @@ exp3proteomics.analyze = function()
   na.count = data.frame(
     Control=rowSums(is.na(dataset[grepl("Control_", colnames(dataset))])),
     Du=rowSums(is.na(dataset[grepl("Du_", colnames(dataset))])))
-
-    # define number of samples total inclusing control
+  
+  # define number of samples total inclusing control
   ns=2
   #define number of replicates per sample
   nrep=4
@@ -46,7 +46,7 @@ exp3proteomics.analyze = function()
   
   # define MNAR (Missing not at random). Must have a 3+ difference in number of NAs in sample in control.
   na.count2$randna = ifelse((na.count[,control] == 0 & na.count[, sample.num.noctr[i]] >= 3) | (na.count[,control] >= 3&na.count[, sample.num.noctr[i]] == 0)| 
-                             (na.count[,control] == 1 & na.count[, sample.num.noctr[i]] == 4)|(na.count[,control] == 4&na.count[, sample.num.noctr[i]] == 1),"FALSE", "TRUE")
+                              (na.count[,control] == 1 & na.count[, sample.num.noctr[i]] == 4)|(na.count[,control] == 4&na.count[, sample.num.noctr[i]] == 1),"FALSE", "TRUE")
   
   #removes all proteins which are not sufficiently identified in both samplegroup
   data2 = data1[na.count[,control]<=1|na.count[, sample.num.noctr[i]]<=1,]
@@ -108,12 +108,25 @@ exp3proteomics.analyze = function()
   dev.off()
   
   # extract matrix normalized and with data imputed
-  write.table(exprs(res.norm), paste("data/exp3proteomics/", name, "_vs_Du_imputation_quan_nor.txt", sep=""), sep="\t", quote=FALSE)
+  write.table(exprs(res.norm), paste("reports/exp3proteomics_", name, "_vs_Du_imputation_quan_nor.txt", sep=""), sep="\t", quote=FALSE)
   
+  kegg.gene2enzyme = readr::read_tsv("data/db/KEGG/kegg.gene2enzyme.tsv", col_names=T, na="") %>%
+    dplyr::mutate(KEGG_EC=gsub("ec:", "", KEGG_EC)) %>%
+    dplyr::filter(!is.na(KEGG_UNIPROT))
   uniprot = readr::read_delim("data/exp3proteomics/uniprot_C_saccharolyticum_enzymes.tab", "\t")
   final_data = as.data.frame(exprs(res.norm)) %>%
     dplyr::mutate(proteinId = rownames(.)) %>%
-    dplyr::left_join(uniprot, by=c("proteinId"="Entry")) %>%
+    dplyr::left_join(uniprot %>% dplyr::rename(EC.number="EC number"), by=c("proteinId"="Entry")) %>%
+    tidyr::separate_rows(EC.number, sep=";") %>%
+    dplyr::left_join(kegg.gene2enzyme %>% dplyr::filter(!is.na(KEGG_UNIPROT)) %>% dplyr::select(KEGG_UNIPROT, KEGG_EC), by=c("proteinId"="KEGG_UNIPROT")) %>%
+    dplyr::group_by(proteinId) %>%
+    dplyr::do((function(z){
+      z.ret = z[1,]
+      z.ret$EC.number = paste(sort(na.omit(unique(c(z$KEGG_EC, z$EC.number)))), collapse=";")
+      z.ret$EC.number = ifelse(z.ret$EC.number!="", z.ret$EC.number, NA_character_)
+      z$KEGG_EC = NULL
+      z.ret
+    })(.)) %>%
     dplyr::rowwise() %>%
     dplyr::mutate(
       pvalue=t.test(c(Control_1, Control_2, Control_3, Control_4), c(Du_1, Du_2, Du_3, Du_4))$p.value,
@@ -132,7 +145,7 @@ exp3proteomics.analyze = function()
   final_data.export = final_data %>% 
     dplyr::mutate(is_significant=ifelse(is_significant>0, "Yes", "No")) %>%
     dplyr::select(
-      proteinId, EC.number, is_significant, FC, pvalue, padjst=p.adjst,
+      proteinId, EC.number, FC, pvalue, padjst=p.adjst, is_significant,
       Control_1, Control_2, Control_3, Control_4, Du_1, Du_2, Du_3, Du_4,
       Pathway, Protein.names, GO.Molecular_Function=Gene.ontology..GO., GO.Biological_Process=Gene.ontology..biological.process.
     )
@@ -153,16 +166,16 @@ exp3proteomics.analyze = function()
   #
   # GO terms enrichment
   #
-  go.terms = readr::read_delim("data/go_terms.tsv", "\t")
+  go.terms = readr::read_delim("data/db/GO/go_terms.tsv", "\t")
   final_data.go = final_data %>%
     reshape2::melt(measure.vars=c("Gene.ontology..GO."), value.name="go") %>%
     dplyr::filter(!is.na(go)) %>%
     tidyr::separate_rows(go, sep="; ") %>%
-    dplyr::mutate(go.name=gsub("(.*) \\[GO:.*", "\\1", go), go.id=gsub(".*(GO:.*)\\].*", "\\1", go)) %>%
-    dplyr::inner_join(go.terms, by="go.id") %>%
-    dplyr::group_by(go.ontology) %>%
+    dplyr::mutate(go.name=gsub("(.*) \\[GO:.*", "\\1", go), go_term=gsub(".*(GO:.*)\\].*", "\\1", go)) %>%
+    dplyr::inner_join(go.terms, by=c("go_term")) %>%
+    dplyr::group_by(go_ontology) %>%
     dplyr::mutate(total_hits=sum(!duplicated(proteinId[is_significant==1])), total_n=length(unique(proteinId))) %>%
-    dplyr::group_by(go.ontology, go.name, go.id, total_hits, total_n) %>%
+    dplyr::group_by(go_ontology, go_description, go_term, total_hits, total_n) %>%
     dplyr::do((function(z) {
       z.ret = data.frame(go_hits=sum(z$is_significant==1), go_n=length(z$proteinId))
       f11 = z.ret$go_hits
@@ -174,8 +187,7 @@ exp3proteomics.analyze = function()
       z.ret$odds = t$estimate
       z.ret
     })(.)) %>%
-    data.frame() %>%
-    dplyr::mutate(padj=p.adjust(pval))
+    data.frame() 
   readr::write_tsv(final_data.export, "reports/exp3proteomics_enrichment.tsv", col_names=T, na="")  
-  final_data.go %>% dplyr::filter(pval < 0.05)
+  final_data.go %>% dplyr::filter(pval <= 0.05)
 }

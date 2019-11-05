@@ -52,7 +52,7 @@ preprocess.hits_uplc = function()
     dplyr::left_join(bugs %>% dplyr::select(species.short, species.long), by=c("species.long")) %>%
     dplyr::filter(Ctrl != "zero") %>% # I don't know what is 'med',  & is.na(drug.uplc_excluded) #  & Bugs != "med"
     data.frame()
-
+  
   data.sum = data %>%
     dplyr::group_by(drug.long, drug.short, species.long, species.short, Extraction, drug.known_activity, drug.uplc_excluded) %>% 
     dplyr::summarise(MedianDiff=median(DiffCtrlSample[Ctrl=="smpl"]), pvalue=wilcox.test(DiffCtrlSample[Ctrl=="ctrl"], DiffCtrlSample[Ctrl=="smpl"])$p.value, n.ctrl=sum(Ctrl=="ctrl"), n.sample=sum(Ctrl=="smpl")) %>%
@@ -137,15 +137,6 @@ number_of_replicates = function()
     dplyr::summarise(BiologicalReplicates=length(unique(Replicate)), Plates=paste(unique(Plate), collapse=","), N.ctrls_count=length(unique(N.ctrls)))
   
   
-  
-  table(data.clean_techreps$TechnicalReplicates, data.clean_techreps$Status)
-  table(data.clean_sample_bioreps$Species.x, data.clean_sample_bioreps$BiologicalReplicates)
-  table(table(data.clean_sample_bioreps$Batch, data.clean_sample_bioreps$Species.x, data.clean_sample_bioreps$N.ctrls_count))
-  
-  table(data.clean_sample_techreps %>% dplyr::filter(N.ctrls_count>1))
-  View(data.clean_sample_techreps %>% dplyr::filter(N.ctrls>1))
-  data.clean_sample_bioreps %>% dplyr::filter(Species.x %in% c("Bacteroides uniformis", "Bifidobacterium animalis lactis", "Clostridium bolteae", "Fusobacterium nucleatum nucleatum", "Lactococcus lactis"))
-  
   #
   # UPLC experiment
   #
@@ -167,11 +158,6 @@ number_of_replicates = function()
     group_by(Extraction, Ctrl, species.long, drug.long, drug.uplc_excluded, drug.known_activity) %>%
     dplyr::summarise(BiologicalReplicates=length(unique(Replicate)), TechnicalReplicates=sum(TechnicalReplicates))
   
-  
-  table(data.uplc_biorep$BiologicalReplicates)
-  table(data.uplc_techrep$TechnicalReplicates)
-  View(data.uplc_biorep %>% dplyr::filter(BiologicalReplicates < 3) %>% data.frame())
-  View(data.uplc_techrep %>% dplyr::filter(TechnicalReplicates < 2) %>% data.frame())
 }
 
 exp012depletion.sankey = function()
@@ -196,25 +182,31 @@ exp012depletion.sankey = function()
     dplyr::left_join(data.clean %>% dplyr::select(GroupName, Plate, DiffToOwn) %>% unique(), by=c("GroupName", "Plate")) %>%
     dplyr::group_by(GroupName, Species.x) %>%
     dplyr::summarize(
-      #DiffOfMeans.screen=ifelse(any(-0.3>DiffOfMeans & p_adjust<0.05), mean(DiffOfMeans[-0.3>DiffOfMeans & p_adjust<0.05]), mean(DiffOfMeans)),
       p_value.screen=min(p_value),
       p_adjust.screen=min(p_adjust),
-      #nhits.screen=sum(-0.3>DiffOfMeans & p_adjust<0.05),
       replicates=length(GroupName), 
       nhits=sum(-0.3>DiffToOwn), 
       nhits.plates=paste(Plate[-0.3>DiffToOwn], collapse=","), 
       MeanDiffToOwn=mean(DiffToOwn[-0.3>DiffToOwn]), 
       side="left") %>%
     data.frame()
-
+  
   hits_degrad = hits_degrad.all %>%
     dplyr::mutate(target=as.character(GroupName), source=as.character(Species.x), value=abs(MeanDiffToOwn)) %>%
-    dplyr::filter(nhits>1) %>%
     dplyr::left_join(hits_uplc %>% dplyr::select(species.long, drug.short, interaction), by=c("source"="species.long", "target"="drug.short")) %>%
     dplyr::inner_join(drug_map %>% dplyr::select(drug.short, drug.known_activity, drug.uplc_excluded), by=c("target"="drug.short")) %>%
-    dplyr::mutate(interaction=ifelse(grepl("Depleted", drug.known_activity), "Previously_known", interaction)) %>%
-    dplyr::mutate(interaction=ifelse(is.na(interaction), "Untested", interaction)) %>%
-    dplyr::mutate(interaction=ifelse(!is.na(drug.uplc_excluded), "Excluded", interaction))
+    dplyr::mutate(drug.known_activity=dplyr::case_when(
+      GroupName=="leva" & grepl("infantis|bolteae|ramosum|comes", Species.x) ~ "Depleted",
+      GroupName=="digo" & !grepl("lenta", Species.x)                         ~ NA_character_,
+      T ~ drug.known_activity)) %>%
+    dplyr::mutate(interaction=dplyr::case_when(
+      !is.na(drug.known_activity) ~ "Previously_known",
+      !is.na(drug.uplc_excluded)  ~ "Excluded",
+      is.na(interaction)          ~ "Untested",
+      TRUE                        ~ interaction)) %>%
+    dplyr::filter(!is.na(drug.known_activity) & nhits>0 | nhits/replicates>=0.5 | nhits>1)
+  
+  
   
   #
   # Load growth effect experiment (#0) for RIGHT side of the sankey plot
@@ -223,18 +215,21 @@ exp012depletion.sankey = function()
     dplyr::filter(!grepl("pyri", cond.org)) %>% # Pyri is not appearing anywhere in the drug list
     dplyr::mutate(side="right", drug.short=substring(cond.org,1,4), max_log_fold=ifelse(is.na(max_log_fold) | max_log_fold<(-2), -2, max_log_fold), value=pmin(1, abs(max_log_fold))) %>%
     dplyr::left_join(drug_map %>% dplyr::select(drug.short, drug.known_activity, drug.uplc_excluded), by=c("drug.short"="drug.short")) %>%
+    dplyr::mutate(drug.known_activity=dplyr::case_when(
+      grepl("digo", drug.short) & !grepl("lenta", org) ~ NA_character_,
+      TRUE                                             ~ drug.known_activity)) %>%
     dplyr::mutate(
       interaction=dplyr::case_when(
-        max_interaction_type=="none" ~ "No activity",
-        !is.na(drug.uplc_excluded)~"Excluded",
+        max_interaction_type=="none"           ~ "No activity",
+        !is.na(drug.uplc_excluded)             ~ "Excluded",
         grepl("Inhibits", drug.known_activity) ~ "Previously known",
-        max_interaction_type=="lethal" ~ "Growth Inhibition",
-        max_log_fold<0 ~ "Growth Inhibition", 
-        max_log_fold>0 ~ "Growth Promotion",
-        T ~ "Unexpected Results (this shouldn't happen)")) %>%
+        max_interaction_type=="lethal"         ~ "Growth Inhibition",
+        max_log_fold<0                         ~ "Growth Inhibition", 
+        max_log_fold>0                         ~ "Growth Promotion",
+        TRUE                                   ~ "Unexpected Results (this shouldn't happen)")) %>%
     dplyr::select(source=drug.short, target=org, value, interaction, max_log_fold, side, max_interaction_type, max_pvalue, max_tech.pval)
   hits_growth = hits_growth.all %>% dplyr::filter(!interaction %in% c("No activity", "Excluded"))
-
+  
   #
   # Build edges and nodes data.frames
   #
@@ -250,6 +245,7 @@ exp012depletion.sankey = function()
     })(.))
   edges = edges.all %>% dplyr::filter(!(interaction %in% c("Untested", "No activity", "Excluded")) & !grepl("Mix", source)) %>% data.frame() # Hide everything unrelated to plot
   
+  
   nodes = rbind(edges %>% dplyr::filter(side=="left") %>% dplyr::mutate(position="left") %>% dplyr::select(name=source, position), 
                 edges %>% dplyr::filter(side=="right") %>% dplyr::mutate(position="right") %>% dplyr::select(name=target, position),
                 edges %>% dplyr::mutate(position="middle") %>% dplyr::select(name=drug, position)) %>% unique() %>%
@@ -259,7 +255,7 @@ exp012depletion.sankey = function()
     dplyr::mutate(
       name.display=dplyr::case_when(!is.na(species.short)~species.short, !is.na(drug.long)~drug.long, T~name),
       group=dplyr::case_when(!is.na(species.group.x)~species.group.x, !is.na(species.group.y)~species.group.y, T~"drug"),
-      order=dplyr::case_when(!is.na(drug.order)~drug.order, !is.na(species.group_order.x)~as.integer(species.group_order.x+100), !is.na(species.group_order.y)~as.integer(species.group_order.y+100))) %>%
+      order=dplyr::case_when(!is.na(drug.order)~drug.order, !is.na(species.group_order.x)~as.double(species.group_order.x+100), !is.na(species.group_order.y)~as.double(species.group_order.y+100))) %>%
     dplyr::arrange(order) %>%
     dplyr::mutate(id=1:n()-1) %>%
     dplyr::select(id, name, name.display, group, order)
@@ -291,8 +287,8 @@ exp012depletion.sankey = function()
   #
   pdf(file="reports/exp012_sankey_legend.pdf", paper="a4r")
   legend = cowplot::get_legend(ggplot(data.frame(Group=c("Biotransformation", "Bioaccumulation", "Untested", "Previously_known", "Growth_Inhibition", "Growth_Promotion", "Excluded", "Untested", "No_activity"))) + # names(colourScale)
-    geom_bar(aes(x=Group, y=1, fill=Group), alpha=0.5, stat="identity") +
-    scale_fill_manual(values=colourScale))
+                                 geom_bar(aes(x=Group, y=1, fill=Group), alpha=0.5, stat="identity") +
+                                 scale_fill_manual(values=colourScale))
   grid::grid.newpage()
   grid::grid.draw(legend)
   dev.off()
@@ -312,6 +308,7 @@ exp012depletion.sankey = function()
     fontSize = 20,
     iterations=0,
     colourScale=colourScaleStr)
+
   
   #
   # Summary (first degree)
@@ -321,99 +318,83 @@ exp012depletion.sankey = function()
     reshape2::melt(id.vars="Species.x", value.name="nreplicates", variable.name="drug.short") %>% 
     dplyr::left_join(hits_degrad.all %>% dplyr::select(Species.x, GroupName, nhits, MeanDiffToOwn, p_value.screen, p_adjust.screen), by=c("Species.x", "drug.short"="GroupName")) %>% 
     replace(is.na(.), 0) %>%
-    dplyr::mutate(exp1.is_hit=ifelse(nhits>1, "Yes", "No"), exp1.replicates=paste0(nhits, "/", nreplicates))  %>%
-    dplyr::select(species.long=Species.x, drug.short, exp1.is_hit, exp1.replicates, exp1.diff=MeanDiffToOwn, p_value.screen, p_adjust.screen) %>% 
+    dplyr::select(species.long=Species.x, drug.short, exp1.nhits=nhits, exp1.nreplicates=nreplicates, exp1.diff=MeanDiffToOwn, p_value.screen, p_adjust.screen) %>% 
     data.frame() %>%
     dplyr::left_join(drug_map %>% dplyr::select(drug.short, drug.long, drug.known_activity, drug.excluded=drug.uplc_excluded), by=c("drug.short")) %>%
     dplyr::left_join(bug_map %>% dplyr::select(species.long, species.short), by=c("species.long")) %>%
     dplyr::left_join(hits_uplc %>% dplyr::select(drug.short, species.long, exp2.padjst_super=padjst.super, exp2.padjst_total=padjst.total, exp2.diff_super=MedianDiff.super, exp2.diff_total=MedianDiff.total, exp2.interaction=interaction), by=c("drug.short", "species.long")) %>%
     dplyr::left_join(hits_growth.all %>% dplyr::select(source, target, growth.effect=interaction, growth.pvalue=max_pvalue, growth.maxod_logfold=value), by=c("drug.short"="source", "species.short"="target")) %>%
     dplyr::filter(!grepl("Mix", species.short)) %>%
+    dplyr::mutate(drug.known_activity=dplyr::case_when(
+      drug.short=="leva" & grepl("infantis|bolteae|ramosum|comes", species.short) ~ "Depleted",
+      drug.short=="digo" & !grepl("lenta", species.short)                         ~ NA_character_,
+      T ~ drug.known_activity)) %>%
+    dplyr::mutate(exp2.interaction=dplyr::case_when(
+      !is.na(drug.known_activity)      ~ "Previously_known",
+      !is.na(drug.excluded)            ~ "Excluded",
+      is.na(exp2.interaction)          ~ "Untested",
+      TRUE                             ~ exp2.interaction)) %>% 
     dplyr::mutate(
-      drug.known_activity=tidyr::replace_na(drug.known_activity, "No"),
+      exp1.is_hit=ifelse(!is.na(drug.known_activity) & exp1.nhits>0 | exp1.nhits/exp1.nreplicates>=0.5 | exp1.nhits>1, "Yes", "No"), 
+      exp1.replicates=paste0(exp1.nhits, "/", exp1.nreplicates))  %>%
+    dplyr::mutate(
+      drug.known_activity=ifelse(drug.long=="Digoxin" & !grepl("lenta", species.short), NA_character_, drug.known_activity),
+      drug.known_activity=dplyr::case_when(
+        drug.long=="Levamisole" & species.short %in% c("B. longum subsp. infantis", "C. bolteae", "C. ramosum", "C. comes") ~ "Depleted",
+        T ~ tidyr::replace_na(drug.known_activity, "No")),
       drug.excluded=tidyr::replace_na(drug.excluded, "No"),
       exp2.interaction=tidyr::replace_na(exp2.interaction, "Not tested"),
       exp1.is_hit=ifelse(drug.excluded=="No", exp1.is_hit, "Excluded"), 
-      exp1.pvalue=round(p_value.screen, 3),
-      exp1.padjst=round(p_adjust.screen, 3),
-      exp1.diff=round(exp1.diff, 3), 
-      exp2.padjst_super=round(exp2.padjst_super, 3), 
-      exp2.padjst_total=round(exp2.padjst_total, 3), 
-      exp2.diff_super=round(exp2.diff_super, 3), 
-      exp2.diff_total=round(exp2.diff_total, 3),
+      exp1.pvalue=round(p_value.screen, 5),
+      exp1.padjst=round(p_adjust.screen, 5),
+      exp1.diff=round(exp1.diff, 5), 
+      exp2.padjst_super=round(exp2.padjst_super, 5), 
+      exp2.padjst_total=round(exp2.padjst_total, 5), 
+      exp2.diff_super=round(exp2.diff_super, 5), 
+      exp2.diff_total=round(exp2.diff_total, 5),
       growth.effect=tidyr::replace_na(growth.effect, "Not tested"),
       growth.effect=ifelse(drug.excluded=="Yes" & growth.effect != "Not tested", "Excluded", growth.effect),
-      growth.pvalue=round(growth.pvalue, 3),
-      growth.maxod_logfold=round(growth.maxod_logfold, 3)
+      growth.pvalue=round(growth.pvalue, 5),
+      growth.maxod_logfold=round(growth.maxod_logfold, 5)
     ) %>%
-    dplyr::select(species.short, drug.long, drug.known_activity, drug.excluded,
+    dplyr::select(species.short, drug.long, drug.known_activity, 
                   exp1.is_hit, exp2.interaction, growth.effect,                             # General HIT/NO-HIT information
                   exp1.diff, exp1.replicates, exp1.pvalue, exp1.padjst,                     # exp1
                   exp2.padjst_super, exp2.padjst_total, exp2.diff_super, exp2.diff_total,   # exp2
                   growth.pvalue, growth.maxod_logfold                                       # growth
     ) 
+  
+  
+  #drug.excluded
   readr::write_tsv(hits_all, "reports/exp012_sankey_data.tsv", col_names=T, na="")  
-
-  # Number of hits per species
-  hits_all.drugs = hits_all %>% 
-    dplyr::group_by(drug.long) %>% 
-    dplyr::summarise(
-      exp1=sum(drug.excluded=="No" & exp1.is_hit=="Yes"),
-      exp2=sum(drug.excluded=="No" & exp1.is_hit=="Yes" & (grepl("Bio", exp2.interaction) | drug.known_activity!="No"))) %>% 
-    data.frame() %>% 
-    dplyr::arrange(exp1)  
-
-  hits_all.species = hits_all %>% 
-    dplyr::group_by(species.short) %>% 
-    dplyr::summarise(
-      exp1=sum(drug.excluded=="No" & exp1.is_hit=="Yes"),
-      exp2=sum(drug.excluded=="No" & exp1.is_hit=="Yes" & (grepl("Bio", exp2.interaction) | drug.known_activity!="No"))) %>%
-    data.frame() %>% 
-    dplyr::arrange(exp1)  
-  
-  readr::write_tsv(hits_all.species, "reports/exp012_sankey_data_species.tsv", col_names=T, na="")  
-  readr::write_tsv(hits_all.drugs, "reports/exp012_sankey_data_drugs.tsv", col_names=T, na="")  
-  
   
   #
-  # Summary (second degree)
+  # Hits overlap between UPLC depletion and growth
   #
-  for(gr in c("drug.long", "species.short")) {
-    hits_all.summary.1 = hits_all %>% 
-      dplyr::rename(group=gr) %>%
-      dplyr::mutate(exp1.is_hit=paste0("exp1_hit.", exp1.is_hit)) %>%
-      dplyr::group_by(group, exp1.is_hit) %>% 
-      dplyr::summarise(exp1.count=length(exp1.is_hit)) %>%
-      reshape2::dcast(group ~ exp1.is_hit, value.var="exp1.count") %>%
-      dplyr::mutate(exp1_total=rowSums(.[,c("exp1_hit.Excluded", "exp1_hit.No", "exp1_hit.Yes")], na.rm=T)) %>%
-      data.frame()
-    
-    hits_all.summary.2 = hits_all %>% 
-      dplyr::rename(group=gr) %>%
-      dplyr::mutate(exp2.is_hit=paste0("exp2_hit.", exp2.interaction)) %>%
-      dplyr::group_by(group, exp2.is_hit) %>% 
-      dplyr::summarise(exp2.count=length(exp2.is_hit)) %>%
-      reshape2::dcast(group ~ exp2.is_hit, value.var="exp2.count") %>%
-      dplyr::mutate(exp2_total=rowSums(.[,c("exp2_hit.Bioaccumulation", "exp2_hit.Biotransformation", "exp2_hit.Excluded", "exp2_hit.No activity")], na.rm=T))%>%
-      data.frame()
-    
-    hits_all.summary.3 = hits_all %>% 
-      dplyr::rename(group=gr) %>%
-      dplyr::mutate(growth.effect=paste0("growth.", growth.effect)) %>%
-      dplyr::group_by(group, growth.effect) %>% 
-      dplyr::summarise(growth.count=length(growth.effect)) %>%
-      reshape2::dcast(group ~ growth.effect, value.var="growth.count") %>%
-      dplyr::mutate(growth_total=rowSums(.[,c("growth.Growth Inhibition", "growth.Growth Promotion", "growth.No activity", "growth.Previously known")], na.rm=T)) %>%
-      data.frame()
-    
-    hits_all.summary = hits_all.summary.1 %>%
-      dplyr::left_join(hits_all.summary.2, by="group") %>%
-      dplyr::left_join(hits_all.summary.3, by="group") %>% 
-      replace(is.na(.), 0)
-    hits_all.summary = rbind(hits_all.summary, c("Total", colSums(data.matrix(hits_all.summary[,-1]), na.rm=T)))
-
-    readr::write_tsv(hits_all.summary, paste0("reports/exp012_sankey_data_2nd_", gr, ".tsv"), col_names=T, na="")  
-  }
+  pdf(file="reports/exp012_growth2depletion_venn.pdf", paper="a4r")
+  hits_all.venn = hits_all %>%
+    dplyr::mutate(label=paste(drug.long,species.short))
+  hits_all.venn=list(UPLC=hits_all.venn %>% dplyr::filter(exp1.is_hit=="Yes") %>% .$label , Growth=hits_all.venn %>% dplyr::filter(grepl("Growth", hits_all$growth.effect)) %>% .$label)
+  hits_all.no = nrow(hits_all %>% dplyr::filter(exp1.is_hit=="No" & growth.effect=="No activity"))
+  grid.newpage()
+  grid.draw(VennDiagram::venn.diagram(hits_all.venn, filename=NULL, na="remove", force.unique=T, category.names=c("",""), fill=RColorBrewer::brewer.pal(3,  "Set1")[1:2], sub=paste0("No hit: ", hits_all.no)))
+  dev.off()
+  
+  #
+  # Statistics
+  #
+  hits_all.summary = hits_all %>% 
+    reshape2::melt(measure.vars=c("drug.long", "species.short")) %>%
+    dplyr::group_by(variable, value) %>% 
+    dplyr::summarise(
+      exp1=sum(grepl("Yes", exp1.is_hit)),
+      exp2.bioaccumulation=sum(grepl("Yes", exp1.is_hit) & grepl("Bioaccumulation", exp2.interaction) & grepl("No", drug.known_activity)),
+      exp2.biotransformation=sum(grepl("Yes", exp1.is_hit) & grepl("Biotransformation", exp2.interaction) & grepl("No", drug.known_activity)),
+      exp2.known=sum(grepl("Yes", exp1.is_hit) & !grepl("No", drug.known_activity)),
+      exp2.excluded=sum(grepl("Yes", exp1.is_hit) & grepl("No", drug.known_activity) & grepl("Excluded", exp2.interaction))) %>%
+    data.frame()  %>%
+    dplyr::arrange(variable, exp1)  
+  readr::write_tsv(hits_all.summary, "reports/exp012_sankey_data_statistics.tsv", col_names=T, na="")  
 }
 
 

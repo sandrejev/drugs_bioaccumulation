@@ -1,3 +1,4 @@
+library(ggplot2)
 
 #
 # t-test
@@ -35,3 +36,14 @@ myTheme <- list(theme_minimal(base_size = 15),
 log.na = function(x) log10(ifelse(x>0, x, NA))
 log.zero = function(x) log10(ifelse(x>0, x, 1))
 glog2 = function(x) ((asinh(x)-log(2))/log(2))
+
+
+strset = function(x, f=T) {
+  x = sort(unique(na.omit(x[f])))
+  if(length(x)==0) return(NA_character_)
+  paste0(x, collapse="|")
+}
+
+chunk = function(x,n) {
+  split(x, rep(1:ceiling(length(x)/n), each=n)[1:length(x)])
+}

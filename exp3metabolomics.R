@@ -48,11 +48,11 @@ fun_uncertaintest = function(data_interest, pair, dulox_peak) {
     dplyr::filter(Treatment==pair[1]) %>%
     dplyr::select(Peak, Mean.ctrl=Mean, SD.ctrl=SD) %>%
     dplyr::inner_join(data_sum %>% dplyr::filter(Treatment==pair[2]) %>% dplyr::select(Peak, Mean.treated=Mean,SD.treated=SD), by="Peak") %>%
-      dplyr::filter(SD.treated<0.2 | SD.ctrl<0.2) %>%
-      dplyr::group_by(Peak) %>%
-      dplyr::mutate(FC=ifelse(Mean.treated>Mean.ctrl,Mean.treated/Mean.ctrl,-Mean.ctrl/Mean.treated), 
-      Ufc=ifelse(Mean.treated>Mean.ctrl,calcunc(Mean.treated,Mean.ctrl,SD.treated,SD.ctrl), calcunc(Mean.ctrl,Mean.treated,SD.ctrl,SD.treated)),
-      pvalue=t.test2(Mean.ctrl, Mean.treated, SD.ctrl, SD.treated, 6, 6,equal.variance=TRUE)$p_value) %>%
+    dplyr::filter(SD.treated<0.2 | SD.ctrl<0.2) %>%
+    dplyr::group_by(Peak) %>%
+    dplyr::mutate(FC=ifelse(Mean.treated>Mean.ctrl,Mean.treated/Mean.ctrl,-Mean.ctrl/Mean.treated), 
+                  Ufc=ifelse(Mean.treated>Mean.ctrl,calcunc(Mean.treated,Mean.ctrl,SD.treated,SD.ctrl), calcunc(Mean.ctrl,Mean.treated,SD.ctrl,SD.treated)),
+                  pvalue=t.test2(Mean.ctrl, Mean.treated, SD.ctrl, SD.treated, 6, 6,equal.variance=TRUE)$p_value) %>%
     data.frame() %>%
     dplyr::mutate(
       FCmin=(1/(1-Ufc)), padjust=p.adjust(pvalue, method="BH"),
@@ -101,12 +101,25 @@ exp3metabolomics.analyze = function()
   datasets.all = list("Extracellular"=extraxset.fillden, "Lysate"=lysxset.fillden, "Click"=clickxset.fillden)
   for(d in names(datasets.all)) {
     # Load raw data
-    data_raw.d = as.data.frame(xcms::groupval(datasets.all[[d]], method="maxint", intensity="into", value="into"))
+    data_raw.xcms = xcms::groupval(datasets.all[[d]], method="maxint", intensity="into", value="into")
+    data_raw.d = data.frame(data_raw.xcms, check.names=F) %>%
+      dplyr::mutate(Peak=rownames(data_raw.xcms)) %>%
+      data.frame(check.names=F)
+    
     
     # Peaks data
     if(d %in% c("Extracellular", "Lysate")) {
+      # This is used to prefilter before interval joining with dplyr because crossing with interval joining is very slow
+      mzmed.se = 0.000005
+      ACN.lb = KEGG_metabolites$ACN_Monoisotopic.mass*(1-mzmed.se)
+      ACN.ub = KEGG_metabolites$ACN_Monoisotopic.mass*(1+mzmed.se)
+      H.lb = KEGG_metabolites$H_Monoisotopic.mass*(1-mzmed.se)
+      H.ub = KEGG_metabolites$H_Monoisotopic.mass*(1+mzmed.se)
+      
       peak_long.d = as.data.frame(datasets.all[[d]]@groups) %>%
-        dplyr::mutate(Peak=rownames(data_raw.d), mzmed.se=0.000005, mzlow=mzmed*(1-mzmed.se), mzhigh=mzmed*(1+mzmed.se)) %>%
+        dplyr::mutate(Peak=data_raw.d$Peak) %>%
+        dplyr::filter(data.table::inrange(mzmed, ACN.lb, ACN.ub) | data.table::inrange(mzmed, H.lb, H.ub)) %>%
+        dplyr::mutate(mzlow=mzmed*(1-mzmed.se), mzhigh=mzmed*(1+mzmed.se)) %>%
         tidyr::crossing(KEGG_metabolites) %>% 
         dplyr::mutate(donor_ACN=ACN_Monoisotopic.mass>=mzlow & ACN_Monoisotopic.mass<=mzhigh, donor_H=H_Monoisotopic.mass>=mzlow & H_Monoisotopic.mass<=mzhigh) %>%
         dplyr::filter(donor_ACN | donor_H) %>%
@@ -120,8 +133,8 @@ exp3metabolomics.analyze = function()
     }
     
     data.d = data_raw.d %>%
-      dplyr::mutate(Peak=make.unique(rownames(.))) %>%
-      dplyr::mutate_at(dplyr::vars(-dplyr::matches("Peak")), dplyr::funs(round)) %>%
+      dplyr::mutate(Peak=make.unique(Peak)) %>%
+      dplyr::mutate_at(dplyr::vars(-dplyr::matches("Peak")), list(round)) %>%
       setNames(gsub("^\\d+_", "", colnames(.))) %>%
       tibble::column_to_rownames("Peak") %>%
       data.matrix()
@@ -139,7 +152,7 @@ exp3metabolomics.analyze = function()
     # vsn::meanSdPlot(glog2(data.d %>% data.matrix()))
   }
   
-  #
+  # 
   # Generate single name for each peak
   #
   peak_long.sum = peak_long %>% 
@@ -160,6 +173,7 @@ exp3metabolomics.analyze = function()
     dplyr::filter(Treatment!="BLK" & State!="heat") %>%
     dplyr::group_by(Sample, species.code) %>%
     dplyr::do((function(z) {
+      zz<<-z
       denominator_peak = dplyr::case_when(z$Dataset[1]=="Lysate"~"278.2/1093", z$Dataset[1]=="Extracellular"~"278.2/1089")
       denominator = z$Intensity[grepl(denominator_peak, z$Peak)]
       z$IntensityLog10=log10(z$Intensity)
@@ -171,7 +185,7 @@ exp3metabolomics.analyze = function()
     dplyr::left_join(peak_long.sum, by=c("Dataset", "species.code", "Peak")) %>%
     dplyr::mutate(metabolite_name=dplyr::case_when(State=="lys" & Peak=="298.1/1050" |  State=="extra" & Peak=="298.1/1040" ~ "Duloxetine", T ~ metabolite_name)) %>%
     dplyr::mutate(metabolite_display=dplyr::case_when(State=="lys" & Peak=="298.1/1050" |  State=="extra" & Peak=="298.1/1040" ~ "Duloxetine", T ~ metabolite_display))
-     
+  
   
   #
   # Replicates matching table
@@ -191,7 +205,6 @@ exp3metabolomics.analyze = function()
   #
   # Calculate fold changes of different peaks AUC and corresponding p-values
   #
-  #data_amitrip.effect.old = data_amitrip.effect
   data_amitrip.effect = data_long.norm %>% 
     dplyr::filter(!is.na(species.code)) %>%
     dplyr::group_by(State, Dataset, species.code) %>%
@@ -209,7 +222,8 @@ exp3metabolomics.analyze = function()
     dplyr::left_join(peak_long.sum, by=c("Dataset", "species.code", "Peak")) %>%
     dplyr::mutate(
       State=factor(State, c("lys", "extra")),
-      is_significant=ifelse(padjust<0.05 & abs(FC)>FCmin, 1, 0)) %>% 
+      is_significant=ifelse(pvalue<0.05 & abs(FC)>1.1, 1, 0)) %>%
+    # is_significant=ifelse(padjust<0.05 & abs(FC)>FCmin, 1, 0)) %>% 
     dplyr::select(-Ufc, -FCmin)
   
   
@@ -217,7 +231,8 @@ exp3metabolomics.analyze = function()
   # Significally effected peaks
   #
   data_amitrip.effect.sum = data_amitrip.effect %>%
-    dplyr::filter(Control!="Dulox") %>% setNames(gsub("^((?!Dataset|Peak|State|species.code|metabolite_name|pathways|metabolite.*).*)$", "\\1.bug", names(.), perl=T)) %>%
+    dplyr::filter(Control!="Dulox") %>% 
+    setNames(gsub("^((?!Dataset|Peak|State|species.code|metabolite_name|pathways|metabolite.*).*)$", "\\1.bug", names(.), perl=T)) %>%
     dplyr::inner_join(data_amitrip.effect %>% dplyr::filter(Control=="Dulox") %>% setNames(gsub("^((?!Dataset|Peak|State|species.code|pathways|metabolite.*).*)$", "\\1.drug", names(.), perl=T)), by=c("Dataset", "State", "Peak", "pathways", colnames(data_amitrip.effect)[grepl("metabolite", colnames(data_amitrip.effect))], "species.code")) %>%
     dplyr::mutate(
       FC.both_same_33=dplyr::between(logFC.bug/logFC.drug, 0.75, 1.33),
@@ -233,6 +248,8 @@ exp3metabolomics.analyze = function()
   # Perform hypergeometric test to calculate pathway significance
   #
   data_amitrip.pathway_hits = data_amitrip.effect.sum %>%
+    dplyr::inner_join(bugs %>% dplyr::select(species.code, species.short), by="species.code") %>%
+    # dplyr::mutate(is_significant.bug=pvalue.bug<0.05 & abs(FC.bug)>1.1, is_significant.drug=pvalue.drug<0.05 & abs(FC.bug)>1.1) %>%
     dplyr::filter(Dataset=="Extracellular") %>% # & Treatment %in% c("Cs", "Bu"), data_long.norm
     tidyr::separate_rows(pathways, sep=",") %>%
     tidyr::separate_rows(metabolite_kegg, sep=",") %>%
@@ -240,43 +257,53 @@ exp3metabolomics.analyze = function()
     # Leave only those pathway/metabolite pairs which are present in KEGG database. The reason is that both pathways and metabolites are lists and not all metabolites come from all pathways
     dplyr::inner_join(KEGG_pathways, by=c("metabolite_kegg"="pathway.compound", "pathways"="pathway.id")) %>%
     dplyr::filter(!is.na(pathways) & pathways != "NA") %>%
-    dplyr::inner_join(KEGG_pathways.met_count, by=c("pathways"="pathway.id", "species.code")) %>%
-  
+    
     # Calculate number significant/total metabolites in species
-    dplyr::group_by(species.code) %>%
-    dplyr::mutate(pathway.id=pathways, species.hits=length(unique(metabolite_kegg[is_significant.bug & is_significant.drug])), species.detected_size=length(unique(metabolite_kegg))) %>%
+    dplyr::group_by(Dataset, species.short) %>%
+    dplyr::mutate(pathway.id=pathways, species.hits=length(unique(Peak[is_significant.bug & is_significant.drug])), species.detected_size=length(unique(Peak))) %>%
     
     # Calculate number significant metabolites in pathways
-    dplyr::group_by(species.code, pathway.id) %>%
-    dplyr::mutate(pathway.detected_size=length(unique(metabolite_kegg)), pathway.hits=length(unique(metabolite_kegg[is_significant.bug & is_significant.drug]))) %>%
+    dplyr::group_by(Dataset, species.short, pathway.id) %>%
+    dplyr::mutate(pathway.detected_size=length(unique(Peak)), pathway.hits=length(unique(Peak[is_significant.bug & is_significant.drug]))) %>%
     
     # Perform hypergeometric/fisher test  
-    dplyr::group_by(species.code, pathway.id, pathway.name, pathway.hits, pathway.size, pathway.detected_size, species.detected_size, species.size, species.hits) %>% 
-    dplyr::summarise(pvalue.hyper=phyper(q=pathway.hits[1], m=pathway.size[1], n=species.size[1]-pathway.size[1], k=species.hits[1], lower.tail=F)) %>%
+    dplyr::group_by(Dataset, species.short, pathway.id, pathway.name, pathway.hits, pathway.detected_size, species.detected_size, species.hits) %>% 
+    dplyr::do((function(z){
+      m = matrix(c(
+        z$pathway.hits[1],
+        z$pathway.detected_size[1]-z$pathway.hits[1],
+        z$species.hits[1]-z$pathway.hits[1],
+        z$species.detected_size[1]-z$species.hits[1]-z$pathway.detected_size[1] + z$pathway.hits[1]), ncol=2)
+      z.test = fisher.test(m)
+      data.frame(pvalue=z.test$p.value, odds=unname(z.test$estimate))
+    })(.)) %>%
     data.frame() %>%
     
     # Multiple testing adjustment
-    dplyr::mutate(is_small_pathway=pathway.detected_size < 2) %>%
-    dplyr::group_by(species.code, is_small_pathway) %>%
-    dplyr::mutate(padjst.hyper=p.adjust(pvalue.hyper), is_significant=ifelse(padjst.hyper<0.05, "Yes", "No")) %>% 
-    data.frame() %>%
-    dplyr::mutate(is_significant=ifelse(is_small_pathway, "No", is_significant), padjst.hyper=ifelse(is_small_pathway, NA, padjst.hyper)) %>%
-    dplyr::arrange(species.code, dplyr::desc(pathway.size), dplyr::desc(pathway.hits/pathway.size))
+    dplyr::mutate(
+      is_small_pathway=ifelse(pathway.detected_size < 2, "Yes", "No"),
+      is_significant=dplyr::case_when(is_small_pathway=="Yes" ~ "No (to few metabolites detected in pathway)", pvalue<0.1~"Yes", T~"No")
+    ) %>%
+    dplyr::select(species.short, pathway.id, pathway.name, pvalue, odds, is_significant, pathway.hits, pathway.detected_size, species.hits, species.detected_size) %>%
+    dplyr::arrange(dplyr::desc(is_significant), pvalue>0.1, odds<1, pvalue)
+  
+  
   
   #
   # Export pathway enrichment data
   #
-  data_amitrip.pathway_hits.export = data_amitrip.pathway_hits %>%
-    dplyr::inner_join(bugs, by="species.code") %>%
-    dplyr::select(species.short, pathway.id, pathway.name, is_significant, pvalue.hyper, padjst.hyper,
-      pathway.hits, species.hits, pathway.detected_size, species.detected_size, pathway.size, species.size)
-  readr::write_tsv(data_amitrip.pathway_hits.export, "reports/exp3metabolomics_pathway_enrichment.tsv", col_names=T, na="")  
-      
+  readr::write_tsv(data_amitrip.pathway_hits, "reports/exp3metabolomics_pathway_enrichment.tsv", col_names=T, na="")  
+  
+  
+  
   #
   # Export figure 2c
   #
   data_amitrip.effect.sum_export = data_amitrip.effect.sum %>% 
-    dplyr::mutate(Species=dplyr::case_when(species.code=="Sc"~"Clostridium saccharolyticum", species.code=="Bu"~"Bacteroides uniformis", T~"No species")) %>%
+    dplyr::mutate(Species=dplyr::case_when(
+      species.code=="Cs"~"Clostridium saccharolyticum", 
+      species.code=="Bu"~"Bacteroides uniformis", 
+      T~"No species")) %>%
     dplyr::select(
       Dataset, Species, Peak, metabolite_name.display=metabolite_display, metabolite_name.all=metabolite_name, metabolite_kegg,
       
@@ -317,12 +344,12 @@ exp3metabolomics.analyze = function()
   dev.off()
   
   
-  png("reports/exp3metabolomics_replicated_correlation.png", width = 2048, height=2048)
+  png("reports/exp3metabolomics_replicated_correlation.png", width = 2048, height=2048, type="cairo-png")
   data_long.norm_cor = data_long.norm_rep %>% 
     dplyr::group_by(group, Dataset) %>%
     dplyr::summarise(cor=cor(IntensityLog10_amitrip.x, IntensityLog10_amitrip.y, method="spearman", use="pairwise.complete.obs"))
   ggplot(data_long.norm_rep, aes(x=IntensityLog10_amitrip.x, y=IntensityLog10_amitrip.y)) +
-    geom_point(alpha=0.1,color="black", size=0.1) +
+    geom_point(color="#00000080", size=0.5) +
     coord_equal() +
     scale_x_continuous(limits =c(-8,2), breaks=seq(-8,2,2)) +
     scale_y_continuous(limits =c(-8,2), breaks=seq(-8,2,2)) +
@@ -330,8 +357,7 @@ exp3metabolomics.analyze = function()
     geom_text(aes(x=-4, y=1, label=round(cor, 3)), data=data_long.norm_cor, colour="black", size=10,inherit.aes=FALSE, parse=FALSE) +
     facet_grid(group~Dataset) +
     myTheme +
-    theme(strip.text = element_text(size=48)) +
-    theme(axis.text = element_text(size=32)) 
+    theme(strip.text=element_text(size=48), axis.text=element_text(size=32), axis.title=element_text(size=48))
   dev.off()
   
   pdf(file="reports/exp3metabolomics_duloxetine_degradation.pdf", width=11, height=5)
@@ -342,8 +368,8 @@ exp3metabolomics.analyze = function()
       Treatment=="CsDulox" ~ "Exposed to duloxetine",
       Treatment=="Dulox" ~ "Duloxetine control",
       T ~ "This should not hapen"
-  )) %>%
-  dplyr::filter(Dataset=="Extracellular" & Treatment %in% c("CsDulox", "Dulox"))
+    )) %>%
+    dplyr::filter(Dataset=="Extracellular" & Treatment %in% c("CsDulox", "Dulox"))
   ggplot(data_long.norm_dulox) +
     geom_boxplot(aes(x=Subset, y=Intensity_amitrip), fill="#999999") +
     labs(y="Peak intensity normalized by Amitriptyline", x="") +
@@ -351,5 +377,4 @@ exp3metabolomics.analyze = function()
     theme(axis.text=element_text(size=18), axis.title=element_text(size=18))
   dev.off()
 }
-  
-  
+

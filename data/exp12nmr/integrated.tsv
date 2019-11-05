@@ -1,0 +1,118 @@
+File	SampleName	Bug	Drug	RegionId	Region	Integral
+1002	IAI1+Duloxetine	IAI1	Duloxetine	1	8.303 - 8.243	0.165944
+1002	IAI1+Duloxetine	IAI1	Duloxetine	2	7.187 - 7.127	0.190426
+1002	IAI1+Duloxetine	IAI1	Duloxetine	3	7.071 - 7.011	0.130905
+1002	IAI1+Duloxetine	IAI1	Duloxetine	4	6.955 - 6.895	0.105423
+1002	IAI1+Duloxetine	IAI1	Duloxetine	5	6.019 - 5.959	0.17504
+1004	IAI1+Duloxetine	IAI1	Duloxetine	1	8.303 - 8.243	0.215051
+1004	IAI1+Duloxetine	IAI1	Duloxetine	2	7.187 - 7.127	0.21088
+1004	IAI1+Duloxetine	IAI1	Duloxetine	3	7.071 - 7.011	0.264298
+1004	IAI1+Duloxetine	IAI1	Duloxetine	4	6.955 - 6.895	0.107146
+1004	IAI1+Duloxetine	IAI1	Duloxetine	5	6.019 - 5.959	0.11186
+1006	IAI1+Duloxetine	IAI1	Duloxetine	1	8.303 - 8.243	0.219727
+1006	IAI1+Duloxetine	IAI1	Duloxetine	2	7.187 - 7.127	0.230119
+1006	IAI1+Duloxetine	IAI1	Duloxetine	3	7.071 - 7.011	0.253536
+1006	IAI1+Duloxetine	IAI1	Duloxetine	4	6.955 - 6.895	0.177331
+1006	IAI1+Duloxetine	IAI1	Duloxetine	5	6.019 - 5.959	0.122645
+1008	IAI1+Duloxetine	IAI1	Duloxetine	1	8.303 - 8.243	0.220478
+1008	IAI1+Duloxetine	IAI1	Duloxetine	2	7.187 - 7.127	0.235431
+1008	IAI1+Duloxetine	IAI1	Duloxetine	3	7.071 - 7.011	0.198212
+1008	IAI1+Duloxetine	IAI1	Duloxetine	4	6.955 - 6.895	0.203869
+1008	IAI1+Duloxetine	IAI1	Duloxetine	5	6.019 - 5.959	0.172943
+1012	ED1a+Duloxetine	ED1a	Duloxetine	1	8.303 - 8.243	0.219751
+1012	ED1a+Duloxetine	ED1a	Duloxetine	2	7.187 - 7.127	0.168463
+1012	ED1a+Duloxetine	ED1a	Duloxetine	3	7.071 - 7.011	0.22503
+1012	ED1a+Duloxetine	ED1a	Duloxetine	4	6.955 - 6.895	0.158588
+1012	ED1a+Duloxetine	ED1a	Duloxetine	5	6.019 - 5.959	0.179652
+1014	ED1a+Duloxetine	ED1a	Duloxetine	1	8.303 - 8.243	0.144832
+1014	ED1a+Duloxetine	ED1a	Duloxetine	2	7.187 - 7.127	0.145046
+1014	ED1a+Duloxetine	ED1a	Duloxetine	3	7.071 - 7.011	0.144666
+1014	ED1a+Duloxetine	ED1a	Duloxetine	4	6.955 - 6.895	0.0994987
+1014	ED1a+Duloxetine	ED1a	Duloxetine	5	6.019 - 5.959	0.101811
+1016	ED1a+Duloxetine	ED1a	Duloxetine	1	8.303 - 8.243	0.171395
+1016	ED1a+Duloxetine	ED1a	Duloxetine	2	7.187 - 7.127	0.177566
+1016	ED1a+Duloxetine	ED1a	Duloxetine	3	7.071 - 7.011	0.213562
+1016	ED1a+Duloxetine	ED1a	Duloxetine	4	6.955 - 6.895	0.116685
+1016	ED1a+Duloxetine	ED1a	Duloxetine	5	6.019 - 5.959	0.132949
+1018	ED1a+Duloxetine	ED1a	Duloxetine	1	8.303 - 8.243	0.121776
+1018	ED1a+Duloxetine	ED1a	Duloxetine	2	7.187 - 7.127	0.169754
+1018	ED1a+Duloxetine	ED1a	Duloxetine	3	7.071 - 7.011	0.230038
+1018	ED1a+Duloxetine	ED1a	Duloxetine	4	6.955 - 6.895	0.131802
+1018	ED1a+Duloxetine	ED1a	Duloxetine	5	6.019 - 5.959	0.074228
+1022	S. salivarius+Duloxetine	S. salivarius	Duloxetine	1	8.303 - 8.243	0.55336
+1022	S. salivarius+Duloxetine	S. salivarius	Duloxetine	2	7.187 - 7.127	0.455389
+1022	S. salivarius+Duloxetine	S. salivarius	Duloxetine	3	7.071 - 7.011	0.587898
+1022	S. salivarius+Duloxetine	S. salivarius	Duloxetine	4	6.955 - 6.895	0.504985
+1022	S. salivarius+Duloxetine	S. salivarius	Duloxetine	5	6.019 - 5.959	0.515544
+1024	S. salivarius+Duloxetine	S. salivarius	Duloxetine	1	8.303 - 8.243	0.529914
+1024	S. salivarius+Duloxetine	S. salivarius	Duloxetine	2	7.187 - 7.127	0.553318
+1024	S. salivarius+Duloxetine	S. salivarius	Duloxetine	3	7.071 - 7.011	0.523111
+1024	S. salivarius+Duloxetine	S. salivarius	Duloxetine	4	6.955 - 6.895	0.404137
+1024	S. salivarius+Duloxetine	S. salivarius	Duloxetine	5	6.019 - 5.959	0.466018
+1026	S. salivarius+Duloxetine	S. salivarius	Duloxetine	1	8.303 - 8.243	0.525114
+1026	S. salivarius+Duloxetine	S. salivarius	Duloxetine	2	7.187 - 7.127	0.536832
+1026	S. salivarius+Duloxetine	S. salivarius	Duloxetine	3	7.071 - 7.011	0.563398
+1026	S. salivarius+Duloxetine	S. salivarius	Duloxetine	4	6.955 - 6.895	0.451264
+1026	S. salivarius+Duloxetine	S. salivarius	Duloxetine	5	6.019 - 5.959	0.545282
+1028	S. salivarius+Duloxetine	S. salivarius	Duloxetine	1	8.303 - 8.243	0.467224
+1028	S. salivarius+Duloxetine	S. salivarius	Duloxetine	2	7.187 - 7.127	0.49469
+1028	S. salivarius+Duloxetine	S. salivarius	Duloxetine	3	7.071 - 7.011	0.540547
+1028	S. salivarius+Duloxetine	S. salivarius	Duloxetine	4	6.955 - 6.895	0.470695
+1028	S. salivarius+Duloxetine	S. salivarius	Duloxetine	5	6.019 - 5.959	0.528716
+1032	ED1a	ED1a	No drug	1	8.303 - 8.243	-0.0250276
+1032	ED1a	ED1a	No drug	2	7.187 - 7.127	0.0280565
+1032	ED1a	ED1a	No drug	3	7.071 - 7.011	0.0413254
+1032	ED1a	ED1a	No drug	4	6.955 - 6.895	-0.0709267
+1032	ED1a	ED1a	No drug	5	6.019 - 5.959	-0.042754
+1034	ED1a	ED1a	No drug	1	8.303 - 8.243	0.0231714
+1034	ED1a	ED1a	No drug	2	7.187 - 7.127	0.0597164
+1034	ED1a	ED1a	No drug	3	7.071 - 7.011	0.0400823
+1034	ED1a	ED1a	No drug	4	6.955 - 6.895	-0.0927784
+1034	ED1a	ED1a	No drug	5	6.019 - 5.959	-0.0734846
+1042	IAI1	IAI1	No drug	1	8.303 - 8.243	2.61272e-4
+1042	IAI1	IAI1	No drug	2	7.187 - 7.127	0.0163723
+1042	IAI1	IAI1	No drug	3	7.071 - 7.011	0.00359082
+1042	IAI1	IAI1	No drug	4	6.955 - 6.895	-0.0619605
+1042	IAI1	IAI1	No drug	5	6.019 - 5.959	0.0159212
+1044	IAI1	IAI1	No drug	1	8.303 - 8.243	-0.0262476
+1044	IAI1	IAI1	No drug	2	7.187 - 7.127	0.0267476
+1044	IAI1	IAI1	No drug	3	7.071 - 7.011	0.0561538
+1044	IAI1	IAI1	No drug	4	6.955 - 6.895	-0.074778
+1044	IAI1	IAI1	No drug	5	6.019 - 5.959	-0.11651
+1052	S. salivarius	S. salivarius	No drug	1	8.303 - 8.243	-0.0173982
+1052	S. salivarius	S. salivarius	No drug	2	7.187 - 7.127	-0.0375149
+1052	S. salivarius	S. salivarius	No drug	3	7.071 - 7.011	0.0382868
+1052	S. salivarius	S. salivarius	No drug	4	6.955 - 6.895	-0.0911367
+1052	S. salivarius	S. salivarius	No drug	5	6.019 - 5.959	-0.0254364
+1054	S. salivarius	S. salivarius	No drug	1	8.303 - 8.243	0.0360619
+1054	S. salivarius	S. salivarius	No drug	2	7.187 - 7.127	-0.0178658
+1054	S. salivarius	S. salivarius	No drug	3	7.071 - 7.011	0.02624
+1054	S. salivarius	S. salivarius	No drug	4	6.955 - 6.895	-0.0113275
+1054	S. salivarius	S. salivarius	No drug	5	6.019 - 5.959	-0.0308691
+1062	Duloxetine	No bug	Duloxetine	1	8.303 - 8.243	0.895926
+1062	Duloxetine	No bug	Duloxetine	2	7.187 - 7.127	0.924006
+1062	Duloxetine	No bug	Duloxetine	3	7.071 - 7.011	0.920977
+1062	Duloxetine	No bug	Duloxetine	4	6.955 - 6.895	0.823242
+1062	Duloxetine	No bug	Duloxetine	5	6.019 - 5.959	0.998137
+1064	Duloxetine	No bug	Duloxetine	1	8.303 - 8.243	0.998162
+1064	Duloxetine	No bug	Duloxetine	2	7.187 - 7.127	0.998934
+1064	Duloxetine	No bug	Duloxetine	3	7.071 - 7.011	1.03219
+1064	Duloxetine	No bug	Duloxetine	4	6.955 - 6.895	0.920187
+1064	Duloxetine	No bug	Duloxetine	5	6.019 - 5.959	1.03023
+1066	Duloxetine	No bug	Duloxetine	1	8.303 - 8.243	1.04602
+1066	Duloxetine	No bug	Duloxetine	2	7.187 - 7.127	1.01682
+1066	Duloxetine	No bug	Duloxetine	3	7.071 - 7.011	1.07232
+1066	Duloxetine	No bug	Duloxetine	4	6.955 - 6.895	0.985474
+1066	Duloxetine	No bug	Duloxetine	5	6.019 - 5.959	1.09082
+1071	C. saccharolyticum+Duloxetine	C. saccharolyticum	Duloxetine	5	6.200 - 5.800	0.460256
+1073	C. saccharolyticum+Duloxetine	C. saccharolyticum	Duloxetine	5	6.200 - 5.800	0.290261
+1075	C. saccharolyticum+Duloxetine	C. saccharolyticum	Duloxetine	5	6.200 - 5.800	0.402795
+1077	C. saccharolyticum+Duloxetine	C. saccharolyticum	Duloxetine	5	6.200 - 5.800	0.353465
+1079	C. saccharolyticum	C. saccharolyticum	No drug	5	6.200 - 5.800	0.008257
+1081	C. saccharolyticum	C. saccharolyticum	No drug	5	6.200 - 5.800	0.001069
+1083	C. saccharolyticum	C. saccharolyticum	No drug	5	6.200 - 5.800	0.020094
+1085	C. saccharolyticum	C. saccharolyticum	No drug	5	6.200 - 5.800	-0.008786
+1087	Duloxetine	No bug	Duloxetine	5	6.200 - 5.800	0.953694
+1089	Duloxetine	No bug	Duloxetine	5	6.200 - 5.800	1
+1091	Duloxetine	No bug	Duloxetine	5	6.200 - 5.800	1.0815
+1093	Duloxetine	No bug	Duloxetine	5	6.200 - 5.800	1.22012

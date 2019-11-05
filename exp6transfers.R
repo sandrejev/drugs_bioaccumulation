@@ -4,6 +4,7 @@ library(ggplot2)
 library(reshape2)
 library(dplyr)
 library(readr)
+library(naniar)
 source("functions.R")
 
 peak.read = function(path,len, remove.empty=T)
@@ -73,19 +74,59 @@ exp6transfers.analyze = function()
   
   data.seq_plot = data.seq %>%
     dplyr::filter(Condition %in% c("+Bu;-D","+Bu;+D","-Bu;+D","-Bu;-D")) %>%
+    dplyr::filter(!(Bug=="-Bu" & Species=="B. uniformis")) %>%
     dplyr::mutate(Drug=ifelse(Drug=="-D", "- Duloxetine", "+ Duloxetine")) %>%
     dplyr::mutate(Bug=ifelse(Bug=="-Bu", "- B. uniformis", "+ B. uniformis"))  %>%
     dplyr::group_by(Condition, Drug, Bug, Species, Date) %>%
-    dplyr::summarise(Percent=mean(Percent))
+    dplyr::summarise(Percent=mean(Percent)) %>%
+    dplyr::group_by(Drug, Bug, Species) %>%
+    dplyr::mutate(ODCorrection=0.2/Percent[Date==0]) %>%
+    dplyr::group_by(Drug, Bug, Date) %>%
+    dplyr::mutate(PercentNorm=100*ODCorrection*Percent/sum(ODCorrection*Percent))
+  
+  species.colors = c("B. thetaiotaomicron"="#4f91c9", "E. rectale"="#cf1f2b", "L. gasseri"="#6c63b8", "R. torques"="#f57a66", "S. salivarius"="#d4d1e7", "B. uniformis"="#6CBA6F")
   
   pdf("reports/exp6transfers_abundance.pdf", width=12, height=8)
   ggplot(data.seq_plot) +
     geom_bar(aes(x=Date, y=Percent, fill=Species), position="stack", stat="identity") +
-    scale_fill_manual(values=c("B. thetaiotaomicron"="#4B7FAE", "E. rectale"="#E24F52", "L. gasseri"="#634FA2", "R. torques"="#FB775A", "S. salivarius"="#D4CFE0", "B. uniformis"="#FF7F0E")) +
+    scale_fill_manual(values=species.colors) +
     facet_grid(Bug ~ Drug) +
     labs(y="Species abundance (%)", x="Transfers") +
     myTheme
+  
+  ggplot(data.seq_plot) +
+    geom_bar(aes(x=Date, y=PercentNorm, fill=Species), position="stack", stat="identity") +
+    scale_fill_manual(values=species.colors) +
+    facet_grid(Bug ~ Drug) +
+    labs(y="Species abundance normalized to equal inoculum OD (%)", x="Transfers") +
+    myTheme
   dev.off()
+  
+  pdf("reports/exp6transfers_rectale-Bu.pdf", width=9, height=6)
+  classicTheme =  theme_classic(base_size=18) + 
+    theme(
+      strip.text.x = element_text(size=24),
+      strip.background = element_blank(),
+      legend.position="bottom", legend.direction="vertical", 
+      aspect.ratio=1)
+  data.seq_plot.rectale = data.seq_plot %>% dplyr::filter(Bug=="- B. uniformis" & Species=="E. rectale" & Date>0)
+  gridExtra::grid.arrange(
+    ggplot(data.seq_plot.rectale) +
+      geom_point(aes(x=Date, y=Percent, color=Drug)) +
+      geom_line(aes(x=Date, y=Percent, color=Drug), linetype="dotted") +
+      labs(y="\n\nSpecies abundance (%)", x="Transfers") +
+      classicTheme,
+    ggplot(data.seq_plot.rectale) +
+      geom_point(aes(x=Date, y=PercentNorm, color=Drug)) +
+      geom_line(aes(x=Date, y=PercentNorm, color=Drug), linetype="dotted") +
+      labs(y="Species abundance\nnormalizedto\nequal inoculum OD (%)", x="Transfers") +
+      classicTheme,
+    ncol=2
+  )
+  dev.off()
+  
+  
+  
   
   depleters = c("B. uniformis","B. thetaiotaomicron","S. salivarius")
   nopes = c("E. rectale","R. torques","L. gasseri")

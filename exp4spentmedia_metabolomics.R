@@ -78,15 +78,15 @@ exp4spentmedia.metabolomics = function()
   drug_increasing.ions2 = drug_increasing.ions %>%
     dplyr::group_by(mz) %>%
     dplyr::mutate(is_hit=is_hit & !any(abs(intensity[sample == "30"] - intensity[sample == "13_5"]) < 1 &
-                         (intensity[sample == "36"] - intensity[sample == "30"]) > 1))
+                                         (intensity[sample == "36"] - intensity[sample == "30"]) > 1))
   
   # Filter ions that increase after time point 36 with no change at time point 13.5 and 30
   drug_increasing.ions3 = drug_increasing.ions2 %>%
     dplyr::group_by(mz) %>%
     dplyr::mutate(is_hit=is_hit & !any(abs(intensity[sample == "30"] - intensity[sample == "13_5"]) < 1 &
-                         abs(intensity[sample == "36"] - intensity[sample == "30"]) < 1 &
-                         (intensity[sample == "36"] - intensity[sample == "13_5"]) > -1 &
-                         (intensity[sample == "47"] - intensity[sample == "36"]) > 1))
+                                         abs(intensity[sample == "36"] - intensity[sample == "30"]) < 1 &
+                                         (intensity[sample == "36"] - intensity[sample == "13_5"]) > -1 &
+                                         (intensity[sample == "47"] - intensity[sample == "36"]) > 1))
   
   ### Filter any metabolite that gets produced by the second species even if it was consumed before:
   # Filter all ions that reach zero at time point 30 or time point 36 and increase afterwards again
@@ -94,8 +94,8 @@ exp4spentmedia.metabolomics = function()
   drug_finalHits = drug_increasing.ions3 %>%
     dplyr::group_by(mz) %>%
     dplyr::mutate(is_hit=is_hit & !any((intensity[sample == "30"] == 0 &
-                          (intensity[sample == "36"] > 0 | intensity[sample == "47"] > 0)) |
-                         (intensity[sample == "36"] == 0 & intensity[sample == "47"] > 0) ))
+                                          (intensity[sample == "36"] > 0 | intensity[sample == "47"] > 0)) |
+                                         (intensity[sample == "36"] == 0 & intensity[sample == "47"] > 0) ))
   
   
   pdf("reports/exp3spentmedia_metabolomics.pdf")

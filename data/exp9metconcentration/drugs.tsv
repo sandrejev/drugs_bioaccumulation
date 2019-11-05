@@ -1,0 +1,59 @@
+drug	adduct	mass
+#	duloxetine,[M-H],296.1115
+#	roflumilast,M+H-2H2O,367.0222
+#	roflumilast,M+H-H2O,385.0322
+#	roflumilast,M-H,401.0277
+#	roflumilast,M-H2O+NH4,402.0577
+#	roflumilast,M+H,403.0422
+#	roflumilast,M+Li,409.051
+#	roflumilast,M+NH4,420.0688
+#	roflumilast,M+Na,425.0242
+#	roflumilast,M+CH3OH+H,435.0684
+#	roflumilast,M+K,440.9981
+#	roflumilast,M+ACN+H,444.0688
+#	roflumilast,M+2Na-H,447.0061
+#	roflumilast,M+ACN+Na,466.0507
+#	roflumilast,M+2H,202.0248
+#	roflumilast,M+H+Na,213.0157
+#	roflumilast,M+2Na,224.0067
+#	roflumilast,M+3H,135.0189
+#	roflumilast,M+2H+Na,142.3462
+#	roflumilast,M+2Na+H,149.6736
+#	roflumilast,M-H2O-H,383.0166
+#	roflumilast,M-H,401.0277
+#	roflumilast,M+F,421.0334
+#	roflumilast,M+Na-2H,423.0096
+#	roflumilast,M+Cl,437.0044
+#	roflumilast,M+K-2H,438.9836
+#	roflumilast,M+FA-H,447.0332
+#	roflumilast,M+CH3COO,461.0488
+#	roflumilast,M-2H,200.0102
+#	roflumilast,M-3H,133.0044
+#	https://metlin.scripps.edu/metabo_info.php?molid=308439
+#roflumilast,[M+0]-H,401.290081550045
+#roflumilast,[M+1]-H,402.030559300003	
+#roflumilast,[M+2]-H,403.024653889103
+#roflumilast,[M+3]-H,404.027734984289
+#roflumilast,[M+4]-H,405.021125293214
+#https://metlin.scripps.edu/metabo_info.php?molid=85388
+roflumilast	[M]	402.034954108
+roflumilast	[M-H2O-H]	383.0166
+roflumilast	[M-H]	401.0277
+roflumilast	[M+F]	421.0334
+roflumilast	[M+Na-2H]	423.0096
+roflumilast	[M+Cl]	437.0044
+roflumilast	[M+K-2H]	438.9836
+roflumilast	[M+FA-H]	447.0332
+roflumilast	[M+CH3COO]	461.0488
+roflumilast	[M-2H]	200.0102
+roflumilast	[M-3H]	133.0044
+duloxetine	[M]	297.118734925
+duloxetine	[M-H]	296.1115
+duloxetine	[M+F]	316.1171
+duloxetine	[M+Na-2H]	318.0934
+duloxetine	[M+Cl]	332.0881
+duloxetine	[M+K-2H]	334.0673
+duloxetine	[M+FA-H]	342.1169
+duloxetine	[M+CH3COO]	356.1326
+duloxetine	[M-2H]	147.5521
+duloxetine	[M-3H]	98.0323

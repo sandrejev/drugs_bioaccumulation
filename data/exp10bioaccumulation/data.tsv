@@ -1,0 +1,471 @@
+Filename	Batch	Plate	Well	No	Extraction	Drug	Concentration	Species_name	Replicate	Incubated	Sulfamethazine_IS	Sulfamehizole_IS	Sulfamethazole_IS2	Fluoxetine_IS	Duloxetine	Montelukast	Rosiglitazone	Roflumilast
+Sonja20190729_Plate1_A01_0µM_total	Batch 3	Plate 1	A01	29	total	Duloxetine	0	no bug	1	Yes	2571486	NF	3917914.428	721647.9977	NF	NF	NF	NF
+Sonja20190729_Plate1_A02_0µM_total	Batch 3	Plate 1	A02	29	total	Duloxetine	0	no bug	2	Yes	2638705	NF	4073242.443	741135.8806	NF	NF	NF	NF
+Sonja20190729_Plate1_A03_0µM_supernatant	Batch 3	Plate 1	A03	29	supernatant	Duloxetine	0	no bug	1	Yes	1907665	NF	2647390.355	648003.8702	NF	NF	NF	NF
+Sonja20190729_Plate1_A04_0µM_supernatant	Batch 3	Plate 1	A04	29	supernatant	Duloxetine	0	no bug	2	Yes	2672491	NF	4093310.888	790803.0357	NF	NF	NF	NF
+Sonja20190729_Plate1_A05_10µM_total	Batch 3	Plate 1	A05	30	total	Duloxetine	10	no bug	1	Yes	2722474	NF	4169001.208	787294.3186	23611.56321	NF	NF	NF
+Sonja20190729_Plate1_A06_10µM_total	Batch 3	Plate 1	A06	30	total	Duloxetine	10	no bug	2	Yes	2762525	NF	4136923.208	850471.5934	19261.05836	NF	NF	NF
+Sonja20190729_Plate1_A07_10µM_supernatant	Batch 3	Plate 1	A07	30	supernatant	Duloxetine	10	no bug	1	Yes	1479691	NF	1729542.526	746265.7476	11668.7593	NF	NF	NF
+Sonja20190729_Plate1_A08_10µM_supernatant	Batch 3	Plate 1	A08	30	supernatant	Duloxetine	10	no bug	2	Yes	2754810	NF	4211972.316	703142.1234	24970.78858	NF	NF	NF
+Sonja20190729_Plate1_A09_20µM_total	Batch 3	Plate 1	A09	31	total	Duloxetine	20	no bug	1	Yes	2595644	NF	4024793.046	805874.4808	149805.6438	NF	NF	NF
+Sonja20190729_Plate1_A10_20µM_total	Batch 3	Plate 1	A10	31	total	Duloxetine	20	no bug	2	Yes	2692032	NF	4186961.082	748803.8289	131538.0765	NF	NF	NF
+Sonja20190729_Plate1_A11_20µM_supernatant	Batch 3	Plate 1	A11	31	supernatant	Duloxetine	20	no bug	1	Yes	2639390	NF	3987285.676	3551582.331	143303.1412	NF	NF	NF
+Sonja20190729_Plate1_A12_20µM_supernatant	Batch 3	Plate 1	A12	31	supernatant	Duloxetine	20	no bug	2	Yes	2771563	NF	4208205.321	3776820.687	136367.3458	NF	NF	NF
+Sonja20190729_Plate1_B01_30µM_total	Batch 3	Plate 1	B01	32	total	Duloxetine	30	no bug	1	Yes	2675365	NF	4108679.962	1393163.945	190514.8638	NF	NF	NF
+Sonja20190729_Plate1_B02_30µM_total	Batch 3	Plate 1	B02	32	total	Duloxetine	30	no bug	2	Yes	2735665	NF	4256327.661	783302.0163	196874.3257	NF	NF	NF
+Sonja20190729_Plate1_B03_30µM_supernatant	Batch 3	Plate 1	B03	32	supernatant	Duloxetine	30	no bug	1	Yes	2850582	NF	4343890.84	778443.3028	229457.1769	NF	NF	NF
+Sonja20190729_Plate1_B04_30µM_supernatant	Batch 3	Plate 1	B04	32	supernatant	Duloxetine	30	no bug	2	Yes	2815577	NF	4379542.099	752275.9255	228176.4765	NF	NF	NF
+Sonja20190729_Plate1_B05_40µM_total	Batch 3	Plate 1	B05	33	total	Duloxetine	40	no bug	1	Yes	2772566	NF	4240981.573	828668.2383	310681.8479	NF	NF	NF
+Sonja20190729_Plate1_B06_40µM_total	Batch 3	Plate 1	B06	33	total	Duloxetine	40	no bug	2	Yes	2848961	NF	4332885.308	1024372.103	305363.4317	NF	NF	NF
+Sonja20190729_Plate1_B07_40µM_supernatant	Batch 3	Plate 1	B07	33	supernatant	Duloxetine	40	no bug	1	Yes	2807739	NF	4330579.604	802096.5657	304264.2661	NF	NF	NF
+Sonja20190729_Plate1_B08_40µM_supernatant	Batch 3	Plate 1	B08	33	supernatant	Duloxetine	40	no bug	2	Yes	2891812	NF	4476945.259	1401734.953	309286.6274	NF	NF	NF
+Sonja20190729_Plate1_B09_50µM_total	Batch 3	Plate 1	B09	34	total	Duloxetine	50	no bug	1	Yes	2776035	NF	4222606.236	750379.7587	318022.2817	NF	NF	NF
+Sonja20190729_Plate1_B10_50µM_total	Batch 3	Plate 1	B10	34	total	Duloxetine	50	no bug	2	Yes	2759585	NF	4247634.011	767855.9009	342195.4397	NF	NF	NF
+Sonja20190729_Plate1_B11_50µM_supernatant	Batch 3	Plate 1	B11	34	supernatant	Duloxetine	50	no bug	1	Yes	2792877	NF	4226516.983	714749.833	381807.5331	NF	NF	NF
+Sonja20190729_Plate1_B12_50µM_supernatant	Batch 3	Plate 1	B12	34	supernatant	Duloxetine	50	no bug	2	Yes	2753114	NF	4251983.901	711941.37	386678.9172	NF	NF	NF
+Sonja20190729_Plate1_C01_70µM_total	Batch 3	Plate 1	C01	35	total	Duloxetine	70	no bug	1	Yes	2746202	NF	4224868.68	1019823.341	580419.3379	NF	NF	NF
+Sonja20190729_Plate1_C02_70µM_total	Batch 3	Plate 1	C02	35	total	Duloxetine	70	no bug	2	Yes	2781338	NF	4315991.58	969754.9745	597631.4041	NF	NF	NF
+Sonja20190729_Plate1_C03_70µM_supernatant	Batch 3	Plate 1	C03	35	supernatant	Duloxetine	70	no bug	1	Yes	2874258	NF	4451961.621	716020.3016	611517.944	NF	NF	NF
+Sonja20190729_Plate1_C04_70µM_supernatant	Batch 3	Plate 1	C04	35	supernatant	Duloxetine	70	no bug	2	Yes	2830430	NF	4341350.812	732834.713	607356.5366	NF	NF	NF
+Sonja20190729_Plate1_C05_0µM_total	Batch 3	Plate 1	C05	1	total	Duloxetine	0	L. lactis	1	Yes	2963722	NF	4548300.011	1059135.762	NF	NF	NF	NF
+Sonja20190729_Plate1_C06_0µM_total	Batch 3	Plate 1	C06	1	total	Duloxetine	0	L. lactis	2	Yes	2963449	NF	4571618.414	900761.9048	NF	NF	NF	NF
+Sonja20190729_Plate1_C07_0µM_total	Batch 3	Plate 1	C07	1	total	Duloxetine	0	L. lactis	3	Yes	2954395	NF	4503923.334	907114.22	NF	NF	NF	NF
+Sonja20190729_Plate1_C08_0µM_total	Batch 3	Plate 1	C08	1	total	Duloxetine	0	L. lactis	4	Yes	2980270	NF	4508524.095	895699.4536	NF	NF	NF	NF
+Sonja20190729_Plate1_C09_0µM_supernatant	Batch 3	Plate 1	C09	1	supernatant	Duloxetine	0	L. lactis	1	Yes	2938081	NF	4482358.095	1269293.089	NF	NF	NF	NF
+Sonja20190729_Plate1_C10_0µM_supernatant	Batch 3	Plate 1	C10	1	supernatant	Duloxetine	0	L. lactis	2	Yes	2976510	NF	4561395.028	1241621.629	NF	NF	NF	NF
+Sonja20190729_Plate1_C11_0µM_supernatant	Batch 3	Plate 1	C11	1	supernatant	Duloxetine	0	L. lactis	3	Yes	2884996	NF	4383830.173	1252912.673	NF	NF	NF	NF
+Sonja20190729_Plate1_C12_0µM_supernatant	Batch 3	Plate 1	C12	1	supernatant	Duloxetine	0	L. lactis	4	Yes	2821897	NF	4365543.758	1205961.197	NF	NF	NF	NF
+Sonja20190729_Plate1_D01_10µM_total	Batch 3	Plate 1	D01	2	total	Duloxetine	10	L. lactis	1	Yes	2927006	NF	4476601.948	852715.2181	34526.64951	NF	NF	NF
+Sonja20190729_Plate1_D02_10µM_total	Batch 3	Plate 1	D02	2	total	Duloxetine	10	L. lactis	2	Yes	3003991	NF	4525172.61	782953.9105	33055.43846	NF	NF	NF
+Sonja20190729_Plate1_D03_10µM_total	Batch 3	Plate 1	D03	2	total	Duloxetine	10	L. lactis	3	Yes	2987103	NF	4568668.275	805284.7932	35030.04291	NF	NF	NF
+Sonja20190729_Plate1_D04_10µM_total	Batch 3	Plate 1	D04	2	total	Duloxetine	10	L. lactis	4	Yes	3002852	NF	4651464.821	783339.4998	33143.9136	NF	NF	NF
+Sonja20190729_Plate1_D05_10µM_supernatant	Batch 3	Plate 1	D05	2	supernatant	Duloxetine	10	L. lactis	1	Yes	3028267	NF	4627063.379	943229.9088	16401.69117	NF	NF	NF
+Sonja20190729_Plate1_D06_10µM_supernatant	Batch 3	Plate 1	D06	2	supernatant	Duloxetine	10	L. lactis	2	Yes	3023070	NF	4610985.312	916162.5495	18524.21262	NF	NF	NF
+Sonja20190729_Plate1_D07_10µM_supernatant	Batch 3	Plate 1	D07	2	supernatant	Duloxetine	10	L. lactis	3	Yes	3045543	NF	4584566.583	953310.7298	25044.69001	NF	NF	NF
+Sonja20190729_Plate1_D08_10µM_supernatant	Batch 3	Plate 1	D08	2	supernatant	Duloxetine	10	L. lactis	4	Yes	3088308	NF	4646297.753	925151.8678	26579.43659	NF	NF	NF
+Sonja20190729_Plate1_D09_20µM_total	Batch 3	Plate 1	D09	3	total	Duloxetine	20	L. lactis	1	Yes	3070242	NF	4637383.466	834426.3202	129920.9631	NF	NF	NF
+Sonja20190729_Plate1_D10_20µM_total	Batch 3	Plate 1	D10	3	total	Duloxetine	20	L. lactis	2	Yes	2981921	NF	4543398.393	810003.2436	129157.8376	NF	NF	NF
+Sonja20190729_Plate1_D11_20µM_total	Batch 3	Plate 1	D11	3	total	Duloxetine	20	L. lactis	3	Yes	3023452	NF	4627277.151	847611.5599	133368.5015	NF	NF	NF
+Sonja20190729_Plate1_D12_20µM_total	Batch 3	Plate 1	D12	3	total	Duloxetine	20	L. lactis	4	Yes	2791872	NF	4309091.582	801462.7418	117405.9185	NF	NF	NF
+Sonja20190729_Plate1_E01_20µM_supernatant	Batch 3	Plate 1	E01	3	supernatant	Duloxetine	20	L. lactis	1	Yes	2935976	NF	4454567.925	865275.0756	141092.961	NF	NF	NF
+Sonja20190729_Plate1_E02_20µM_supernatant	Batch 3	Plate 1	E02	3	supernatant	Duloxetine	20	L. lactis	2	Yes	2920593	NF	4516809.488	851049.2702	150099.5151	NF	NF	NF
+Sonja20190729_Plate1_E03_20µM_supernatant	Batch 3	Plate 1	E03	3	supernatant	Duloxetine	20	L. lactis	3	Yes	2956767	NF	4438208.333	867972.3916	135187.2152	NF	NF	NF
+Sonja20190729_Plate1_E04_20µM_supernatant	Batch 3	Plate 1	E04	3	supernatant	Duloxetine	20	L. lactis	4	Yes	2950515	NF	4536392.485	884009.859	155905.4878	NF	NF	NF
+Sonja20190729_Plate1_E05_30µM_total	Batch 3	Plate 1	E05	4	total	Duloxetine	30	L. lactis	1	Yes	3040194	NF	4559745.312	1358512.248	224025.9098	NF	NF	NF
+Sonja20190729_Plate1_E06_30µM_total	Batch 3	Plate 1	E06	4	total	Duloxetine	30	L. lactis	2	Yes	3098423	NF	4693156.31	1319200.592	222626.8687	NF	NF	NF
+Sonja20190729_Plate1_E07_30µM_total	Batch 3	Plate 1	E07	4	total	Duloxetine	30	L. lactis	3	Yes	3021039	NF	4587242.333	1331243.913	245463.847	NF	NF	NF
+Sonja20190729_Plate1_E08_30µM_total	Batch 3	Plate 1	E08	4	total	Duloxetine	30	L. lactis	4	Yes	3039503	NF	4632360.537	1334479.856	216620.8065	NF	NF	NF
+Sonja20190729_Plate1_E09_30µM_supernatant	Batch 3	Plate 1	E09	4	supernatant	Duloxetine	30	L. lactis	1	Yes	3066627	NF	4682755.658	966810.081	232024.6752	NF	NF	NF
+Sonja20190729_Plate1_E10_30µM_supernatant	Batch 3	Plate 1	E10	4	supernatant	Duloxetine	30	L. lactis	2	Yes	3004703	NF	4635745.297	939565.9732	212539.5101	NF	NF	NF
+Sonja20190729_Plate1_E11_30µM_supernatant	Batch 3	Plate 1	E11	4	supernatant	Duloxetine	30	L. lactis	3	Yes	3061735	NF	4645816.414	947271.5995	205418.5244	NF	NF	NF
+Sonja20190729_Plate1_E12_30µM_supernatant	Batch 3	Plate 1	E12	4	supernatant	Duloxetine	30	L. lactis	4	Yes	2969247	NF	4500633.304	886278.2485	222030.0214	NF	NF	NF
+Sonja20190729_Plate1_F01_40µM_total	Batch 3	Plate 1	F01	5	total	Duloxetine	40	L. lactis	1	Yes	2934093	NF	4472220.426	932872.1926	299295.8521	NF	NF	NF
+Sonja20190729_Plate1_F02_40µM_total	Batch 3	Plate 1	F02	5	total	Duloxetine	40	L. lactis	2	Yes	3064819	NF	4616977.777	914521.6126	306867.4459	NF	NF	NF
+Sonja20190729_Plate1_F03_40µM_total	Batch 3	Plate 1	F03	5	total	Duloxetine	40	L. lactis	3	Yes	3112685	NF	4735845.417	943811.8049	314181.2427	NF	NF	NF
+Sonja20190729_Plate1_F04_40µM_total	Batch 3	Plate 1	F04	5	total	Duloxetine	40	L. lactis	4	Yes	3054907	NF	4592898.902	910213.3171	312901.3516	NF	NF	NF
+Sonja20190729_Plate1_F05_40µM_supernatant	Batch 3	Plate 1	F05	5	supernatant	Duloxetine	40	L. lactis	1	Yes	3004231	NF	4528005.14	1946686.145	331342.011	NF	NF	NF
+Sonja20190729_Plate1_F06_40µM_supernatant	Batch 3	Plate 1	F06	5	supernatant	Duloxetine	40	L. lactis	2	Yes	3100085	NF	4600875.949	1978306.405	345243.8954	NF	NF	NF
+Sonja20190729_Plate1_F07_40µM_supernatant	Batch 3	Plate 1	F07	5	supernatant	Duloxetine	40	L. lactis	3	Yes	3088365	NF	4648391.927	2459825.29	293220.6416	NF	NF	NF
+Sonja20190729_Plate1_F08_40µM_supernatant	Batch 3	Plate 1	F08	5	supernatant	Duloxetine	40	L. lactis	4	Yes	3051657	NF	4566670.787	1838544.117	308021.9007	NF	NF	NF
+Sonja20190729_Plate1_F09_50µM_total	Batch 3	Plate 1	F09	6	total	Duloxetine	50	L. lactis	1	Yes	3089322	NF	4634077.419	276061.8201	110593.9757	NF	NF	NF
+Sonja20190729_Plate1_F10_50µM_total	Batch 3	Plate 1	F10	6	total	Duloxetine	50	L. lactis	2	Yes	3045500	NF	4585445.891	311587.7081	82937.24543	NF	NF	NF
+Sonja20190729_Plate1_F11_50µM_total	Batch 3	Plate 1	F11	6	total	Duloxetine	50	L. lactis	3	Yes	3002588	NF	4444722.836	668099.9172	299691.7552	NF	NF	NF
+Sonja20190729_Plate1_F12_50µM_total	Batch 3	Plate 1	F12	6	total	Duloxetine	50	L. lactis	4	Yes	2165555	NF	2794099.178	441893.6475	159472.3494	NF	NF	NF
+Sonja20190729_Plate1_G01_50µM_supernatant	Batch 3	Plate 1	G01	6	supernatant	Duloxetine	50	L. lactis	1	Yes	2918123	NF	4406425.727	693250.0244	324805.8647	NF	NF	NF
+Sonja20190729_Plate1_G02_50µM_supernatant	Batch 3	Plate 1	G02	6	supernatant	Duloxetine	50	L. lactis	2	Yes	3027403	NF	4534175.472	768555.2559	330122.5178	NF	NF	NF
+Sonja20190729_Plate1_G03_50µM_supernatant	Batch 3	Plate 1	G03	6	supernatant	Duloxetine	50	L. lactis	3	Yes	3018640	NF	4522325.273	734035.5106	353379.5642	NF	NF	NF
+Sonja20190729_Plate1_G04_50µM_supernatant	Batch 3	Plate 1	G04	6	supernatant	Duloxetine	50	L. lactis	4	Yes	3040534	NF	4563887.567	762101.5885	345067.384	NF	NF	NF
+Sonja20190729_Plate1_G05_70µM_total	Batch 3	Plate 1	G05	7	total	Duloxetine	70	L. lactis	1	Yes	3080591	NF	4647505.199	670914.3169	474968.4398	NF	NF	NF
+Sonja20190729_Plate1_G06_70µM_total	Batch 3	Plate 1	G06	7	total	Duloxetine	70	L. lactis	2	Yes	3175321	NF	4683587.03	635482.0161	478992.0692	NF	NF	NF
+Sonja20190729_Plate1_G07_70µM_total	Batch 3	Plate 1	G07	7	total	Duloxetine	70	L. lactis	3	Yes	3259861	NF	4872401.443	695773.4945	486020.0611	NF	NF	NF
+Sonja20190729_Plate1_G08_70µM_total	Batch 3	Plate 1	G08	7	total	Duloxetine	70	L. lactis	4	Yes	3075750	NF	4612114.246	655657.5965	472323.4718	NF	NF	NF
+Sonja20190729_Plate1_G09_70µM_supernatant	Batch 3	Plate 1	G09	7	supernatant	Duloxetine	70	L. lactis	1	Yes	3101990	NF	4635805.158	615271.5978	413117.9395	NF	NF	NF
+Sonja20190729_Plate1_G10_70µM_supernatant	Batch 3	Plate 1	G10	7	supernatant	Duloxetine	70	L. lactis	2	Yes	3125739	NF	4676110.552	651980.8394	459317.4895	NF	NF	NF
+Sonja20190729_Plate1_G11_70µM_supernatant	Batch 3	Plate 1	G11	7	supernatant	Duloxetine	70	L. lactis	3	Yes	1719309	NF	2251915.695	559831.9903	344109.7254	NF	NF	NF
+Sonja20190729_Plate1_G12_70µM_supernatant	Batch 3	Plate 1	G12	7	supernatant	Duloxetine	70	L. lactis	4	Yes	3007447	NF	4543220.302	749745.1723	534521.9837	NF	NF	NF
+Sonja20190729_Plate1_H01_0µM_total	Batch 3	Plate 1	H01	8	total	Duloxetine	0	Escherichia coli ED1a	1	Yes	3148713	NF	4629691.478	748344.2409	NF	NF	NF	NF
+Sonja20190729_Plate1_H02_0µM_total	Batch 3	Plate 1	H02	8	total	Duloxetine	0	Escherichia coli ED1a	2	Yes	3017304	NF	4543472.482	681968.7977	NF	NF	NF	NF
+Sonja20190729_Plate1_H03_0µM_total	Batch 3	Plate 1	H03	8	total	Duloxetine	0	Escherichia coli ED1a	3	Yes	3059371	NF	4512151.269	661567.7792	NF	NF	NF	NF
+Sonja20190729_Plate1_H04_0µM_total	Batch 3	Plate 1	H04	8	total	Duloxetine	0	Escherichia coli ED1a	4	Yes	3123320	NF	4644850.46	1360333.839	NF	NF	NF	NF
+Sonja20190729_Plate1_H05_0µM_supernatant	Batch 3	Plate 1	H05	8	supernatant	Duloxetine	0	Escherichia coli ED1a	1	Yes	3156993	NF	4710718.275	620575.5474	NF	NF	NF	NF
+Sonja20190729_Plate1_H06_0µM_supernatant	Batch 3	Plate 1	H06	8	supernatant	Duloxetine	0	Escherichia coli ED1a	2	Yes	3129247	NF	4688678.971	585192.2196	NF	NF	NF	NF
+Sonja20190729_Plate1_H07_0µM_supernatant	Batch 3	Plate 1	H07	8	supernatant	Duloxetine	0	Escherichia coli ED1a	3	Yes	3219628	NF	4710642.492	748388.369	NF	NF	NF	NF
+Sonja20190729_Plate1_H08_0µM_supernatant	Batch 3	Plate 1	H08	8	supernatant	Duloxetine	0	Escherichia coli ED1a	4	Yes	3074984	NF	4601723.426	609315.1779	NF	NF	NF	NF
+Sonja20190729_Plate1_H09_10µM_total	Batch 3	Plate 1	H09	9	total	Duloxetine	10	Escherichia coli ED1a	1	Yes	3195264	NF	4753660.172	5222358.805	29846.616	NF	NF	NF
+Sonja20190729_Plate1_H10_10µM_total	Batch 3	Plate 1	H10	9	total	Duloxetine	10	Escherichia coli ED1a	2	Yes	3001714	NF	4403383.065	4312294.314	21299.09779	NF	NF	NF
+Sonja20190729_Plate1_H11_10µM_total	Batch 3	Plate 1	H11	9	total	Duloxetine	10	Escherichia coli ED1a	3	Yes	2963742	NF	4373706.812	6208314.358	29216.15742	NF	NF	NF
+Sonja20190729_Plate1_H12_10µM_total	Batch 3	Plate 1	H12	9	total	Duloxetine	10	Escherichia coli ED1a	4	Yes	2895627	NF	4346633.891	4477019.02	10294.49873	NF	NF	NF
+Sonja20190729_Plate2_A01_10µM_supernatant	Batch 3	Plate 2	A01	9	supernatant	Duloxetine	10	Escherichia coli ED1a	1	Yes	3025596	NF	4534721.941	719019.0036	17308.95591	NF	NF	NF
+Sonja20190729_Plate2_A02_10µM_supernatant	Batch 3	Plate 2	A02	9	supernatant	Duloxetine	10	Escherichia coli ED1a	2	Yes	2941292	NF	4342207.595	432061.6655	19762.61202	NF	NF	NF
+Sonja20190729_Plate2_A03_10µM_supernatant	Batch 3	Plate 2	A03	9	supernatant	Duloxetine	10	Escherichia coli ED1a	3	Yes	2990204	NF	4307225.659	537087.0805	7333.400733	NF	NF	NF
+Sonja20190729_Plate2_A04_10µM_supernatant	Batch 3	Plate 2	A04	9	supernatant	Duloxetine	10	Escherichia coli ED1a	4	Yes	3025211	NF	4474075.79	604587.7107	14224.73352	NF	NF	NF
+Sonja20190729_Plate2_A05_20µM_total	Batch 3	Plate 2	A05	10	total	Duloxetine	20	Escherichia coli ED1a	1	Yes	3130308	NF	4624374.572	733386.7564	105957.6871	NF	NF	NF
+Sonja20190729_Plate2_A06_20µM_total	Batch 3	Plate 2	A06	10	total	Duloxetine	20	Escherichia coli ED1a	2	Yes	3074210	NF	4629769.279	331605.3022	84346.15757	NF	NF	NF
+Sonja20190729_Plate2_A07_20µM_total	Batch 3	Plate 2	A07	10	total	Duloxetine	20	Escherichia coli ED1a	3	Yes	3074537	NF	4494955.936	722605.5711	124513.7994	NF	NF	NF
+Sonja20190729_Plate2_A08_20µM_total	Batch 3	Plate 2	A08	10	total	Duloxetine	20	Escherichia coli ED1a	4	Yes	5502458	NF	8017711.296	704275.6138	97123.31307	NF	NF	NF
+Sonja20190729_Plate2_A09_20µM_supernatant	Batch 3	Plate 2	A09	10	supernatant	Duloxetine	20	Escherichia coli ED1a	1	Yes	3245490	NF	4789665.63	190911.2704	56303.44231	NF	NF	NF
+Sonja20190729_Plate2_A10_20µM_supernatant	Batch 3	Plate 2	A10	10	supernatant	Duloxetine	20	Escherichia coli ED1a	2	Yes	3059893	NF	4639265.967	166352.6551	22144.97616	NF	NF	NF
+Sonja20190729_Plate2_A11_20µM_supernatant	Batch 3	Plate 2	A11	10	supernatant	Duloxetine	20	Escherichia coli ED1a	3	Yes	3343236	NF	4940672.265	207266.3015	42974.94965	NF	NF	NF
+Sonja20190729_Plate2_A12_20µM_supernatant	Batch 3	Plate 2	A12	10	supernatant	Duloxetine	20	Escherichia coli ED1a	4	Yes	3418432	NF	4959762.376	873718.0327	143088.0257	NF	NF	NF
+Sonja20190729_Plate2_B01_30µM_total	Batch 3	Plate 2	B01	11	total	Duloxetine	30	Escherichia coli ED1a	1	Yes	2898968	NF	4297591.438	188193.7565	47979.62007	NF	NF	NF
+Sonja20190729_Plate2_B02_30µM_total	Batch 3	Plate 2	B02	11	total	Duloxetine	30	Escherichia coli ED1a	2	Yes	3015461	NF	4534617.241	274187.8211	24738.14011	NF	NF	NF
+Sonja20190729_Plate2_B03_30µM_total	Batch 3	Plate 2	B03	11	total	Duloxetine	30	Escherichia coli ED1a	3	Yes	3006035	NF	4407260.539	172541.6722	92453.28443	NF	NF	NF
+Sonja20190729_Plate2_B04_30µM_total	Batch 3	Plate 2	B04	11	total	Duloxetine	30	Escherichia coli ED1a	4	Yes	2869173	NF	4191457.634	756291.6409	160422.6459	NF	NF	NF
+Sonja20190729_Plate2_B05_30µM_supernatant	Batch 3	Plate 2	B05	11	supernatant	Duloxetine	30	Escherichia coli ED1a	1	Yes	3063108	NF	4470873.052	696339.1291	188602.3504	NF	NF	NF
+Sonja20190729_Plate2_B06_30µM_supernatant	Batch 3	Plate 2	B06	11	supernatant	Duloxetine	30	Escherichia coli ED1a	2	Yes	3399709	NF	4922208.257	781520.1964	220179.2142	NF	NF	NF
+Sonja20190729_Plate2_B07_30µM_supernatant	Batch 3	Plate 2	B07	11	supernatant	Duloxetine	30	Escherichia coli ED1a	3	Yes	3098302	NF	4523183.228	210344.7435	42708.92909	NF	NF	NF
+Sonja20190729_Plate2_B08_30µM_supernatant	Batch 3	Plate 2	B08	11	supernatant	Duloxetine	30	Escherichia coli ED1a	4	Yes	1968086	NF	2724949.006	217832.8741	35413.78995	NF	NF	NF
+Sonja20190729_Plate2_B09_40µM_total	Batch 3	Plate 2	B09	12	total	Duloxetine	40	Escherichia coli ED1a	1	Yes	3176127	NF	4671453.113	489183.6884	178635.1032	NF	NF	NF
+Sonja20190729_Plate2_B10_40µM_total	Batch 3	Plate 2	B10	12	total	Duloxetine	40	Escherichia coli ED1a	2	Yes	3296116	NF	4786235.554	454140.0853	176101.3337	NF	NF	NF
+Sonja20190729_Plate2_B11_40µM_total	Batch 3	Plate 2	B11	12	total	Duloxetine	40	Escherichia coli ED1a	3	Yes	3514179	NF	5197747.961	451104.0607	219549.1109	NF	NF	NF
+Sonja20190729_Plate2_B12_40µM_total	Batch 3	Plate 2	B12	12	total	Duloxetine	40	Escherichia coli ED1a	4	Yes	3425582	NF	4944027.758	378954.5885	186421.7746	NF	NF	NF
+Sonja20190729_Plate2_C01_40µM_supernatant	Batch 3	Plate 2	C01	12	supernatant	Duloxetine	40	Escherichia coli ED1a	1	Yes	3059422	NF	4422792.092	248449.5157	181117.8211	NF	NF	NF
+Sonja20190729_Plate2_C02_40µM_supernatant	Batch 3	Plate 2	C02	12	supernatant	Duloxetine	40	Escherichia coli ED1a	2	Yes	3099969	NF	4497924.867	291489.6536	82804.79948	NF	NF	NF
+Sonja20190729_Plate2_C03_40µM_supernatant	Batch 3	Plate 2	C03	12	supernatant	Duloxetine	40	Escherichia coli ED1a	3	Yes	1503011	NF	1675805.195	456198.8044	174933.7743	NF	NF	NF
+Sonja20190729_Plate2_C04_40µM_supernatant	Batch 3	Plate 2	C04	12	supernatant	Duloxetine	40	Escherichia coli ED1a	4	Yes	1833543	NF	2335360.059	735120.6092	290034.2412	NF	NF	NF
+Sonja20190729_Plate2_C05_50µM_total	Batch 3	Plate 2	C05	13	total	Duloxetine	50	Escherichia coli ED1a	1	Yes	3149190	NF	4665264.074	669738.3157	318106.2601	NF	NF	NF
+Sonja20190729_Plate2_C06_50µM_total	Batch 3	Plate 2	C06	13	total	Duloxetine	50	Escherichia coli ED1a	2	Yes	3137269	NF	4507448.164	653575.4381	341553.1244	NF	NF	NF
+Sonja20190729_Plate2_C07_50µM_total	Batch 3	Plate 2	C07	13	total	Duloxetine	50	Escherichia coli ED1a	3	Yes	1769527	NF	2227738.576	738725.9541	367315.8144	NF	NF	NF
+Sonja20190729_Plate2_C08_50µM_total	Batch 3	Plate 2	C08	13	total	Duloxetine	50	Escherichia coli ED1a	4	Yes	2016121	NF	2237940.062	750619.721	332868.6827	NF	NF	NF
+Sonja20190729_Plate2_C09_50µM_supernatant	Batch 3	Plate 2	C09	13	supernatant	Duloxetine	50	Escherichia coli ED1a	1	Yes	3446415	NF	4865239.261	356917.8474	148755.0932	NF	NF	NF
+Sonja20190729_Plate2_C10_50µM_supernatant	Batch 3	Plate 2	C10	13	supernatant	Duloxetine	50	Escherichia coli ED1a	2	Yes	3179639	NF	4607381.969	255205.6757	103897.9416	NF	NF	NF
+Sonja20190729_Plate2_C11_50µM_supernatant	Batch 3	Plate 2	C11	13	supernatant	Duloxetine	50	Escherichia coli ED1a	3	Yes	3286737	NF	4730771.008	371433.687	159934.1962	NF	NF	NF
+Sonja20190729_Plate2_C12_50µM_supernatant	Batch 3	Plate 2	C12	13	supernatant	Duloxetine	50	Escherichia coli ED1a	4	Yes	4030236	NF	5891850.203	519816.9531	245363	NF	NF	NF
+Sonja20190729_Plate2_D01_70µM_total	Batch 3	Plate 2	D01	14	total	Duloxetine	70	Escherichia coli ED1a	1	Yes	3186113	NF	4518904.687	346536.9827	157656.3585	NF	NF	NF
+Sonja20190729_Plate2_D02_70µM_total	Batch 3	Plate 2	D02	14	total	Duloxetine	70	Escherichia coli ED1a	2	Yes	1939345	NF	2470201.074	793329.4729	478366.4715	NF	NF	NF
+Sonja20190729_Plate2_D03_70µM_total	Batch 3	Plate 2	D03	14	total	Duloxetine	70	Escherichia coli ED1a	3	Yes	939093	NF	1124014.413	364220.8693	238153.3938	NF	NF	NF
+Sonja20190729_Plate2_D04_70µM_total	Batch 3	Plate 2	D04	14	total	Duloxetine	70	Escherichia coli ED1a	4	Yes	996809	NF	1056006.337	387997.8648	222013.7731	NF	NF	NF
+Sonja20190729_Plate2_D05_70µM_supernatant	Batch 3	Plate 2	D05	14	supernatant	Duloxetine	70	Escherichia coli ED1a	1	Yes	1028243	NF	1207534.149	346072.7319	251853.3657	NF	NF	NF
+Sonja20190729_Plate2_D06_70µM_supernatant	Batch 3	Plate 2	D06	14	supernatant	Duloxetine	70	Escherichia coli ED1a	2	Yes	2404978	NF	3381581.687	758005.8658	479344.5939	NF	NF	NF
+Sonja20190729_Plate2_D07_70µM_supernatant	Batch 3	Plate 2	D07	14	supernatant	Duloxetine	70	Escherichia coli ED1a	3	Yes	1147079	NF	1224214.539	375176.8684	240697.5792	NF	NF	NF
+Sonja20190729_Plate2_D08_70µM_supernatant	Batch 3	Plate 2	D08	14	supernatant	Duloxetine	70	Escherichia coli ED1a	4	Yes	1114134	NF	1419823.949	409936.3659	243603.9099	NF	NF	NF
+Sonja20190729_Plate2_D09_0µM_total	Batch 3	Plate 2	D09	15	total	Duloxetine	0	Clostridium saccharolyticum	1	Yes	1152130	NF	1579180.161	403276.3688	NF	NF	NF	NF
+Sonja20190729_Plate2_D10_0µM_total	Batch 3	Plate 2	D10	15	total	Duloxetine	0	Clostridium saccharolyticum	2	Yes	1246519	NF	1498363.575	426390.1741	NF	NF	NF	NF
+Sonja20190729_Plate2_D11_0µM_total	Batch 3	Plate 2	D11	15	total	Duloxetine	0	Clostridium saccharolyticum	3	Yes	1126416	NF	1364273.009	388844.9868	NF	NF	NF	NF
+Sonja20190729_Plate2_D12_0µM_total	Batch 3	Plate 2	D12	15	total	Duloxetine	0	Clostridium saccharolyticum	4	Yes	1264146	NF	1781159.034	396952.3978	NF	NF	NF	NF
+Sonja20190729_Plate2_E01_0µM_supernatant	Batch 3	Plate 2	E01	15	supernatant	Duloxetine	0	Clostridium saccharolyticum	1	Yes	1159693	NF	1846728.525	355266.8326	NF	NF	NF	NF
+Sonja20190729_Plate2_E02_0µM_supernatant	Batch 3	Plate 2	E02	15	supernatant	Duloxetine	0	Clostridium saccharolyticum	2	Yes	1301145	NF	1517004.277	381669.4839	NF	NF	NF	NF
+Sonja20190729_Plate2_E03_0µM_supernatant	Batch 3	Plate 2	E03	15	supernatant	Duloxetine	0	Clostridium saccharolyticum	3	Yes	1464115	NF	2214898.925	377777.1168	NF	NF	NF	NF
+Sonja20190729_Plate2_E04_0µM_supernatant	Batch 3	Plate 2	E04	15	supernatant	Duloxetine	0	Clostridium saccharolyticum	4	Yes	1541680	NF	2230749.841	367997.2048	NF	NF	NF	NF
+Sonja20190729_Plate2_E05_10µM_total	Batch 3	Plate 2	E05	16	total	Duloxetine	10	Clostridium saccharolyticum	1	Yes	1303810	NF	2048342.106	356690.2677	3341.527658	NF	NF	NF
+Sonja20190729_Plate2_E06_10µM_total	Batch 3	Plate 2	E06	16	total	Duloxetine	10	Clostridium saccharolyticum	2	Yes	1267454	NF	2138606.59	404829.8428	4173.534383	NF	NF	NF
+Sonja20190729_Plate2_E07_10µM_total	Batch 3	Plate 2	E07	16	total	Duloxetine	10	Clostridium saccharolyticum	3	Yes	1348831	NF	2229560.766	338751.3128	6525.579485	NF	NF	NF
+Sonja20190729_Plate2_E08_10µM_total	Batch 3	Plate 2	E08	16	total	Duloxetine	10	Clostridium saccharolyticum	4	Yes	1642443	NF	2711466.142	385929.0221	5409.62708	NF	NF	NF
+Sonja20190729_Plate2_E09_10µM_supernatant	Batch 3	Plate 2	E09	16	supernatant	Duloxetine	10	Clostridium saccharolyticum	1	Yes	1354202	NF	2028866.054	373878.9785	1106.721008	NF	NF	NF
+Sonja20190729_Plate2_E10_10µM_supernatant	Batch 3	Plate 2	E10	16	supernatant	Duloxetine	10	Clostridium saccharolyticum	2	Yes	1919997	NF	3124859.877	338450.3147	1252.541632	NF	NF	NF
+Sonja20190729_Plate2_E11_10µM_supernatant	Batch 3	Plate 2	E11	16	supernatant	Duloxetine	10	Clostridium saccharolyticum	3	Yes	2103117	NF	3111116.036	352883.8515	NF	NF	NF	NF
+Sonja20190729_Plate2_E12_10µM_supernatant	Batch 3	Plate 2	E12	16	supernatant	Duloxetine	10	Clostridium saccharolyticum	4	Yes	2257780	NF	3216344.741	360452.0314	3692.119261	NF	NF	NF
+Sonja20190729_Plate2_F01_20µM_total	Batch 3	Plate 2	F01	17	total	Duloxetine	20	Clostridium saccharolyticum	1	Yes	1490121	NF	2685350.485	362593.9184	28430.50941	NF	NF	NF
+Sonja20190729_Plate2_F02_20µM_total	Batch 3	Plate 2	F02	17	total	Duloxetine	20	Clostridium saccharolyticum	2	Yes	2205143	NF	3087923.773	332617.4499	32195.84722	NF	NF	NF
+Sonja20190729_Plate2_F03_20µM_total	Batch 3	Plate 2	F03	17	total	Duloxetine	20	Clostridium saccharolyticum	3	Yes	1790886	NF	3052623.665	351182.1279	42543.63932	NF	NF	NF
+Sonja20190729_Plate2_F04_20µM_total	Batch 3	Plate 2	F04	17	total	Duloxetine	20	Clostridium saccharolyticum	4	Yes	2399427	NF	3535995.197	290578.9451	43368.69696	NF	NF	NF
+Sonja20190729_Plate2_F05_20µM_supernatant	Batch 3	Plate 2	F05	17	supernatant	Duloxetine	20	Clostridium saccharolyticum	1	Yes	2049774	NF	3141415.396	698350.0931	25096.63911	NF	NF	NF
+Sonja20190729_Plate2_F06_20µM_supernatant	Batch 3	Plate 2	F06	17	supernatant	Duloxetine	20	Clostridium saccharolyticum	2	Yes	2432056	NF	3166153.997	707622.2464	23140.13676	NF	NF	NF
+Sonja20190729_Plate2_F07_20µM_supernatant	Batch 3	Plate 2	F07	17	supernatant	Duloxetine	20	Clostridium saccharolyticum	3	Yes	2214316	NF	3307869.594	655664.1219	14341.5292	NF	NF	NF
+Sonja20190729_Plate2_F08_20µM_supernatant	Batch 3	Plate 2	F08	17	supernatant	Duloxetine	20	Clostridium saccharolyticum	4	Yes	2585502	NF	3355949.054	598292.7011	21757.03558	NF	NF	NF
+Sonja20190729_Plate2_F09_30µM_total	Batch 3	Plate 2	F09	18	total	Duloxetine	30	Clostridium saccharolyticum	1	Yes	2697977	NF	3428210.023	310858.0333	104487.9599	NF	NF	NF
+Sonja20190729_Plate2_F10_30µM_total	Batch 3	Plate 2	F10	18	total	Duloxetine	30	Clostridium saccharolyticum	2	Yes	2565308	NF	3248907.253	344019.8517	99772.09767	NF	NF	NF
+Sonja20190729_Plate2_F11_30µM_total	Batch 3	Plate 2	F11	18	total	Duloxetine	30	Clostridium saccharolyticum	3	Yes	2304333	NF	3068729.754	348170.6767	85485.50021	NF	NF	NF
+Sonja20190729_Plate2_F12_30µM_total	Batch 3	Plate 2	F12	18	total	Duloxetine	30	Clostridium saccharolyticum	4	Yes	2233498	NF	3173587.436	361220.0302	77845.47141	NF	NF	NF
+Sonja20190729_Plate2_G01_30µM_supernatant	Batch 3	Plate 2	G01	18	supernatant	Duloxetine	30	Clostridium saccharolyticum	1	Yes	2450681	NF	3025512.89	329513.7602	51475.0639	NF	NF	NF
+Sonja20190729_Plate2_G02_30µM_supernatant	Batch 3	Plate 2	G02	18	supernatant	Duloxetine	30	Clostridium saccharolyticum	2	Yes	2536074	NF	2802098.392	310098.1889	49276.12654	NF	NF	NF
+Sonja20190729_Plate2_G03_30µM_supernatant	Batch 3	Plate 2	G03	18	supernatant	Duloxetine	30	Clostridium saccharolyticum	3	Yes	2692812	NF	3186482.425	310917.0919	59568.76166	NF	NF	NF
+Sonja20190729_Plate2_G04_30µM_supernatant	Batch 3	Plate 2	G04	18	supernatant	Duloxetine	30	Clostridium saccharolyticum	4	Yes	2217097	NF	3307364.499	306125.3091	52464.18738	NF	NF	NF
+Sonja20190729_Plate2_G05_40µM_total	Batch 3	Plate 2	G05	19	total	Duloxetine	40	Clostridium saccharolyticum	1	Yes	2478978	NF	3261521.297	373104.1271	126969.9525	NF	NF	NF
+Sonja20190729_Plate2_G06_40µM_total	Batch 3	Plate 2	G06	19	total	Duloxetine	40	Clostridium saccharolyticum	2	Yes	1883880	NF	2428122.422	661624.5479	245342.4842	NF	NF	NF
+Sonja20190729_Plate2_G07_40µM_total	Batch 3	Plate 2	G07	19	total	Duloxetine	40	Clostridium saccharolyticum	3	Yes	2605649	NF	2623904.492	361559.4011	123082.4419	NF	NF	NF
+Sonja20190729_Plate2_G08_40µM_total	Batch 3	Plate 2	G08	19	total	Duloxetine	40	Clostridium saccharolyticum	4	Yes	2665187	NF	3324608.732	351926.1144	100504.305	NF	NF	NF
+Sonja20190729_Plate2_G09_40µM_supernatant	Batch 3	Plate 2	G09	19	supernatant	Duloxetine	40	Clostridium saccharolyticum	1	Yes	2655972	NF	2961007.904	339268.0303	111958.1949	NF	NF	NF
+Sonja20190729_Plate2_G10_40µM_supernatant	Batch 3	Plate 2	G10	19	supernatant	Duloxetine	40	Clostridium saccharolyticum	2	Yes	2427613	NF	2976707.418	335301.8153	110391.2687	NF	NF	NF
+Sonja20190729_Plate2_G11_40µM_supernatant	Batch 3	Plate 2	G11	19	supernatant	Duloxetine	40	Clostridium saccharolyticum	3	Yes	2485791	NF	2771913.846	277086.9031	93717.71271	NF	NF	NF
+Sonja20190729_Plate2_G12_40µM_supernatant	Batch 3	Plate 2	G12	19	supernatant	Duloxetine	40	Clostridium saccharolyticum	4	Yes	2478042	NF	3291240.424	284007.8828	104466.3932	NF	NF	NF
+Sonja20190729_Plate2_H01_50µM_total	Batch 3	Plate 2	H01	20	total	Duloxetine	50	Clostridium saccharolyticum	1	Yes	2467413	NF	2550049.974	390290.8636	176999.3816	NF	NF	NF
+Sonja20190729_Plate2_H02_50µM_total	Batch 3	Plate 2	H02	20	total	Duloxetine	50	Clostridium saccharolyticum	2	Yes	3133197	NF	4364965.747	460571.1057	271880.9244	NF	NF	NF
+Sonja20190729_Plate2_H03_50µM_total	Batch 3	Plate 2	H03	20	total	Duloxetine	50	Clostridium saccharolyticum	3	Yes	2482717	NF	2588440.067	330598.8707	183701.0625	NF	NF	NF
+Sonja20190729_Plate2_H04_50µM_total	Batch 3	Plate 2	H04	20	total	Duloxetine	50	Clostridium saccharolyticum	4	Yes	2427816	NF	3456449.072	341354.2489	187900.6669	NF	NF	NF
+Sonja20190729_Plate2_H05_50µM_supernatant	Batch 3	Plate 2	H05	20	supernatant	Duloxetine	50	Clostridium saccharolyticum	1	Yes	1915309	NF	1574874.471	356407.1561	94680.42192	NF	NF	NF
+Sonja20190729_Plate2_H06_50µM_supernatant	Batch 3	Plate 2	H06	20	supernatant	Duloxetine	50	Clostridium saccharolyticum	2	Yes	2577113	NF	2600707.678	372015.3983	137676.2866	NF	NF	NF
+Sonja20190729_Plate2_H07_50µM_supernatant	Batch 3	Plate 2	H07	20	supernatant	Duloxetine	50	Clostridium saccharolyticum	3	Yes	3169210	NF	4065646.682	363747.6371	161497.2559	NF	NF	NF
+Sonja20190729_Plate2_H08_50µM_supernatant	Batch 3	Plate 2	H08	20	supernatant	Duloxetine	50	Clostridium saccharolyticum	4	Yes	1781880	NF	2089797.376	430452.7847	126623.6566	NF	NF	NF
+Sonja20190729_Plate2_H09_70µM_total	Batch 3	Plate 2	H09	21	total	Duloxetine	70	Clostridium saccharolyticum	1	Yes	2099983	NF	2402445.744	354631.7006	396413.8601	NF	NF	NF
+Sonja20190729_Plate2_H10_70µM_total	Batch 3	Plate 2	H10	21	total	Duloxetine	70	Clostridium saccharolyticum	2	Yes	2324612	NF	2694448.329	657227.0984	367232.0158	NF	NF	NF
+Sonja20190729_Plate2_H11_70µM_total	Batch 3	Plate 2	H11	21	total	Duloxetine	70	Clostridium saccharolyticum	3	Yes	2503454	NF	2964717.392	425027.8998	239781.1557	NF	NF	NF
+Sonja20190729_Plate2_H12_70µM_total	Batch 3	Plate 2	H12	21	total	Duloxetine	70	Clostridium saccharolyticum	4	Yes	2790475	NF	3446120.703	425447.9204	260743.1154	NF	NF	NF
+Sonja20190729_Plate3_A01_70µM_supernatant	Batch 3	Plate 3	A01	21	supernatant	Duloxetine	70	Clostridium saccharolyticum	1	Yes	2860762	NF	3585817.473	382925.8434	127233.4842	NF	NF	NF
+Sonja20190729_Plate3_A02_70µM_supernatant	Batch 3	Plate 3	A02	21	supernatant	Duloxetine	70	Clostridium saccharolyticum	2	Yes	3517940	NF	4433296.339	574928.0998	277634.7077	NF	NF	NF
+Sonja20190729_Plate3_A03_70µM_supernatant	Batch 3	Plate 3	A03	21	supernatant	Duloxetine	70	Clostridium saccharolyticum	3	Yes	3178546	NF	4030265.481	349750.0244	180555.1472	NF	NF	NF
+Sonja20190729_Plate3_A04_70µM_supernatant	Batch 3	Plate 3	A04	21	supernatant	Duloxetine	70	Clostridium saccharolyticum	4	Yes	3155814	NF	3987545.575	428774.2161	185634.5127	NF	NF	NF
+Sonja20190729_Plate3_A05_0µM_total	Batch 3	Plate 3	A05	22	total	Duloxetine	0	Escherichia coli IAI1	1	Yes	3346500	NF	4229533.566	676871.3118	NF	NF	NF	NF
+Sonja20190729_Plate3_A06_0µM_total	Batch 3	Plate 3	A06	22	total	Duloxetine	0	Escherichia coli IAI1	2	Yes	2802145	NF	3448484.612	619942.3155	NF	NF	NF	NF
+Sonja20190729_Plate3_A07_0µM_total	Batch 3	Plate 3	A07	22	total	Duloxetine	0	Escherichia coli IAI1	3	Yes	3839811	NF	4825800.968	718646.667	NF	NF	NF	NF
+Sonja20190729_Plate3_A08_0µM_total	Batch 3	Plate 3	A08	22	total	Duloxetine	0	Escherichia coli IAI1	4	Yes	3473173	NF	4348547.9	447207.1385	NF	NF	NF	NF
+Sonja20190729_Plate3_A09_0µM_supernatant	Batch 3	Plate 3	A09	22	supernatant	Duloxetine	0	Escherichia coli IAI1	1	Yes	3277941	NF	4155593.913	502563.7747	NF	NF	NF	NF
+Sonja20190729_Plate3_A10_0µM_supernatant	Batch 3	Plate 3	A10	22	supernatant	Duloxetine	0	Escherichia coli IAI1	2	Yes	3340672	NF	4230672.418	679712.0209	NF	NF	NF	NF
+Sonja20190729_Plate3_A11_0µM_supernatant	Batch 3	Plate 3	A11	22	supernatant	Duloxetine	0	Escherichia coli IAI1	3	Yes	3533920	NF	4416600.108	486389.3051	NF	NF	NF	NF
+Sonja20190729_Plate3_A12_0µM_supernatant	Batch 3	Plate 3	A12	22	supernatant	Duloxetine	0	Escherichia coli IAI1	4	Yes	3151617	NF	4014452.684	637668.7709	NF	NF	NF	NF
+Sonja20190729_Plate3_B01_10µM_total	Batch 3	Plate 3	B01	23	total	Duloxetine	10	Escherichia coli IAI1	1	Yes	3092496	NF	3913244.222	376892.1794	7327.353183	NF	NF	NF
+Sonja20190729_Plate3_B02_10µM_total	Batch 3	Plate 3	B02	23	total	Duloxetine	10	Escherichia coli IAI1	2	Yes	3268251	NF	4136673.575	341995.7258	848.1256567	NF	NF	NF
+Sonja20190729_Plate3_B03_10µM_total	Batch 3	Plate 3	B03	23	total	Duloxetine	10	Escherichia coli IAI1	3	Yes	3347047	NF	4297340.23	445450.6631	5676.040221	NF	NF	NF
+Sonja20190729_Plate3_B04_10µM_total	Batch 3	Plate 3	B04	23	total	Duloxetine	10	Escherichia coli IAI1	4	Yes	3330271	NF	4247495.286	408172.3927	4410.452718	NF	NF	NF
+Sonja20190729_Plate3_B05_10µM_supernatant	Batch 3	Plate 3	B05	23	supernatant	Duloxetine	10	Escherichia coli IAI1	1	Yes	3543174	NF	4527735.442	413570.5613	10059.24826	NF	NF	NF
+Sonja20190729_Plate3_B06_10µM_supernatant	Batch 3	Plate 3	B06	23	supernatant	Duloxetine	10	Escherichia coli IAI1	2	Yes	2876648	NF	3479119.155	575854.4778	22249.54589	NF	NF	NF
+Sonja20190729_Plate3_B07_10µM_supernatant	Batch 3	Plate 3	B07	23	supernatant	Duloxetine	10	Escherichia coli IAI1	3	Yes	2883878	NF	3551691.938	543888.0836	14431.48351	NF	NF	NF
+Sonja20190729_Plate3_B08_10µM_supernatant	Batch 3	Plate 3	B08	23	supernatant	Duloxetine	10	Escherichia coli IAI1	4	Yes	4000775	NF	5042658.315	336965.0406	8013.924226	NF	NF	NF
+Sonja20190729_Plate3_B09_20µM_total	Batch 3	Plate 3	B09	24	total	Duloxetine	20	Escherichia coli IAI1	1	Yes	2866527	NF	3485388.655	434174.0694	73508.08844	NF	NF	NF
+Sonja20190729_Plate3_B10_20µM_total	Batch 3	Plate 3	B10	24	total	Duloxetine	20	Escherichia coli IAI1	2	Yes	3772975	NF	4687573.492	268448.617	36773.39917	NF	NF	NF
+Sonja20190729_Plate3_B11_20µM_total	Batch 3	Plate 3	B11	24	total	Duloxetine	20	Escherichia coli IAI1	3	Yes	3364249	NF	4168595.796	408658.8365	43690.47559	NF	NF	NF
+Sonja20190729_Plate3_B12_20µM_total	Batch 3	Plate 3	B12	24	total	Duloxetine	20	Escherichia coli IAI1	4	Yes	3413695	NF	4230382.803	358396.7893	38643.91304	NF	NF	NF
+Sonja20190729_Plate3_C01_20µM_supernatant	Batch 3	Plate 3	C01	24	supernatant	Duloxetine	20	Escherichia coli IAI1	1	Yes	3393052	NF	4299822.442	308107.954	21928.99711	NF	NF	NF
+Sonja20190729_Plate3_C02_20µM_supernatant	Batch 3	Plate 3	C02	24	supernatant	Duloxetine	20	Escherichia coli IAI1	2	Yes	3217553	NF	4041877.801	276819.1049	30155.93676	NF	NF	NF
+Sonja20190729_Plate3_C03_20µM_supernatant	Batch 3	Plate 3	C03	24	supernatant	Duloxetine	20	Escherichia coli IAI1	3	Yes	3515574	NF	4392091.525	310573.2688	36585.88744	NF	NF	NF
+Sonja20190729_Plate3_C04_20µM_supernatant	Batch 3	Plate 3	C04	24	supernatant	Duloxetine	20	Escherichia coli IAI1	4	Yes	3644424	NF	4505203.308	251191.6694	35190.62383	NF	NF	NF
+Sonja20190729_Plate3_C05_30µM_total	Batch 3	Plate 3	C05	25	total	Duloxetine	30	Escherichia coli IAI1	1	Yes	3715460	NF	4556058.313	441023.6413	74654.58742	NF	NF	NF
+Sonja20190729_Plate3_C06_30µM_total	Batch 3	Plate 3	C06	25	total	Duloxetine	30	Escherichia coli IAI1	2	Yes	4324936	NF	5422947.985	495726.639	96243.02978	NF	NF	NF
+Sonja20190729_Plate3_C07_30µM_total	Batch 3	Plate 3	C07	25	total	Duloxetine	30	Escherichia coli IAI1	3	Yes	3694990	NF	4600553.197	432482.1741	58500.28428	NF	NF	NF
+Sonja20190729_Plate3_C08_30µM_total	Batch 3	Plate 3	C08	25	total	Duloxetine	30	Escherichia coli IAI1	4	Yes	3617902	NF	4571978.015	463502.7312	79349.77678	NF	NF	NF
+Sonja20190729_Plate3_C09_30µM_supernatant	Batch 3	Plate 3	C09	25	supernatant	Duloxetine	30	Escherichia coli IAI1	1	Yes	3577602	NF	4490190.312	378403.4752	47457.40745	NF	NF	NF
+Sonja20190729_Plate3_C10_30µM_supernatant	Batch 3	Plate 3	C10	25	supernatant	Duloxetine	30	Escherichia coli IAI1	2	Yes	3420383	NF	4334373.603	264959.7187	62902.95973	NF	NF	NF
+Sonja20190729_Plate3_C11_30µM_supernatant	Batch 3	Plate 3	C11	25	supernatant	Duloxetine	30	Escherichia coli IAI1	3	Yes	3439958	NF	4307028.068	544077.4318	116371.9703	NF	NF	NF
+Sonja20190729_Plate3_C12_30µM_supernatant	Batch 3	Plate 3	C12	25	supernatant	Duloxetine	30	Escherichia coli IAI1	4	Yes	3537445	NF	4407848.437	376141.2176	51083.98104	NF	NF	NF
+Sonja20190729_Plate3_D01_40µM_total	Batch 3	Plate 3	D01	26	total	Duloxetine	40	Escherichia coli IAI1	1	Yes	3555880	NF	4425016.897	407997.6781	123779.2554	NF	NF	NF
+Sonja20190729_Plate3_D02_40µM_total	Batch 3	Plate 3	D02	26	total	Duloxetine	40	Escherichia coli IAI1	2	Yes	3532344	NF	4402751.201	295224.6093	125370.931	NF	NF	NF
+Sonja20190729_Plate3_D03_40µM_total	Batch 3	Plate 3	D03	26	total	Duloxetine	40	Escherichia coli IAI1	3	Yes	3443384	NF	4312952.067	235431.8113	94794.11787	NF	NF	NF
+Sonja20190729_Plate3_D04_40µM_total	Batch 3	Plate 3	D04	26	total	Duloxetine	40	Escherichia coli IAI1	4	Yes	3653826	NF	4630699.523	351043.1008	118731.6219	NF	NF	NF
+Sonja20190729_Plate3_D05_40µM_supernatant	Batch 3	Plate 3	D05	26	supernatant	Duloxetine	40	Escherichia coli IAI1	1	Yes	3041680	NF	3696858.332	505440.6511	144444.9192	NF	NF	NF
+Sonja20190729_Plate3_D06_40µM_supernatant	Batch 3	Plate 3	D06	26	supernatant	Duloxetine	40	Escherichia coli IAI1	2	Yes	3724582	NF	4565259.789	389247.4697	86159.54661	NF	NF	NF
+Sonja20190729_Plate3_D07_40µM_supernatant	Batch 3	Plate 3	D07	26	supernatant	Duloxetine	40	Escherichia coli IAI1	3	Yes	3777456	NF	4654660.958	296876.5583	54750.05353	NF	NF	NF
+Sonja20190729_Plate3_D08_40µM_supernatant	Batch 3	Plate 3	D08	26	supernatant	Duloxetine	40	Escherichia coli IAI1	4	Yes	3212164	NF	3833998.762	345689.2012	188070.516	NF	NF	NF
+Sonja20190729_Plate3_D09_50µM_total	Batch 3	Plate 3	D09	27	total	Duloxetine	50	Escherichia coli IAI1	1	Yes	NF	NF	NF	NF	NF	NF	NF	NF
+Sonja20190729_Plate3_D10_50µM_total	Batch 3	Plate 3	D10	27	total	Duloxetine	50	Escherichia coli IAI1	2	Yes	3580988	NF	4437094.71	246776.1116	133280.8736	NF	NF	NF
+Sonja20190729_Plate3_D11_50µM_total	Batch 3	Plate 3	D11	27	total	Duloxetine	50	Escherichia coli IAI1	3	Yes	3571300	NF	4424304.775	342821.8491	146274.7799	NF	NF	NF
+Sonja20190729_Plate3_D12_50µM_total	Batch 3	Plate 3	D12	27	total	Duloxetine	50	Escherichia coli IAI1	4	Yes	3455611	NF	4257203.83	328297.2146	149542.7622	NF	NF	NF
+Sonja20190729_Plate3_E01_50µM_supernatant	Batch 3	Plate 3	E01	27	supernatant	Duloxetine	50	Escherichia coli IAI1	1	Yes	2953626	NF	3551434.047	221183.4675	200288.8891	NF	NF	NF
+Sonja20190729_Plate3_E02_50µM_supernatant	Batch 3	Plate 3	E02	27	supernatant	Duloxetine	50	Escherichia coli IAI1	2	Yes	2860920	NF	3424723.991	433006.8875	190131.2525	NF	NF	NF
+Sonja20190729_Plate3_E03_50µM_supernatant	Batch 3	Plate 3	E03	27	supernatant	Duloxetine	50	Escherichia coli IAI1	3	Yes	3914285	NF	4793341.239	610042.6008	229384.4822	NF	NF	NF
+Sonja20190729_Plate3_E04_50µM_supernatant	Batch 3	Plate 3	E04	27	supernatant	Duloxetine	50	Escherichia coli IAI1	4	Yes	3875537	NF	4706477.242	599463.9191	219596.3021	NF	NF	NF
+Sonja20190729_Plate3_E05_70µM_total	Batch 3	Plate 3	E05	28	total	Duloxetine	70	Escherichia coli IAI1	1	Yes	3433166	NF	4327968.888	691463.4963	388504.6354	NF	NF	NF
+Sonja20190729_Plate3_E06_70µM_total	Batch 3	Plate 3	E06	28	total	Duloxetine	70	Escherichia coli IAI1	2	Yes	3718908	NF	4573296.974	362184.9549	216062.8673	NF	NF	NF
+Sonja20190729_Plate3_E07_70µM_total	Batch 3	Plate 3	E07	28	total	Duloxetine	70	Escherichia coli IAI1	3	Yes	3726138	NF	4616726.375	748372.2145	431649.3451	NF	NF	NF
+Sonja20190729_Plate3_E08_70µM_total	Batch 3	Plate 3	E08	28	total	Duloxetine	70	Escherichia coli IAI1	4	Yes	3738618	NF	4619768.09	406883.7868	275446.0764	NF	NF	NF
+Sonja20190729_Plate3_E09_70µM_supernatant	Batch 3	Plate 3	E09	28	supernatant	Duloxetine	70	Escherichia coli IAI1	1	Yes	3733353	NF	4581627.892	313594.7532	225853.373	NF	NF	NF
+Sonja20190729_Plate3_E10_70µM_supernatant	Batch 3	Plate 3	E10	28	supernatant	Duloxetine	70	Escherichia coli IAI1	2	Yes	3659222	NF	4479702.137	290739.7578	236947.9078	NF	NF	NF
+Sonja20190729_Plate3_E11_70µM_supernatant	Batch 3	Plate 3	E11	28	supernatant	Duloxetine	70	Escherichia coli IAI1	3	Yes	3599900	NF	4418737.507	306182.9948	237510.4317	NF	NF	NF
+Sonja20190729_Plate3_E12_70µM_supernatant	Batch 3	Plate 3	E12	28	supernatant	Duloxetine	70	Escherichia coli IAI1	4	Yes	3432985	NF	4196170.113	265975.0907	209473.2768	NF	NF	NF
+Sonja20190729_Plate3_F01_0µM_total	Batch 3	Plate 3	F01	29	total	Duloxetine	0	no bug	3	Yes	3654818	NF	4498935.753	327279.1185	NF	NF	NF	NF
+Sonja20190729_Plate3_F02_0µM_total	Batch 3	Plate 3	F02	29	total	Duloxetine	0	no bug	4	Yes	3545494	NF	4279671.352	602803.3539	NF	NF	NF	NF
+Sonja20190729_Plate3_F03_0µM_supernatant	Batch 3	Plate 3	F03	29	supernatant	Duloxetine	0	no bug	3	Yes	3740089	NF	4630455.843	175537.1645	NF	NF	NF	NF
+Sonja20190729_Plate3_F04_0µM_supernatant	Batch 3	Plate 3	F04	29	supernatant	Duloxetine	0	no bug	4	Yes	3751913	NF	4625384.209	281960.5524	NF	NF	NF	NF
+Sonja20190729_Plate3_F05_10µM_total	Batch 3	Plate 3	F05	30	total	Duloxetine	10	no bug	3	Yes	3855571	NF	4705404.055	448550.2266	13310.34178	NF	NF	NF
+Sonja20190729_Plate3_F06_10µM_total	Batch 3	Plate 3	F06	30	total	Duloxetine	10	no bug	4	Yes	3807990	NF	4641560.8	529542.5494	12585.17572	NF	NF	NF
+Sonja20190729_Plate3_F07_10µM_supernatant	Batch 3	Plate 3	F07	30	supernatant	Duloxetine	10	no bug	3	Yes	3930369	NF	4837698.614	367259.2147	5907.85442	NF	NF	NF
+Sonja20190729_Plate3_F08_10µM_supernatant	Batch 3	Plate 3	F08	30	supernatant	Duloxetine	10	no bug	4	Yes	3361890	NF	4116708.87	510169.3908	17863.8631	NF	NF	NF
+Sonja20190729_Plate3_F09_20µM_total	Batch 3	Plate 3	F09	31	total	Duloxetine	20	no bug	3	Yes	3723451	NF	4539956.402	361760.5167	28644.83891	NF	NF	NF
+Sonja20190729_Plate3_F10_20µM_total	Batch 3	Plate 3	F10	31	total	Duloxetine	20	no bug	4	Yes	3488817	NF	3512265.514	557692.4331	72288.50221	NF	NF	NF
+Sonja20190729_Plate3_F11_20µM_supernatant	Batch 3	Plate 3	F11	31	supernatant	Duloxetine	20	no bug	3	Yes	3329405	NF	4152586.035	2302434.67	79074.42312	NF	NF	NF
+Sonja20190729_Plate3_F12_20µM_supernatant	Batch 3	Plate 3	F12	31	supernatant	Duloxetine	20	no bug	4	Yes	3910753	NF	4819519.281	700012.6301	100893.2693	NF	NF	NF
+Sonja20190729_Plate3_G01_30µM_total	Batch 3	Plate 3	G01	32	total	Duloxetine	30	no bug	3	Yes	3718556	NF	4535777.115	216298.6869	41593.90294	NF	NF	NF
+Sonja20190729_Plate3_G02_30µM_total	Batch 3	Plate 3	G02	32	total	Duloxetine	30	no bug	4	Yes	3803788	NF	4694583.222	329644.1678	39659.83919	NF	NF	NF
+Sonja20190729_Plate3_G03_30µM_supernatant	Batch 3	Plate 3	G03	32	supernatant	Duloxetine	30	no bug	3	Yes	3760504	NF	4558146.243	569608.3496	142558.5385	NF	NF	NF
+Sonja20190729_Plate3_G04_30µM_supernatant	Batch 3	Plate 3	G04	32	supernatant	Duloxetine	30	no bug	4	Yes	3757442	NF	4571832.743	214955.2214	73726.6493	NF	NF	NF
+Sonja20190729_Plate3_G05_40µM_total	Batch 3	Plate 3	G05	33	total	Duloxetine	40	no bug	3	Yes	5482935	NF	6700049.125	565617.6754	146027.0916	NF	NF	NF
+Sonja20190729_Plate3_G06_40µM_total	Batch 3	Plate 3	G06	33	total	Duloxetine	40	no bug	4	Yes	5094161	NF	6130041.494	735769.3384	276789.5468	NF	NF	NF
+Sonja20190729_Plate3_G07_40µM_supernatant	Batch 3	Plate 3	G07	33	supernatant	Duloxetine	40	no bug	3	Yes	3815057	NF	4642839.955	587703.09	200115.444	NF	NF	NF
+Sonja20190729_Plate3_G08_40µM_supernatant	Batch 3	Plate 3	G08	33	supernatant	Duloxetine	40	no bug	4	Yes	3672771	NF	4530031.071	381735.2849	198363.5807	NF	NF	NF
+Sonja20190729_Plate3_G09_50µM_total	Batch 3	Plate 3	G09	34	total	Duloxetine	50	no bug	3	Yes	2678501	NF	3178629.85	450093.4236	191139.4556	NF	NF	NF
+Sonja20190729_Plate3_G10_50µM_total	Batch 3	Plate 3	G10	34	total	Duloxetine	50	no bug	4	Yes	3542569	NF	4296962.66	350929.8854	109023.2949	NF	NF	NF
+Sonja20190729_Plate3_G11_50µM_supernatant	Batch 3	Plate 3	G11	34	supernatant	Duloxetine	50	no bug	3	Yes	3483878	NF	3444701.14	584403.0064	258834.0033	NF	NF	NF
+Sonja20190729_Plate3_G12_50µM_supernatant	Batch 3	Plate 3	G12	34	supernatant	Duloxetine	50	no bug	4	Yes	3719322	NF	4512796.195	320263.9806	115737.313	NF	NF	NF
+Sonja20190729_Plate3_H01_70µM_total	Batch 3	Plate 3	H01	35	total	Duloxetine	70	no bug	3	Yes	3632869	NF	4390335.143	399049.9211	162369.1944	NF	NF	NF
+Sonja20190729_Plate3_H02_70µM_total	Batch 3	Plate 3	H02	35	total	Duloxetine	70	no bug	4	Yes	3452873	NF	4198540.198	351203.1409	165527.7772	NF	NF	NF
+Sonja20190729_Plate3_H03_70µM_supernatant	Batch 3	Plate 3	H03	35	supernatant	Duloxetine	70	no bug	3	Yes	3513713	NF	4253759.058	252485.482	163082.8122	NF	NF	NF
+Sonja20190729_Plate3_H04_70µM_supernatant	Batch 3	Plate 3	H04	35	supernatant	Duloxetine	70	no bug	4	Yes	3890674	NF	4721571.534	345765.4886	165746.4694	NF	NF	NF
+20190828_A01_total_strd_30µM_nobug	Batch 5	Plate 5	A01	1	total	Duloxetine	30	no bug	1	Yes	4971661.827	3857834.318	NF	668017.1837	629059.9533	NF	NF	NF
+20190828_A02_total_strd_30µM_nobug	Batch 5	Plate 5	A02	1	total	Duloxetine	30	no bug	2	Yes	4742836.381	3722297.941	NF	657809.9445	595143.9729	NF	NF	NF
+20190828_A03_total_strd_40µM_nobug	Batch 5	Plate 5	A03	1	total	Duloxetine	40	no bug	1	Yes	4499655.847	3592891.375	NF	656682.8414	751521.6217	NF	NF	NF
+20190828_A04_total_strd_40µM_nobug	Batch 5	Plate 5	A04	1	total	Duloxetine	40	no bug	2	Yes	4660069.386	3568351.073	NF	683308.9806	729099.6604	NF	NF	NF
+20190828_A05_total_strd_50µM_nobug	Batch 5	Plate 5	A05	1	total	Duloxetine	50	no bug	1	Yes	4638599.902	3590852.304	NF	613286.5559	991831.4249	NF	NF	NF
+20190828_A06_total_strd_50µM_nobug	Batch 5	Plate 5	A06	1	total	Duloxetine	50	no bug	2	Yes	4415280.132	3551671.182	NF	681201.6003	965118.5456	NF	NF	NF
+20190828_A07_total_sample_50µM_NT5026	Batch 5	Plate 5	A07	4	total	Duloxetine	50	C. bolteae	1	Yes	4374553.388	3428095.871	NF	603793.5963	941144.2209	NF	NF	NF
+20190828_A08_total_sample_50µM_NT5026	Batch 5	Plate 5	A08	4	total	Duloxetine	50	C. bolteae	2	Yes	4364190.665	3350497.703	NF	600977.6558	907090.0486	NF	NF	NF
+20190828_A09_total_sample_50µM_NT5026	Batch 5	Plate 5	A09	4	total	Duloxetine	50	C. bolteae	3	Yes	4429784.234	3401846.672	NF	655771.9753	910016.4892	NF	NF	NF
+20190828_A10_total_sample_50µM_NT5026	Batch 5	Plate 5	A10	4	total	Duloxetine	50	C. bolteae	4	Yes	4605784.768	3480593.361	NF	620125.2877	899224.344	NF	NF	NF
+20190828_A11_sup_strd_30µM_nobug	Batch 5	Plate 5	A11	1	supernatant	Duloxetine	30	no bug	1	Yes	4762333.009	3545637.647	NF	612963.1037	533941.9577	NF	NF	NF
+20190828_A12_sup_strd_30µM_nobug	Batch 5	Plate 5	A12	1	supernatant	Duloxetine	30	no bug	2	Yes	4966504.812	3691165.73	NF	624428.3233	532384.5604	NF	NF	NF
+20190828_B01_sup_strd_40µM_nobug	Batch 5	Plate 5	B01	1	supernatant	Duloxetine	40	no bug	1	Yes	4518189.888	3483582.781	NF	636372.9889	657332.6655	NF	NF	NF
+20190828_B02_sup_strd_40µM_nobug	Batch 5	Plate 5	B02	1	supernatant	Duloxetine	40	no bug	2	Yes	4421754.096	3366373.375	NF	599035.2714	669007.2986	NF	NF	NF
+20190828_B03_sup_strd_50µM_nobug	Batch 5	Plate 5	B03	1	supernatant	Duloxetine	50	no bug	1	Yes	4245240.697	3338353.713	NF	600089.1097	964881.5873	NF	NF	NF
+20190828_B04_sup_strd_50µM_nobug	Batch 5	Plate 5	B04	1	supernatant	Duloxetine	50	no bug	2	Yes	4463855.532	3386838.815	NF	592620.0264	926062.738	NF	NF	NF
+20190828_B05_sup_sample_50µM_NT5026	Batch 5	Plate 5	B05	4	supernatant	Duloxetine	50	C. bolteae	1	Yes	4229133.609	3224383.553	NF	561549.1734	728219.7242	NF	NF	NF
+20190828_B06_sup_sample_50µM_NT5026	Batch 5	Plate 5	B06	4	supernatant	Duloxetine	50	C. bolteae	2	Yes	4294349.399	3312024.645	NF	610073.9969	696561.8385	NF	NF	NF
+20190828_B07_sup_sample_50µM_NT5026	Batch 5	Plate 5	B07	4	supernatant	Duloxetine	50	C. bolteae	3	Yes	4244301.137	3203059.139	NF	579845.7532	641220.6623	NF	NF	NF
+20190828_B08_sup_sample_50µM_NT5026	Batch 5	Plate 5	B08	4	supernatant	Duloxetine	50	C. bolteae	4	Yes	4206120.354	3397890.482	NF	623955.0239	687607.5536	NF	NF	NF
+20190828_B09_total_strd_30µM_nobug	Batch 5	Plate 5	B09	12	total	Montelukast	30	no bug	1	Yes	4378723.329	3301541.126	NF	596280.268	NF	3772.6785	NF	NF
+20190828_B10_total_strd_30µM_nobug	Batch 5	Plate 5	B10	12	total	Montelukast	30	no bug	2	Yes	4300746.36	3240895.677	NF	590266.0177	NF	1387469.675	NF	NF
+20190828_B11_total_strd_40µM_nobug	Batch 5	Plate 5	B11	12	total	Montelukast	40	no bug	1	Yes	4272650.782	3303698.597	NF	581992.6056	NF	1369536.591	NF	NF
+20190828_B12_total_strd_40µM_nobug	Batch 5	Plate 5	B12	12	total	Montelukast	40	no bug	2	Yes	4538893.741	3370630.993	NF	621176.689	NF	1771092.401	NF	NF
+20190828_C01_total_strd_50µM_nobug	Batch 5	Plate 5	C01	12	total	Montelukast	50	no bug	1	Yes	4386146.465	3279671.418	NF	568818.2126	NF	1890227.797	NF	NF
+20190828_C02_total_strd_50µM_nobug	Batch 5	Plate 5	C02	12	total	Montelukast	50	no bug	2	Yes	4639781.666	3331820.721	NF	599378.4595	NF	2650663.924	NF	NF
+20190828_C03_total_sample_50µM_NT5065	Batch 5	Plate 5	C03	17	total	Montelukast	50	B. uniformis HM-715	1	Yes	4235786.063	3243727.708	NF	567617.7778	NF	2627493.613	NF	NF
+20190828_C04_total_sample_50µM_NT5065	Batch 5	Plate 5	C04	17	total	Montelukast	50	B. uniformis HM-715	2	Yes	4160180.469	3191865.723	NF	582156.4948	NF	2177241.634	NF	NF
+20190828_C05_total_sample_50µM_NT5065	Batch 5	Plate 5	C05	17	total	Montelukast	50	B. uniformis HM-715	3	Yes	4197226.36	3204125.548	NF	592067.4291	NF	2072943.309	NF	NF
+20190828_C06_total_sample_50µM_NT5065	Batch 5	Plate 5	C06	17	total	Montelukast	50	B. uniformis HM-715	4	Yes	4249115.547	3224839.307	NF	583907.7321	NF	2151504.644	NF	NF
+20190828_C07_sup_strd_30µM_nobug	Batch 5	Plate 5	C07	12	supernatant	Montelukast	30	no bug	1	Yes	4643705.88	3376640.563	NF	556068.9418	2404.288245	2138297.773	NF	NF
+20190828_C08_sup_strd_30µM_nobug	Batch 5	Plate 5	C08	12	supernatant	Montelukast	30	no bug	2	Yes	4242270.084	3292040.63	NF	611266.5389	NF	1319952.812	NF	NF
+20190828_C09_sup_strd_40µM_nobug	Batch 5	Plate 5	C09	12	supernatant	Montelukast	40	no bug	1	Yes	4674576.782	3320989.316	NF	598649.4348	NF	1296786.145	NF	NF
+20190828_C10_sup_strd_40µM_nobug	Batch 5	Plate 5	C10	12	supernatant	Montelukast	40	no bug	2	Yes	NF	NF	NF	NF	NF	NF	NF	NF
+20190828_C11_sup_strd_50µM_nobug	Batch 5	Plate 5	C11	12	supernatant	Montelukast	50	no bug	1	Yes	4237933.37	3237237.16	NF	586432.3541	NF	1589909.711	NF	NF
+20190828_C12_sup_strd_50µM_nobug	Batch 5	Plate 5	C12	12	supernatant	Montelukast	50	no bug	2	Yes	4341690.914	3360675.184	NF	624850.342	NF	2612904.642	NF	NF
+20190828_D01_sup_sample_50µM_NT5065	Batch 5	Plate 5	D01	17	supernatant	Montelukast	50	B. uniformis HM-715	1	Yes	4227531.492	3243519.796	NF	568373.0166	NF	2685391.517	NF	NF
+20190828_D02_sup_sample_50µM_NT5065	Batch 5	Plate 5	D02	17	supernatant	Montelukast	50	B. uniformis HM-715	2	Yes	4084641.55	3140342.138	NF	557209.3402	NF	2157929.31	NF	NF
+20190828_D03_sup_sample_50µM_NT5065	Batch 5	Plate 5	D03	17	supernatant	Montelukast	50	B. uniformis HM-715	3	Yes	4100093.398	3151657.276	NF	552483.9403	NF	2160451.256	NF	NF
+20190828_D04_sup_sample_50µM_NT5065	Batch 5	Plate 5	D04	17	supernatant	Montelukast	50	B. uniformis HM-715	4	Yes	NF	NF	NF	NF	NF	NF	NF	NF
+20190828_D05_total_strd_50µM_nobug	Batch 5	Plate 5	D05	12	total	Montelukast	50	no bug	3	Yes	4239041.093	3252547.679	NF	580604.2218	NF	2036610.844	NF	NF
+20190828_D06_total_sample_50µM_NT5023	Batch 5	Plate 5	D06	13	total	Montelukast	50	B. longum subsp. infantis	1	Yes	4309291.673	3263106.594	NF	557662.5536	NF	2481946.376	NF	NF
+20190828_D07_total_sample_50µM_NT5023	Batch 5	Plate 5	D07	13	total	Montelukast	50	B. longum subsp. infantis	2	Yes	4209962.541	3241605.773	NF	606654.3159	NF	2255918.981	NF	NF
+20190828_D08_total_sample_50µM_NT5023	Batch 5	Plate 5	D08	13	total	Montelukast	50	B. longum subsp. infantis	3	Yes	4383048.741	3212268.101	NF	577494.1231	NF	2177678.391	NF	NF
+20190828_D09_total_sample_50µM_NT5023	Batch 5	Plate 5	D09	13	total	Montelukast	50	B. longum subsp. infantis	4	Yes	4253837.719	3235627.357	NF	574559.4598	NF	2189330.201	NF	NF
+20190828_D10_total_strd_50µM_nobug	Batch 5	Plate 5	D10	12	total	Montelukast	50	no bug	4	Yes	4175687.757	3203712.355	NF	537164.5622	NF	2286360.528	NF	NF
+20190828_D11_sup_strd_50µM_nobug	Batch 5	Plate 5	D11	12	supernatant	Montelukast	50	no bug	3	Yes	4234532.066	3201245.878	NF	494672.3652	NF	2425896.813	NF	NF
+20190828_D12_sup_sample_50µM_NT5023	Batch 5	Plate 5	D12	13	supernatant	Montelukast	50	B. longum subsp. infantis	1	Yes	4131273.469	3154613.738	NF	566109.2803	NF	2607260.346	NF	NF
+20190828_E01_sup_sample_50µM_NT5023	Batch 5	Plate 5	E01	13	supernatant	Montelukast	50	B. longum subsp. infantis	2	Yes	4344266.869	3188529.723	NF	564245.6115	NF	2361930.563	NF	NF
+20190828_E02_sup_sample_50µM_NT5023	Batch 5	Plate 5	E02	13	supernatant	Montelukast	50	B. longum subsp. infantis	3	Yes	4191777.812	3147109.435	NF	581450.9163	NF	2483897.739	NF	NF
+20190828_E03_sup_sample_50µM_NT5023	Batch 5	Plate 5	E03	13	supernatant	Montelukast	50	B. longum subsp. infantis	4	Yes	3937661.605	3026482.672	NF	562441.229	NF	2413198.326	NF	NF
+20190828_E04_sup_strd_50µM_nobug	Batch 5	Plate 5	E04	12	supernatant	Montelukast	50	no bug	4	Yes	4185471.559	3163648.449	NF	578203.3335	NF	2381082.928	NF	NF
+20190828_E05_total_strd_30µM_nobug	Batch 5	Plate 5	E05	18	total	Roflumilast	30	no bug	1	Yes	4086762.545	3125544.266	NF	581651.6449	NF	2494708.813	NF	79547.29785
+20190828_E06_total_strd_30µM_nobug	Batch 5	Plate 5	E06	18	total	Roflumilast	30	no bug	2	Yes	4351737.885	3121410.717	NF	552450.9786	NF	NF	NF	57891.38666
+20190828_E07_total_strd_40µM_nobug	Batch 5	Plate 5	E07	18	total	Roflumilast	40	no bug	1	Yes	4069951.517	3073630.789	NF	543701.5266	NF	NF	NF	165390.2225
+20190828_E08_total_strd_40µM_nobug	Batch 5	Plate 5	E08	18	total	Roflumilast	40	no bug	2	Yes	4559553.799	3223527.106	NF	602882.3057	NF	NF	NF	151678.334
+20190828_E09_total_strd_50µM_nobug	Batch 5	Plate 5	E09	18	total	Roflumilast	50	no bug	1	Yes	4140396.317	3109372.214	NF	546879.3768	NF	NF	NF	316581.0338
+20190828_E10_total_strd_50µM_nobug	Batch 5	Plate 5	E10	18	total	Roflumilast	50	no bug	2	Yes	4001810.031	2938502.318	NF	550529.2562	NF	NF	NF	316078.8015
+20190828_E11_total_sample_50µM_Llactis	Batch 5	Plate 5	E11	19	total	Roflumilast	50	L. lactis	1	Yes	4033508.278	3157067.38	NF	564116.7943	NF	NF	NF	748043.0273
+20190828_E12_total_sample_50µM_Llactis	Batch 5	Plate 5	E12	19	total	Roflumilast	50	L. lactis	2	Yes	3916332.528	3140509.215	NF	556233.2524	NF	NF	NF	729309.9515
+20190828_F01_total_sample_50µM_Llactis	Batch 5	Plate 5	F01	19	total	Roflumilast	50	L. lactis	3	Yes	4022122.841	2994043.517	NF	543965.8433	NF	NF	NF	745368.9254
+20190828_F02_total_sample_50µM_Llactis	Batch 5	Plate 5	F02	19	total	Roflumilast	50	L. lactis	4	Yes	3967729.35	2793669.367	NF	525379.663	NF	NF	NF	750729.0932
+20190828_F03_sup_strd_30µM_nobug	Batch 5	Plate 5	F03	18	supernatant	Roflumilast	30	no bug	1	Yes	3904763.088	2964029.728	NF	570246.4794	NF	NF	NF	74342.37929
+20190828_F04_sup_strd_30µM_nobug	Batch 5	Plate 5	F04	18	supernatant	Roflumilast	30	no bug	2	Yes	3961038.086	2935973.143	NF	556308.5774	NF	NF	NF	103830.9712
+20190828_F05_sup_strd_40µM_nobug	Batch 5	Plate 5	F05	18	supernatant	Roflumilast	40	no bug	1	Yes	4015051.727	3036406.489	NF	570971.7986	NF	NF	NF	172738.5947
+20190828_F06_sup_strd_40µM_nobug	Batch 5	Plate 5	F06	18	supernatant	Roflumilast	40	no bug	2	Yes	4255722.332	3207785.689	NF	592369.8532	NF	NF	NF	174879.6215
+20190828_F07_sup_strd_50µM_nobug	Batch 5	Plate 5	F07	18	supernatant	Roflumilast	50	no bug	1	Yes	4038205.268	3097130.825	NF	578685.1138	NF	NF	NF	299658.628
+20190828_F08_sup_strd_50µM_nobug	Batch 5	Plate 5	F08	18	supernatant	Roflumilast	50	no bug	2	Yes	4188951.618	3074983.85	NF	553321.2128	NF	NF	NF	305181.2987
+20190828_F09_sup_sample_50µM_Llactis	Batch 5	Plate 5	F09	19	supernatant	Roflumilast	50	L. lactis	1	Yes	4158608.922	3181071.643	NF	543107.6081	NF	NF	NF	355861.0891
+20190828_F10_sup_sample_50µM_Llactis	Batch 5	Plate 5	F10	19	supernatant	Roflumilast	50	L. lactis	2	Yes	4113341.054	3196274.588	NF	543628.4487	NF	NF	NF	339094.0935
+20190828_F11_sup_sample_50µM_Llactis	Batch 5	Plate 5	F11	19	supernatant	Roflumilast	50	L. lactis	3	Yes	4339509.907	3130254.435	NF	549793.9108	NF	NF	NF	360142.4413
+20190828_F12_sup_sample_50µM_Llactis	Batch 5	Plate 5	F12	19	supernatant	Roflumilast	50	L. lactis	4	Yes	3991915.729	3204138.111	NF	582676.9914	NF	NF	NF	384016.3932
+20190828_G01_total_strd_30µM_nobug	Batch 5	Plate 5	G01	20	total	Rosiglitazone	30	no bug	1	Yes	3728233.46	2945598.751	NF	498872.4231	NF	NF	4122581	NF
+20190828_G02_total_strd_30µM_nobug	Batch 5	Plate 5	G02	20	total	Rosiglitazone	30	no bug	2	Yes	3795794.382	2989175.617	NF	524771.9427	NF	NF	4316987	NF
+20190828_G03_total_strd_40µM_nobug	Batch 5	Plate 5	G03	20	total	Rosiglitazone	40	no bug	1	Yes	3724791.033	2828848.881	NF	493408.2784	NF	NF	5441645	NF
+20190828_G04_total_strd_40µM_nobug	Batch 5	Plate 5	G04	20	total	Rosiglitazone	40	no bug	2	Yes	3756582.671	2896840.541	NF	549715.933	NF	NF	5688948	NF
+20190828_G05_total_strd_50µM_nobug	Batch 5	Plate 5	G05	20	total	Rosiglitazone	50	no bug	1	Yes	3846100.884	2900856.396	NF	510500.6249	NF	NF	8396868	NF
+20190828_G06_total_strd_50µM_nobug	Batch 5	Plate 5	G06	20	total	Rosiglitazone	50	no bug	2	Yes	3989302.702	3087147.677	NF	592595.0388	NF	NF	8537038	NF
+20190828_G07_total_sample_50µM_NT5042	Batch 5	Plate 5	G07	23	total	Rosiglitazone	50	L. paracasei	1	Yes	4089867.588	3060261.071	NF	550062.3836	NF	NF	9656248	NF
+20190828_G08_total_sample_50µM_NT5042	Batch 5	Plate 5	G08	23	total	Rosiglitazone	50	L. paracasei	2	Yes	4008719.251	3030258.918	NF	577332.6342	NF	NF	9616031	NF
+20190828_G09_total_sample_50µM_NT5042	Batch 5	Plate 5	G09	23	total	Rosiglitazone	50	L. paracasei	3	Yes	3932723.535	3091546.62	NF	522894.2149	NF	NF	9690343	NF
+20190828_G10_total_sample_50µM_NT5042	Batch 5	Plate 5	G10	23	total	Rosiglitazone	50	L. paracasei	4	Yes	4103506.759	3067829.046	NF	567852.1881	NF	NF	9607256	NF
+20190828_G11_sup_strd_30µM_nobug	Batch 5	Plate 5	G11	20	supernatant	Rosiglitazone	30	no bug	1	Yes	3761948.788	2984488.576	NF	523151.8493	NF	NF	4439310	NF
+20190828_G12_sup_strd_30µM_nobug	Batch 5	Plate 5	G12	20	supernatant	Rosiglitazone	30	no bug	2	Yes	4178766.645	3265530.689	NF	631501.8187	NF	NF	4742001	NF
+20190828_H01_sup_strd_40µM_nobug	Batch 5	Plate 5	H01	20	supernatant	Rosiglitazone	40	no bug	1	Yes	3858882.724	2942932.387	NF	507918.0732	NF	NF	5543814	NF
+20190828_H02_sup_strd_40µM_nobug	Batch 5	Plate 5	H02	20	supernatant	Rosiglitazone	40	no bug	2	Yes	3796804.962	2915800.146	NF	485373.8755	NF	NF	5661726	NF
+20190828_H03_sup_strd_50µM_nobug	Batch 5	Plate 5	H03	20	supernatant	Rosiglitazone	50	no bug	1	Yes	3688811.133	2666274.127	NF	486801.1192	NF	NF	7825934	NF
+20190828_H04_sup_strd_50µM_nobug	Batch 5	Plate 5	H04	20	supernatant	Rosiglitazone	50	no bug	2	Yes	3790248.426	2853294.155	NF	540006.4596	NF	NF	8132075	NF
+20190828_H05_sup_sample_50µM_NT5042	Batch 5	Plate 5	H05	23	supernatant	Rosiglitazone	50	L. paracasei	1	Yes	3609836.378	2825913.635	NF	500431.5527	NF	NF	8373610	NF
+20190828_H06_sup_sample_50µM_NT5042	Batch 5	Plate 5	H06	23	supernatant	Rosiglitazone	50	L. paracasei	2	Yes	3774221.588	2816422.418	NF	508383.7765	NF	NF	8267457	NF
+20190828_H07_sup_sample_50µM_NT5042	Batch 5	Plate 5	H07	23	supernatant	Rosiglitazone	50	L. paracasei	3	Yes	4061009.402	3008341.197	NF	515721.5367	NF	NF	8772682	NF
+20190828_H08_sup_sample_50µM_NT5042	Batch 5	Plate 5	H08	23	supernatant	Rosiglitazone	50	L. paracasei	4	Yes	3876265.131	3002057.227	NF	524122.3412	NF	NF	9085850	NF
+20190828_H09_sup_strd_50µM_nobug	Batch 5	Plate 5	H09	20	supernatant	Rosiglitazone	50	no bug	3	Yes	3870626.293	3023456.965	NF	588187.4908	NF	NF	8248974	NF
+20190828_H10_sup_strd_50µM_nobug	Batch 5	Plate 5	H10	20	supernatant	Rosiglitazone	50	no bug	4	Yes	3770496.807	2855650.476	NF	525284.9357	NF	NF	8341215	NF
+20190816_A01_non-inc_30uM_IAI1	Batch 4	Plate 4	A01	-	total	Duloxetine	30	E. coli IAI1	1	No	2960000	NF	2550000	421000	474000	NF	NF	NF
+20190816_A02_non-inc_40uM_IAI1	Batch 4	Plate 4	A02	-	total	Duloxetine	40	E. coli IAI1	1	No	2960000	NF	2460000	427000	609000	NF	NF	NF
+20190816_A03_non-inc_50uM_IAI1	Batch 4	Plate 4	A03	-	total	Duloxetine	50	E. coli IAI1	1	No	2860000	NF	2440000	418000	812000	NF	NF	NF
+20190816_A04_inc_30uM_noBug	Batch 4	Plate 4	A04	-	total	Duloxetine	30	no bug	1	Yes	2840000	NF	2440000	420000	399000	NF	NF	NF
+20190816_A05_inc_40uM_noBug	Batch 4	Plate 4	A05	-	total	Duloxetine	40	no bug	1	Yes	2850000	NF	2420000	430000	539000	NF	NF	NF
+20190816_A06_inc_50uM_noBug	Batch 4	Plate 4	A06	-	total	Duloxetine	50	no bug	1	Yes	2910000	NF	2350000	408000	755000	NF	NF	NF
+20190816_A07_non-inc_30uM_IAI1	Batch 4	Plate 4	A07	-	supernatant	Duloxetine	30	E. coli IAI1	1	No	2850000	NF	2390000	399000	428000	NF	NF	NF
+20190816_A08_non-inc_40uM_IAI1	Batch 4	Plate 4	A08	-	supernatant	Duloxetine	40	E. coli IAI1	1	No	2790000	NF	2360000	411000	599000	NF	NF	NF
+20190816_A09_non-inc_50uM_IAI1	Batch 4	Plate 4	A09	-	supernatant	Duloxetine	50	E. coli IAI1	1	No	2830000	NF	2350000	426000	743000	NF	NF	NF
+20190816_A10_inc_30uM_noBug	Batch 4	Plate 4	A10	-	supernatant	Duloxetine	30	no bug	1	Yes	2860000	NF	2310000	405000	362000	NF	NF	NF
+20190816_A11_inc_40uM_noBug	Batch 4	Plate 4	A11	-	supernatant	Duloxetine	40	no bug	1	Yes	2760000	NF	2300000	416000	533000	NF	NF	NF
+20190816_A12_inc_50uM_noBug	Batch 4	Plate 4	A12	-	supernatant	Duloxetine	50	no bug	1	Yes	2810000	NF	2280000	406000	574000	NF	NF	NF
+20190816_B01_inc_0uM_noBug	Batch 4	Plate 4	B01	-	total	Duloxetine	0	no bug	2	Yes	2790000	NF	2430000	407000	NF	NF	NF	NF
+20190816_B02_inc_0uM_IAI1	Batch 4	Plate 4	B02	-	total	Duloxetine	0	E. coli IAI1	1	Yes	2920000	NF	2360000	408000	NF	NF	NF	NF
+20190816_B03_inc_0uM_IAI1	Batch 4	Plate 4	B03	-	total	Duloxetine	0	E. coli IAI1	2	Yes	2810000	NF	2390000	426000	NF	NF	NF	NF
+20190816_B04_inc_0uM_IAI1	Batch 4	Plate 4	B04	-	total	Duloxetine	0	E. coli IAI1	3	Yes	2800000	NF	2320000	429000	NF	NF	NF	NF
+20190816_B05_inc_0uM_noBug	Batch 4	Plate 4	B05	-	total	Duloxetine	0	no bug	3	Yes	2730000	NF	2260000	405000	NF	NF	NF	NF
+20190816_B06_inc_0uM_noBug	Batch 4	Plate 4	B06	-	supernatant	Duloxetine	0	no bug	2	Yes	2780000	NF	2340000	400000	NF	NF	NF	NF
+20190816_B07_inc_0uM_IAI1	Batch 4	Plate 4	B07	-	supernatant	Duloxetine	0	E. coli IAI1	1	Yes	2810000	NF	2290000	386000	NF	NF	NF	NF
+20190816_B08_inc_0uM_IAI1	Batch 4	Plate 4	B08	-	supernatant	Duloxetine	0	E. coli IAI1	2	Yes	2710000	NF	2340000	423000	NF	NF	NF	NF
+20190816_B09_inc_0uM_IAI1	Batch 4	Plate 4	B09	-	supernatant	Duloxetine	0	E. coli IAI1	3	Yes	2770000	NF	2140000	449000	NF	NF	NF	NF
+20190816_B10_inc_0uM_noBug	Batch 4	Plate 4	B10	-	supernatant	Duloxetine	0	no bug	3	Yes	2670000	NF	2250000	387000	NF	NF	NF	NF
+20190816_B11_inc_10uM_noBug	Batch 4	Plate 4	B11	-	total	Duloxetine	10	no bug	2	Yes	2780000	NF	2330000	389000	74600	NF	NF	NF
+20190816_B12_inc_10uM_IAI1	Batch 4	Plate 4	B12	-	total	Duloxetine	10	E. coli IAI1	1	Yes	2710000	NF	2280000	381000	98000	NF	NF	NF
+20190816_C01_inc_10uM_IAI1	Batch 4	Plate 4	C01	-	total	Duloxetine	10	E. coli IAI1	2	Yes	2780000	NF	2310000	428000	94600	NF	NF	NF
+20190816_C02_inc_10uM_IAI1	Batch 4	Plate 4	C02	-	total	Duloxetine	10	E. coli IAI1	3	Yes	2730000	NF	2270000	437000	93800	NF	NF	NF
+20190816_C03_inc_10uM_noBug	Batch 4	Plate 4	C03	-	total	Duloxetine	10	no bug	3	Yes	2730000	NF	2330000	408000	80500	NF	NF	NF
+20190816_C04_inc_10uM_noBug	Batch 4	Plate 4	C04	-	supernatant	Duloxetine	10	no bug	2	Yes	2710000	NF	2290000	415000	92500	NF	NF	NF
+20190816_C05_inc_10uM_IAI1	Batch 4	Plate 4	C05	-	supernatant	Duloxetine	10	E. coli IAI1	1	Yes	2700000	NF	2290000	443000	89900	NF	NF	NF
+20190816_C06_inc_10uM_IAI1	Batch 4	Plate 4	C06	-	supernatant	Duloxetine	10	E. coli IAI1	2	Yes	2720000	NF	2220000	410000	88800	NF	NF	NF
+20190816_C07_inc_10uM_IAI1	Batch 4	Plate 4	C07	-	supernatant	Duloxetine	10	E. coli IAI1	3	Yes	2740000	NF	2270000	435000	101000	NF	NF	NF
+20190816_C08_inc_10uM_noBug	Batch 4	Plate 4	C08	-	supernatant	Duloxetine	10	no bug	3	Yes	2670000	NF	2340000	405000	93300	NF	NF	NF
+20190816_C09_inc_20uM_noBug	Batch 4	Plate 4	C09	-	total	Duloxetine	20	no bug	2	Yes	2610000	NF	2200000	421000	172000	NF	NF	NF
+20190816_C10_inc_20uM_IAI1	Batch 4	Plate 4	C10	-	total	Duloxetine	20	E. coli IAI1	1	Yes	2670000	NF	2220000	432000	254000	NF	NF	NF
+20190816_C11_inc_20uM_IAI1	Batch 4	Plate 4	C11	-	total	Duloxetine	20	E. coli IAI1	2	Yes	2590000	NF	2270000	414000	255000	NF	NF	NF
+20190816_C12_inc_20uM_IAI1	Batch 4	Plate 4	C12	-	total	Duloxetine	20	E. coli IAI1	3	Yes	2700000	NF	2280000	401000	259000	NF	NF	NF
+20190816_D01_inc_20uM_noBug	Batch 4	Plate 4	D01	-	total	Duloxetine	20	no bug	3	Yes	2720000	NF	2300000	427000	188000	NF	NF	NF
+20190816_D02_inc_20uM_noBug	Batch 4	Plate 4	D02	-	supernatant	Duloxetine	20	no bug	2	Yes	2750000	NF	2270000	420000	302000	NF	NF	NF
+20190816_D03_inc_20uM_IAI1	Batch 4	Plate 4	D03	-	supernatant	Duloxetine	20	E. coli IAI1	1	Yes	2650000	NF	2290000	419000	277000	NF	NF	NF
+20190816_D04_inc_20uM_IAI1	Batch 4	Plate 4	D04	-	supernatant	Duloxetine	20	E. coli IAI1	2	Yes	2670000	NF	2300000	421000	264000	NF	NF	NF
+20190816_D05_inc_20uM_IAI1	Batch 4	Plate 4	D05	-	supernatant	Duloxetine	20	E. coli IAI1	3	Yes	2820000	NF	2310000	409000	262000	NF	NF	NF
+20190816_D06_inc_20uM_noBug	Batch 4	Plate 4	D06	-	supernatant	Duloxetine	20	no bug	3	Yes	2720000	NF	2280000	376000	286000	NF	NF	NF
+20190816_D07_inc_30uM_noBug	Batch 4	Plate 4	D07	-	total	Duloxetine	30	no bug	2	Yes	2720000	NF	2240000	407000	398000	NF	NF	NF
+20190816_D08_inc_30uM_IAI1	Batch 4	Plate 4	D08	-	total	Duloxetine	30	E. coli IAI1	1	Yes	2750000	NF	2230000	436000	442000	NF	NF	NF
+20190816_D09_inc_30uM_IAI1	Batch 4	Plate 4	D09	-	total	Duloxetine	30	E. coli IAI1	2	Yes	2740000	NF	2270000	425000	391000	NF	NF	NF
+20190816_D10_inc_30uM_IAI1	Batch 4	Plate 4	D10	-	total	Duloxetine	30	E. coli IAI1	3	Yes	2610000	NF	2280000	419000	425000	NF	NF	NF
+20190816_D11_inc_30uM_noBug	Batch 4	Plate 4	D11	-	total	Duloxetine	30	no bug	3	Yes	2720000	NF	2270000	439000	385000	NF	NF	NF
+20190816_D12_inc_30uM_noBug	Batch 4	Plate 4	D12	-	supernatant	Duloxetine	30	no bug	2	Yes	2650000	NF	2220000	445000	369000	NF	NF	NF
+20190816_E01_inc_30uM_IAI1	Batch 4	Plate 4	E01	-	supernatant	Duloxetine	30	E. coli IAI1	1	Yes	2670000	NF	2210000	436000	355000	NF	NF	NF
+20190816_E02_inc_30uM_IAI1	Batch 4	Plate 4	E02	-	supernatant	Duloxetine	30	E. coli IAI1	2	Yes	2620000	NF	2240000	429000	346000	NF	NF	NF
+20190816_E03_inc_30uM_IAI1	Batch 4	Plate 4	E03	-	supernatant	Duloxetine	30	E. coli IAI1	3	Yes	2690000	NF	2280000	435000	341000	NF	NF	NF
+20190816_E04_inc_30uM_noBug	Batch 4	Plate 4	E04	-	supernatant	Duloxetine	30	no bug	3	Yes	2650000	NF	2270000	394000	359000	NF	NF	NF
+20190816_E05_inc_40uM_noBug	Batch 4	Plate 4	E05	-	total	Duloxetine	40	no bug	2	Yes	2620000	NF	2280000	412000	499000	NF	NF	NF
+20190816_E06_inc_40uM_IAI1	Batch 4	Plate 4	E06	-	total	Duloxetine	40	E. coli IAI1	1	Yes	2680000	NF	2280000	450000	503000	NF	NF	NF
+20190816_E07_inc_40uM_IAI1	Batch 4	Plate 4	E07	-	total	Duloxetine	40	E. coli IAI1	2	Yes	2680000	NF	2310000	413000	512000	NF	NF	NF
+20190816_E08_inc_40uM_IAI1	Batch 4	Plate 4	E08	-	total	Duloxetine	40	E. coli IAI1	3	Yes	2600000	NF	2230000	435000	509000	NF	NF	NF
+20190816_E09_inc_40uM_noBug	Batch 4	Plate 4	E09	-	total	Duloxetine	40	no bug	3	Yes	2760000	NF	2310000	416000	534000	NF	NF	NF
+20190816_E10_inc_40uM_noBug	Batch 4	Plate 4	E10	-	supernatant	Duloxetine	40	no bug	2	Yes	2680000	NF	2260000	413000	522000	NF	NF	NF
+20190816_E11_inc_40uM_IAI1	Batch 4	Plate 4	E11	-	supernatant	Duloxetine	40	E. coli IAI1	1	Yes	2690000	NF	2300000	430000	498000	NF	NF	NF
+20190816_E12_inc_40uM_IAI1	Batch 4	Plate 4	E12	-	supernatant	Duloxetine	40	E. coli IAI1	2	Yes	2750000	NF	2250000	425000	533000	NF	NF	NF
+20190816_F01_inc_40uM_IAI1	Batch 4	Plate 4	F01	-	supernatant	Duloxetine	40	E. coli IAI1	3	Yes	2740000	NF	2380000	444000	546000	NF	NF	NF
+20190816_F02_inc_40uM_noBug	Batch 4	Plate 4	F02	-	supernatant	Duloxetine	40	no bug	3	Yes	2770000	NF	2290000	415000	538000	NF	NF	NF
+20190816_F03_inc_50uM_noBug	Batch 4	Plate 4	F03	-	total	Duloxetine	50	no bug	2	Yes	2720000	NF	2300000	375000	707000	NF	NF	NF
+20190816_F04_inc_50uM_IAI1	Batch 4	Plate 4	F04	-	total	Duloxetine	50	E. coli IAI1	1	Yes	2710000	NF	2240000	416000	625000	NF	NF	NF
+20190816_F05_inc_50uM_IAI1	Batch 4	Plate 4	F05	-	total	Duloxetine	50	E. coli IAI1	2	Yes	2770000	NF	2320000	429000	659000	NF	NF	NF
+20190816_F06_inc_50uM_IAI1	Batch 4	Plate 4	F06	-	total	Duloxetine	50	E. coli IAI1	3	Yes	2720000	NF	2320000	420000	665000	NF	NF	NF
+20190816_F07_inc_50uM_noBug	Batch 4	Plate 4	F07	-	total	Duloxetine	50	no bug	3	Yes	2620000	NF	2300000	423000	725000	NF	NF	NF
+20190816_F08_inc_50uM_noBug	Batch 4	Plate 4	F08	-	supernatant	Duloxetine	50	no bug	2	Yes	2710000	NF	2280000	439000	569000	NF	NF	NF
+20190816_F09_inc_50uM_IAI1	Batch 4	Plate 4	F09	-	supernatant	Duloxetine	50	E. coli IAI1	1	Yes	2720000	NF	2290000	430000	637000	NF	NF	NF
+20190816_F10_inc_50uM_IAI1	Batch 4	Plate 4	F10	-	supernatant	Duloxetine	50	E. coli IAI1	2	Yes	2760000	NF	2260000	404000	646000	NF	NF	NF
+20190816_F11_inc_50uM_IAI1	Batch 4	Plate 4	F11	-	supernatant	Duloxetine	50	E. coli IAI1	3	Yes	2680000	NF	2290000	428000	616000	NF	NF	NF
+20190816_F12_inc_50uM_noBug	Batch 4	Plate 4	F12	-	supernatant	Duloxetine	50	no bug	3	Yes	2630000	NF	2370000	410000	565000	NF	NF	NF
+20190816_G01_inc_70uM_noBug	Batch 4	Plate 4	G01	-	total	Duloxetine	70	no bug	2	Yes	2810000	NF	2320000	406000	791000	NF	NF	NF
+20190816_G02_inc_70uM_IAI1	Batch 4	Plate 4	G02	-	total	Duloxetine	70	E. coli IAI1	1	Yes	2690000	NF	2300000	401000	862000	NF	NF	NF
+20190816_G03_inc_70uM_IAI1	Batch 4	Plate 4	G03	-	total	Duloxetine	70	E. coli IAI1	2	Yes	2720000	NF	2260000	449000	837000	NF	NF	NF
+20190816_G04_inc_70uM_IAI1	Batch 4	Plate 4	G04	-	total	Duloxetine	70	E. coli IAI1	3	Yes	2610000	NF	2210000	440000	887000	NF	NF	NF
+20190816_G05_inc_70uM_noBug	Batch 4	Plate 4	G05	-	total	Duloxetine	70	no bug	3	Yes	2700000	NF	2360000	414000	789000	NF	NF	NF
+20190816_G06_inc_70uM_noBug	Batch 4	Plate 4	G06	-	supernatant	Duloxetine	70	no bug	2	Yes	2640000	NF	2280000	414000	932000	NF	NF	NF
+20190816_G07_inc_70uM_IAI1	Batch 4	Plate 4	G07	-	supernatant	Duloxetine	70	E. coli IAI1	1	Yes	2730000	NF	2340000	431000	825000	NF	NF	NF
+20190816_G08_inc_70uM_IAI1	Batch 4	Plate 4	G08	-	supernatant	Duloxetine	70	E. coli IAI1	2	Yes	2680000	NF	2260000	405000	811000	NF	NF	NF
+20190816_G09_inc_70uM_IAI1	Batch 4	Plate 4	G09	-	supernatant	Duloxetine	70	E. coli IAI1	3	Yes	2710000	NF	2260000	428000	793000	NF	NF	NF
+20190816_G10_inc_70uM_noBug	Batch 4	Plate 4	G10	-	supernatant	Duloxetine	70	no bug	3	Yes	2740000	NF	2250000	425000	902000	NF	NF	NF
+20190816_G11_blanc	Batch 4	Plate 4	G11	-	-	-	0	no bug	1	-	2670000	NF	2340000	442000	NF	NF	NF	NF
+20190816_G12_blanc	Batch 4	Plate 4	G12	-	-	-	0	no bug	2	-	2650000	NF	2320000	439000	NF	NF	NF	NF
+20190816_H01_non-inc_30uM_IAI1	Batch 4	Plate 4	H01	-	total	Duloxetine	30	E. coli IAI1	2	No	2710000	NF	2250000	427000	443000	NF	NF	NF
+20190816_H02_non-inc_40uM_IAI1	Batch 4	Plate 4	H02	-	total	Duloxetine	40	E. coli IAI1	2	No	2620000	NF	2180000	444000	572000	NF	NF	NF
+20190816_H03_non-inc_50uM_IAI1	Batch 4	Plate 4	H03	-	total	Duloxetine	50	E. coli IAI1	2	No	2590000	NF	2220000	416000	750000	NF	NF	NF
+20190816_H04_inc_30uM_noBug	Batch 4	Plate 4	H04	-	total	Duloxetine	30	no bug	4	Yes	2690000	NF	2290000	407000	396000	NF	NF	NF
+20190816_H05_inc_40uM_noBug	Batch 4	Plate 4	H05	-	total	Duloxetine	40	no bug	4	Yes	2720000	NF	2190000	378000	491000	NF	NF	NF
+20190816_H06_inc_50uM_noBug	Batch 4	Plate 4	H06	-	total	Duloxetine	50	no bug	4	Yes	2650000	NF	2290000	391000	735000	NF	NF	NF
+20190816_H07_non-inc_30uM_IAI1	Batch 4	Plate 4	H07	-	supernatant	Duloxetine	30	E. coli IAI1	2	No	2610000	NF	2240000	401000	420000	NF	NF	NF
+20190816_H08_non-inc_40uM_IAI1	Batch 4	Plate 4	H08	-	supernatant	Duloxetine	40	E. coli IAI1	2	No	2670000	NF	2340000	428000	544000	NF	NF	NF
+20190816_H09_non-inc_50uM_IAI1	Batch 4	Plate 4	H09	-	supernatant	Duloxetine	50	E. coli IAI1	2	No	2740000	NF	2340000	405000	706000	NF	NF	NF
+20190816_H10_inc_30uM_noBug	Batch 4	Plate 4	H10	-	supernatant	Duloxetine	30	no bug	4	Yes	2870000	NF	2350000	394000	363000	NF	NF	NF
+20190816_H11_inc_40uM_noBug	Batch 4	Plate 4	H11	-	supernatant	Duloxetine	40	no bug	4	Yes	2680000	NF	2280000	400000	496000	NF	NF	NF
+20190816_H12_inc_50uM_noBug	Batch 4	Plate 4	H12	-	supernatant	Duloxetine	50	no bug	4	Yes	2700000	NF	2260000	379000	551000	NF	NF	NF

@@ -28,14 +28,14 @@ exp5concentration.analyze = function()
   if(!file.exists("tmp/exp5concentration/data.tsv")) {
     exp5concentration.preprocess()
   }
-    
+  
   data = readr::read_delim("tmp/exp5concentration/data.tsv", "\t")
   pdf(file="reports/exp5concentration_curves.pdf", width=11, height=11)
   ggplot(data) + 
     geom_line(aes(x=Time, y=OD, color=Concentration, group=paste(Concentration, Replicate)))+
     facet_wrap(~Species)
   dev.off()
-      
+  
   #####
   data.approx = data %>%
     dplyr::group_by(Species, Concentration, Replicate) %>%
@@ -68,8 +68,6 @@ exp5concentration.analyze = function()
       maxOD=mean(maxOD)
     ) %>%
     dplyr::select(Species, Concentration, maxOD, maxOD.se, maxODnorm, maxODnorm.se, n)
-  
-  
   readr::write_tsv(data.sum, "reports/exp5concentration_growth.tsv", col_names=T, na="")  
   
   pdf(file="reports/exp5concentration_growth.pdf", width=11, height=11)
