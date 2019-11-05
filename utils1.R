@@ -178,5 +178,5 @@ utils1.collect_families = function()
     uniprot2family = rbind(uniprot2family, uniprot2family.f)
   }
   
-  write.table(uniprot2family, "data/db/UNIPROT/uniprot2family.tsv", na="", sep="\t", quote=F, row.names=F, col.names=T)
+  write.table(uniprot2family, "data/db/uniprot2family.tsv", na="", sep="\t", quote=F, row.names=F, col.names=T)
 }
