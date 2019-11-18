@@ -34,7 +34,7 @@ exp10bioaccumulation.analyze = function() {
   data_long = readr::read_tsv("data/exp10bioaccumulation/data_long.tsv") %>%
     dplyr::filter(!is.na(IntensityNorm) & Incubated=="Yes") %>%
     dplyr::mutate(BatchPlate=paste0("Plate: ", gsub("Batch ", "", Batch), "/", gsub("Plate ", "", Plate))) 
-                  
+  
   #
   # Select only drug concentration correction samples
   #
@@ -128,22 +128,25 @@ exp10bioaccumulation.analyze = function() {
     dplyr::inner_join(data_long.1.ggplot.f %>% dplyr::distinct(Batch, Species_name, Drug, Extraction, Standard), by=c("Batch", "Species_name", "Drug", "Standard")) %>%
     dplyr::mutate(InitialConcentration=factor(InitialConcentration, f.concentrations))
   ggplot(data_long.1.ggplot.f) +
-    geom_boxplot(aes(y=DetectedConcentration, x=InitialConcentration, fill=Extraction), width=.5) +
+    geom_boxplot(aes(y=DetectedConcentration, x=InitialConcentration, fill=Extraction), width=.5, outlier.size=0, position=position_dodge2(0.75, preserve="single")) +
+    geom_point(aes(x=InitialConcentration, y=DetectedConcentration, fill=Extraction), position=position_dodge(0.75, preserve="total")) + 
     #geom_errorbarh(aes(y=IntensityNormMax50*1.05, xmin=as.numeric(InitialConcentration)-0.1, xmax=as.numeric(InitialConcentration)+0.1), data=data_long.1.ggplot_test.f, height=0) + 
     labs(x="Initial duloxetine concentration", y="Normalized duloxetine peak area") +
     facet_wrap(Batch~Species_name, scales="free") +
-    scale_fill_manual(values=c(supernatant="#d3d2d2", total="#656263")) +
+    scale_fill_manual(values=c(supernatant="#cacac8", total="#ef3628")) +
+    scale_y_continuous(breaks=seq(0, 125, 25)) +
     theme_classic(base_size=16) + 
     theme(strip.background=element_blank(), aspect.ratio=1)
   for(d in unique(data_long.1.ggplot$Drug)) {
     print(ggplot(data_long.1.ggplot %>% dplyr::filter(Drug==d)) +
-      geom_boxplot(aes(y=DetectedConcentration, x=InitialConcentration, fill=Extraction), width=.5) +
-      #geom_errorbarh(aes(y=IntensityNormMax*1.05, xmin=as.numeric(InitialConcentration)-0.1, xmax=as.numeric(InitialConcentration)+0.1), data=data_long.1.ggplot_test %>% dplyr::filter(Standard==Standard), height=0) + 
-      labs(x=paste0("Initial ", d, " concentration"), y=paste0("Normalized ", d, " peak area")) +
-      facet_grid(Standard~Batch+Species_name, scales="free") +
-      scale_fill_manual(values=c(supernatant="#d3d2d2", total="#656263")) +
-      theme_classic(base_size=16) + 
-      theme(strip.background=element_blank(), aspect.ratio=1))
+            geom_boxplot(aes(y=DetectedConcentration, x=InitialConcentration, fill=Extraction), width=.5, outlier.size=0, position=position_dodge2(0.75, preserve="single")) +
+            geom_point(aes(x=InitialConcentration, y=DetectedConcentration, fill=Extraction), position=position_dodge(0.75, preserve="total")) + 
+            #geom_errorbarh(aes(y=IntensityNormMax*1.05, xmin=as.numeric(InitialConcentration)-0.1, xmax=as.numeric(InitialConcentration)+0.1), data=data_long.1.ggplot_test %>% dplyr::filter(Standard==Standard), height=0) + 
+            labs(x=paste0("Initial ", d, " concentration"), y=paste0("Normalized ", d, " peak area")) +
+            facet_grid(Standard~Batch+Species_name, scales="free") +
+            scale_fill_manual(values=c(supernatant="#cacac8", total="#ef3628")) +
+            theme_classic(base_size=16) + 
+            theme(strip.background=element_blank(), aspect.ratio=1))
   }
   dev.off()
   
