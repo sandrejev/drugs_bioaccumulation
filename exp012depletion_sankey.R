@@ -132,6 +132,25 @@ number_of_replicates = function()
   data.clean_sample_techreps = data.clean_techreps %>% 
     dplyr::filter(Status=="sample") 
   
+  number_of_drug_controls = data.clean_techreps %>%
+    dplyr::group_by(Batch, GroupName) %>%
+    dplyr::summarise(drug=unique(na.omit(drug)), N.ctrls=unique(N.ctrls)) %>%
+    dplyr::select(-GroupName)
+  ggplot(number_of_drug_controls) +
+    geom_bar(aes(x=as.character(Batch), y=N.ctrls), stat="identity") +
+    facet_wrap(~drug, scales="free")
+  
+  number_of_drug_controls.sum = number_of_drug_controls %>%
+    dplyr::group_by(drug) %>%
+    dplyr::summarise(N.ctrls_min=min(N.ctrls), N.ctrls_median=median(N.ctrls))
+  readr::write_tsv(number_of_drug_controls, path="reports/exp1UPLCdepletion_controls_count.tsv")  
+  readr::write_tsv(number_of_drug_controls.sum, path="reports/exp1UPLCdepletion_controls_count_summary.tsv")  
+  
+  writeLines(c(
+    with(number_of_drug_controls, sprintf("Range of control replicates for all batches/drugs: %i-%i (sd: %g)", min(N.ctrls), max(N.ctrls), sd(N.ctrls))),
+    with(number_of_drug_controls.sum, sprintf("Range of control replicates (median per batch) for all drugs: %i-%i (sd: %g)", min(N.ctrls_median), max(N.ctrls_median), sd(N.ctrls_median)))
+  ))
+
   data.clean_sample_bioreps = data.clean_sample_techreps %>%
     dplyr::group_by(Species.x, GroupName, Status, Batch, drug.uplc_excluded) %>%
     dplyr::summarise(BiologicalReplicates=length(unique(Replicate)), Plates=paste(unique(Plate), collapse=","), N.ctrls_count=length(unique(N.ctrls)))
@@ -153,13 +172,9 @@ number_of_replicates = function()
   data.uplc_biorep = data.uplc_techrep %>%
     group_by(Extraction, Ctrl, species.long, drug.long, drug.uplc_excluded, drug.known_activity) %>%
     dplyr::summarise(BiologicalReplicates=length(unique(Replicate)), TechnicalReplicates=sum(TechnicalReplicates))
-  
-  data.uplc_biorep = data.uplc_techrep %>%
-    group_by(Extraction, Ctrl, species.long, drug.long, drug.uplc_excluded, drug.known_activity) %>%
-    dplyr::summarise(BiologicalReplicates=length(unique(Replicate)), TechnicalReplicates=sum(TechnicalReplicates))
-  
 }
 
+# @Figure 1
 exp012depletion.sankey = function()
 {
   drug_map = readr::read_delim("data/drug_map.tsv", "\t")
@@ -309,7 +324,6 @@ exp012depletion.sankey = function()
     iterations=0,
     colourScale=colourScaleStr)
 
-  
   #
   # Summary (first degree)
   #
@@ -335,7 +349,7 @@ exp012depletion.sankey = function()
       is.na(exp2.interaction)          ~ "Untested",
       TRUE                             ~ exp2.interaction)) %>% 
     dplyr::mutate(
-      exp1.is_hit=ifelse(!is.na(drug.known_activity) & exp1.nhits>0 | exp1.nhits/exp1.nreplicates>=0.5 | exp1.nhits>1, "Yes", "No"), 
+      exp1.is_hit=ifelse(!is.na(drug.known_activity) & exp1.nhits>0 | exp1.nhits/exp1.nreplicates>=0.5 | exp1.nhits>1, "Depleted", "Not depleted"), 
       exp1.replicates=paste0(exp1.nhits, "/", exp1.nreplicates))  %>%
     dplyr::mutate(
       drug.known_activity=ifelse(drug.long=="Digoxin" & !grepl("lenta", species.short), NA_character_, drug.known_activity),
@@ -357,13 +371,16 @@ exp012depletion.sankey = function()
       growth.pvalue=round(growth.pvalue, 5),
       growth.maxod_logfold=round(growth.maxod_logfold, 5)
     ) %>%
+    dplyr::mutate(exp1.pvalue=ifelse(!is.na(exp1.is_hit) & exp1.is_hit=="Excluded", "N/A", format(exp1.pvalue, scientific=F))) %>%
+    dplyr::mutate(exp1.padjst=ifelse(!is.na(exp1.is_hit) & exp1.is_hit=="Excluded", "N/A", format(exp1.padjst, scientific=F))) %>%
     dplyr::select(species.short, drug.long, drug.known_activity, 
                   exp1.is_hit, exp2.interaction, growth.effect,                             # General HIT/NO-HIT information
                   exp1.diff, exp1.replicates, exp1.pvalue, exp1.padjst,                     # exp1
                   exp2.padjst_super, exp2.padjst_total, exp2.diff_super, exp2.diff_total,   # exp2
                   growth.pvalue, growth.maxod_logfold                                       # growth
-    ) 
+    )
   
+  table(hits_all$exp1.is_hit)
   
   #drug.excluded
   readr::write_tsv(hits_all, "reports/exp012_sankey_data.tsv", col_names=T, na="")  
@@ -374,7 +391,7 @@ exp012depletion.sankey = function()
   pdf(file="reports/exp012_growth2depletion_venn.pdf", paper="a4r")
   hits_all.venn = hits_all %>%
     dplyr::mutate(label=paste(drug.long,species.short))
-  hits_all.venn=list(UPLC=hits_all.venn %>% dplyr::filter(exp1.is_hit=="Yes") %>% .$label , Growth=hits_all.venn %>% dplyr::filter(grepl("Growth", hits_all$growth.effect)) %>% .$label)
+  hits_all.venn=list(UPLC=hits_all.venn %>% dplyr::filter(exp1.is_hit=="Depleted") %>% .$label , Growth=hits_all.venn %>% dplyr::filter(grepl("Growth", hits_all$growth.effect)) %>% .$label)
   hits_all.no = nrow(hits_all %>% dplyr::filter(exp1.is_hit=="No" & growth.effect=="No activity"))
   grid.newpage()
   grid.draw(VennDiagram::venn.diagram(hits_all.venn, filename=NULL, na="remove", force.unique=T, category.names=c("",""), fill=RColorBrewer::brewer.pal(3,  "Set1")[1:2], sub=paste0("No hit: ", hits_all.no)))
@@ -387,14 +404,12 @@ exp012depletion.sankey = function()
     reshape2::melt(measure.vars=c("drug.long", "species.short")) %>%
     dplyr::group_by(variable, value) %>% 
     dplyr::summarise(
-      exp1=sum(grepl("Yes", exp1.is_hit)),
-      exp2.bioaccumulation=sum(grepl("Yes", exp1.is_hit) & grepl("Bioaccumulation", exp2.interaction) & grepl("No", drug.known_activity)),
-      exp2.biotransformation=sum(grepl("Yes", exp1.is_hit) & grepl("Biotransformation", exp2.interaction) & grepl("No", drug.known_activity)),
+      exp1=sum(grepl("Depleted", exp1.is_hit)),
+      exp2.bioaccumulation=sum(grepl("Depleted", exp1.is_hit) & grepl("Bioaccumulation", exp2.interaction) & grepl("No", drug.known_activity)),
+      exp2.biotransformation=sum(grepl("Depleted", exp1.is_hit) & grepl("Biotransformation", exp2.interaction) & grepl("No", drug.known_activity)),
       exp2.known=sum(grepl("Yes", exp1.is_hit) & !grepl("No", drug.known_activity)),
       exp2.excluded=sum(grepl("Yes", exp1.is_hit) & grepl("No", drug.known_activity) & grepl("Excluded", exp2.interaction))) %>%
     data.frame()  %>%
     dplyr::arrange(variable, exp1)  
-  readr::write_tsv(hits_all.summary, "reports/exp012_sankey_data_statistics.tsv", col_names=T, na="")  
+  readr::write_tsv(hits_all.summary, "reports/exp012_sankey_data_statistics_2.tsv", col_names=T, na="")  
 }
-
-

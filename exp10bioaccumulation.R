@@ -42,6 +42,12 @@ exp10bioaccumulation.analyze = function() {
     dplyr::filter(Drug==Drug_measured & Species_name=="no bug" & Concentration > 0) %>% 
     data.frame()
   
+  # IntensityNorm = Intensity/Standard
+  # data_long.0 = Only drug was measured at concentrations>0
+  # DetectedConcentration = For each standard under each condition build a model that predicts real concentration from Intensity/StandardIntensity
+  # Use Fluoxetine_IS standard because it had most robust correlation when predicting real concentration from metabolomic intensity devided by standard
+  # Use only C. saccharalyticum (Batch 3) or E. coli IAI1 (Batch 4) data. Batch is not important as there are these species are unique to these batches
+  
   #
   # Plot performance of different internal standards
   #
@@ -52,6 +58,14 @@ exp10bioaccumulation.analyze = function() {
     dplyr::summarise(n=length(Plate), R=cor(IntensityNorm, Concentration, use="pairwise.complete.obs"), Slope=lm(Concentration~IntensityNorm+0)$coefficients[1])
   
   pdf("reports/exp10bioaccumulation_nobug_calibration.pdf", width=10, height=14)
+  data_long.0.cor %>% 
+    dplyr::group_by(Standard) %>% 
+    dplyr::mutate(Standard=paste(Standard, sum(n))) %>% 
+    dplyr::ungroup() %>%
+    ggplot() + 
+      geom_boxplot(aes(y=R, x=Standard, color=Extraction)) + 
+      coord_flip()
+  
   ggplot(data_long.0, aes(x=IntensityNorm, y=Concentration)) +
     geom_smooth(aes(color=BatchPlate), method="lm", formula=y~x, size=1, alpha=.2) + 
     geom_point(aes(group=Replicate, color=BatchPlate)) + 
@@ -127,12 +141,19 @@ exp10bioaccumulation.analyze = function() {
   data_long.1.ggplot_test.f = data_long.1.ggplot_test %>% 
     dplyr::inner_join(data_long.1.ggplot.f %>% dplyr::distinct(Batch, Species_name, Drug, Extraction, Standard), by=c("Batch", "Species_name", "Drug", "Standard")) %>%
     dplyr::mutate(InitialConcentration=factor(InitialConcentration, f.concentrations))
+  
+  data_long.1.ggplot.f %>% 
+    dplyr::filter(Species_name=="Clostridium saccharolyticum") %>%
+    dplyr::select(Plate, Well, Species_name, Extraction, InitialConcentration, DetectedConcentration) %>%
+    readr::write_tsv("reports/exp10bioaccumulation_effect_Csac
+                     +charolyticum.tsv", col_names=T, na="")  
+  
   ggplot(data_long.1.ggplot.f) +
-    geom_boxplot(aes(y=DetectedConcentration, x=InitialConcentration, fill=Extraction), width=.5, outlier.size=0, position=position_dodge2(0.75, preserve="single")) +
+    geom_boxplot(aes(x=InitialConcentration, y=DetectedConcentration, fill=Extraction), width=.5, outlier.size=0, position=position_dodge2(0.75, preserve="single")) +
     geom_point(aes(x=InitialConcentration, y=DetectedConcentration, fill=Extraction), position=position_dodge(0.75, preserve="total")) + 
     #geom_errorbarh(aes(y=IntensityNormMax50*1.05, xmin=as.numeric(InitialConcentration)-0.1, xmax=as.numeric(InitialConcentration)+0.1), data=data_long.1.ggplot_test.f, height=0) + 
     labs(x="Initial duloxetine concentration", y="Normalized duloxetine peak area") +
-    facet_wrap(Batch~Species_name, scales="free") +
+    facet_wrap(~Species_name, scales="free") +
     scale_fill_manual(values=c(supernatant="#cacac8", total="#ef3628")) +
     scale_y_continuous(breaks=seq(0, 125, 25)) +
     theme_classic(base_size=16) + 

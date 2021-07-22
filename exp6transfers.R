@@ -87,7 +87,12 @@ exp6transfers.analyze = function()
   species.colors = c("B. thetaiotaomicron"="#4f91c9", "E. rectale"="#cf1f2b", "L. gasseri"="#6c63b8", "R. torques"="#f57a66", "S. salivarius"="#d4d1e7", "B. uniformis"="#6CBA6F")
   
   pdf("reports/exp6transfers_abundance.pdf", width=12, height=8)
-  ggplot(data.seq_plot) +
+  data.seq_ggplot = data.seq_plot %>%
+    dplyr::filter(Bug=="- B. uniformis") %>%
+    dplyr::select(Bug, Drug, Date, Species, Percent)
+  
+  readr::write_tsv(data.seq_ggplot, "reports/exp6transfers_abundance_noBu.tsv", col_names=T, na="") 
+  ggplot(data.seq_ggplot) +
     geom_bar(aes(x=Date, y=Percent, fill=Species), position="stack", stat="identity") +
     scale_fill_manual(values=species.colors) +
     facet_grid(Bug ~ Drug) +

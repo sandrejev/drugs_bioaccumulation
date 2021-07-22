@@ -16,11 +16,11 @@ exp5concentration.preprocess = function()
   map  =  readr::read_delim("data/exp5concentration/well2species.tsv", "\t")
   data = rbind(data.rep1, data.rep2, data.rep3) %>%
     dplyr::mutate(Time=rep(0:24, 3), Replicate=rep(1:3, each=25)) %>%
-    dplyr::select(-T..578) %>%
+    dplyr::select(-dplyr::matches("T..578")) %>%
     reshape2::melt(id.vars=c("Time", "Replicate"), variable.name="Well", value.name="OD") %>%
     dplyr::inner_join(map, by="Well") %>%
     dplyr::select(Well, Species, Concentration, Replicate, Time, OD)
-  readr::write_tsv(data, path="tmp/exp5concentration/data.tsv", na="")
+  readr::write_tsv(data, file="tmp/exp5concentration/data.tsv", na="")
 }
 
 exp5concentration.analyze = function()
@@ -52,13 +52,15 @@ exp5concentration.analyze = function()
       minOD.species=min(ODfit[Concentration==1000])) %>%
     data.frame()
   
-  data.sum = data.approx %>%
+  data.plot = data.approx %>%
     dplyr::inner_join(data.stats, by=c("Species", "Replicate")) %>%
     dplyr::arrange(Species, Concentration, Replicate, Time) %>%
     dplyr::group_by(Species, Concentration, Replicate, maxOD.species, minOD.species) %>%
     dplyr::summarise(
       maxOD=ODfit[Time==maxODtime.species],
-      maxODnorm=(maxOD-minOD.species[1])/(maxOD.species[1]-minOD.species[1])) %>%
+      maxODnorm=(maxOD-minOD.species[1])/(maxOD.species[1]-minOD.species[1]))
+  
+  data.sum = data.plot %>%
     dplyr::group_by(Species, Concentration) %>%
     dplyr::summarise(
       n=length(Concentration),
@@ -71,7 +73,9 @@ exp5concentration.analyze = function()
   readr::write_tsv(data.sum, "reports/exp5concentration_growth.tsv", col_names=T, na="")  
   
   pdf(file="reports/exp5concentration_growth.pdf", width=11, height=11)
-  ggplot(data.sum %>% dplyr::filter(grepl("thetaiotaomicron|rectale|gasseri|torques|salivarius", Species))) + 
+  data.ggplot = data.sum %>% 
+    dplyr::filter(grepl("thetaiotaomicron|rectale|gasseri|torques|salivarius", Species))
+  ggplot(data.ggplot) + 
     geom_line(aes(x=Concentration, y=maxODnorm, color=Species)) +
     geom_errorbar(aes(x=Concentration, ymin=maxODnorm-maxODnorm.se, ymax=maxODnorm+maxODnorm.se, color=Species), width=0.033) +
     scale_x_log10(breaks=c(0, 5,10,50,100,500,1000)) +

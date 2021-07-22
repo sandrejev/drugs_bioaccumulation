@@ -5,6 +5,8 @@ source("exp3proteomics.R")
 source("exp4spentmedia_metabolomics.R")
 source("exp5concentration.R")
 source("exp6transfers.R")
+source("exp10bioaccumulation.R")
+source("exp12nmr.R")
 source("exp7spentmedia_Erectale_growth.R")
 source("summary.R")
 source("screen_vs_assay.R")
@@ -27,7 +29,14 @@ create.dockerfile = function()
   system("docker push sandrejev/drugs_bioaccumulation", wait=T)
 }
 
-exp012depletion.sankey()
+exp012depletion.sankey() # Done (Figure 1)
+exp12nmr_analyze() # Figure 2b
+exp10bioaccumulation.analyze() # Figure 2c
+exp6transfers.analyze() # Figure 3a
+exp5concentration.analyze() # Figure 3b
+exp7spentmedia.Erectale_growth() # Figure 3c
+
+
 exp2depletion.total2supernatant()
 exp3metabolomics.analyze()
 exp3proteomics.analyze()
@@ -39,3 +48,7 @@ summary.enzymatic_coverage()
 screen_vs_assay()
 chemical_diversity()
 exp7spentmedia.Erectale_growth()
+
+#
+# Export to Metabolights
+#

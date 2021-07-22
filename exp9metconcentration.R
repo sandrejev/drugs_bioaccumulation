@@ -82,7 +82,9 @@ exp9metconcentration.analyze = function()
     dplyr::ungroup() %>%
     dplyr::mutate(KEGG_ID=ifelse(is.na(KEGG_ID), cpd, KEGG_ID)) %>% 
     dplyr::group_by(Ion_mz, Chemical_formula, Assumed_ESI_adduct, Assumed_neutral_mass_shift) %>%
-    dplyr::filter(all(is.na(KEGG_ID)) | !is.na(KEGG_ID))
+    dplyr::filter(all(is.na(KEGG_ID)) | !is.na(KEGG_ID)) %>%
+    dplyr::ungroup()
+  
   
   metabolomics.ions = readr::read_delim("data/exp9metconcentration/METABOLOMICS_DATA_IONS.csv", ",")
   metabolomics.meta = readr::read_delim("data/exp9metconcentration/METABOLOMICS_DATA_METADATA.csv", ",", quote='"') %>%
@@ -116,6 +118,20 @@ exp9metconcentration.analyze = function()
     dplyr::filter(!data.table::inrange(Ion_mz, drug_peaks$lb_extended, drug_peaks$ub_extended))
   metabolomics.data.no_drugs2 = metabolomics.data[,metabolomics.ions$Ion_mz %in% metabolomics.ions.no_drugs2$Ion_mz]
 
+  #
+  # Defined list of metabolites
+  #
+  metabolites_list = readr::read_tsv("C:/Users/sandrejev/Desktop/drugs_bioaccumulation/data/exp9metconcentration/exp9metconcentration_metlist.tsv")$MetlinUD
+  metabolomics.anno.listed = metabolomics.anno %>% dplyr::filter(Metlin_ID %in% metabolites_list)
+  metabolomics.ions.listed = metabolomics.ions %>% 
+    dplyr::inner_join(metabolomics.anno.listed, by=c("Ion_mz", "Ion_index"))
+  metabolomics.data.listed = metabolomics.data[,metabolomics.ions$Ion_index %in% metabolomics.ions.listed$Ion_index]
+
+  metabolomics.ions.listed %>%
+    dplyr::distinct(Metlin_ID, Ion_mz, First_metabolite_name_HMDB) %>%
+    dplyr::distinct(Metlin_ID, Ion_mz, .keep_all=T) %>%
+    readr::write_tsv("C:/Users/sandrejev/Desktop/drugs_bioaccumulation/data/exp9metconcentration/exp9metconcentration_metlist_filtered.tsv")
+  
   #
   # Calculate T-test 0-concentration vs X-concentration
   #
@@ -289,13 +305,15 @@ exp9metconcentration.analyze = function()
   #
   pca_n = 3
   metabolomics.pca_species_colors = c("Clostridium saccharolyticum"="#F8766D","Escherichia coli ED1a"="#C49A00","Escherichia coli IAI1"="#53B400","Lactobacillus plantarum WCFS1"="#00C094","Lactococcus lactis IL1403"="#00B6EB","none"="#666666","Streptococcus salivarius"="#FB61D7")
-  metabolomics.pca_species_shapes = c("Clostridium saccharolyticum"=21,"Escherichia coli ED1a"=13,"Escherichia coli IAI1"=22,"Lactobacillus plantarum WCFS1"=23,"Lactococcus lactis IL1403"=24,"none"=1,"Streptococcus salivarius"=25)
-  metabolomics.pca_species_pch = c("Clostridium saccharolyticum"="\u2776","Escherichia coli ED1a"="\u2777","Escherichia coli IAI1"="\u2778","Lactobacillus plantarum WCFS1"="\u2779","Lactococcus lactis IL1403"="\u277A","none"="\u2B24","Streptococcus salivarius"="\u277B")
+  metabolomics.pca_species_shapes = c("Clostridium saccharolyticum"=21,"C. saccharolyticum"=21,"Escherichia coli ED1a"=13,"Escherichia coli IAI1"=22,"Lactobacillus plantarum WCFS1"=23,"Lactococcus lactis IL1403"=24,"none"=1,"Streptococcus salivarius"=25)
+  metabolomics.pca_species_pch = c("Clostridium saccharolyticum"="\u2776","C. saccharolyticum"="\u2776","Escherichia coli ED1a"="\u2777","Escherichia coli IAI1"="\u2778","Lactobacillus plantarum WCFS1"="\u2779","Lactococcus lactis IL1403"="\u277A","none"="\u2B24","Streptococcus salivarius"="\u277B")
+  
   metabolomics.pca = metabolomics.meta %>%
     dplyr::filter(!is.na(SPECIES)) %>%
     dplyr::group_by(SPECIES, DIFFERENTIAL_TREATMENT_OR_CONDITION, INTERACTION) %>% #  
     dplyr::do((function(z){
       z.data = metabolomics.data.no_drugs2
+      # z.data = metabolomics.data.listed
       z.data = z.data[match(as.character(z$SAMPLE_INDEX), rownames(z.data)),]
       z.data = z.data[,colMeans(z.data>0)==1]
       z.pca = prcomp(z.data)
@@ -318,6 +336,7 @@ exp9metconcentration.analyze = function()
     dplyr::do((function(z){
       #zz<<-z
       z.data = metabolomics.data.no_drugs2
+      # z.data = metabolomics.data.listed
       z.data = z.data[match(as.character(z$SAMPLE_INDEX), rownames(z.data)),]
       z.data = z.data[,colMeans(z.data>0)>=1]
       z.pca = prcomp(z.data)
